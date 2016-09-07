@@ -1,0 +1,29 @@
+@prefix : <http://hadatac.org/ont/chear#> .
+@prefix uo: <http://purl.obolibrary.org/obo/uo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://hadatac.org/ont/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hasco: <http://hadatac.org/ont/hasco#> .
+@prefix vstoi: <http://hadatac.org/ont/vstoi#> .
+@prefix hasneto: <http://hadatac.org/ont/hasneto#> .
+@prefix chebi:   <http://purl.obolibrary.org/obo/CHEBI_>.
+@prefix obo:   <http://purl.obolibrary.org/obo/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+@base <http://hadatac.org/ont/chear> .
+
+<http://hadatac.org/ont/chear> rdf:type owl:Ontology ;
+                               
+                               owl:versionIRI <http://hadatac.org/ont/chear/0.6> ;
+                               
+                               owl:imports <http://hadatac.org/ont/hasco> ;
+                               
+                               rdfs:comment """Children's health and wellbeing are influenced by interactions between environmental and genetic factors. NIEHS is establishing an infrastructure, the Children's Health Exposure Analysis Resource (CHEAR), to provide the extramural research community access to laboratory and data analyses that add or expand the inclusion of environmental exposures in children's health research. The goal of CHEAR is to provide tools so researchers can assess the full range of environmental exposures which may affect children's health. We anticipate that CHEAR will be used by children's health researchers conducting epidemiological or clinical studies that currently have limited consideration of environmental exposures, or those who have collected exposure data but seek more extensive analyses.
+
+Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" .
+
