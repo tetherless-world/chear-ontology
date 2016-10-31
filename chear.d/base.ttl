@@ -14,6 +14,7 @@
 @prefix obo:   <http://purl.obolibrary.org/obo/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prv: <http://hadatac.org/ont/prov#> .
 
 @base <http://hadatac.org/ont/chear> .
 

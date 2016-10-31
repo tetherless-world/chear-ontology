@@ -13,35 +13,23 @@
 @prefix setl:          <http://purl.org/twc/vocab/setl/> .
 @prefix csvw:          <http://www.w3.org/ns/csvw#> .
 @prefix pv:            <http://purl.org/net/provenance/ns#>.
+@prefix prv:           <http://hadatac.org/ont/prov#>.
 @prefix labkey:        <http://chear.tw.rpi.edu/labkey/query/CHEAR%20Production/selectRows.api?schemaName=lists&query.queryName=>.
 
 @prefix :              <https://hadatac.org/setl/> .
 
 @prefix chear:    <http://hadatac.org/ont/chear#> .
 
-:localObjectType a setl:JSON;
+:LocalAnalyteType a setl:JSON;
   prov:wasGeneratedBy [
     a setl:Extract;
-    prov:used labkey:LocalObjectType;
+    prov:used labkey:LocalAnalyteType;
   ].
 
-:localAnalytes a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalAnalytes;
-  ].
-
-:localAttributeType a setl:JSON;
+:LocalAttributeType a setl:JSON;
   prov:wasGeneratedBy [
     a setl:Extract;
     prov:used labkey:LocalAttributeType;
-  ].
-
-
-:LocalInstrumentType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalInstrumentType;
   ].
 
 :LocalDetectorType a setl:JSON;
@@ -50,10 +38,34 @@
     prov:used labkey:LocalDetectorType;
   ].
 
+:LocalInstrumentPerspectiveType a setl:JSON;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used labkey:LocalInstrumentPerspectiveType;
+  ].
+
+:LocalInstrumentType a setl:JSON;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used labkey:LocalInstrumentType;
+  ].
+
 :LocalMethodType a setl:JSON;
   prov:wasGeneratedBy [
     a setl:Extract;
     prov:used labkey:LocalMethodType;
+  ].
+
+:LocalObjectType a setl:JSON;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used labkey:LocalObjectType;
+  ].
+
+:LocalObjectType a setl:JSON;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used labkey:LocalObjectType;
   ].
 
 :LocalPlatformType a setl:JSON;
@@ -61,37 +73,60 @@
     a setl:Extract;
     prov:used labkey:LocalPlatformType;
   ].
-  
+
 :LocalProcessType a setl:JSON;
   prov:wasGeneratedBy [
     a setl:Extract;
     prov:used labkey:LocalProcessType;
   ].
-  
+
 :LocalSampleType a setl:JSON;
   prov:wasGeneratedBy [
     a setl:Extract;
     prov:used labkey:LocalSampleType;
   ].
 
-:base_graph a void:Dataset;
+:LocalScaleType a setl:JSON;
   prov:wasGeneratedBy [
     a setl:Extract;
-    prov:used <chear.d/base.ttl>;
+    prov:used labkey:LocalScaleType;
+  ].
+
+:LocalSensingPerspectiveType a setl:JSON;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used labkey:LocalSensingPerspectiveType;
+  ].
+
+:LocalStudyIndicatorType a setl:JSON;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used labkey:LocalStudyIndicatorType;
+  ].
+
+:IndicatorType a setl:JSON;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used labkey:IndicatorType;
   ].
 
 <http://hadatac.org/ont/chear> a void:Dataset;
   prov:wasGeneratedBy [
     a setl:Transform, setl:JSLDT;
-    prov:used :localObjectType,
-              :localAnalytes,
-              :localAttributeType,
-              :LocalInstrumentType,
+    prov:used :LocalAnalyteType,
+              :LocalAttributeType,
               :LocalDetectorType,
+              :IndicatorType,
+#              :LocalInstrumentPerspectiveType,
+              :LocalInstrumentType,
               :LocalMethodType,
+              :LocalObjectType,
               :LocalPlatformType,
-              :LocalProcessType,
-              :LocalSampleType;
+#              :LocalProcessType,
+              :LocalSampleType,
+              :LocalScaleType,
+              :LocalSensingPerspectiveType,
+              :LocalStudyIndicatorType;
     setl:hasContext '''{
   "@vocab" :  "https://hbgd.tw.rpi.edu/",
   "owl": "http://www.w3.org/2002/07/owl#",
@@ -107,6 +142,9 @@
   "hasco" : "http://hadatac.org/ont/hasco#",
   "vstoi" : "http://hadatac.org/ont/vstoi#",
   "hasneto" : "http://hadatac.org/ont/hasneto#",
+  "uberon" : "http://purl.obolibrary.org/obo/UBERON_",
+  "prv" : "http://hadatac.org/ont/prov#",
+  "chear-kb" : "http://hadatac.org/kb/chear#",
   "cmo"  :    "http://purl.org/twc/ontologies/cmo.owl#"
 }''';
   prov:value '''[{
@@ -115,7 +153,14 @@
       "@for": "r in row['rows']",
       "@do": {
         "@id": "{{r['hasURI']}}",
-        "@type": "owl:Class",
+        "@type": [
+          "owl:Class",
+          {
+            "@if" : "'rdf:type' in r and r['rdf:type'] is not None and len(r['rdf:type'].strip()) > 0",
+            "@for" : "t in re.split('\\\\s*[,&]\\\\s*', r['rdf:type'])",
+            "@do" : "{{t}}"
+          }
+        ],
         "rdfs:label": {
           "@if" : "'rdfs:label' in r and r['rdfs:label'] is not None and len(r['rdfs:label'].strip()) > 0",
           "@value" : "{{r['rdfs:label']}}"
@@ -123,6 +168,10 @@
         "dc:identifier": {
           "@if" : "'dcterms:identifier' in r and r['dcterms:identifier'] is not None and len(r['dcterms:identifier'].strip()) > 0",
           "@value" : "{{r['dcterms:identifier'].strip()}}"
+        },
+        "skos:editorialNote": {
+          "@if" : "'skos:editorialNote' in r and r['skos:editorialNote'] is not None and len(r['skos:editorialNote'].strip()) > 0",
+          "@value" : "{{r['skos:editorialNote']}}"
         },
         "skos:editorialNote": {
           "@if" : "'skos:editorialNote' in r and r['skos:editorialNote'] is not None and len(r['skos:editorialNote'].strip()) > 0",
@@ -138,11 +187,25 @@
             "@value" : "{{r['skos:definition']}}"
           }
         ],
+        "hasco:wasApprovedBy": [
+          {
+            "@if" : "'hasco:approvedBy' in r and r['hasco:approvedBy'] is not None and len(r['hasco:approvedBy'].strip()) > 0",
+            "@value" : "{{r['hasco:approvedBy']}}"
+          }
+        ],
         "rdfs:subClassOf": [
           { "@if" : "'hasneto:hasUnit' in r and not isempty(r['hasneto:hasUnit'])",
             "@type" : "owl:Restriction",
             "owl:onProperty" : { "@id":"sio:hasUnit"},
             "owl:hasValue" : { "@id": "{{r['hasneto:hasUnit']}}" }
+          },
+          { "@if" : "'prov:wasGeneratedBy' in r and not isempty(r['prov:wasGeneratedBy'])",
+            "@for" : "s in re.split('\\\\s*[,&]\\\\s*', r['prov:wasGeneratedBy'])",
+            "@do" : {
+              "@type" : "owl:Restriction",
+              "owl:onProperty" : { "@id":"prov:wasDerivedFrom"},
+              "owl:allValuesFrom" : { "@id": "{{s}}" }
+            }
           },
           {
             "@if" : "'rdfs:subClassOf' in r and r['rdfs:subClassOf'] is not None and len(r['rdfs:subClassOf'].strip()) > 0",
@@ -160,5 +223,5 @@
     dcterms:format "text/turtle";
     prov:wasGeneratedBy [
       a setl:Load;
-      prov:used <http://hadatac.org/ont/chear>, :base_graph ;
+      prov:used <http://hadatac.org/ont/chear> ;
     ].
