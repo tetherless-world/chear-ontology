@@ -1,0 +1,72 @@
+@prefix :        <http://localhost/default#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix chear:   <http://hadatac.org/ont/chear#> .
+@prefix chear-kb:   <http://hadatac.org/kb/chear#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+
+
+<http://hadatac.org/ont/chear/AmericanIndianOrAlaskanNative>
+    skos:definition "A person having origins in any of the original peoples of North, Central, or South America, and who maintains tribal affiliations or community attachment.";
+    sio:isDescribedBy [
+        a sio:Definition;
+        sio:hasValue "A person having origins in any of the original peoples of North, Central, or South America, and who maintains tribal affiliations or community attachment.";
+        prov:wasQuotedFrom <https://www.whitehouse.gov/sites/default/files/omb/assets/information_and_regulatory_affairs/re_app-a-update.pdf>  ;
+        prov:wasAttributedTo chear-kb:PER-Jeanette-Stingone ;
+    ].
+
+<http://hadatac.org/ont/chear/Asian>
+    skos:definition "A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam. (Note: Individuals from the Philippine Islands have been recorded as Pacific Islanders in previous data collection strategies.)";
+    sio:isDescribedBy [
+        a sio:Definition;
+        sio:hasValue "A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam. (Note: Individuals from the Philippine Islands have been recorded as Pacific Islanders in previous data collection strategies.)";
+        prov:wasQuotedFrom <https://www.whitehouse.gov/sites/default/files/omb/assets/information_and_regulatory_affairs/re_app-a-update.pdf>  ;
+        prov:wasAttributedTo chear-kb:PER-Jeanette-Stingone ;
+    ].
+
+<http://hadatac.org/ont/chear/BlackOrAfricanAmerican>
+    skos:definition "A person having origins in any of the black racial groups of Africa. Terms such as “Haitian” or “Negro” can be used in addition to “Black or African American.”";
+    sio:isDescribedBy [
+        a sio:Definition;
+        sio:hasValue "A person having origins in any of the black racial groups of Africa. Terms such as “Haitian” or “Negro” can be used in addition to “Black or African American.”";
+        prov:wasQuotedFrom <https://www.whitehouse.gov/sites/default/files/omb/assets/information_and_regulatory_affairs/re_app-a-update.pdf>  ;
+        prov:wasAttributedTo chear-kb:PER-Jeanette-Stingone ;
+    ].
+
+<http://hadatac.org/ont/chear/NativeHawaiianOrOtherPacificIslander>
+    skos:definition "A person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands.";
+    sio:isDescribedBy [
+        a sio:Definition;
+        sio:hasValue "A person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands.";
+        prov:wasQuotedFrom <https://www.whitehouse.gov/sites/default/files/omb/assets/information_and_regulatory_affairs/re_app-a-update.pdf>  ;
+        prov:wasAttributedTo chear-kb:PER-Jeanette-Stingone ;
+    ].
+
+<http://hadatac.org/ont/chear/White>
+    skos:definition "A person having origins in any of the original peoples of Europe, the Middle East, or North Africa.";
+    sio:isDescribedBy [
+        a sio:Definition;
+        sio:hasValue "A person having origins in any of the original peoples of Europe, the Middle East, or North Africa.";
+        prov:wasQuotedFrom <https://www.whitehouse.gov/sites/default/files/omb/assets/information_and_regulatory_affairs/re_app-a-update.pdf>  ;
+        prov:wasAttributedTo chear-kb:PER-Jeanette-Stingone ;
+    ].
+
+
+<http://hadatac.org/ont/chear/HispanicOrLatino>
+    skos:definition "A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. The term 'Spanish origin' can also be used in addition to 'Hispanic or Latino.'";
+    sio:isDescribedBy [
+        a sio:Definition;
+        sio:hasValue "A person having origins in any of the original peoples of North, Central, or South America, and who maintains tribal affiliations or community attachment.";
+        prov:wasQuotedFrom <https://www.whitehouse.gov/sites/default/files/omb/assets/information_and_regulatory_affairs/re_app-a-update.pdf>  ;
+        prov:wasAttributedTo chear-kb:PER-Jeanette-Stingone ;
+    ].
+
+
+<http://hadatac.org/ont/chear/NonHispanicOrLatino>
+    skos:definition "A person not having hispanic or latino ethnicity.";
+    sio:isDescribedBy [
+        a sio:Definition;
+        sio:hasValue "A person not having hispanic or latino ethnicity.";
+        prov:wasQuotedFrom <https://www.whitehouse.gov/sites/default/files/omb/assets/information_and_regulatory_affairs/re_app-a-update.pdf>  ;
+        prov:wasAttributedTo chear-kb:PER-Jeanette-Stingone ;
+    ].
