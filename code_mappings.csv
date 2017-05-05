@@ -1,263 +1,461 @@
 code,uri,label
+AAMA,chear:AAMA,N-Acetyl-S-(2-carbamoylethyl)-L-cysteine
 AMA,chear:AMA,Mercapturic acids of acrolein and crotonaldehyde
-BuPB,chebi:88542,Butyl paraben
+AMCC,chear:AMCC,N-Acetyl-S-(N-methylcarbamoyl)-L-cysteine
+ATCA,chear:ATCA,2-Aminothiazoline-4-carboxylic acid
+BAA1,chear:BAA1,1-hydroxybenz[a]anthacene
 BAPT,chear:BAPT,Benzo[a]pyrene tetraol
 BCP1,chear:BCP1,1-hydroxybenzo[c]-phenanthrene
 BCP2,chear:BCP2,2-hydroxybenzo[c]-phenanthrene
 BCP3,chear:BCP3,3-hydroxybenzo[c]-phenanthrene
+BDE100,chear:BDE100,"2,2',4,4',6-Pentabromodiphenyl ether"
+BDE153,chear:BDE153,"2,2',4,4',5,5'-Hexabromodiphenyl ether"
+BDE154,chear:BDE154,"2,2',4,4',5,6'-Hexabromodiphenyl ether"
+BDE17,chear:BDE17,"2,2',4'-Tribromodiphenyl ether"
+BDE183,chear:BDE183,"2,2',3,4,4',5',6-Heptabromodiphenyl ether"
+BDE209,chear:BDE209,"2,2',3,3',4,4',5,5',6,6'-Decabromodiphenyl ether"
+BDE28,chear:BDE28,"2,4,4'-Tribromodiphenyl ether"
+BDE47,chear:BDE47,"2,2',4,4'-Tetrabromodiphenyl ether"
+BDE66,chear:BDE66,"2,3',4,4'-Tetrabromodiphenyl ether"
+BDE85,chear:BDE85,"2,2',3,4,4'-Pentabromodiphenyl ether"
+BDE99,chear:BDE99,"2,2',4,4',5-Pentabromodiphenyl ether"
+BMA,chear:BMA,N-Acetyl-S-(benzyl)-L-cysteine
 BP3,chear:BP3,Benzophenone-3
-BAA1,chear:BAA1,1-hydroxybenz[a]anthacene
-MCOMHP,chear:MCOMHP,mono (6-COOH-2-methylheptyl) phthalate
-MCOMOP,chear:MCOMOP,mono (7-COOH-2-methyloctyl) phthalate
-TCP245,chebi:28520,"2,4,5-Trichlorophenol"
+BPMA,chear:BPMA,N-Acetyl-S-(n-propyl)-L-cysteine
+BU,chear:BuccalCell,Buccal Cell
+CEMA,chear:CEMA,N-Acetyl-S- (2-carboxyethyl)-L-cysteine
 CHRY3,chear:CHRY3,3-hydroxychrysene
+COTT,chear:COTT,Cotinine (total)
+CYMA,chear:CYMA,N-Acetyl-S-(2-cyanoethyl)-L-cysteine
+DCVMA12,chear:DCVMA12,"N-Acetyl-S-(1,2-dichlorovinyl)-L-cysteine"
+DCVMA22,chear:DCVMA22,"N-Acetyl-S-(2,2-dichlorovinyl)-L-cysteine"
+DEDP,chear:DEDP,diethyldithiophosphate
+DEP,chear:DEP,diethylphosphate
+DETP,chear:DETP,diethylthiophosphate
+DHBMA,chear:DHBMA,"N-Acetyl-S- (3,4-dihydroxybutyl)-L-cysteine"
+DMDP,chear:DMDP,dimethyldithiophosphate
+DMP,chear:DMP,dimethylphosphate
+DMTP,chear:DMTP,dimethylthiophosphate
+DPMA,chear:DPMA,"N-Acetyl-S-(2,4-dimethylphenyl)-L-cysteine + N-Acetyl-S-(2,5-dimethylphenyl)-L-cysteine + N-Acetyl-S-(3,4-dimethylphenyl)-L-cysteine"
+GAMA,chear:GAMA,N-Acetyl-S-(2-carbamoyl-2-hydroxyethyl)-L-cysteine
 HEMA,chear:HEMA,"Mercapturic acids of 1,3-butadiene"
+HPMA,chear:HPMA,N-Acetyl-S- (3-hydroxypropyl)-L-cysteine
+HPMA2,chear:HPMA2,N-Acetyl-S-(2-hydroxypropyl)-L-cysteine
+HPMMA,chear:HPMMA,N-Acetyl-S-(3-hydroxypropyl-1-methyl)-L-cysteine
+MA,chear:MA,Mandelic acid
 mBzP,chear:mBzP,mono-benzyl phthalate
 mCHpP,chear:mCHpP,mono(7-carboxyheptyl)phthalate
 mCINP,chear:mCINP,mono-carboxy isononyl phthalate
 mCIOP,chear:mCIOP,mono-carboxy isooctyl phthalate
+MCOMHP,chear:MCOMHP,mono (6-COOH-2-methylheptyl) phthalate
+MCOMOP,chear:MCOMOP,mono (7-COOH-2-methyloctyl) phthalate
 mECPP,chear:mECPP,mono-(2-ethyl-5-carboxypentyl) phthalate
+MHA2,chear:MHA2,2-Methylhippuric acid
+MHA34,chear:MHA34,3-Methylhippuric acid + 4-Methylhippuric acid
+MHBMA1,chear:MHBMA1,N-Acetyl-S-(1-hydroxymethyl-2-propenyl)-L-cysteine
+MHBMA2,chear:MHBMA2,N-Acetyl-S-(2-hydroxy-3-butenyl)-L-cysteine
+MHBMA3,chear:MHBMA3,N-Acetyl-S-(4-hydroxy-2-buten-1-yl)-L-cysteine
 mHpP,chear:mHpP,mono-2-heptyl phthalate
 mIDP,chear:mIDP,mono-isodecyl phthalate
 MIP,chear:MIP,monoisononyl phthalate
 mIPrP,chear:mIPrP,mono-isopropyl phthalate
 MPP,chear:MPP,Mono-n-pentyl phthalate
+MU,chear:MU,"trans, trans -Muconic acid"
+NICT,chear:NICT,Nicotine (total)
 NNAL,chear:NNAL,4-(methlynitrosamino)-1-(3-pyridyl)-1-butanol
-BDE85,chear:BDE85,"2,2',3,4,4'-Pentabromodiphenyl ether"
-BDE99,chear:BDE99,"2,2',4,4',5-Pentabromodiphenyl ether"
-BDE100,chear:BDE100,"2,2',4,4',6-Pentabromodiphenyl ether"
-BDE153,chear:BDE153,"2,2',4,4',5,5'-Hexabromodiphenyl ether"
-BDE154,chear:BDE154,"2,2',4,4',5,6'-Hexabromodiphenyl ether"
-BDE183,chear:BDE183,"2,2',3,4,4',5',6-Heptabromodiphenyl ether"
-BDE209,chear:BDE209,"2,2',3,3',4,4',5,5',6,6'-Decabromodiphenyl ether"
+PBA,chear:PBA,3-phenoxybenzoic acid
 PBB153,chear:PBB153,"2,2',4,4',5,5'-Hexabromobiphenyl"
-OHEtP,pubchem:77547,Protocatechuic acid ethyl ester
-COTT,chear:COTT,Cotinine (total)
-MOP,pubchem:79362,Mono-n-octyl phthalate
-BDE17,chear:BDE17,"2,2',4'-Tribromodiphenyl ether"
-PFPeA,chebi:83491,Perfluoro-n-pentanoic acid
-mMP,chebi:89749,mono-methyl phthalate
-PHEN3,chebi:20184,3-hydroxyphenanthrene
-PHEN9,pubchem:10229,9-hydroxyphenanthrene
-Arsenocholine,pubchem:104820,Arsenocholine
-Arsenic (V) Acid,chebi:18231,Arsenic (V) Acid
+PGA,chear:PGA,Phenylglyoxylic acid
+PHEMA,chear:PHEMA,N-Acetyl-S-(1-phenyl-2-hydroxyethyl-L-cysteine + N-Acetyl-S-(2-phenyl-2-hydroxyethyl)-L-cysteine
+PMA,chear:PMA,N-Acetyl-S-(phenyl)-L-cysteine
 SPMA,chear:SPMA,Mercapturic acid of benzene
+TCP,chear:TCP,"3,5,6-trichloro-2-pyridinol"
+TCVMA,chear:TCVMA,N-Acetyl-S-(trichlorovinyl)-L-cysteine
 TeCP2456,chear:TeCP2456,"2,4,5,6-Tetrachlorophenol"
 TNIC,chear:TNIC,Total nicotine
-TCS,chebi:164200,Triclosan
-PHEN2,chebi:19760,2-hydroxyphenanthrene
-TOL,chebi:17578,Toluene
-mINP,pubchem:110394,mono-isononyl phthalate
-MiPP,pubchem:118770,Monoisopropyl phthalate
-MEOHP,pubchem:119096,mono (2-ethyl-5-oxohexyl) phthalate
-Cd,chebi:22977,Cadmium
-Pb,chebi:25016,Lead
-DCVMA22,chear:DCVMA22,"N-Acetyl-S-(2,2-dichlorovinyl)-L-cysteine"
-CHRY2,pubchem:47782,2-hydroxychrysene
-MCPP,pubchem:53435014,mono (3-carboxypropyl) phthalate (multiple)
-TeCP2346,pubchem:6028,"2,3,4,6-Tetrachlorophenol"
-As,chebi:27563,Arsenic
-DE12,chebi:27789,"1,2-Dichloroethane"
-CTET,chebi:27385,Carbon Tetrachloride
-Co,chebi:27638,Cobalt
-NIC,chebi:18723,Nicotine
-BPF,pubchem:75575,Bisphenol F
-DHB34,chebi:36062,"3,4-Dihydroxy benzoic acid"
-COT,chebi:68641,Cotinine
-Te,chebi:30452,Tellurium
-VOCPMA,chear:VOCPMA,N-Acetyl-S-(phenyl)-L-cysteine(ng/mL)
-VOCATC,chear:VOCATC,2-amnothiazolne-4-carbxylic acid(ng/mL)
-VOCAMC,chear:VOCAMC,N-Ace-S-(N-methlcarbamoyl)-L-cys(ng/mL)
-VOCAAM,chear:VOCAAM,N-Ace-S-(2-carbamoylethyl)-L-cys(ng/mL)
-VOC34M,chear:VOC34M,3-methipurc acd & 4-methipurc acd(ng/mL)
-VOC2MH,chear:VOC2MH,2-Methylhippuric acid (ng/mL)
-VOC2DC,chear:VOC2DC,"N-Acel-S-(2,2-Dichlorvinyl)-L-cys(ng/mL)"
+TTCA,chear:TTCA,2-Thioxothiazolidine-4-carboxylic acid
 VOC1DC,chear:VOC1DC,"N-acel-S-(1,2-dichlorovinl)-L-cys(ng/mL)"
-MHA34,chear:MHA34,3-Methylhippuric acid + 4-Methylhippuric acid
-MHA2,chear:MHA2,2-Methylhippuric acid
-DPMA,chear:DPMA,"N-Acetyl-S-(2,4-dimethylphenyl)-L-cysteine + N-Acetyl-S-(2,5-dimethylphenyl)-L-cysteine + N-Acetyl-S-(3,4-dimethylphenyl)-L-cysteine"
+VOC2DC,chear:VOC2DC,"N-Acel-S-(2,2-Dichlorvinyl)-L-cys(ng/mL)"
+VOC2MH,chear:VOC2MH,2-Methylhippuric acid (ng/mL)
+VOC34M,chear:VOC34M,3-methipurc acd & 4-methipurc acd(ng/mL)
+VOCAAM,chear:VOCAAM,N-Ace-S-(2-carbamoylethyl)-L-cys(ng/mL)
+VOCAMC,chear:VOCAMC,N-Ace-S-(N-methlcarbamoyl)-L-cys(ng/mL)
+VOCATC,chear:VOCATC,2-amnothiazolne-4-carbxylic acid(ng/mL)
+VOCBMA,chear:VOCBMA,N-Acetyl-S-(benzyl)-L-cysteine(ng/mL)
+VOCBPM,chear:VOCBPM,N-Acetyl-S-(n-propyl)-L-cysteine(ng/mL)
+VOCCEM,chear:VOCCEM,N-Acetyl-S-(2-Carbxyethyl)-L-Cys(ng/mL)
+VOCCYM,chear:VOCCYM,N-acetyl-S-(2-cyanoethyl)-L-cyst(ng/mL)
+VOCDHB,chear:VOCDHB,"N-Ace-S- (3,4-Dihidxybutl)-L-Cys(ng/mL)"
+VOCDPM,chear:VOCDPM,N-Ace-S-(dimethylphenyl)-L-Cys(ng/mL)
+VOCGAM,chear:VOCGAM,N-ac-S-(2-carbmo-2-hydxel)-L-cys(ng/mL)
+VOCHEM,chear:VOCHEM,N-Ace-S-(2-Hydroxyethyl)-L-cys(ng/mL)
+VOCHP2,chear:VOCHP2,N-Ace-S-(2-hydroxypropyl)-L-cys(ng/mL)
+VOCHPM,chear:VOCHPM,N-Ace-S-(3-Hydroxypropyl)-L-Cys(ng/mL)
+VOCMAD,chear:VOCMAD,Mandelic acid(ng/mL)
+VOCMB1,chear:VOCMB1,N-A-S-(1-HydrxMet)-2-Prpn)-L-Cys(ng/mL)
+VOCMB2,chear:VOCMB2,N-Ac-S-(2-Hydrxy-3-butnyl)-L-Cys(ng/mL)
+VOCMB3,chear:VOCMB3,N-ace-S-(phenl-2-hydxyetl)-L-cys(ng/mL)
+VOCMUC,chear:VOCMUC,"t,t-Muconic acid(ng/mL)"
+VOCPHE,chear:VOCPHE,N-ace-S-(phenl-2-hydxyetl)-L-cys(ng/mL)
 VOCPHG,chear:VOCPHG,Phenylglyoxylic acid(ng/mL)
-OXB,chebi:34283,Oxybenzone
-MCP2,chebi:47083,2-Chlorophenol
+VOCPMA,chear:VOCPMA,N-Acetyl-S-(phenyl)-L-cysteine(ng/mL)
+VOCPMM,chear:VOCPMM,N-A-S-(3-hydrxprpl-1-metl)-L-cys(ng/mL)
+VOCTCV,chear:VOCTCV,N-Acetyl-S-(trichlorovinyl)-L-cys(ng/mL)
+VOCTTC,chear:VOCTTC,2-thoxothazlidne-4-carbxylic acid(ng/mL)
 EB,chebi:16101,Ethylbenzene
-CH3Hg,chebi:49747,Methyl mercury (CH3Hg+)
-Np,chebi:33387,Neptunium
-Dimethylarsinic Acid,chebi:48765,Dimethylarsinic Acid
-Arsenous (III) Acid,chebi:49900,Arsenous ( III) Acid
-PHEN4,chebi:20469,4-hydroxyphenanthrene
-TeCP2356,chebi:52048,"2,3,5,6-Tetrachlorophenol"
-Gd,chebi:33375,Gadolinium
-Pu,chebi:33388,Plutonium
-PFOA,chebi:35549,Perfluorooctanoic acid
-Pt,chebi:33364,Platinum
-TCC,chebi:48347,Triclocarban
-I,chebi:33115,Iodine
-Ru,chebi:30682,Ruthenium
-NORN,chebi:28313,Nornicotine
+TCS,chebi:164200,Triclosan
 BZ,chebi:16716,Benzene
-Mn,chebi:18291,Managanese
-TCE,chebi:17300,Tetrachloroethene
-PCP,chebi:17642,Pentachlorophenol
+CRE,chebi:16737,Creatinine
 DCP24,chebi:16738,"2,4-Dichlorophenol"
 Hg2,chebi:16793,Inorganic Mercury (Hg2+)
 MEHP,chebi:17243,mono ethyl hexyl phthalate
-CRE,chebi:16737,Creatinine
+TCE,chebi:17300,Tetrachloroethene
+TOL,chebi:17578,Toluene
+PCP,chebi:17642,Pentachlorophenol
+Arsenic (V) Acid,chebi:18231,Arsenic (V) Acid
+Mn,chebi:18291,Managanese
+NIC,chebi:18723,Nicotine
+PHEN2,chebi:19760,2-hydroxyphenanthrene
+PHEN3,chebi:20184,3-hydroxyphenanthrene
+PHEN4,chebi:20469,4-hydroxyphenanthrene
+Cd,chebi:22977,Cadmium
+Pb,chebi:25016,Lead
 Hg,chebi:25195,Mercury
-PFOS,chebi:39421,Perfluorooctanesulfonic acid
-VOCCEM,chear:VOCCEM,N-Acetyl-S-(2-Carbxyethyl)-L-Cys(ng/mL)
-TeCP2345,pubchem:21013,"2,3,4,5-Tetrachlorophenol"
-VOCTCV,chear:VOCTCV,N-Acetyl-S-(trichlorovinyl)-L-cys(ng/mL)
-VOCTTC,chear:VOCTTC,2-thoxothazlidne-4-carbxylic acid(ng/mL)
-TCP246,chebi:28755,"2,4,6-Trichlorophenol"
-VOCPHE,chear:VOCPHE,N-ace-S-(phenl-2-hydxyetl)-L-cys(ng/mL)
-VOCMUC,chear:VOCMUC,"t,t-Muconic acid(ng/mL)"
-VOCMB3,chear:VOCMB3,N-ace-S-(phenl-2-hydxyetl)-L-cys(ng/mL)
-VOCMB2,chear:VOCMB2,N-Ac-S-(2-Hydrxy-3-butnyl)-L-Cys(ng/mL)
-VOCMB1,chear:VOCMB1,N-A-S-(1-HydrxMet)-2-Prpn)-L-Cys(ng/mL)
-VOCMAD,chear:VOCMAD,Mandelic acid(ng/mL)
-VOCPMM,chear:VOCPMM,N-A-S-(3-hydrxprpl-1-metl)-L-cys(ng/mL)
-VOCHPM,chear:VOCHPM,N-Ace-S-(3-Hydroxypropyl)-L-Cys(ng/mL)
-VOCHP2,chear:VOCHP2,N-Ace-S-(2-hydroxypropyl)-L-cys(ng/mL)
+Sn,chebi:27007,Tin
+ANAT,chebi:2705,Anatabine
 Trimethylarsine oxide,chebi:27131,Trimethylarsine oxide
+Uranium,chebi:27214,Uranium
+VitaminD,chebi:27300,Vitamin D
+Zn,chebi:27363,Zinc
+CTET,chebi:27385,Carbon Tetrachloride
 PXY,chebi:27417,p-Xylene*
 STY,chebi:27452,Styrene
-V,chebi:27698,Vanadium
-U,chebi:27214,Uranium
-ANAT,chebi:2705,Anatabine
-Se,chebi:27568,Selenium
-Sn,chebi:27007,Tin
-B,chebi:27560,Boron
-VOCHEM,chear:VOCHEM,N-Ace-S-(2-Hydroxyethyl)-L-cys(ng/mL)
-VOCGAM,chear:VOCGAM,N-ac-S-(2-carbmo-2-hydxel)-L-cys(ng/mL)
-VOCDPM,chear:VOCDPM,N-Ace-S-(dimethylphenyl)-L-Cys(ng/mL)
-Zn,chebi:27363,Zinc
 PHEN1,chebi:27528,1-hydroxyphenanthrene
-VOCDHB,chear:VOCDHB,"N-Ace-S- (3,4-Dihidxybutl)-L-Cys(ng/mL)"
-VOCCYM,chear:VOCCYM,N-acetyl-S-(2-cyanoethyl)-L-cyst(ng/mL)
-VOCBPM,chear:VOCBPM,N-Acetyl-S-(n-propyl)-L-cysteine(ng/mL)
-Au,chebi:29287,Gold
-Ni,chebi:28112,Nickel
-MXY,chebi:28488,m-Xylene*
+B,chebi:27560,Boron
+As,chebi:27563,Arsenic
+Se,chebi:27568,Selenium
+Co,chebi:27638,Cobalt
+V,chebi:27698,Vanadium
+DE12,chebi:27789,"1,2-Dichloroethane"
+DCP25,chebi:27929,"2,5-Dichlorophenol"
 W,chebi:27998,Tungsten
-Li,chebi:30145,Lithium
-Tl,chebi:30440,Thallium
-MCP4,chebi:28078,4-Chlorophenol
+OXY,chebi:28063,o-Xylene
 Cr,chebi:28073,Chromium
-Monomethylarsonic Acid,chebi:29852,Monomethylarsonic Acid
-VOCBMA,chear:VOCBMA,N-Acetyl-S-(benzyl)-L-cysteine(ng/mL)
+MCP4,chebi:28078,4-Chlorophenol
+Ni,chebi:28112,Nickel
+NORN,chebi:28313,Nornicotine
+MXY,chebi:28488,m-Xylene*
+TCP245,chebi:28520,"2,4,5-Trichlorophenol"
+Mo,chebi:28685,Molybdenum
+Cu,chebi:28694,Copper
+TCP246,chebi:28755,"2,4,6-Trichlorophenol"
 Al,chebi:28984,Aluminum
 PA,chebi:29069,phthalic acid
-Mo,chebi:28685,Molybdenum
-DCP25,chebi:27929,"2,5-Dichlorophenol"
-OXY,chebi:28063,o-Xylene
-Cu,chebi:28694,Copper
-PrPB,chebi:32063,Propyl paraben
+Au,chebi:29287,Gold
+Monomethylarsonic Acid,chebi:29852,Monomethylarsonic Acid
+Li,chebi:30145,Lithium
+Tl,chebi:30440,Thallium
+Te,chebi:30452,Tellurium
+Be,chebi:30501,Beryllium
+Ag,chebi:30512,Silver
+Sb,chebi:30513,Antimony
+Cs,chebi:30514,Caesium
+Ru,chebi:30682,Ruthenium
+HB4,chebi:30763,4-Hydroxybenzoic acid
 EtPB,chebi:31575,Ethyl paraben
 MePB,chebi:31835,Methyl Paraben
-HB4,chebi:30763,4-Hydroxybenzoic acid
-Cs,chebi:30514,Caesium
-Be,chebi:30501,Beryllium
-Ti,chebi:33341,Titanium
-Nb,chebi:33344,Niobium
+PrPB,chebi:32063,Propyl paraben
+Ba,chebi:32594,Barium
+8-isoprostane,chebi:33023,8-isoprostane
+I,chebi:33115,Iodine
 C2H5Hg,chebi:33204,Ethyl mercury (C2H5Hg+)
 BPA,chebi:33216,Bisphenol A
 Bi,chebi:33301,Bismuth
 Sr,chebi:33324,Strontium
-Ag,chebi:30512,Silver
-Ba,chebi:32594,Barium
-Sb,chebi:30513,Antimony
-BzPB,chebi:34571,Benzyl paraben
+Ti,chebi:33341,Titanium
+Nb,chebi:33344,Niobium
+Pt,chebi:33364,Platinum
+Gd,chebi:33375,Gadolinium
+Np,chebi:33387,Neptunium
+Pu,chebi:33388,Plutonium
 PYR1,chebi:34093,1-hydroxypyrene
-PFNA,chebi:38397,Perfluorononanoic acid
-CFRM,chebi:35255,Chloroform
+OXB,chebi:34283,Oxybenzone
 FLUO2,chebi:34289,2-hydroxyfluorene
+BzPB,chebi:34571,Benzyl paraben
 HePB,chebi:34788,Heptyl paraben
+CFRM,chebi:35255,Chloroform
+PFOA,chebi:35549,Perfluorooctanoic acid
+DHB34,chebi:36062,"3,4-Dihydroxy benzoic acid"
+PFNA,chebi:38397,Perfluorononanoic acid
 MCP3,chebi:38855,3-Chlorophenol
+PFOS,chebi:39421,Perfluorooctanesulfonic acid
 PFBA,chebi:39426,Perfluorobutanoic acid
-PFHxA,chebi:83492,Perfluorohexanoic acid
-PFHxS,pubchem:67734,Perfluorohexane-1-sulphonic acid
-MCEPP,pubchem:148386,mono (5-carboxy-2-ethylpentyl) phthalate (DEHP)
-PFBS,pubchem:67815,Perfluorobutanesulfonic acid
-NAP1,pubchem:7005,1-hydroxynaphthalene
-FLUO9,pubchem:74318,9-hydroxyfluorene
+8-hydroxydeoxyguanosine,chebi:40304,8-hydroxydeoxyguanosine
+MCP2,chebi:47083,2-Chlorophenol
+TCC,chebi:48347,Triclocarban
+DmA,chebi:48765,Dimethylarsinic Acid
+CH3Hg,chebi:49747,Methyl mercury (CH3Hg+)
+Arsenous (III) Acid,chebi:49900,Arsenous ( III) Acid
+TeCP2356,chebi:52048,"2,3,5,6-Tetrachlorophenol"
+COT,chebi:68641,Cotinine
 MEP,chebi:70973,monoethyl phthalate (DEP)
-BPS,pubchem:6626,Bisphenol S
-MBP,pubchem:31736,mono benzyl phthalate (BzBP)
-CHRY6,pubchem:37766,6-hydroxychrysene
-MCHP,pubchem:165618,Monocyclohexyl phthalate
+HCOT,chebi:71182,Hydroxycotinine
 Arsenobetaine,chebi:82392,Arsenobetaine
+PFPeA,chebi:83491,Perfluoro-n-pentanoic acid
+PFHxA,chebi:83492,Perfluorohexanoic acid
+MnBP,chebi:88522,"mono-n-butylphthalate (BzBP, DnBP)"
+BuPB,chebi:88542,Butyl paraben
+FLUO3,chebi:89645,3-hydroxyfluorene
+mMP,chebi:89749,mono-methyl phthalate
+Th,http://purl.obolibrary.org/obo/MS_1000040,mass-to-charge ratio
+m,http://purl.obolibrary.org/obo/UO_0000008,Meter
+kg,http://purl.obolibrary.org/obo/UO_0000009,kilogram
+s,http://purl.obolibrary.org/obo/UO_0000010,second
+A,http://purl.obolibrary.org/obo/UO_0000011,ampere
+K,http://purl.obolibrary.org/obo/UO_0000012,kelvin
+mol,http://purl.obolibrary.org/obo/UO_0000013,mole
+cd,http://purl.obolibrary.org/obo/UO_0000014,candela
+cm,http://purl.obolibrary.org/obo/UO_0000015,centimeter
+mm,http://purl.obolibrary.org/obo/UO_0000016,millimeter
+um,http://purl.obolibrary.org/obo/UO_0000017,micrometer
+nm,http://purl.obolibrary.org/obo/UO_0000018,nanometer
+Ang,http://purl.obolibrary.org/obo/UO_0000019,angstrom
+pm,http://purl.obolibrary.org/obo/UO_0000020,picometer
+g,http://purl.obolibrary.org/obo/UO_0000021,gram
+mg,http://purl.obolibrary.org/obo/UO_0000022,milligram
+ug,http://purl.obolibrary.org/obo/UO_0000023,microgram
+ng,http://purl.obolibrary.org/obo/UO_0000024,nanogram
+pg,http://purl.obolibrary.org/obo/UO_0000025,picogram
+fg,http://purl.obolibrary.org/obo/UO_0000026,femtogram
+C,http://purl.obolibrary.org/obo/UO_0000027,degree Celsius
+ms,http://purl.obolibrary.org/obo/UO_0000028,millisecond
+us,http://purl.obolibrary.org/obo/UO_0000029,microsecond
+ps,http://purl.obolibrary.org/obo/UO_0000030,picosecond
+min,http://purl.obolibrary.org/obo/UO_0000031,minute
+h,http://purl.obolibrary.org/obo/UO_0000032,hour
+mA,http://purl.obolibrary.org/obo/UO_0000037,milliampere
+uA,http://purl.obolibrary.org/obo/UO_0000038,microampere
+umol,http://purl.obolibrary.org/obo/UO_0000039,micromole
+mmol,http://purl.obolibrary.org/obo/UO_0000040,millimole
+nmol,http://purl.obolibrary.org/obo/UO_0000041,nanomole
+pmol,http://purl.obolibrary.org/obo/UO_0000042,picomole
+fmol,http://purl.obolibrary.org/obo/UO_0000043,femtomole
+amol,http://purl.obolibrary.org/obo/UO_0000044,attomole
+mdu,http://purl.obolibrary.org/obo/UO_0000052,mass density unit
+mass per unit area unit,http://purl.obolibrary.org/obo/UO_0000054,area density unit
+M,http://purl.obolibrary.org/obo/UO_0000062,molar
+mM,http://purl.obolibrary.org/obo/UO_0000063,millimolar
+uM,http://purl.obolibrary.org/obo/UO_0000064,micromolar
+nM,http://purl.obolibrary.org/obo/UO_0000065,nanomolar
+pM,http://purl.obolibrary.org/obo/UO_0000066,picomolar
+m,http://purl.obolibrary.org/obo/UO_0000068,molal
+mm,http://purl.obolibrary.org/obo/UO_0000069,millimolal
+um,http://purl.obolibrary.org/obo/UO_0000070,micromolal
+nmolal,http://purl.obolibrary.org/obo/UO_0000071,nanomolal
+pmolal,http://purl.obolibrary.org/obo/UO_0000072,picomolal
+fM,http://purl.obolibrary.org/obo/UO_0000073,femtomolar
+Norm,http://purl.obolibrary.org/obo/UO_0000075,normal
+chi,http://purl.obolibrary.org/obo/UO_0000076,mole fraction
+m/s2,http://purl.obolibrary.org/obo/UO_0000077,meter per second per second
+alpha,http://purl.obolibrary.org/obo/UO_0000078,radian per second per second
+rad/s,http://purl.obolibrary.org/obo/UO_0000079,radian per second
+m2,http://purl.obolibrary.org/obo/UO_0000080,square meter
+cm2,http://purl.obolibrary.org/obo/UO_0000081,square centimeter
+mm2,http://purl.obolibrary.org/obo/UO_0000082,square millimeter
+kg/m3,http://purl.obolibrary.org/obo/UO_0000083,kilogram per cubic meter
+g/cm3,http://purl.obolibrary.org/obo/UO_0000084,gram per cubic centimeter
+cd/m2,http://purl.obolibrary.org/obo/UO_0000085,candela per square meter
+kg/m2,http://purl.obolibrary.org/obo/UO_0000086,kilogram per square meter
+kg/mol,http://purl.obolibrary.org/obo/UO_0000087,kilogram per mole
+g/mol,http://purl.obolibrary.org/obo/UO_0000088,gram per mole
+m3/mol,http://purl.obolibrary.org/obo/UO_0000089,cubic meter per mole
+cm3/mol,http://purl.obolibrary.org/obo/UO_0000090,cubic centimeter per mole
+kg.m/s,http://purl.obolibrary.org/obo/UO_0000091,kilogram meter per second
+1/s,http://purl.obolibrary.org/obo/UO_0000092,turns per second
+m3/kg,http://purl.obolibrary.org/obo/UO_0000093,cubic meter per kilogram
+m/s,http://purl.obolibrary.org/obo/UO_0000094,meter per second
+m3,http://purl.obolibrary.org/obo/UO_0000096,cubic meter
+cm3,http://purl.obolibrary.org/obo/UO_0000097,cubic centimeter
+ml,http://purl.obolibrary.org/obo/UO_0000098,milliliter
+L,http://purl.obolibrary.org/obo/UO_0000099,liter
+dm3,http://purl.obolibrary.org/obo/UO_0000100,cubic decimeter
+ul,http://purl.obolibrary.org/obo/UO_0000101,microliter
+nl,http://purl.obolibrary.org/obo/UO_0000102,nanoliter
+pl,http://purl.obolibrary.org/obo/UO_0000103,picoliter
+fl,http://purl.obolibrary.org/obo/UO_0000104,femtoliter
+Hz,http://purl.obolibrary.org/obo/UO_0000106,hertz
+Ntn,http://purl.obolibrary.org/obo/UO_0000108,newton
+Pa,http://purl.obolibrary.org/obo/UO_0000110,pascal
+J,http://purl.obolibrary.org/obo/UO_0000112,joule
+W,http://purl.obolibrary.org/obo/UO_0000114,watt
+lx,http://purl.obolibrary.org/obo/UO_0000116,lux
+lm,http://purl.obolibrary.org/obo/UO_0000118,lumen
+kat,http://purl.obolibrary.org/obo/UO_0000120,katal
+rad,http://purl.obolibrary.org/obo/UO_0000123,radian
+sr,http://purl.obolibrary.org/obo/UO_0000125,steradian
+Bq,http://purl.obolibrary.org/obo/UO_0000132,becquerel
+Ci,http://purl.obolibrary.org/obo/UO_0000133,curie
+Gy,http://purl.obolibrary.org/obo/UO_0000134,Gray
+Roentgen,http://purl.obolibrary.org/obo/UO_0000136,roentgen
+Sv,http://purl.obolibrary.org/obo/UO_0000137,sievert
+mSv,http://purl.obolibrary.org/obo/UO_0000138,millisievert
+uSv,http://purl.obolibrary.org/obo/UO_0000139,microsievert
+rem,http://purl.obolibrary.org/obo/UO_0000140,Roentgen equivalent man
+uGy,http://purl.obolibrary.org/obo/UO_0000141,microgray
+mGy,http://purl.obolibrary.org/obo/UO_0000142,milligray
+nGy,http://purl.obolibrary.org/obo/UO_0000143,nanogray
+nSv,http://purl.obolibrary.org/obo/UO_0000144,nanosievert
+mCi,http://purl.obolibrary.org/obo/UO_0000145,millicurie
+uCi,http://purl.obolibrary.org/obo/UO_0000146,microcurie
+dpm,http://purl.obolibrary.org/obo/UO_0000147,disintegrations per minute
+cpm,http://purl.obolibrary.org/obo/UO_0000148,counts per minute
+ns,http://purl.obolibrary.org/obo/UO_0000150,nanosecond
+ft-c,http://purl.obolibrary.org/obo/UO_0000153,foot candle
+W/m2,http://purl.obolibrary.org/obo/UO_0000155,watt per square meter
+einstein/sm2,http://purl.obolibrary.org/obo/UO_0000156,einstein per square meter per second
+W/sr/m2,http://purl.obolibrary.org/obo/UO_0000158,watt per steradian per square meter
+ueinstein/sm2,http://purl.obolibrary.org/obo/UO_0000160,microeinstein per square meter per second
+W/sr,http://purl.obolibrary.org/obo/UO_0000162,watt per steradian
+w/w,http://purl.obolibrary.org/obo/UO_0000163,mass percentage
+(w/v),http://purl.obolibrary.org/obo/UO_0000164,mass volume percentage
+%(v/v),http://purl.obolibrary.org/obo/UO_0000165,volume percentage
+pph,http://purl.obolibrary.org/obo/UO_0000167,parts per hundred
+ppth,http://purl.obolibrary.org/obo/UO_0000168,parts per thousand
+ppm,http://purl.obolibrary.org/obo/UO_0000169,parts per million
+ppb,http://purl.obolibrary.org/obo/UO_0000170,parts per billion
+ppt,http://purl.obolibrary.org/obo/UO_0000171,parts per trillion
+ppq,http://purl.obolibrary.org/obo/UO_0000172,parts per quadrillion
+g/ml,http://purl.obolibrary.org/obo/UO_0000173,gram per milliliter
+kg/L,http://purl.obolibrary.org/obo/UO_0000174,kilogram per liter
+g/L,http://purl.obolibrary.org/obo/UO_0000175,gram per liter
+mg/ml,http://purl.obolibrary.org/obo/UO_0000176,milligram per milliliter
+U/ml,http://purl.obolibrary.org/obo/UO_0000178,unit per milliliter
+U/l,http://purl.obolibrary.org/obo/UO_0000179,unit per liter
+enzyme unit,http://purl.obolibrary.org/obo/UO_0000181,enzyme unit
+kg/m,http://purl.obolibrary.org/obo/UO_0000184,kilogram per meter
+%,http://purl.obolibrary.org/obo/UO_0000187,percent
+count,http://purl.obolibrary.org/obo/UO_0000189,count unit
+F,http://purl.obolibrary.org/obo/UO_0000195,degree Fahrenheit
+l/kg,http://purl.obolibrary.org/obo/UO_0000197,liter per kilogram
+ml/kg,http://purl.obolibrary.org/obo/UO_0000198,milliliter per kilogram
+ul/kg,http://purl.obolibrary.org/obo/UO_0000199,microliter per kilogram
+cells per ml,http://purl.obolibrary.org/obo/UO_0000201,cells per milliliter
+kat/m3,http://purl.obolibrary.org/obo/UO_0000203,katal per cubic meter
+kat/l,http://purl.obolibrary.org/obo/UO_0000204,katal per liter
+ml/m3,http://purl.obolibrary.org/obo/UO_0000206,milliliter per cubic meter
+ml/l,http://purl.obolibrary.org/obo/UO_0000207,milliliter per liter
+g/dl,http://purl.obolibrary.org/obo/UO_0000208,gram per deciliter
+dl,http://purl.obolibrary.org/obo/UO_0000209,deciliter
+cfu,http://purl.obolibrary.org/obo/UO_0000210,colony forming unit
+pfu,http://purl.obolibrary.org/obo/UO_0000211,plaque forming unit
+cfu/ml,http://purl.obolibrary.org/obo/UO_0000213,colony forming unit per milliliter
+pfu/ml,http://purl.obolibrary.org/obo/UO_0000215,plaque forming unit per milliliter
+dps,http://purl.obolibrary.org/obo/UO_0000216,disintegrations per second
+Volt,http://purl.obolibrary.org/obo/UO_0000218,volt
+Da,http://purl.obolibrary.org/obo/UO_0000221,dalton
+kDa,http://purl.obolibrary.org/obo/UO_0000222,kilodalton
+Wh,http://purl.obolibrary.org/obo/UO_0000223,watt-hour
+Wb,http://purl.obolibrary.org/obo/UO_0000226,weber
+MFDU,http://purl.obolibrary.org/obo/UO_0000227,magnetic flux density unit
+Tesla,http://purl.obolibrary.org/obo/UO_0000228,tesla
+Vh,http://purl.obolibrary.org/obo/UO_0000229,volt-hour
+kVh,http://purl.obolibrary.org/obo/UO_0000230,kilovolt-hour
+Byte,http://purl.obolibrary.org/obo/UO_0000233,byte
+kB,http://purl.obolibrary.org/obo/UO_0000234,kilobyte
+MB,http://purl.obolibrary.org/obo/UO_0000235,megabyte
+dpi,http://purl.obolibrary.org/obo/UO_0000240,dots per inch
+micrometer pixel,http://purl.obolibrary.org/obo/UO_0000241,micron pixel
+ppi,http://purl.obolibrary.org/obo/UO_0000242,pixels per inch
+pixels per millimetre,http://purl.obolibrary.org/obo/UO_0000243,pixels per millimeter
+bp,http://purl.obolibrary.org/obo/UO_0000244,base pair
+KiB,http://purl.obolibrary.org/obo/UO_0000245,kibibyte
+MiB,http://purl.obolibrary.org/obo/UO_0000246,mebibyte
+mV,http://purl.obolibrary.org/obo/UO_0000247,millivolt
+kV,http://purl.obolibrary.org/obo/UO_0000248,kilovolt
+uV,http://purl.obolibrary.org/obo/UO_0000249,microvolt
+nV,http://purl.obolibrary.org/obo/UO_0000250,nanovolt
+pV,http://purl.obolibrary.org/obo/UO_0000251,picovolt
+MV,http://purl.obolibrary.org/obo/UO_0000252,megavolt
+N/m,http://purl.obolibrary.org/obo/UO_0000254,newton per meter
+dyn/cm,http://purl.obolibrary.org/obo/UO_0000255,dyne per cm
+Pas,http://purl.obolibrary.org/obo/UO_0000257,pascal second
+Poise,http://purl.obolibrary.org/obo/UO_0000258,poise
+dB,http://purl.obolibrary.org/obo/UO_0000259,decibel
+1/AV,http://purl.obolibrary.org/obo/UO_0000264,siemens
+W/mK,http://purl.obolibrary.org/obo/UO_0000265,watt per meter kelvin
+eV,http://purl.obolibrary.org/obo/UO_0000266,electronvolt
+Efs,http://purl.obolibrary.org/obo/UO_0000267,electric field strength unit
+V/m,http://purl.obolibrary.org/obo/UO_0000268,volt per meter
+AU,http://purl.obolibrary.org/obo/UO_0000269,absorbance unit
+uL/min,http://purl.obolibrary.org/obo/UO_0000271,microliters per minute
+mmHg,http://purl.obolibrary.org/obo/UO_0000272,millimetres of mercury
+mg/L,http://purl.obolibrary.org/obo/UO_0000273,milligram per liter
+ug/ml,http://purl.obolibrary.org/obo/UO_0000274,microgram per milliliter
+ng/ml,http://purl.obolibrary.org/obo/UO_0000275,nanogram per milliliter
+mU/ml,http://purl.obolibrary.org/obo/UO_0000279,milliunits per milliliter
+1/nMs,http://purl.obolibrary.org/obo/UO_0000281,count per nanomolar second
+1/Ms,http://purl.obolibrary.org/obo/UO_0000282,count per molar second
+1/nM,http://purl.obolibrary.org/obo/UO_0000284,count per nanomolar
+1/M,http://purl.obolibrary.org/obo/UO_0000285,count per molar
+ug/L,http://purl.obolibrary.org/obo/UO_0000301,microgram per liter
+cpul,http://purl.obolibrary.org/obo/UO_0000316,cells per microliter
+FNU,http://purl.obolibrary.org/obo/UO_0000318,formazin nephelometric unit
+curie/l,http://purl.obolibrary.org/obo/UO_0000320,curie per liter
+ucurie/ml,http://purl.obolibrary.org/obo/UO_0000321,microcurie per milliliter
+cM,http://purl.obolibrary.org/obo/UO_0000326,centiMorgan
+cR,http://purl.obolibrary.org/obo/UO_0000327,centiRay
+kbp,http://purl.obolibrary.org/obo/UO_0000328,kilobasepair
+Mb,http://purl.obolibrary.org/obo/UO_0000329,megabasepair
+Gb,http://purl.obolibrary.org/obo/UO_0000330,gigabasepair
+GB,http://purl.obolibrary.org/obo/UO_0000331,gigabyte
+TB,http://purl.obolibrary.org/obo/UO_0000332,terabyte
+TNFalpha,http://www.uniprot.org/uniprot/P01375,TNF-alpha
+IL1B,http://www.uniprot.org/uniprot/P01584,Interleukin-1 beta
+CRP,http://www.uniprot.org/uniprot/P02741,C-reactive protein
+IL6,http://www.uniprot.org/uniprot/P05231,Interleukin-6
+IL10,http://www.uniprot.org/uniprot/P22301,Interleukin-10
+PHEN9,pubchem:10229,9-hydroxyphenanthrene
+Arsenocholine,pubchem:104820,Arsenocholine
+mINP,pubchem:110394,mono-isononyl phthalate
+MiPP,pubchem:118770,Monoisopropyl phthalate
+MEOHP,pubchem:119096,mono (2-ethyl-5-oxohexyl) phthalate
+MCEPP,pubchem:148386,mono (5-carboxy-2-ethylpentyl) phthalate (DEHP)
+MCHP,pubchem:165618,Monocyclohexyl phthalate
 MEHHP,pubchem:170295,mono (2-ethyl-5-hydroxyhexyl) phthalate
 MCMHP,pubchem:187353,Mono-2-(carboxymethyl) hexyl phthalate
 mHxP,pubchem:20269373,mono-hexyl phthalate
+TeCP2345,pubchem:21013,"2,3,4,5-Tetrachlorophenol"
 NICO,pubchem:211457,Nicotine-N-oxide
 OHMeP,pubchem:287064,"3,4-Dihydroxy-benzoic acid methyl ester"
-HCOT,chebi:71182,Hydroxycotinine
+MBP,pubchem:31736,mono benzyl phthalate (BzBP)
+CHRY6,pubchem:37766,6-hydroxychrysene
 CHRY1,pubchem:44284,1-hydroxychrysene
 CHRY4,pubchem:44286,4-hydroxychrysene
-MnBP,chebi:88522,"mono-n-butylphthalate (BzBP, DnBP)"
-FLUO3,chebi:89645,3-hydroxyfluorene
-DMTP,chear:DMTP,dimethylthiophosphate
-MiBP,pubchem:92272,mono-isobutyl phthalate (DiBP)
-BDE47,chear:BDE47,"2,2',4,4'-Tetrabromodiphenyl ether"
-BDE28,chear:BDE28,"2,4,4'-Tribromodiphenyl ether"
-TCP,chear:TCP,"3,5,6-trichloro-2-pyridinol"
-PBA,chear:PBA,3-phenoxybenzoic acid
-DETP,chear:DETP,diethylthiophosphate
-DEDP,chear:DEDP,diethyldithiophosphate
-DMDP,chear:DMDP,dimethyldithiophosphate
-DEP,chear:DEP,diethylphosphate
-DMP,chear:DMP,dimethylphosphate
-mPeP,pubchem:90531,mono-pentyl phthalate
-BDE66,chear:BDE66,"2,3',4,4'-Tetrabromodiphenyl ether"
+CHRY2,pubchem:47782,2-hydroxychrysene
+MCPP,pubchem:53435014,mono (3-carboxypropyl) phthalate (multiple)
+TeCP2346,pubchem:6028,"2,3,4,6-Tetrachlorophenol"
+BPS,pubchem:6626,Bisphenol S
+PFHxS,pubchem:67734,Perfluorohexane-1-sulphonic acid
+PFBS,pubchem:67815,Perfluorobutanesulfonic acid
+NAP1,pubchem:7005,1-hydroxynaphthalene
+FLUO9,pubchem:74318,9-hydroxyfluorene
+BPF,pubchem:75575,Bisphenol F
+OHEtP,pubchem:77547,Protocatechuic acid ethyl ester
+MOP,pubchem:79362,Mono-n-octyl phthalate
 NAP2,pubchem:8663,2-hydroxynaphthalene
-PMA,chear:PMA,N-Acetyl-S-(phenyl)-L-cysteine
-MU,chear:MU,"trans, trans -Muconic acid"
-NICT,chear:NICT,Nicotine (total)
-HPMA,chear:HPMA,N-Acetyl-S- (3-hydroxypropyl)-L-cysteine
-GAMA,chear:GAMA,N-Acetyl-S-(2-carbamoyl-2-hydroxyethyl)-L-cysteine
-CEMA,chear:CEMA,N-Acetyl-S- (2-carboxyethyl)-L-cysteine
-DCVMA12,chear:DCVMA12,"N-Acetyl-S-(1,2-dichlorovinyl)-L-cysteine"
-MA,chear:MA,Mandelic acid
-BPMA,chear:BPMA,N-Acetyl-S-(n-propyl)-L-cysteine
-PHEMA,chear:PHEMA,N-Acetyl-S-(1-phenyl-2-hydroxyethyl-L-cysteine + N-Acetyl-S-(2-phenyl-2-hydroxyethyl)-L-cysteine
-AMCC,chear:AMCC,N-Acetyl-S-(N-methylcarbamoyl)-L-cysteine
-TCVMA,chear:TCVMA,N-Acetyl-S-(trichlorovinyl)-L-cysteine
-HPMA2,chear:HPMA2,N-Acetyl-S-(2-hydroxypropyl)-L-cysteine
-AAMA,chear:AAMA,N-Acetyl-S-(2-carbamoylethyl)-L-cysteine
-HPMMA,chear:HPMMA,N-Acetyl-S-(3-hydroxypropyl-1-methyl)-L-cysteine
-ATCA,chear:ATCA,2-Aminothiazoline-4-carboxylic acid
-MHBMA2,chear:MHBMA2,N-Acetyl-S-(2-hydroxy-3-butenyl)-L-cysteine
-MHBMA3,chear:MHBMA3,N-Acetyl-S-(4-hydroxy-2-buten-1-yl)-L-cysteine
-TTCA,chear:TTCA,2-Thioxothiazolidine-4-carboxylic acid
-DHBMA,chear:DHBMA,"N-Acetyl-S- (3,4-dihydroxybutyl)-L-cysteine"
-MHBMA1,chear:MHBMA1,N-Acetyl-S-(1-hydroxymethyl-2-propenyl)-L-cysteine
-CYMA,chear:CYMA,N-Acetyl-S-(2-cyanoethyl)-L-cysteine
-BMA,chear:BMA,N-Acetyl-S-(benzyl)-L-cysteine
-PGA,chear:PGA,Phenylglyoxylic acid
+mPeP,pubchem:90531,mono-pentyl phthalate
+MiBP,pubchem:92272,mono-isobutyl phthalate (DiBP)
+D,sio:DeoxyribonucleicAcid,DNA
+R,sio:RibonucleicAcid,RNA
 WB,uberon:0000178,Whole Blood
+H,uberon:0001037,Hair
 U,uberon:0001088,Urine
 T,uberon:0001091,Tooth
-SU,uberon:0007311,Sputum
 SL,uberon:0001836,Saliva
-R,sio:RibonucleicAcid,RNA
-N,uberon:0009565,Nails
-H,uberon:0001037,Hair
-D,sio:DeoxyribonucleicAcid,DNA
-BU,chear:BuccalCell,Buccal Cell
-ME,uberon:0007109,Meconium
-PL,uberon:0001987,Placenta
-CB,uberon:0012168,Cord Blood
-S,uberon:0001977,Serum
 P,uberon:0001969,Plasma
-VitaminD,chebi:27300,Vitamin D
-TNFalpha,http://www.uniprot.org/uniprot/P01375,TNF-alpha
-IL10,http://www.uniprot.org/uniprot/P22301,Interleukin-10
-IL6,http://www.uniprot.org/uniprot/P05231,Interleukin-6
-IL1B,http://www.uniprot.org/uniprot/P01584,Interleukin-1 beta
-CRP,http://www.uniprot.org/uniprot/P02741,C-reactive protein
-8-isoprostane,chebi:33023,8-isoprostane
-8-hydroxydeoxyguanosine,chebi:40304,8-hydroxydeoxyguanosine
-kg,http://purl.obolibrary.org/obo/UO_0000009,Kilogram
-g/dl,http://purl.obolibrary.org/obo/UO_0000208,Grams Per Deciliter
-m,http://purl.obolibrary.org/obo/UO_0000008,Meter
-cm,http://purl.obolibrary.org/obo/UO_0000015,Centimeter
+S,uberon:0001977,Serum
+PL,uberon:0001987,Placenta
+ME,uberon:0007109,Meconium
+SU,uberon:0007311,Sputum
+N,uberon:0009565,Nails
+CB,uberon:0012168,Cord Blood
