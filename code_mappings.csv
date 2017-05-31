@@ -391,6 +391,7 @@ uL/min,http://purl.obolibrary.org/obo/UO_0000271,microliters per minute
 mmHg,http://purl.obolibrary.org/obo/UO_0000272,millimetres of mercury
 mg/L,http://purl.obolibrary.org/obo/UO_0000273,milligram per liter
 ug/ml,http://purl.obolibrary.org/obo/UO_0000274,microgram per milliliter
+ug/dl,chear:MicrogramPerDecilter,microgram per deciliter
 ng/ml,http://purl.obolibrary.org/obo/UO_0000275,nanogram per milliliter
 mU/ml,http://purl.obolibrary.org/obo/UO_0000279,milliunits per milliliter
 1/nMs,http://purl.obolibrary.org/obo/UO_0000281,count per nanomolar second
