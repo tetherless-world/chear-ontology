@@ -207,214 +207,214 @@ MnBP,chebi:88522,"mono-n-butylphthalate (BzBP, DnBP)"
 BuPB,chebi:88542,Butyl paraben
 FLUO3,chebi:89645,3-hydroxyfluorene
 mMP,chebi:89749,mono-methyl phthalate
-Th,http://purl.obolibrary.org/obo/MS_1000040,mass-to-charge ratio
-m,http://purl.obolibrary.org/obo/UO_0000008,Meter
-kg,http://purl.obolibrary.org/obo/UO_0000009,kilogram
-s,http://purl.obolibrary.org/obo/UO_0000010,second
-A,http://purl.obolibrary.org/obo/UO_0000011,ampere
-K,http://purl.obolibrary.org/obo/UO_0000012,kelvin
-mol,http://purl.obolibrary.org/obo/UO_0000013,mole
-cd,http://purl.obolibrary.org/obo/UO_0000014,candela
-cm,http://purl.obolibrary.org/obo/UO_0000015,centimeter
-mm,http://purl.obolibrary.org/obo/UO_0000016,millimeter
-um,http://purl.obolibrary.org/obo/UO_0000017,micrometer
-nm,http://purl.obolibrary.org/obo/UO_0000018,nanometer
-Ang,http://purl.obolibrary.org/obo/UO_0000019,angstrom
-pm,http://purl.obolibrary.org/obo/UO_0000020,picometer
-g,http://purl.obolibrary.org/obo/UO_0000021,gram
-mg,http://purl.obolibrary.org/obo/UO_0000022,milligram
-ug,http://purl.obolibrary.org/obo/UO_0000023,microgram
-ng,http://purl.obolibrary.org/obo/UO_0000024,nanogram
-pg,http://purl.obolibrary.org/obo/UO_0000025,picogram
-fg,http://purl.obolibrary.org/obo/UO_0000026,femtogram
-C,http://purl.obolibrary.org/obo/UO_0000027,degree Celsius
-ms,http://purl.obolibrary.org/obo/UO_0000028,millisecond
-us,http://purl.obolibrary.org/obo/UO_0000029,microsecond
-ps,http://purl.obolibrary.org/obo/UO_0000030,picosecond
-min,http://purl.obolibrary.org/obo/UO_0000031,minute
-h,http://purl.obolibrary.org/obo/UO_0000032,hour
-mA,http://purl.obolibrary.org/obo/UO_0000037,milliampere
-uA,http://purl.obolibrary.org/obo/UO_0000038,microampere
-umol,http://purl.obolibrary.org/obo/UO_0000039,micromole
-mmol,http://purl.obolibrary.org/obo/UO_0000040,millimole
-nmol,http://purl.obolibrary.org/obo/UO_0000041,nanomole
-pmol,http://purl.obolibrary.org/obo/UO_0000042,picomole
-fmol,http://purl.obolibrary.org/obo/UO_0000043,femtomole
-amol,http://purl.obolibrary.org/obo/UO_0000044,attomole
-mdu,http://purl.obolibrary.org/obo/UO_0000052,mass density unit
-mass per unit area unit,http://purl.obolibrary.org/obo/UO_0000054,area density unit
-M,http://purl.obolibrary.org/obo/UO_0000062,molar
-mM,http://purl.obolibrary.org/obo/UO_0000063,millimolar
-uM,http://purl.obolibrary.org/obo/UO_0000064,micromolar
-nM,http://purl.obolibrary.org/obo/UO_0000065,nanomolar
-pM,http://purl.obolibrary.org/obo/UO_0000066,picomolar
-m,http://purl.obolibrary.org/obo/UO_0000068,molal
-mm,http://purl.obolibrary.org/obo/UO_0000069,millimolal
-um,http://purl.obolibrary.org/obo/UO_0000070,micromolal
-nmolal,http://purl.obolibrary.org/obo/UO_0000071,nanomolal
-pmolal,http://purl.obolibrary.org/obo/UO_0000072,picomolal
-fM,http://purl.obolibrary.org/obo/UO_0000073,femtomolar
-Norm,http://purl.obolibrary.org/obo/UO_0000075,normal
-chi,http://purl.obolibrary.org/obo/UO_0000076,mole fraction
-m/s2,http://purl.obolibrary.org/obo/UO_0000077,meter per second per second
-alpha,http://purl.obolibrary.org/obo/UO_0000078,radian per second per second
-rad/s,http://purl.obolibrary.org/obo/UO_0000079,radian per second
-m2,http://purl.obolibrary.org/obo/UO_0000080,square meter
-cm2,http://purl.obolibrary.org/obo/UO_0000081,square centimeter
-mm2,http://purl.obolibrary.org/obo/UO_0000082,square millimeter
-kg/m3,http://purl.obolibrary.org/obo/UO_0000083,kilogram per cubic meter
-g/cm3,http://purl.obolibrary.org/obo/UO_0000084,gram per cubic centimeter
-cd/m2,http://purl.obolibrary.org/obo/UO_0000085,candela per square meter
-kg/m2,http://purl.obolibrary.org/obo/UO_0000086,kilogram per square meter
-kg/mol,http://purl.obolibrary.org/obo/UO_0000087,kilogram per mole
-g/mol,http://purl.obolibrary.org/obo/UO_0000088,gram per mole
-m3/mol,http://purl.obolibrary.org/obo/UO_0000089,cubic meter per mole
-cm3/mol,http://purl.obolibrary.org/obo/UO_0000090,cubic centimeter per mole
-kg.m/s,http://purl.obolibrary.org/obo/UO_0000091,kilogram meter per second
-1/s,http://purl.obolibrary.org/obo/UO_0000092,turns per second
-m3/kg,http://purl.obolibrary.org/obo/UO_0000093,cubic meter per kilogram
-m/s,http://purl.obolibrary.org/obo/UO_0000094,meter per second
-m3,http://purl.obolibrary.org/obo/UO_0000096,cubic meter
-cm3,http://purl.obolibrary.org/obo/UO_0000097,cubic centimeter
-ml,http://purl.obolibrary.org/obo/UO_0000098,milliliter
-L,http://purl.obolibrary.org/obo/UO_0000099,liter
-dm3,http://purl.obolibrary.org/obo/UO_0000100,cubic decimeter
-ul,http://purl.obolibrary.org/obo/UO_0000101,microliter
-nl,http://purl.obolibrary.org/obo/UO_0000102,nanoliter
-pl,http://purl.obolibrary.org/obo/UO_0000103,picoliter
-fl,http://purl.obolibrary.org/obo/UO_0000104,femtoliter
-Hz,http://purl.obolibrary.org/obo/UO_0000106,hertz
-Ntn,http://purl.obolibrary.org/obo/UO_0000108,newton
-Pa,http://purl.obolibrary.org/obo/UO_0000110,pascal
-J,http://purl.obolibrary.org/obo/UO_0000112,joule
-W,http://purl.obolibrary.org/obo/UO_0000114,watt
-lx,http://purl.obolibrary.org/obo/UO_0000116,lux
-lm,http://purl.obolibrary.org/obo/UO_0000118,lumen
-kat,http://purl.obolibrary.org/obo/UO_0000120,katal
-rad,http://purl.obolibrary.org/obo/UO_0000123,radian
-sr,http://purl.obolibrary.org/obo/UO_0000125,steradian
-Bq,http://purl.obolibrary.org/obo/UO_0000132,becquerel
-Ci,http://purl.obolibrary.org/obo/UO_0000133,curie
-Gy,http://purl.obolibrary.org/obo/UO_0000134,Gray
-Roentgen,http://purl.obolibrary.org/obo/UO_0000136,roentgen
-Sv,http://purl.obolibrary.org/obo/UO_0000137,sievert
-mSv,http://purl.obolibrary.org/obo/UO_0000138,millisievert
-uSv,http://purl.obolibrary.org/obo/UO_0000139,microsievert
-rem,http://purl.obolibrary.org/obo/UO_0000140,Roentgen equivalent man
-uGy,http://purl.obolibrary.org/obo/UO_0000141,microgray
-mGy,http://purl.obolibrary.org/obo/UO_0000142,milligray
-nGy,http://purl.obolibrary.org/obo/UO_0000143,nanogray
-nSv,http://purl.obolibrary.org/obo/UO_0000144,nanosievert
-mCi,http://purl.obolibrary.org/obo/UO_0000145,millicurie
-uCi,http://purl.obolibrary.org/obo/UO_0000146,microcurie
-dpm,http://purl.obolibrary.org/obo/UO_0000147,disintegrations per minute
-cpm,http://purl.obolibrary.org/obo/UO_0000148,counts per minute
-ns,http://purl.obolibrary.org/obo/UO_0000150,nanosecond
-ft-c,http://purl.obolibrary.org/obo/UO_0000153,foot candle
-W/m2,http://purl.obolibrary.org/obo/UO_0000155,watt per square meter
-einstein/sm2,http://purl.obolibrary.org/obo/UO_0000156,einstein per square meter per second
-W/sr/m2,http://purl.obolibrary.org/obo/UO_0000158,watt per steradian per square meter
-ueinstein/sm2,http://purl.obolibrary.org/obo/UO_0000160,microeinstein per square meter per second
-W/sr,http://purl.obolibrary.org/obo/UO_0000162,watt per steradian
-w/w,http://purl.obolibrary.org/obo/UO_0000163,mass percentage
-(w/v),http://purl.obolibrary.org/obo/UO_0000164,mass volume percentage
-%(v/v),http://purl.obolibrary.org/obo/UO_0000165,volume percentage
-pph,http://purl.obolibrary.org/obo/UO_0000167,parts per hundred
-ppth,http://purl.obolibrary.org/obo/UO_0000168,parts per thousand
-ppm,http://purl.obolibrary.org/obo/UO_0000169,parts per million
-ppb,http://purl.obolibrary.org/obo/UO_0000170,parts per billion
-ppt,http://purl.obolibrary.org/obo/UO_0000171,parts per trillion
-ppq,http://purl.obolibrary.org/obo/UO_0000172,parts per quadrillion
-g/ml,http://purl.obolibrary.org/obo/UO_0000173,gram per milliliter
-kg/L,http://purl.obolibrary.org/obo/UO_0000174,kilogram per liter
-g/L,http://purl.obolibrary.org/obo/UO_0000175,gram per liter
-mg/ml,http://purl.obolibrary.org/obo/UO_0000176,milligram per milliliter
-U/ml,http://purl.obolibrary.org/obo/UO_0000178,unit per milliliter
-U/l,http://purl.obolibrary.org/obo/UO_0000179,unit per liter
-enzyme unit,http://purl.obolibrary.org/obo/UO_0000181,enzyme unit
-kg/m,http://purl.obolibrary.org/obo/UO_0000184,kilogram per meter
-%,http://purl.obolibrary.org/obo/UO_0000187,percent
-count,http://purl.obolibrary.org/obo/UO_0000189,count unit
-F,http://purl.obolibrary.org/obo/UO_0000195,degree Fahrenheit
-l/kg,http://purl.obolibrary.org/obo/UO_0000197,liter per kilogram
-ml/kg,http://purl.obolibrary.org/obo/UO_0000198,milliliter per kilogram
-ul/kg,http://purl.obolibrary.org/obo/UO_0000199,microliter per kilogram
-cells per ml,http://purl.obolibrary.org/obo/UO_0000201,cells per milliliter
-kat/m3,http://purl.obolibrary.org/obo/UO_0000203,katal per cubic meter
-kat/l,http://purl.obolibrary.org/obo/UO_0000204,katal per liter
-ml/m3,http://purl.obolibrary.org/obo/UO_0000206,milliliter per cubic meter
-ml/l,http://purl.obolibrary.org/obo/UO_0000207,milliliter per liter
-g/dl,http://purl.obolibrary.org/obo/UO_0000208,gram per deciliter
-dl,http://purl.obolibrary.org/obo/UO_0000209,deciliter
-cfu,http://purl.obolibrary.org/obo/UO_0000210,colony forming unit
-pfu,http://purl.obolibrary.org/obo/UO_0000211,plaque forming unit
-cfu/ml,http://purl.obolibrary.org/obo/UO_0000213,colony forming unit per milliliter
-pfu/ml,http://purl.obolibrary.org/obo/UO_0000215,plaque forming unit per milliliter
-dps,http://purl.obolibrary.org/obo/UO_0000216,disintegrations per second
-Volt,http://purl.obolibrary.org/obo/UO_0000218,volt
-Da,http://purl.obolibrary.org/obo/UO_0000221,dalton
-kDa,http://purl.obolibrary.org/obo/UO_0000222,kilodalton
-Wh,http://purl.obolibrary.org/obo/UO_0000223,watt-hour
-Wb,http://purl.obolibrary.org/obo/UO_0000226,weber
-MFDU,http://purl.obolibrary.org/obo/UO_0000227,magnetic flux density unit
-Tesla,http://purl.obolibrary.org/obo/UO_0000228,tesla
-Vh,http://purl.obolibrary.org/obo/UO_0000229,volt-hour
-kVh,http://purl.obolibrary.org/obo/UO_0000230,kilovolt-hour
-Byte,http://purl.obolibrary.org/obo/UO_0000233,byte
-kB,http://purl.obolibrary.org/obo/UO_0000234,kilobyte
-MB,http://purl.obolibrary.org/obo/UO_0000235,megabyte
-dpi,http://purl.obolibrary.org/obo/UO_0000240,dots per inch
-micrometer pixel,http://purl.obolibrary.org/obo/UO_0000241,micron pixel
-ppi,http://purl.obolibrary.org/obo/UO_0000242,pixels per inch
-pixels per millimetre,http://purl.obolibrary.org/obo/UO_0000243,pixels per millimeter
-bp,http://purl.obolibrary.org/obo/UO_0000244,base pair
-KiB,http://purl.obolibrary.org/obo/UO_0000245,kibibyte
-MiB,http://purl.obolibrary.org/obo/UO_0000246,mebibyte
-mV,http://purl.obolibrary.org/obo/UO_0000247,millivolt
-kV,http://purl.obolibrary.org/obo/UO_0000248,kilovolt
-uV,http://purl.obolibrary.org/obo/UO_0000249,microvolt
-nV,http://purl.obolibrary.org/obo/UO_0000250,nanovolt
-pV,http://purl.obolibrary.org/obo/UO_0000251,picovolt
-MV,http://purl.obolibrary.org/obo/UO_0000252,megavolt
-N/m,http://purl.obolibrary.org/obo/UO_0000254,newton per meter
-dyn/cm,http://purl.obolibrary.org/obo/UO_0000255,dyne per cm
-Pas,http://purl.obolibrary.org/obo/UO_0000257,pascal second
-Poise,http://purl.obolibrary.org/obo/UO_0000258,poise
-dB,http://purl.obolibrary.org/obo/UO_0000259,decibel
-1/AV,http://purl.obolibrary.org/obo/UO_0000264,siemens
-W/mK,http://purl.obolibrary.org/obo/UO_0000265,watt per meter kelvin
-eV,http://purl.obolibrary.org/obo/UO_0000266,electronvolt
-Efs,http://purl.obolibrary.org/obo/UO_0000267,electric field strength unit
-V/m,http://purl.obolibrary.org/obo/UO_0000268,volt per meter
-AU,http://purl.obolibrary.org/obo/UO_0000269,absorbance unit
-uL/min,http://purl.obolibrary.org/obo/UO_0000271,microliters per minute
-mmHg,http://purl.obolibrary.org/obo/UO_0000272,millimetres of mercury
-mg/L,http://purl.obolibrary.org/obo/UO_0000273,milligram per liter
-ug/ml,http://purl.obolibrary.org/obo/UO_0000274,microgram per milliliter
+Th,obo:MS_1000040,mass-to-charge ratio
+m,obo:UO_0000008,Meter
+kg,obo:UO_0000009,kilogram
+s,obo:UO_0000010,second
+A,obo:UO_0000011,ampere
+K,obo:UO_0000012,kelvin
+mol,obo:UO_0000013,mole
+cd,obo:UO_0000014,candela
+cm,obo:UO_0000015,centimeter
+mm,obo:UO_0000016,millimeter
+um,obo:UO_0000017,micrometer
+nm,obo:UO_0000018,nanometer
+Ang,obo:UO_0000019,angstrom
+pm,obo:UO_0000020,picometer
+g,obo:UO_0000021,gram
+mg,obo:UO_0000022,milligram
+ug,obo:UO_0000023,microgram
+ng,obo:UO_0000024,nanogram
+pg,obo:UO_0000025,picogram
+fg,obo:UO_0000026,femtogram
+C,obo:UO_0000027,degree Celsius
+ms,obo:UO_0000028,millisecond
+us,obo:UO_0000029,microsecond
+ps,obo:UO_0000030,picosecond
+min,obo:UO_0000031,minute
+h,obo:UO_0000032,hour
+mA,obo:UO_0000037,milliampere
+uA,obo:UO_0000038,microampere
+umol,obo:UO_0000039,micromole
+mmol,obo:UO_0000040,millimole
+nmol,obo:UO_0000041,nanomole
+pmol,obo:UO_0000042,picomole
+fmol,obo:UO_0000043,femtomole
+amol,obo:UO_0000044,attomole
+mdu,obo:UO_0000052,mass density unit
+mass per unit area unit,obo:UO_0000054,area density unit
+M,obo:UO_0000062,molar
+mM,obo:UO_0000063,millimolar
+uM,obo:UO_0000064,micromolar
+nM,obo:UO_0000065,nanomolar
+pM,obo:UO_0000066,picomolar
+m,obo:UO_0000068,molal
+mm,obo:UO_0000069,millimolal
+um,obo:UO_0000070,micromolal
+nmolal,obo:UO_0000071,nanomolal
+pmolal,obo:UO_0000072,picomolal
+fM,obo:UO_0000073,femtomolar
+Norm,obo:UO_0000075,normal
+chi,obo:UO_0000076,mole fraction
+m/s2,obo:UO_0000077,meter per second per second
+alpha,obo:UO_0000078,radian per second per second
+rad/s,obo:UO_0000079,radian per second
+m2,obo:UO_0000080,square meter
+cm2,obo:UO_0000081,square centimeter
+mm2,obo:UO_0000082,square millimeter
+kg/m3,obo:UO_0000083,kilogram per cubic meter
+g/cm3,obo:UO_0000084,gram per cubic centimeter
+cd/m2,obo:UO_0000085,candela per square meter
+kg/m2,obo:UO_0000086,kilogram per square meter
+kg/mol,obo:UO_0000087,kilogram per mole
+g/mol,obo:UO_0000088,gram per mole
+m3/mol,obo:UO_0000089,cubic meter per mole
+cm3/mol,obo:UO_0000090,cubic centimeter per mole
+kg.m/s,obo:UO_0000091,kilogram meter per second
+1/s,obo:UO_0000092,turns per second
+m3/kg,obo:UO_0000093,cubic meter per kilogram
+m/s,obo:UO_0000094,meter per second
+m3,obo:UO_0000096,cubic meter
+cm3,obo:UO_0000097,cubic centimeter
+ml,obo:UO_0000098,milliliter
+L,obo:UO_0000099,liter
+dm3,obo:UO_0000100,cubic decimeter
+ul,obo:UO_0000101,microliter
+nl,obo:UO_0000102,nanoliter
+pl,obo:UO_0000103,picoliter
+fl,obo:UO_0000104,femtoliter
+Hz,obo:UO_0000106,hertz
+Ntn,obo:UO_0000108,newton
+Pa,obo:UO_0000110,pascal
+J,obo:UO_0000112,joule
+W,obo:UO_0000114,watt
+lx,obo:UO_0000116,lux
+lm,obo:UO_0000118,lumen
+kat,obo:UO_0000120,katal
+rad,obo:UO_0000123,radian
+sr,obo:UO_0000125,steradian
+Bq,obo:UO_0000132,becquerel
+Ci,obo:UO_0000133,curie
+Gy,obo:UO_0000134,Gray
+Roentgen,obo:UO_0000136,roentgen
+Sv,obo:UO_0000137,sievert
+mSv,obo:UO_0000138,millisievert
+uSv,obo:UO_0000139,microsievert
+rem,obo:UO_0000140,Roentgen equivalent man
+uGy,obo:UO_0000141,microgray
+mGy,obo:UO_0000142,milligray
+nGy,obo:UO_0000143,nanogray
+nSv,obo:UO_0000144,nanosievert
+mCi,obo:UO_0000145,millicurie
+uCi,obo:UO_0000146,microcurie
+dpm,obo:UO_0000147,disintegrations per minute
+cpm,obo:UO_0000148,counts per minute
+ns,obo:UO_0000150,nanosecond
+ft-c,obo:UO_0000153,foot candle
+W/m2,obo:UO_0000155,watt per square meter
+einstein/sm2,obo:UO_0000156,einstein per square meter per second
+W/sr/m2,obo:UO_0000158,watt per steradian per square meter
+ueinstein/sm2,obo:UO_0000160,microeinstein per square meter per second
+W/sr,obo:UO_0000162,watt per steradian
+w/w,obo:UO_0000163,mass percentage
+(w/v),obo:UO_0000164,mass volume percentage
+%(v/v),obo:UO_0000165,volume percentage
+pph,obo:UO_0000167,parts per hundred
+ppth,obo:UO_0000168,parts per thousand
+ppm,obo:UO_0000169,parts per million
+ppb,obo:UO_0000170,parts per billion
+ppt,obo:UO_0000171,parts per trillion
+ppq,obo:UO_0000172,parts per quadrillion
+g/ml,obo:UO_0000173,gram per milliliter
+kg/L,obo:UO_0000174,kilogram per liter
+g/L,obo:UO_0000175,gram per liter
+mg/ml,obo:UO_0000176,milligram per milliliter
+U/ml,obo:UO_0000178,unit per milliliter
+U/l,obo:UO_0000179,unit per liter
+enzyme unit,obo:UO_0000181,enzyme unit
+kg/m,obo:UO_0000184,kilogram per meter
+%,obo:UO_0000187,percent
+count,obo:UO_0000189,count unit
+F,obo:UO_0000195,degree Fahrenheit
+l/kg,obo:UO_0000197,liter per kilogram
+ml/kg,obo:UO_0000198,milliliter per kilogram
+ul/kg,obo:UO_0000199,microliter per kilogram
+cells per ml,obo:UO_0000201,cells per milliliter
+kat/m3,obo:UO_0000203,katal per cubic meter
+kat/l,obo:UO_0000204,katal per liter
+ml/m3,obo:UO_0000206,milliliter per cubic meter
+ml/l,obo:UO_0000207,milliliter per liter
+g/dl,obo:UO_0000208,gram per deciliter
+dl,obo:UO_0000209,deciliter
+cfu,obo:UO_0000210,colony forming unit
+pfu,obo:UO_0000211,plaque forming unit
+cfu/ml,obo:UO_0000213,colony forming unit per milliliter
+pfu/ml,obo:UO_0000215,plaque forming unit per milliliter
+dps,obo:UO_0000216,disintegrations per second
+Volt,obo:UO_0000218,volt
+Da,obo:UO_0000221,dalton
+kDa,obo:UO_0000222,kilodalton
+Wh,obo:UO_0000223,watt-hour
+Wb,obo:UO_0000226,weber
+MFDU,obo:UO_0000227,magnetic flux density unit
+Tesla,obo:UO_0000228,tesla
+Vh,obo:UO_0000229,volt-hour
+kVh,obo:UO_0000230,kilovolt-hour
+Byte,obo:UO_0000233,byte
+kB,obo:UO_0000234,kilobyte
+MB,obo:UO_0000235,megabyte
+dpi,obo:UO_0000240,dots per inch
+micrometer pixel,obo:UO_0000241,micron pixel
+ppi,obo:UO_0000242,pixels per inch
+pixels per millimetre,obo:UO_0000243,pixels per millimeter
+bp,obo:UO_0000244,base pair
+KiB,obo:UO_0000245,kibibyte
+MiB,obo:UO_0000246,mebibyte
+mV,obo:UO_0000247,millivolt
+kV,obo:UO_0000248,kilovolt
+uV,obo:UO_0000249,microvolt
+nV,obo:UO_0000250,nanovolt
+pV,obo:UO_0000251,picovolt
+MV,obo:UO_0000252,megavolt
+N/m,obo:UO_0000254,newton per meter
+dyn/cm,obo:UO_0000255,dyne per cm
+Pas,obo:UO_0000257,pascal second
+Poise,obo:UO_0000258,poise
+dB,obo:UO_0000259,decibel
+1/AV,obo:UO_0000264,siemens
+W/mK,obo:UO_0000265,watt per meter kelvin
+eV,obo:UO_0000266,electronvolt
+Efs,obo:UO_0000267,electric field strength unit
+V/m,obo:UO_0000268,volt per meter
+AU,obo:UO_0000269,absorbance unit
+uL/min,obo:UO_0000271,microliters per minute
+mmHg,obo:UO_0000272,millimetres of mercury
+mg/L,obo:UO_0000273,milligram per liter
+ug/ml,obo:UO_0000274,microgram per milliliter
 ug/dl,chear:MicrogramPerDecilter,microgram per deciliter
-ng/ml,http://purl.obolibrary.org/obo/UO_0000275,nanogram per milliliter
-mU/ml,http://purl.obolibrary.org/obo/UO_0000279,milliunits per milliliter
-1/nMs,http://purl.obolibrary.org/obo/UO_0000281,count per nanomolar second
-1/Ms,http://purl.obolibrary.org/obo/UO_0000282,count per molar second
-1/nM,http://purl.obolibrary.org/obo/UO_0000284,count per nanomolar
-1/M,http://purl.obolibrary.org/obo/UO_0000285,count per molar
-ug/L,http://purl.obolibrary.org/obo/UO_0000301,microgram per liter
-cpul,http://purl.obolibrary.org/obo/UO_0000316,cells per microliter
-FNU,http://purl.obolibrary.org/obo/UO_0000318,formazin nephelometric unit
-curie/l,http://purl.obolibrary.org/obo/UO_0000320,curie per liter
-ucurie/ml,http://purl.obolibrary.org/obo/UO_0000321,microcurie per milliliter
-cM,http://purl.obolibrary.org/obo/UO_0000326,centiMorgan
-cR,http://purl.obolibrary.org/obo/UO_0000327,centiRay
-kbp,http://purl.obolibrary.org/obo/UO_0000328,kilobasepair
-Mb,http://purl.obolibrary.org/obo/UO_0000329,megabasepair
-Gb,http://purl.obolibrary.org/obo/UO_0000330,gigabasepair
-GB,http://purl.obolibrary.org/obo/UO_0000331,gigabyte
-TB,http://purl.obolibrary.org/obo/UO_0000332,terabyte
-TNFalpha,http://www.uniprot.org/uniprot/P01375,TNF-alpha
-IL1B,http://www.uniprot.org/uniprot/P01584,Interleukin-1 beta
-CRP,http://www.uniprot.org/uniprot/P02741,C-reactive protein
-IL6,http://www.uniprot.org/uniprot/P05231,Interleukin-6
-IL10,http://www.uniprot.org/uniprot/P22301,Interleukin-10
+ng/ml,obo:UO_0000275,nanogram per milliliter
+mU/ml,obo:UO_0000279,milliunits per milliliter
+1/nMs,obo:UO_0000281,count per nanomolar second
+1/Ms,obo:UO_0000282,count per molar second
+1/nM,obo:UO_0000284,count per nanomolar
+1/M,obo:UO_0000285,count per molar
+ug/L,obo:UO_0000301,microgram per liter
+cpul,obo:UO_0000316,cells per microliter
+FNU,obo:UO_0000318,formazin nephelometric unit
+curie/l,obo:UO_0000320,curie per liter
+ucurie/ml,obo:UO_0000321,microcurie per milliliter
+cM,obo:UO_0000326,centiMorgan
+cR,obo:UO_0000327,centiRay
+kbp,obo:UO_0000328,kilobasepair
+Mb,obo:UO_0000329,megabasepair
+Gb,obo:UO_0000330,gigabasepair
+GB,obo:UO_0000331,gigabyte
+TB,obo:UO_0000332,terabyte
+TNFalpha,uniprot:P01375,TNF-alpha
+IL1B,uniprot:P01584,Interleukin-1 beta
+CRP,uniprot:P02741,C-reactive protein
+IL6,uniprot:P05231,Interleukin-6
+IL10,uniprot:P22301,Interleukin-10
 PHEN9,pubchem:10229,9-hydroxyphenanthrene
 Arsenocholine,pubchem:104820,Arsenocholine
 mINP,pubchem:110394,mono-isononyl phthalate
