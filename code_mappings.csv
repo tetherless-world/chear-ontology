@@ -460,3 +460,8 @@ Wb,obo:UO_0000226,weber
 WB,uberon:0000178,Whole Blood
 Wh,obo:UO_0000223,watt-hour
 Zn,chebi:27363,Zinc
+mg/dl,chear:milligram_per_deciliter,milligram per deciliter
+umol/L,chear:micromole_per_liter,micromole per liter
+mg/g,chear:milligram_per_gram,milligram per gram
+mmol/L,chear:millimole_per_liter,chear:millimole per liter
+IU/L,chear:international_units_per_litre,international units per litre
