@@ -25,14 +25,16 @@ def build():
     setl_graph = Graph()
     setl_graph.load(SETL_FILE,format="turtle")
     cwd = os.getcwd()
-    ontology_output_file = setl_graph.resource(URIRef('file://'+cwd+'/chear.ttl'))
+    formats = ['ttl','owl','json']
+    ontology_output_files = [setl_graph.resource(URIRef('file://'+cwd+'/chear.'+x)) for x in formats]
     for filename in os.listdir(CHEAR_DIR):
         if not filename.endswith('.ttl'):
             continue
         print 'Adding fragment', filename
 
         fragment = setl_graph.resource(BNode())
-        ontology_output_file.value(prov.wasGeneratedBy).add(prov.used, fragment)
+        for ontology_output_file in ontology_output_files:
+            ontology_output_file.value(prov.wasGeneratedBy).add(prov.used, fragment)
         fragment.add(RDF.type, setlr.void.Dataset)
         fragment_extract = setl_graph.resource(BNode())
         fragment.add(prov.wasGeneratedBy, fragment_extract)

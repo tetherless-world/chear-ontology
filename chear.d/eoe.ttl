@@ -1,4 +1,3 @@
-@prefix : <#> .
 @prefix do: <http://purl.obolibrary.org/obo/DOID_> .
 @prefix uo: <http://purl.obolibrary.org/obo/UO_> .
 @prefix fma: <http://purl.org/sig/ont/fma/> .
@@ -13,7 +12,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix chear: <http://hadatac.org/ont/chear/> .
 @prefix uberon: <http://purl.obolibrary.org/obo/UBERON_>.
-@base <http://www.w3.org/2002/07/owl#> .
 
 
 

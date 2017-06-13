@@ -62,12 +62,6 @@
     prov:used labkey:LocalObjectType;
   ].
 
-:LocalObjectType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalObjectType;
-  ].
-
 :LocalPlatformType a setl:JSON;
   prov:wasGeneratedBy [
     a setl:Extract;
@@ -104,16 +98,36 @@
     prov:used labkey:LocalStudyIndicatorType;
   ].
 
+:LocalRoleType a setl:JSON;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used labkey:LocalRoleType;
+  ].
+
+:LocalTimeIntervalType a setl:JSON;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used labkey:LocalTimeIntervalType;
+  ].
+
 :IndicatorType a setl:JSON;
   prov:wasGeneratedBy [
     a setl:Extract;
     prov:used labkey:IndicatorType;
   ].
 
+:analytes_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=0>;
+  ].
+
+
 <http://hadatac.org/ont/chear> a void:Dataset;
   prov:wasGeneratedBy [
     a setl:Transform, setl:JSLDT;
-    prov:used :LocalAnalyteType,
+    prov:used
+#              :LocalAnalyteType,
               :LocalAttributeType,
               :LocalDetectorType,
               :IndicatorType,
@@ -125,10 +139,12 @@
 #              :LocalProcessType,
               :LocalSampleType,
               :LocalScaleType,
-              :LocalSensingPerspectiveType,
+              :LocalRoleType,
+              :LocalTimeIntervalType,
+#              :LocalSensingPerspectiveType,
               :LocalStudyIndicatorType;
     setl:hasContext '''{
-  "@vocab" :  "https://hbgd.tw.rpi.edu/",
+  "@vocab" :  "https://chear.tw.rpi.edu/",
   "owl": "http://www.w3.org/2002/07/owl#",
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
   "sio" :     "http://semanticscience.org/resource/",
@@ -143,15 +159,18 @@
   "vstoi" : "http://hadatac.org/ont/vstoi#",
   "hasneto" : "http://hadatac.org/ont/hasneto#",
   "uberon" : "http://purl.obolibrary.org/obo/UBERON_",
+  "do": "http://purl.obolibrary.org/obo/DOID_",
   "prv" : "http://hadatac.org/ont/prov#",
   "chear-kb" : "http://hadatac.org/kb/chear#",
   "cmo"  :    "http://purl.org/twc/ontologies/cmo.owl#"
 }''';
   prov:value '''[{
     "@id": "http://hadatac.org/ont/chear",
+    "@context": "https://raw.githubusercontent.com/jimmccusker/ontext/master/owl-context.jsonld",
     "@graph": [{
       "@for": "r in row['rows']",
       "@do": {
+        "@if" : "'owl:deprecated' not in r or r['owl:deprecated'] != '1.0'",
         "@id": "{{r['hasURI']}}",
         "@type": [
           "owl:Class",
@@ -161,6 +180,10 @@
             "@do" : "{{t}}"
           }
         ],
+        "owl:deprecated": {
+          "@if" : "'owl:deprecated' in r and r['owl:deprecated'] is not None",
+          "@value" : true
+        },
         "rdfs:label": {
           "@if" : "'rdfs:label' in r and r['rdfs:label'] is not None and len(r['rdfs:label'].strip()) > 0",
           "@value" : "{{r['rdfs:label']}}"
@@ -196,7 +219,7 @@
         "rdfs:subClassOf": [
           { "@if" : "'hasneto:hasUnit' in r and not isempty(r['hasneto:hasUnit'])",
             "@type" : "owl:Restriction",
-            "owl:onProperty" : { "@id":"sio:hasUnit"},
+            "on" : { "@id":"sio:hasUnit"},
             "owl:hasValue" : { "@id": "{{r['hasneto:hasUnit']}}" }
           },
           { "@if" : "'prov:wasGeneratedBy' in r and not isempty(r['prov:wasGeneratedBy'])",
@@ -207,6 +230,49 @@
               "owl:allValuesFrom" : { "@id": "{{s}}" }
             }
           },
+          { "@if" : "'sio:isAttributeOf' in r and not isempty(r['sio:isAttributeOf'])",
+            "@for" : "s in re.split('\\\\s*[,&]\\\\s*', r['sio:isAttributeOf'])",
+            "@do" : { "@type" : "Restriction", "on" : "sio:isAttributeOf", "only" : "{{s}}" }
+          },
+          {
+            "@if" : "'sio:hasUnit' in r and not isempty(r['sio:hasUnit'])",
+            "@type" : "owl:Restriction", "on" : "sio:hasUnit", "value" : { "@id": "{{r['sio:hasUnit']}}" }
+          },
+          { "@if" : "'start' in r and not isempty(r.start)",
+            "@type" : "Restriction", "on" : "sio:hasStartTime",
+            "only" : {
+              "@type" : "Class", "and" : [
+                { "@id": "{{r['sio:hasUnit']}}" },
+                { "@type" : "Restriction", "on" : "sio:hasValue", "value" : {"@value" : "{{r.start}}", "@type" : "xsd:integer"} }
+              ]}
+          },
+          { "@if" : "'end' in r and not isempty(r.end)",
+            "@type" : "Restriction", "on" : "sio:hasEndTime",
+            "only" : {
+              "@type" : "Class", "and" : [
+                { "@id": "{{r['sio:hasUnit']}}" },
+                { "@type" : "Restriction", "on" : "sio:hasValue", "value" : {"@value" : "{{r.end}}", "@type" : "xsd:integer"} }
+              ]}
+          },
+          {
+            "@if" : "'sio:inRelationTo' in r and not isempty(r['sio:inRelationTo'])",
+            "@type" : "owl:Restriction", "on" : "sio:inRelationTo", "only" : {
+              "@type" : "Class", "and" : [
+                { "@id": "{{r['sio:inRelationTo']}}" },
+                {
+                  "@if" : "'sio:inRelationTo o sio:hasRole' in r and not isempty(r['sio:inRelationTo o sio:hasRole'])",
+                  "@type" : "Restriction", "on" : "sio:hasRole", "only" : {"@id" : "{{r['sio:inRelationTo o sio:hasRole']}}"}
+                }
+              ]
+            }
+          },
+          {
+            "@if" : "'sio:isRoleOf o sio:hasAttribute' in r and not isempty(r['sio:isRoleOf o sio:hasAttribute'])",
+            "@type" : "owl:Restriction", "on" : "sio:isRoleOf",
+            "only" : {
+              "@type" : "Restriction", "on" : "sio:hasAttribute", "some" : {"@id" : "{{r['sio:isRoleOf o sio:hasAttribute']}}"}
+            }
+          },
           {
             "@if" : "'rdfs:subClassOf' in r and r['rdfs:subClassOf'] is not None and len(r['rdfs:subClassOf'].strip()) > 0",
             "@for" : "s in re.split('\\\\s*[,&]\\\\s*', r['rdfs:subClassOf'])",
@@ -215,12 +281,168 @@
         ]
       }
     }]
-}]''']
+}]'''];
+  prov:wasGeneratedBy [
+    a setl:Transform, setl:JSLDT;
+    prov:used
+        :analytes_table;
+    setl:hasContext '''{
+  "@vocab" :  "https://chear.tw.rpi.edu/",
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "sio" :     "http://semanticscience.org/resource/",
+  "chear" :   "http://hadatac.org/ont/chear#",
+  "skos" :    "http://www.w3.org/2004/02/skos/core#",
+  "prov" :    "http://www.w3.org/ns/prov#",
+  "chebi" :   "http://purl.obolibrary.org/obo/CHEBI_",
+  "obo" :   "http://purl.obolibrary.org/obo/",
+  "pubchem" : "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/",
+  "dc"   :    "http://purl.org/dc/terms/",
+  "hasco" : "http://hadatac.org/ont/hasco#",
+  "vstoi" : "http://hadatac.org/ont/vstoi#",
+  "hasneto" : "http://hadatac.org/ont/hasneto#",
+  "uberon" : "http://purl.obolibrary.org/obo/UBERON_",
+  "do": "http://purl.obolibrary.org/obo/DOID_",
+  "prv" : "http://hadatac.org/ont/prov#",
+  "chear-kb" : "http://hadatac.org/kb/chear#",
+  "cmo"  :    "http://purl.org/twc/ontologies/cmo.owl#"
+}''';
+  prov:value '''[{
+    "@id": "http://hadatac.org/ont/chear",
+    "@context": "https://raw.githubusercontent.com/jimmccusker/ontext/master/owl-context.jsonld",
+    "@graph": [{
+        "@if" : "'owl:deprecated' not in row or row['owl:deprecated'] != '1.0'",
+        "@id": "{{row['hasURI']}}",
+        "@type": [
+          "owl:Class",
+          {
+            "@if" : "'rdf:type' in row and row['rdf:type'] is not None and len(row['rdf:type'].strip()) > 0",
+            "@for" : "t in re.split('\\\\s*[,&]\\\\s*', row['rdf:type'])",
+            "@do" : "{{t}}"
+          }
+        ],
+        "owl:deprecated": {
+          "@if" : "'owl:deprecated' in row and row['owl:deprecated'] is not None",
+          "@value" : true
+        },
+        "rdfs:label": {
+          "@if" : "'rdfs:label' in row and row['rdfs:label'] is not None and len(row['rdfs:label'].strip()) > 0",
+          "@value" : "{{row['rdfs:label']}}"
+        },
+        "dc:identifier": {
+          "@if" : "'dcterms:identifier' in row and row['dcterms:identifier'] is not None and len(row['dcterms:identifier'].strip()) > 0",
+          "@value" : "{{row['dcterms:identifier'].strip()}}"
+        },
+        "skos:editorialNote": {
+          "@if" : "'skos:editorialNote' in row and row['skos:editorialNote'] is not None and len(row['skos:editorialNote'].strip()) > 0",
+          "@value" : "{{row['skos:editorialNote']}}"
+        },
+        "skos:editorialNote": {
+          "@if" : "'skos:editorialNote' in row and row['skos:editorialNote'] is not None and len(row['skos:editorialNote'].strip()) > 0",
+          "@value" : "{{row['skos:editorialNote']}}"
+        },
+        "skos:definition": [
+          {
+            "@if" : "'rdfs:comment' in row and row['rdfs:comment'] is not None and len(row['rdfs:comment'].strip()) > 0",
+            "@value" : "{{row['rdfs:comment']}}"
+          },
+          {
+            "@if" : "'skos:definition' in row and row['skos:definition'] is not None and len(row['skos:definition'].strip()) > 0",
+            "@value" : "{{row['skos:definition']}}"
+          }
+        ],
+        "hasco:wasApprovedBy": [
+          {
+            "@if" : "'hasco:approvedBy' in row and row['hasco:approvedBy'] is not None and len(row['hasco:approvedBy'].strip()) > 0",
+            "@value" : "{{row['hasco:approvedBy']}}"
+          }
+        ],
+        "rdfs:subClassOf": [
+          { "@if" : "'hasneto:hasUnit' in row and not isempty(row['hasneto:hasUnit'])",
+            "@type" : "owl:Restriction",
+            "on" : { "@id":"sio:hasUnit"},
+            "owl:hasValue" : { "@id": "{{row['hasneto:hasUnit']}}" }
+          },
+          { "@if" : "'prov:wasGeneratedBy' in row and not isempty(row['prov:wasGeneratedBy'])",
+            "@for" : "s in re.split('\\\\s*[,&]\\\\s*', row['prov:wasGeneratedBy'])",
+            "@do" : {
+              "@type" : "owl:Restriction",
+              "owl:onProperty" : { "@id":"prov:wasDerivedFrom"},
+              "owl:allValuesFrom" : { "@id": "{{s}}" }
+            }
+          },
+          { "@if" : "'sio:isAttributeOf' in row and not isempty(row['sio:isAttributeOf'])",
+            "@for" : "s in re.split('\\\\s*[,&]\\\\s*', row['sio:isAttributeOf'])",
+            "@do" : { "@type" : "Restriction", "on" : "sio:isAttributeOf", "only" : "{{s}}" }
+          },
+          {
+            "@if" : "'sio:hasUnit' in row and not isempty(row['sio:hasUnit'])",
+            "@type" : "owl:Restriction", "on" : "sio:hasUnit", "value" : { "@id": "{{row['sio:hasUnit']}}" }
+          },
+          { "@if" : "'start' in row and not isempty(row.start)",
+            "@type" : "Restriction", "on" : "sio:hasStartTime",
+            "only" : {
+              "@type" : "Class", "and" : [
+                { "@id": "{{row['sio:hasUnit']}}" },
+                { "@type" : "Restriction", "on" : "sio:hasValue", "value" : {"@value" : "{{r.start}}", "@type" : "xsd:integer"} }
+              ]}
+          },
+          { "@if" : "'end' in row and not isempty(row.end)",
+            "@type" : "Restriction", "on" : "sio:hasEndTime",
+            "only" : {
+              "@type" : "Class", "and" : [
+                { "@id": "{{row['sio:hasUnit']}}" },
+                { "@type" : "Restriction", "on" : "sio:hasValue", "value" : {"@value" : "{{r.end}}", "@type" : "xsd:integer"} }
+              ]}
+          },
+          {
+            "@if" : "'sio:inRelationTo' in row and not isempty(row['sio:inRelationTo'])",
+            "@type" : "owl:Restriction", "on" : "sio:inRelationTo", "only" : {
+              "@type" : "Class", "and" : [
+                { "@id": "{{row['sio:inRelationTo']}}" },
+                {
+                  "@if" : "'sio:inRelationTo o sio:hasRole' in row and not isempty(row['sio:inRelationTo o sio:hasRole'])",
+                  "@type" : "Restriction", "on" : "sio:hasRole", "only" : {"@id" : "{{row['sio:inRelationTo o sio:hasRole']}}"}
+                }
+              ]
+            }
+          },
+          {
+            "@if" : "'sio:isRoleOf o sio:hasAttribute' in row and not isempty(row['sio:isRoleOf o sio:hasAttribute'])",
+            "@type" : "owl:Restriction", "on" : "sio:isRoleOf",
+            "only" : {
+              "@type" : "Restriction", "on" : "sio:hasAttribute", "some" : {"@id" : "{{row['sio:isRoleOf o sio:hasAttribute']}}"}
+            }
+          },
+          {
+            "@if" : "'rdfs:subClassOf' in row and row['rdfs:subClassOf'] is not None and len(row['rdfs:subClassOf'].strip()) > 0",
+            "@for" : "s in re.split('\\\\s*[,&]\\\\s*', row['rdfs:subClassOf'])",
+            "@do" : { "@id": "{{s}}", "@type": "owl:Class"}
+          }
+        ]
+      }
+    ]
+  }
+]''']
 .
 
 
 <chear.ttl> a pv:File;
     dcterms:format "text/turtle";
+    prov:wasGeneratedBy [
+      a setl:Load;
+      prov:used <http://hadatac.org/ont/chear> ;
+    ].
+    
+<chear.owl> a pv:File;
+    dcterms:format "application/rdf+xml";
+    prov:wasGeneratedBy [
+      a setl:Load;
+      prov:used <http://hadatac.org/ont/chear> ;
+    ].
+
+<chear.json> a pv:File;
+    dcterms:format "application/json";
     prov:wasGeneratedBy [
       a setl:Load;
       prov:used <http://hadatac.org/ont/chear> ;
