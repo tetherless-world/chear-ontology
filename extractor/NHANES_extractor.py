@@ -257,10 +257,10 @@ for item in list_items :
                     
                     tables = entry.findAll("table")
                     # Insert Codebook Entries
-#                     for table in tables :
-#                         table_rows = table.find("tbody").findAll("tr")
-#                         for table_row in table_rows :
-#                             codebook.write(entry.find("dl").find("dt",text="Variable Name: ").findNext("dd").contents[0].replace(" ","") + "," + table_row.find("td",scope="row").contents[0].encode('ascii','ignore').decode('utf-8') + ',"' + table_row.find("td",scope="row").findNext("td").contents[0].encode('ascii','ignore').decode('utf-8').replace("\"","'") + '"\n')
+                    for table in tables :
+                        table_rows = table.find("tbody").findAll("tr")
+                        for table_row in table_rows :
+                            codebook.write(entry.find("dl").find("dt",text="Variable Name: ").findNext("dd").contents[0].replace(" ","") + "," + table_row.find("td",scope="row").contents[0].encode('ascii','ignore').decode('utf-8') + ',"' + table_row.find("td",scope="row").findNext("td").contents[0].encode('ascii','ignore').decode('utf-8').replace("\"","'") + '"\n')
                 sdd.close()
                 codebook.close()
             except:
