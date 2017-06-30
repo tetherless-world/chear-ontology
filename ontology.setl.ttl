@@ -162,6 +162,7 @@
   "do": "http://purl.obolibrary.org/obo/DOID_",
   "prv" : "http://hadatac.org/ont/prov#",
   "chear-kb" : "http://hadatac.org/kb/chear#",
+  "envo": "http://purl.obolibrary.org/obo/ENVO_",
   "cmo"  :    "http://purl.org/twc/ontologies/cmo.owl#"
 }''';
   prov:value '''[{
@@ -302,6 +303,7 @@
   "vstoi" : "http://hadatac.org/ont/vstoi#",
   "hasneto" : "http://hadatac.org/ont/hasneto#",
   "uberon" : "http://purl.obolibrary.org/obo/UBERON_",
+  "envo" : "http://purl.obolibrary.org/obo/ENVO_",
   "do": "http://purl.obolibrary.org/obo/DOID_",
   "prv" : "http://hadatac.org/ont/prov#",
   "chear-kb" : "http://hadatac.org/kb/chear#",
