@@ -171,7 +171,7 @@
     "@graph": [{
       "@for": "r in row['rows']",
       "@do": {
-        "@if" : "'owl:deprecated' not in r or r['owl:deprecated'] != '1.0'",
+        "@if" : "'owl:deprecated' not in r or r['owl:deprecated'] != '1.0' or r['owl:deprecated'] != '1.1'",
         "@id": "{{r['hasURI']}}",
         "@type": [
           "owl:Class",
@@ -313,7 +313,7 @@
     "@id": "http://hadatac.org/ont/chear",
     "@context": "https://raw.githubusercontent.com/jimmccusker/ontext/master/owl-context.jsonld",
     "@graph": [{
-        "@if" : "'owl:deprecated' not in row or row['owl:deprecated'] != '1.0'",
+        "@if" : "'owl:deprecated' not in row or row['owl:deprecated'] != '1.0' or row['owl:deprecated'] != '1.1'",
         "@id": "{{row['hasURI']}}",
         "@type": [
           "owl:Class",
