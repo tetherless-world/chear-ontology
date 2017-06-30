@@ -1,0 +1,3795 @@
+@prefix : <http://hadatac.org/ont/chear#> .
+@prefix chear: <http://hadatac.org/ont/chear#> .
+@prefix daml: <http://www.daml.org/2001/03/daml+oil#> .
+@prefix do: <http://purl.obolibrary.org/obo/DOID_> .
+@prefix fma: <http://purl.org/sig/ont/fma/> .
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://hadatac.org/ont/hasco#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix uberon: <http://purl.obolibrary.org/obo/UBERON_> .
+@prefix uo: <http://purl.obolibrary.org/obo/UO_> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hadatac.org/ont/chear> a owl:Ontology ;
+    rdfs:comment """Children's health and wellbeing are influenced by interactions between environmental and genetic factors. NIEHS is establishing an infrastructure, the Children's Health Exposure Analysis Resource (CHEAR), to provide the extramural research community access to laboratory and data analyses that add or expand the inclusion of environmental exposures in children's health research. The goal of CHEAR is to provide tools so researchers can assess the full range of environmental exposures which may affect children's health. We anticipate that CHEAR will be used by children's health researchers conducting epidemiological or clinical studies that currently have limited consideration of environmental exposures, or those who have collected exposure data but seek more extensive analyses.
+
+Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
+    owl:imports <http://hadatac.org/ont/hasco>,
+        <http://purl.obolibrary.org/obo/envo.owl> ;
+    owl:versionIRI <http://hadatac.org/ont/chear/1.1> .
+
+chear:AAMA a owl:Class ;
+    rdfs:label "N-Acetyl-S-(2-carbamoylethyl)-L-cysteine" ;
+    ns1:identifier "AAMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:AMA a owl:Class ;
+    rdfs:label "Mercapturic acids of acrolein and crotonaldehyde" ;
+    ns1:identifier "AMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+chear:AMCC a owl:Class ;
+    rdfs:label "N-Acetyl-S-(N-methylcarbamoyl)-L-cysteine" ;
+    ns1:identifier "AMCC" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:APGAR a owl:Class ;
+    rdfs:label "Apgar Score" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf [ a rdf:List ;
+                            rdf:first [ a rdfs:Datatype ;
+                                    owl:onDatatype xsd:integer ;
+                                    owl:withRestrictions [ a rdf:List ;
+                                            rdf:first [ xsd:minInclusive 0 ] ;
+                                            rdf:rest () ] ] ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first [ a rdfs:Datatype ;
+                                            owl:onDatatype xsd:integer ;
+                                            owl:withRestrictions [ a rdf:List ;
+                                                    rdf:first [ xsd:maxInclusive 10 ] ;
+                                                    rdf:rest () ] ] ;
+                                    rdf:rest () ] ] ] ;
+            owl:onProperty sio:hasValue ],
+        chear:BirthOutcome,
+        sio:Sum ;
+    skos:definition "A method to quickly summarize the health of newborn children. The Apgar score was invented by Virginia Apgar in 1952 when Apgar was an anesthesiologist who developed the score in order to ascertain the effects of obstetric anesthesia on babies.  The Apgar scale is determined by evaluating the newborn baby on five simple criteria on a scale from zero to two, then summing up the five values thus obtained. The resulting Apgar score ranges from zero to 10. The five criteria are summarized using words chosen to form a backronym (Appearance, Pulse, Grimace, Activity, Respiration)." .
+
+chear:ATCA a owl:Class ;
+    rdfs:label "2-Aminothiazoline-4-carboxylic acid" ;
+    ns1:identifier "ATCA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:AbsorbanceReader a owl:Class ;
+    rdfs:label "Absorbance Reader" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:MicroplateReader ;
+    skos:definition "Absorbance readers are used for assays such as ELISA assays, protein and nucleic acid quantification or enzyme activity assays. A light source illuminates the sample using a specific wavelength (selected by an optical filter, or a monochromator), and a light detector located on the other side of the well measures how much of the initial (100%) light is transmitted through the sample: the amount of transmitted light will typically be related to the concentration of the molecule of interest." .
+
+chear:ActiveNonTobaccoSmoker a owl:Class ;
+    rdfs:label "Active Non-Tobacco Smoker" ;
+    rdfs:subClassOf chear:ActiveSmoker ;
+    skos:definition "Active Non-Tobacco Smoker" .
+
+chear:Adopted a owl:Class ;
+    rdfs:label "Adopted" ;
+    rdfs:subClassOf chear:NonBiologicalRelative ;
+    skos:definition "Adoption is a process whereby a person assumes the parenting of another, usually a child, from that person's biological or legal parent or parents, and, in so doing, permanently transfers all rights and responsibilities, along with filiation, from the biological parent or parents." .
+
+chear:Adult a owl:Class ;
+    rdfs:label "Adult" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Demographic,
+        chear:DevelopmentalQuality ;
+    skos:definition "Refers to a person above a threshold age." .
+
+chear:AdvancedDegree a owl:Class ;
+    rdfs:label "Advanced Graduate Degree" ;
+    rdfs:subClassOf chear:EducationLevel ;
+    skos:definition "Having earned a pos-baccalaureate degree" .
+
+chear:Agilent_1100_HPLC a owl:Class ;
+    rdfs:label "Agilent 1100 HPLC" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:HPLC .
+
+chear:Agilent_8800_QQQ_ICP_MS a owl:Class ;
+    rdfs:label "Aligent 8800 Triple Quadrupole ICP-MS" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:ICPMSQQQ .
+
+chear:AlcoholUse a owl:Class ;
+    rdfs:label "Alcohol Use" ;
+    rdfs:subClassOf chear:ATIDU ;
+    skos:definition "Uses Alcohol" .
+
+chear:AmericanIndianOrAlaskanNative a owl:Class ;
+    rdfs:label "American Indian Or AlaskanNative" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Race ;
+    skos:definition "A person having origins in any of the original peoples of North, Central, or South America, and who maintains tribal affiliations or community attachment." .
+
+chear:AnalysisMode a owl:Class ;
+    rdfs:label "Analysis Mode" ;
+    rdfs:subClassOf ns2:SampleIndicator ;
+    skos:definition "Analysis Mode" .
+
+chear:Asian a owl:Class ;
+    rdfs:label "Asian" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Race ;
+    skos:definition "A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent including, for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam. (Note: Individuals from the Philippine Islands have been recorded as Pacific Islanders in previous data collection strategies.)" .
+
+chear:AtomicAbsorptionSpectroscopy a owl:Class ;
+    rdfs:label "Atomic Absorption Spectroscopy" ;
+    rdfs:subClassOf chear:AtomicSpectroscopy .
+
+chear:AtomicEmissionSpectroscopy a owl:Class ;
+    rdfs:label "Atomic Emission Spectroscopy" ;
+    rdfs:subClassOf chear:AtomicSpectroscopy .
+
+chear:BAA1 a owl:Class ;
+    rdfs:label "1-hydroxybenz[a]anthacene" ;
+    ns1:identifier "BAA1" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> ;
+    skos:editorialNote "Only found in one journal article, no where else. Maybe mis-spelled?" .
+
+chear:BAPT a owl:Class ;
+    rdfs:label "Benzo[a]pyrene tetraol" ;
+    ns1:identifier "BAPT" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+chear:BCP1 a owl:Class ;
+    rdfs:label "1-hydroxybenzo[c]-phenanthrene" ;
+    ns1:identifier "BCP1" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+chear:BCP2 a owl:Class ;
+    rdfs:label "2-hydroxybenzo[c]-phenanthrene" ;
+    ns1:identifier "BCP2" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+chear:BCP3 a owl:Class ;
+    rdfs:label "3-hydroxybenzo[c]-phenanthrene" ;
+    ns1:identifier "BCP3" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+chear:BDE100 a owl:Class ;
+    rdfs:label "2,2',4,4',6-Pentabromodiphenyl ether" ;
+    ns1:identifier "BDE100" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134094> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:BDE153 a owl:Class ;
+    rdfs:label "2,2',4,4',5,5'-Hexabromodiphenyl ether" ;
+    ns1:identifier "BDE153" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134094> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:BDE154 a owl:Class ;
+    rdfs:label "2,2',4,4',5,6'-Hexabromodiphenyl ether" ;
+    ns1:identifier "BDE154" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134094> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:BDE17 a owl:Class ;
+    rdfs:label "2,2',4'-Tribromodiphenyl ether" ;
+    ns1:identifier "BDE17" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134094> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:BDE183 a owl:Class ;
+    rdfs:label "2,2',3,4,4',5',6-Heptabromodiphenyl ether" ;
+    ns1:identifier "BDE183" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134094> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:BDE209 a owl:Class ;
+    rdfs:label "2,2',3,3',4,4',5,5',6,6'-Decabromodiphenyl ether" ;
+    ns1:identifier "BDE209" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134094> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:BDE28 a owl:Class ;
+    rdfs:label "2,4,4'-Tribromodiphenyl ether" ;
+    ns1:identifier "BDE28" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134094> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:BDE47 a owl:Class ;
+    rdfs:label "2,2',4,4'-Tetrabromodiphenyl ether" ;
+    ns1:identifier "BDE47" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134094> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:BDE66 a owl:Class ;
+    rdfs:label "2,3',4,4'-Tetrabromodiphenyl ether" ;
+    ns1:identifier "BDE66" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134094> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:BDE85 a owl:Class ;
+    rdfs:label "2,2',3,4,4'-Pentabromodiphenyl ether" ;
+    ns1:identifier "BDE85" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134094> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:BDE99 a owl:Class ;
+    rdfs:label "2,2',4,4',5-Pentabromodiphenyl ether" ;
+    ns1:identifier "BDE99" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134094> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:BIRD-MS a owl:Class ;
+    rdfs:label "Blackbody Infrared Radiative Dissociation (BIRD)" ;
+    rdfs:subClassOf ns2:TandemMassSpectrometry .
+
+chear:BMA a owl:Class ;
+    rdfs:label "N-Acetyl-S-(benzyl)-L-cysteine" ;
+    ns1:identifier "BMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:BP3 a owl:Class ;
+    rdfs:label "Benzophenone-3" ;
+    ns1:identifier "BP3" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "Oxybenzone is a benzophenone derivative used as a sunscreen agent. Oxybenzone absorbs UVB and UVA II rays, resulting in a photochemical excitation and absorption of energy. Upon return to ground state, the absorbed energy results in emission of longer wavelength radiation and decreased skin penetration of radiation which reduces the risk of DNA damage." ;
+    skos:editorialNote "Duplicate of OXB?" .
+
+chear:BPMA a owl:Class ;
+    rdfs:label "N-Acetyl-S-(n-propyl)-L-cysteine" ;
+    ns1:identifier "BPMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:BathroomCount a owl:Class ;
+    rdfs:label "Bathroom Count" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:RoomCount ;
+    skos:definition "Total Number of Bathrooms in the Home" .
+
+chear:BedroomCount a owl:Class ;
+    rdfs:label "Bedroom Count" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:RoomCount ;
+    skos:definition "Total Number of Bedrooms in the Home" .
+
+chear:BiologicalRelative a owl:Class ;
+    rdfs:label "Biological Relative" ;
+    rdfs:subClassOf chear:Relative ;
+    skos:definition "Being from the same biological kinship as another person. In that aspect, consanguinity is the quality of being descended from the same ancestor as another person." .
+
+chear:BirthBodyLength a owl:Class ;
+    rdfs:label "Birth Body Length" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Anthropometry,
+        chear:BirthOutcome,
+        sio:Length ;
+    owl:deprecated true ;
+    skos:definition "The length of the body at birth." .
+
+chear:BirthHeadCircumference a owl:Class ;
+    rdfs:label "Birth Head Circumference" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Anthropometry,
+        chear:BirthOutcome,
+        sio:Circumference ;
+    owl:deprecated true ;
+    skos:definition "The circumference of the head at birth." .
+
+chear:BisulfitePyrosequencing a owl:Class ;
+    rdfs:label "Bisulfite Pyrosequencing" ;
+    rdfs:subClassOf chear:NucleicAcidSequencing .
+
+chear:BlackOrAfricanAmerican a owl:Class ;
+    rdfs:label "African American" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Race ;
+    skos:definition "A person having origins in any of the black racial groups of Africa. Terms such as “Haitian” or “Negro” can be used in addition to “Black or African American.”" .
+
+chear:BoilerCount a owl:Class ;
+    rdfs:label "Boiler Count" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HouseholdApplianceCount ;
+    skos:definition "A boiler is an object that heats up water. This attribute quantifies the number of boilers  in the home." .
+
+chear:BuccalCell a owl:Class ;
+    rdfs:label "Buccal Cell" ;
+    ns1:identifier "BU" ;
+    rdfs:subClassOf sio:Cell ;
+    skos:definition "Cells collected from the inner epithelium of the cheek" .
+
+chear:CEMA a owl:Class ;
+    rdfs:label "N-Acetyl-S- (2-carboxyethyl)-L-cysteine" ;
+    ns1:identifier "CEMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:CHRY3 a owl:Class ;
+    rdfs:label "3-hydroxychrysene" ;
+    ns1:identifier "CHRY3" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+chear:CID-MS a owl:Class ;
+    rdfs:label "Collision-Induced Dissociation (CID)" ;
+    rdfs:subClassOf ns2:TandemMassSpectrometry .
+
+chear:COTT a owl:Class ;
+    rdfs:label "Cotinine (total)" ;
+    ns1:identifier "COTT" ;
+    rdfs:subClassOf chear:TobaccoMetabolite ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:CVAFSInstrument a owl:Class ;
+    rdfs:label "Cold Vapor Atomic Fluorescence Spectroscopy Instrument" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:AFSInstrument ;
+    skos:definition "Used in the measurement of trace amounts of volatile heavy metals such as mercury, cold vapour AFS makes use of the unique characteristic of mercury that allows vapour measurement at room temperature." .
+
+chear:CYMA a owl:Class ;
+    rdfs:label "N-Acetyl-S-(2-cyanoethyl)-L-cysteine" ;
+    ns1:identifier "CYMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:CannedFoodConsumption a owl:Class ;
+    rdfs:label "Canned Food Consumption" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:CannedFoodFrequency ;
+    skos:definition "Whether or not canned food is consumed." .
+
+chear:CarCount a owl:Class ;
+    rdfs:label "Car Count" ;
+    rdfs:subClassOf chear:HousingCharacteristic,
+        sio:Count ;
+    skos:definition "Total Number of Cars in the Home" ;
+    skos:editorialNote "Again, this isn't related to physical properties of housing. This is more closely related to Socioeconomic Status. Consider moving it." .
+
+chear:CementFloor a owl:Class ;
+    rdfs:label "Cement Floor" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:FloorType ;
+    skos:definition "Cement Floor Type" .
+
+chear:ChildAge a owl:Class ;
+    rdfs:label "Child's Age" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Demographic,
+        sio:Age ;
+    owl:deprecated true ;
+    skos:definition "Child's Age in Years" ;
+    skos:editorialNote "Similar to mother age, don't we need to have a time associated with this?" .
+
+chear:ChildBMI a owl:Class ;
+    rdfs:label "Child's Body Mass Index" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:BMI ;
+    owl:deprecated true ;
+    skos:definition "Child's Body Mass Index" .
+
+chear:ChildDOB a owl:Class ;
+    rdfs:label "Child's Date of Birth" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:BirthOutcome,
+        chear:DateOfBirth ;
+    owl:deprecated true ;
+    skos:definition "Date in which child was born." .
+
+chear:ChildHeight a owl:Class ;
+    rdfs:label "Child's Height" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Height ;
+    owl:deprecated true ;
+    skos:definition "Child's Height" .
+
+chear:ChildIQ a owl:Class ;
+    rdfs:label "Child's Intelligence Quotient" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:IQ ;
+    owl:deprecated true ;
+    skos:definition "A measure of a child's intelligence." .
+
+chear:ChildRace a owl:Class ;
+    rdfs:label "Child's Race" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Race ;
+    owl:deprecated true ;
+    skos:definition "Child's Race" .
+
+chear:ChildSex a owl:Class ;
+    rdfs:label "Child's Sex" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Demographic,
+        sio:BiologicalSex ;
+    owl:deprecated true .
+
+chear:Childhood a owl:Class ;
+    rdfs:label "Childhood" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Demographic,
+        chear:DevelopmentalQuality ;
+    skos:definition "Refers to a person under a threshold age." .
+
+chear:ClaussClottingMethod a owl:Class ;
+    rdfs:label "Fibrinogen Assay (Clauss method)" ;
+    rdfs:subClassOf sio:Assay .
+
+chear:CollectionDate a owl:Class ;
+    rdfs:label "Collection Date of Sample" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:TimeInterval ;
+    skos:definition "Collection Date of Sample" .
+
+chear:CollegeGraduate a owl:Class ;
+    rdfs:label "College Graduate" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HigherEducation ;
+    skos:definition "The quality of having graduated from College" .
+
+chear:ColorimetricAssay a owl:Class ;
+    rdfs:label "Colorimetric Assay" ;
+    rdfs:subClassOf sio:Assay .
+
+chear:CompetitiveELISA a owl:Class ;
+    rdfs:label "Competitive-inhibition enzyme-linked immunosorbent assay" ;
+    rdfs:subClassOf chear:ELISA .
+
+chear:CompetitiveImmunoassay a owl:Class ;
+    rdfs:label "Competitive Immunoassay" ;
+    rdfs:subClassOf ns2:Immunoassay .
+
+chear:ComputerCount a owl:Class ;
+    rdfs:label "Computer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HouseholdApplianceCount ;
+    skos:definition "A machine used for computation and much more." .
+
+chear:Conception a owl:Class ;
+    rdfs:label "Conception" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:TimeInterval ;
+    skos:definition "When a sperm fertilizes an egg" .
+
+chear:DCVMA12 a owl:Class ;
+    rdfs:label "N-Acetyl-S-(1,2-dichlorovinyl)-L-cysteine" ;
+    ns1:identifier "DCVMA12" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:DCVMA22 a owl:Class ;
+    rdfs:label "N-Acetyl-S-(2,2-dichlorovinyl)-L-cysteine" ;
+    ns1:identifier "DCVMA22" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:DEDP a owl:Class ;
+    rdfs:label "diethyldithiophosphate" ;
+    ns1:identifier "DEDP" ;
+    rdfs:subClassOf chear:AlkylPhosphatePesticideMetabolite ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:DEP a owl:Class ;
+    rdfs:label "diethylphosphate" ;
+    ns1:identifier "DEP" ;
+    rdfs:subClassOf chear:AlkylPhosphatePesticideMetabolite ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:DETP a owl:Class ;
+    rdfs:label "diethylthiophosphate" ;
+    ns1:identifier "DETP" ;
+    rdfs:subClassOf chear:AlkylPhosphatePesticideMetabolite ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:DHBMA a owl:Class ;
+    rdfs:label "N-Acetyl-S- (3,4-dihydroxybutyl)-L-cysteine" ;
+    ns1:identifier "DHBMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:DMDP a owl:Class ;
+    rdfs:label "dimethyldithiophosphate" ;
+    ns1:identifier "DMDP" ;
+    rdfs:subClassOf chear:AlkylPhosphatePesticideMetabolite ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:DMP a owl:Class ;
+    rdfs:label "dimethylphosphate" ;
+    ns1:identifier "DMP" ;
+    rdfs:subClassOf chear:AlkylPhosphatePesticideMetabolite ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:DMTP a owl:Class ;
+    rdfs:label "dimethylthiophosphate" ;
+    ns1:identifier "DMTP" ;
+    rdfs:subClassOf chear:AlkylPhosphatePesticideMetabolite ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:DPMA a owl:Class ;
+    rdfs:label "N-Acetyl-S-(2,4-dimethylphenyl)-L-cysteine + N-Acetyl-S-(2,5-dimethylphenyl)-L-cysteine + N-Acetyl-S-(3,4-dimethylphenyl)-L-cysteine" ;
+    ns1:identifier "DPMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:DVDPlayerCount a owl:Class ;
+    rdfs:label "DVD Player Count" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HouseholdApplianceCount ;
+    skos:definition "Number of devices in the home that play DVDs." .
+
+chear:Daughter a owl:Class ;
+    rdfs:label "Daughter" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:onProperty sio:hasAttribute ;
+                    owl:someValuesFrom sio:Female ] ;
+            owl:onProperty sio:isRoleOf ],
+        chear:Child ;
+    skos:definition "The female offspring in relation to her parents." .
+
+chear:DentalFillings a owl:Class ;
+    rdfs:label "Dental Fillings" ;
+    rdfs:subClassOf chear:OralHealth .
+
+chear:DiseaseIdentifier a owl:Class ;
+    rdfs:label "Disease ID" ;
+    rdfs:subClassOf sio:Identifier ;
+    skos:definition "Disease Identifier" .
+
+chear:DrugHistory a owl:Class ;
+    rdfs:label "Drug History" ;
+    rdfs:subClassOf chear:ATIDU .
+
+chear:ECD-MS a owl:Class ;
+    rdfs:label "Electron Capture Dissociation (ECD)" ;
+    rdfs:subClassOf ns2:TandemMassSpectrometry .
+
+chear:EDD-MS a owl:Class ;
+    rdfs:label "Electron-Detachment Dissociation (EDD)" ;
+    rdfs:subClassOf ns2:TandemMassSpectrometry .
+
+chear:EIA a owl:Class ;
+    rdfs:label "Enzyme Immunoassay" ;
+    rdfs:subClassOf ns2:Immunoassay .
+
+chear:ETD-MS a owl:Class ;
+    rdfs:label "Electron Transfer Dissociation (ETD)" ;
+    rdfs:subClassOf ns2:TandemMassSpectrometry .
+
+chear:ElementarySchool a owl:Class ;
+    rdfs:label "Elementary School" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:SomeElementarySchool ;
+    skos:definition "Finished Elementary School" .
+
+chear:EoEActive a owl:Class ;
+    rdfs:label "active eosinophilic esophagitis" ;
+    rdfs:comment "Eosinophilic esophagitis is active when a biopsy of the esophagus reveals a count of more than 25 eosinophils per high-power field area, or 0.158 mm^2 (400x)." ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/DOID_13922> ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( <http://purl.obolibrary.org/obo/UBERON_0001043> [ a owl:Restriction ;
+                                owl:onProperty sio:hasAttribute ;
+                                owl:someValuesFrom [ a owl:Class ;
+                                        owl:intersectionOf ( chear:EOPerHPF [ a owl:Restriction ;
+                                                    owl:allValuesFrom [ a rdfs:Datatype ;
+                                                            owl:onDatatype xsd:integer ;
+                                                            owl:withRestrictions ( [ xsd:minExclusive 25 ] ) ] ;
+                                                    owl:onProperty sio:hasValue ] ) ] ] ) ] ;
+            owl:onProperty sio:isPhenotypeOf ] .
+
+chear:EoEMild a owl:Class ;
+    rdfs:label "mild eosinophilic esophagitis" ;
+    rdfs:comment "Eosinophilic esophagitis is mild when a biopsy of the esophagus reveals a count of 15-25 eosinophils per high-power field area, or 0.158 mm^2 (400x)." ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/DOID_13922> ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( <http://purl.obolibrary.org/obo/UBERON_0001043> [ a owl:Restriction ;
+                                owl:onProperty sio:hasAttribute ;
+                                owl:someValuesFrom [ a owl:Class ;
+                                        owl:intersectionOf ( chear:EOPerHPF [ a owl:Restriction ;
+                                                    owl:allValuesFrom [ a rdfs:Datatype ;
+                                                            owl:onDatatype xsd:integer ;
+                                                            owl:withRestrictions ( [ xsd:minInclusive 15 ] [ xsd:maxExclusive 25 ] ) ] ;
+                                                    owl:onProperty sio:hasValue ] ) ] ] ) ] ;
+            owl:onProperty sio:isPhenotypeOf ] .
+
+chear:EoERemission a owl:Class ;
+    rdfs:label "eosinophilic esophagitis in remission" ;
+    rdfs:comment "Eosinophilic esophagitis is active when a biopsy of the esophagus reveals a count of less than 15 eosinophils per high-power field area, or 0.158 mm^2 (400x)." ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/DOID_13922> ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( <http://purl.obolibrary.org/obo/UBERON_0001043> [ a owl:Restriction ;
+                                owl:onProperty sio:hasAttribute ;
+                                owl:someValuesFrom [ a owl:Class ;
+                                        owl:intersectionOf ( chear:EOPerHPF [ a owl:Restriction ;
+                                                    owl:allValuesFrom [ a rdfs:Datatype ;
+                                                            owl:onDatatype xsd:integer ;
+                                                            owl:withRestrictions ( [ xsd:maxExclusive 15 ] ) ] ;
+                                                    owl:onProperty sio:hasValue ] ) ] ] ) ] ;
+            owl:onProperty sio:isPhenotypeOf ] .
+
+chear:EsophagusNormality a owl:Class ;
+    rdfs:label "Esophagus Normality" ;
+    rdfs:subClassOf chear:MedicalHistory,
+        sio:Normal ;
+    owl:deprecated true .
+
+chear:FastFoodConsumption a owl:Class ;
+    rdfs:label "Fast Food Consumption" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:FastFoodFrequency ;
+    skos:definition "Whether or not fast food is consumed." .
+
+chear:Father a owl:Class ;
+    rdfs:label "Father" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:onProperty sio:hasAttribute ;
+                    owl:someValuesFrom sio:Male ] ;
+            owl:onProperty sio:isRoleOf ],
+        chear:Parent ;
+    skos:definition "The male parent of a child. Besides the paternal bonds of a father to his children, the father may have a parental legal and social relationship with the child that carries with it certain rights and obligations. An adoptive father is a male who has become the child's parent through the legal process of adoption. A biological father is the male genetic contributor to the creation of the baby, through sexual intercourse or sperm donation. A biological father may have legal obligations to a child not raised by him, such as an obligation of monetary support. A putative father is a man whose biological relationship to a child is alleged but has not been established. A stepfather is a male who is the husband of a child's mother and they may form a family unit, but who generally does not have the legal rights and responsibilities of a parent in relation to the child." .
+
+chear:FatherAge a owl:Class ;
+    rdfs:label "Father's Age" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Demographic,
+        sio:Age ;
+    owl:deprecated true ;
+    skos:definition "Father's Age in Years" ;
+    skos:editorialNote "see mother age and child age for comment" .
+
+chear:FatherBMI a owl:Class ;
+    rdfs:label "Father's Body Mass Index" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:BMI ;
+    owl:deprecated true ;
+    skos:definition "Father's Body Mass Index" .
+
+chear:FatherDOB a owl:Class ;
+    rdfs:label "Father's Date of Birth" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:DateOfBirth ;
+    owl:deprecated true ;
+    skos:definition "Date in which Father was born." .
+
+chear:FatherEducationGrade a owl:Class ;
+    rdfs:label "Father's Education Grade" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:EducationGrade,
+        chear:FatherEducationLevel ;
+    owl:deprecated true ;
+    skos:definition "Highest grade of education achieved by the father." .
+
+chear:FatherHeight a owl:Class ;
+    rdfs:label "Father's Height" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Height ;
+    owl:deprecated true ;
+    skos:definition "Father's Height" .
+
+chear:FatherIQ a owl:Class ;
+    rdfs:label "Father's Intelligence Quotient" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:IQ ;
+    owl:deprecated true ;
+    skos:definition "A measure of father's intelligence." .
+
+chear:FatherRace a owl:Class ;
+    rdfs:label "Father's Race" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Race ;
+    owl:deprecated true ;
+    skos:definition "Father's Race" .
+
+chear:FirstTrimester a owl:Class ;
+    rdfs:label "First Trimester" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:TimeInterval ;
+    skos:definition "From pregnancy week 1 through 12 and includes conception. Conception is when the sperm fertilizes the egg. The fertilized egg then travels down the fallopian tube and attaches to the inside of the uterus, where it begins to form the embryo and placenta. The first trimester carries the highest risk of miscarriage (natural death of embryo or fetus)." .
+
+chear:Foster a owl:Class ;
+    rdfs:label "Foster" ;
+    rdfs:subClassOf chear:NonBiologicalRelative ;
+    skos:definition "Fosterage, the practice of a family bringing up a child not their own, differs from adoption in that the child's parents, not the foster-parents, remain the acknowledged parents. In many modern western societies foster care can be organized by the state to care for children with troubled family backgrounds, usually on a temporary basis. In many pre-modern societies fosterage was a form of patronage, whereby influential families cemented political relationships by bringing up each other's children, similar to arranged marriages, also based on dynastic or alliance calculations." .
+
+chear:FreezeThawCycleCount a owl:Class ;
+    rdfs:label "Freeze/Thaw Cycles Count" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:Count ;
+    skos:definition "Number of Freeze/Thaw cycles." .
+
+chear:FreshVegetableConsumption a owl:Class ;
+    rdfs:label "Fresh Vegetable Consumption" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:FreshVegetableFrequency ;
+    skos:definition "Whether or not Fresh Vegetables are consumed." .
+
+chear:GAMA a owl:Class ;
+    rdfs:label "N-Acetyl-S-(2-carbamoyl-2-hydroxyethyl)-L-cysteine" ;
+    ns1:identifier "GAMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:GC a owl:Class ;
+    rdfs:label "Gas Chromatography" ;
+    rdfs:subClassOf ns2:Chromatography .
+
+chear:GCMSMS a owl:Class ;
+    rdfs:label "Gas Chromatographer-Tandem Mass Spectrometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:GCMS,
+        chear:TandemMassSpectrometer ;
+    skos:definition "MS/MS is the combination of two mass analyzers in one mass spec instrument." .
+
+chear:GelElectrophoresis a owl:Class ;
+    rdfs:label "Gel Electrophoresis" ;
+    rdfs:subClassOf sio:Assay ;
+    skos:definition "Gel electrophoresis is a method for separation and analysis of macromolecules (DNA, RNA and proteins) and their fragments, based on their size and charge." .
+
+chear:Gravida a owl:Class ;
+    rdfs:label "Gravida" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:PregnancyCharacteristic,
+        sio:Count ;
+    skos:definition "Pregnancy Count, regardless of whether pregnancy was carried to Term." .
+
+chear:GravimetricAnalysisInstrument a owl:Class ;
+    rdfs:label "Gravimetric Analysis Instrument" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
+    skos:definition "Gravimetric analysis describes a set of methods used in analytical chemistry for the quantitative determination of an analyte (the ion being analyzed) based on its mass. The principle behind this type of analysis is that once an ion's mass has been determined as a unique compound, that known measurement can then be used to determine the same analyte's mass in a mixture, as long as the relative quantities of the other constituents are known." .
+
+chear:HEMA a owl:Class ;
+    rdfs:label "Mercapturic acids of 1,3-butadiene" ;
+    ns1:identifier "HEMA" ;
+    rdfs:subClassOf chear:TobaccoMetabolite .
+
+chear:HHEducationGrade a owl:Class ;
+    rdfs:label "Head of Household's Education Grade" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:EducationGrade,
+        chear:HHEducationLevel ;
+    skos:definition "Highest grade of education achieved by the head of household." .
+
+chear:HMOInsurance a owl:Class ;
+    rdfs:label "Health Maintenance Organization Insurance" ;
+    rdfs:subClassOf chear:Insurance .
+
+chear:HP-LC a owl:Class ;
+    rdfs:label "High Performance Liquid Chromatography" ;
+    rdfs:subClassOf ns2:Chromatography .
+
+chear:HPLCFLD a owl:Class ;
+    rdfs:label "HPLC with Fluorescence Level Detector" ;
+    rdfs:subClassOf chear:HPLC ;
+    skos:definition "HPLC paired with a Fluorescence Level Detector. Fluorescence spectroscopy (also known as fluorometry or spectrofluorometry) is a type of electromagnetic spectroscopy that analyzes fluorescence from a sample. It involves using a beam of light, usually ultraviolet light, that excites the electrons in molecules of certain compounds and causes them to emit light; typically, but not necessarily, visible light. A complementary technique is absorption spectroscopy. In the special case of single molecule fluorescence spectroscopy, intensity fluctuations from the emitted light are measured from either single fluorophores, or pairs of fluorophores." .
+
+chear:HPLCMSMS a owl:Class ;
+    rdfs:label "High Performance Liquid Chromatography - Tandem Mass Spectrometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:HPLCMS,
+        chear:LCMSMS ;
+    skos:definition "Liquid chromatography and tandem Mass Spectrometry. MS/MS (Tandem MS) is the combination of two mass analyzers in one mass spec instrument." .
+
+chear:HPMA a owl:Class ;
+    rdfs:label "N-Acetyl-S- (3-hydroxypropyl)-L-cysteine" ;
+    ns1:identifier "HPMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:HPMA2 a owl:Class ;
+    rdfs:label "N-Acetyl-S-(2-hydroxypropyl)-L-cysteine" ;
+    ns1:identifier "HPMA2" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:HPMMA a owl:Class ;
+    rdfs:label "N-Acetyl-S-(3-hydroxypropyl-1-methyl)-L-cysteine" ;
+    ns1:identifier "HPMMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:HadDietTreatment a owl:Class ;
+    rdfs:label "Diet Treatment Medical Therapy" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HadMedicalTherapy ;
+    skos:definition "Diet Treatment is a form of Medical Therapy." .
+
+chear:HadPPITreatment a owl:Class ;
+    rdfs:label "Proton Pump Inhibitor Treatment" ;
+    rdfs:subClassOf chear:HadMedicalTherapy ;
+    skos:definition "Had Proton Pump Inhibitor Treatment as a form of medical therapy." ;
+    skos:editorialNote "UPDATE: Yes, add the prescription medication, either as an indicator or as a class under Medical Therapy. Whichever works for the ontology.  Why isn't this listed under prescription medication? How do you differentiate between medical therapy and prescription medication?" .
+
+chear:HadPregnancy a owl:Class ;
+    rdfs:label "Pregnancy" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:PregnancyCharacteristic,
+        sio:BiologicalReproduction ;
+    owl:deprecated true ;
+    skos:definition "Had the process of producing a child." .
+
+chear:HadPretermBirth a owl:Class ;
+    rdfs:label "Preterm Birth" ;
+    rdfs:subClassOf chear:BirthOutcome,
+        sio:Birthing ;
+    owl:deprecated true ;
+    skos:definition "Had a birthing event that takes place at less that 37 weeks of gestational age." ;
+    skos:editorialNote "I understand why this is HadPreterm Birth because you are referring to the mother's birthing process. But, what we're interested in is the child being preterm. This might not be an issue, as long as you can display \"Preterm\" in the search and not hadpreterm. Because Had Preterm sounds like it could refer to a past pregnancy. Which would be a different concept." .
+
+chear:HadSteroidTreatment a owl:Class ;
+    rdfs:label "Steroid Treatment form of Medical Therapy" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HadMedicalTherapy ;
+    skos:definition "Had a form of treatment which uses steroids." .
+
+chear:HaircareProductUse a owl:Class ;
+    rdfs:label "Haircare Product Use" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:PersonalProductUse .
+
+chear:HasHousehold a owl:Class ;
+    rdfs:label "Has a Household" ;
+    rdfs:subClassOf chear:Demographic ;
+    owl:deprecated true ;
+    skos:definition "The attribute of having a location which housing characteristics are held" ;
+    skos:editorialNote "After the shift of objects and processes into their corresponding attributes, this concepts may not be necessary anymore." .
+
+chear:HeadOfHousehold a owl:Class ;
+    rdfs:label "Head Of Household",
+        "Head of Household" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( chear:Household ) ] ;
+            owl:onProperty sio:inRelationTo ],
+        chear:Demographic,
+        sio:Role ;
+    skos:definition "Head of Household is a filing status for individual United States taxpayers. To use the Head of Household filing status, a taxpayer must: (1) Be unmarried or considered unmarried at the end of the year (2) Have paid more than half the cost of keeping up a home for the tax year (either one's own home or the home of a qualifying parent) (3) Usually have a qualifying person who lived with the head in the home for more than half of the tax year unless the qualifying person is a dependent parent.",
+        "The Person is the head of Household" .
+
+chear:HighSchoolGraduate a owl:Class ;
+    rdfs:label "Graduated From High School" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HighSchoolOrLess ;
+    skos:definition "The quality of having graduated from High School" .
+
+chear:HispanicOrLatino a owl:Class ;
+    rdfs:label "Hispanic or Latino Ethnicity" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:Ethnicity ;
+    skos:definition "A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. The term “Spanish origin” can also be used in addition to “Hispanic or Latino.”" .
+
+chear:HospitalUtilization a owl:Class ;
+    rdfs:label "Hospital Utilization" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HealthcareAccess ;
+    skos:definition "Hospital Utilization" .
+
+chear:HouseholdIncome a owl:Class ;
+    rdfs:label "Household Income" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:SocioeconomicStatus,
+        sio:Quantity ;
+    skos:definition "How much net money do the members of a household make a year." .
+
+chear:ICP-MS a owl:Class ;
+    rdfs:label "Inductively Coupled Plasma Mass Spectrometry" ;
+    rdfs:subClassOf ns2:MassSpectrometry .
+
+chear:IRMPD-MS a owl:Class ;
+    rdfs:label "Infrared Multiphoton Dissociation (IRMPD)" ;
+    rdfs:subClassOf ns2:TandemMassSpectrometry .
+
+chear:InVitroFertilization a owl:Class ;
+    rdfs:label "In Vitro Fertilization" ;
+    rdfs:subClassOf chear:AssistedReproductiveTherapy .
+
+chear:InfiniumMethylationEPICBeadChip a owl:Class ;
+    rdfs:label "Infinium Methylation EPIC BeadChip Assay" ;
+    rdfs:subClassOf chear:MethylationAssay,
+        chear:MicroarrayAssay .
+
+chear:InsuranceType a owl:Class ;
+    rdfs:label "Insurance Type" ;
+    rdfs:subClassOf chear:Insurance ;
+    skos:definition "Insurance Type" .
+
+chear:Ion_Mobility_Synapt_G2Si a owl:Class ;
+    rdfs:label "SYNAPT G2-Si Mass Spectrometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:HDMS .
+
+chear:KnownFoodAllergies a owl:Class ;
+    rdfs:label "Known Food Allergies" ;
+    rdfs:subClassOf chear:MedicalHistory .
+
+chear:LC-MS-MS a owl:Class ;
+    rdfs:label "Liquid Chromotography -tandem mass spectrometry" ;
+    rdfs:subClassOf ns2:MassSpectrometry .
+
+chear:LC-MS3 a owl:Class ;
+    rdfs:label "Liquid Chromotography-Multistage Mass Spectrometery" ;
+    rdfs:subClassOf ns2:MassSpectrometry .
+
+chear:LandfillProximity a owl:Class ;
+    rdfs:label "Landfill Proximity" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:EnvironmentalExposure,
+        sio:Length ;
+    skos:definition "How close a household is to a landfill." .
+
+chear:LightBulbCount a owl:Class ;
+    rdfs:label "Light Bulb Count" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HousingCharacteristic,
+        sio:Count ;
+    skos:definition "Total Number of Lightbulbs in the Home" .
+
+chear:LongRangePCR a owl:Class ;
+    rdfs:label "Long Range Polymerase Chain Reaction" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:PolymeraseChainReaction ;
+    skos:definition "Amplification of DNA lengths that cannot typically be amplified using routine PCR methods or reagents. For simple DNA templates, polymerases optimized for Long Range PCR can amplify up to 30 kb and beyond. For complex, genomic templates, 20 kb is a typical target." .
+
+chear:MA a owl:Class ;
+    rdfs:label "Mandelic acid" ;
+    ns1:identifier "MA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:MCOMHP a owl:Class ;
+    rdfs:label "mono (6-COOH-2-methylheptyl) phthalate" ;
+    ns1:identifier "MCOMHP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+chear:MCOMOP a owl:Class ;
+    rdfs:label "mono (7-COOH-2-methyloctyl) phthalate" ;
+    ns1:identifier "MCOMOP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+chear:MHA2 a owl:Class ;
+    rdfs:label "2-Methylhippuric acid" ;
+    ns1:identifier "MHA2" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:MHA34 a owl:Class ;
+    rdfs:label "3-Methylhippuric acid + 4-Methylhippuric acid" ;
+    ns1:identifier "MHA34" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:MHBMA1 a owl:Class ;
+    rdfs:label "N-Acetyl-S-(1-hydroxymethyl-2-propenyl)-L-cysteine" ;
+    ns1:identifier "MHBMA1" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:MHBMA2 a owl:Class ;
+    rdfs:label "N-Acetyl-S-(2-hydroxy-3-butenyl)-L-cysteine" ;
+    ns1:identifier "MHBMA2" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:MHBMA3 a owl:Class ;
+    rdfs:label "N-Acetyl-S-(4-hydroxy-2-buten-1-yl)-L-cysteine" ;
+    ns1:identifier "MHBMA3" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:MIP a owl:Class ;
+    rdfs:label "monoisononyl phthalate" ;
+    ns1:identifier "MIP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> ;
+    skos:editorialNote "Duplicate of mINP?" .
+
+chear:MPP a owl:Class ;
+    rdfs:label "Mono-n-pentyl phthalate" ;
+    ns1:identifier "MPP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> ;
+    skos:editorialNote "Duplicate of mPeP?" .
+
+chear:MU a owl:Class ;
+    rdfs:label "trans, trans -Muconic acid" ;
+    ns1:identifier "MU" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:MaritalStatus a owl:Class ;
+    rdfs:label "Marital Status" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Demographic,
+        sio:StatusDescriptor ;
+    skos:definition "A status describing whether or not a person is married." .
+
+chear:MaternalPostpregnancyBMI a owl:Class ;
+    rdfs:label "Mother's Postpregnancy BMI" ;
+    rdfs:subClassOf chear:MotherBMI ;
+    owl:deprecated true .
+
+chear:MaternalPrepregnancyBMI a owl:Class ;
+    rdfs:label "Mother's Prepregnancy BMI" ;
+    rdfs:subClassOf chear:MotherBMI ;
+    owl:deprecated true .
+
+chear:MaternalWeightGain a owl:Class ;
+    rdfs:label "Maternal Weight Gain" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:PregnancyCharacteristic,
+        chear:Weight ;
+    skos:definition "The amount of weight gained during a pregnacy." .
+
+chear:Metabolite a owl:Class ;
+    rdfs:label "Metabolite" ;
+    rdfs:subClassOf chear:SmallMolecule ;
+    skos:definition "The intermediates and products of metabolism. The term metabolite is usually restricted to small molecules. Metabolites have various functions, including fuel, structure, signaling, stimulatory and inhibitory effects on enzymes, catalytic activity of their own (usually as a cofactor to an enzyme), defense, and interactions with other organisms (e.g. pigments, odorants, and pheromones). A primary metabolite is directly involved in normal \"growth\", development, and reproduction. Ethylene is an example of a primary metabolite produced in large-scale by industrial microbiology. A secondary metabolite is not directly involved in those processes, but usually has an important ecological function. Examples include antibiotics and pigments such as resins and terpenes etc. Some antibiotics use primary metabolites as precursors, such as actinomycin which is created from the primary metabolite, tryptophan." .
+
+chear:MicroPEM a owl:Class ;
+    rdfs:label "MicroPEM" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:ExposureMonitoringInstrument ;
+    skos:definition "The MicroPEM device monitors individual exposures to very fine airborne particles—or particulate matter—at two sizes. PM10 has a diameter of less than 10 micrometers (PM10), which is approximately 1/30th the size of a human hair, and PM2.5, which at diameters of less than 2.5 micrometers, is even smaller." .
+
+chear:MicrowaveOvenCount a owl:Class ;
+    rdfs:label "Microwave Oven Count" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HouseholdApplianceCount ;
+    skos:definition "Number of machines in the home used to heat up food using microwaves." ;
+    skos:editorialNote "Putting a note here, but it applies to all of the appliances. These are used to calculate the SES Index that was reported within one of the pilots. So, there needs to be some connection between these terms." .
+
+chear:Mother a owl:Class ;
+    rdfs:label "Mother" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:onProperty sio:hasAttribute ;
+                    owl:someValuesFrom sio:Female ] ;
+            owl:onProperty sio:isRoleOf ],
+        chear:Parent ;
+    skos:definition "A mother is the female parent of a child. Mothers are women who inhabit or perform the role of bearing some relation to their children, who may or may not be their biological offspring. Thus, dependent on the context, women can be considered mothers by virtue of having given birth, by raising their child(ren), supplying their ovum for fertilisation, or some combination thereof. Such conditions provide a way of delineating the concept of motherhood, or the state of being a mother. Women who meet the third and first categories usually fall under the terms 'birth mother' or 'biological mother', regardless of whether the individual in question goes on to parent their child. Accordingly, a woman who meets only the second condition may be considered an adoptive mother, and those who meet only the third a surrogacy mother.  The above concepts defining the role of mother are neither exhaustive nor universal, as any definition of 'mother' may differ based on how social, cultural, and religious roles are defined." .
+
+chear:MotherDOB a owl:Class ;
+    rdfs:label "Mother's Date of Birth" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:DateOfBirth ;
+    owl:deprecated true ;
+    skos:definition "Date in which Mother was born." .
+
+chear:MotherEducationGrade a owl:Class ;
+    rdfs:label "Mother's Education Grade" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:EducationGrade,
+        chear:MotherEducationLevel ;
+    owl:deprecated true ;
+    skos:definition "Highest grade of education achieved by the mother" .
+
+chear:MotherHeight a owl:Class ;
+    rdfs:label "Mother's Height" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Height ;
+    owl:deprecated true ;
+    skos:definition "Mother's Height" .
+
+chear:MotherHemoglobin a owl:Class ;
+    rdfs:label "Mother's Hemoglobin" ;
+    rdfs:subClassOf chear:ParentalHealthAndFamilyHistory ;
+    owl:deprecated true ;
+    skos:editorialNote "Additional SubClass relationships need to be added" .
+
+chear:MotherIQ a owl:Class ;
+    rdfs:label "Mother's Intelligence Quotient" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:IQ ;
+    owl:deprecated true ;
+    skos:definition "A measure of mother's intelligence." .
+
+chear:MotherLanguage a owl:Class ;
+    rdfs:label "Mother's Language" ;
+    rdfs:subClassOf chear:Language ;
+    owl:deprecated true .
+
+chear:MotherOccupation a owl:Class ;
+    rdfs:label "Mother's Occupation" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Occupation ;
+    owl:deprecated true ;
+    skos:definition "The mother's field of employment" ;
+    skos:editorialNote "Does this fall under demographic, SES, or both? JS: I would put it in both" .
+
+chear:MotherPostPregnancyWeight a owl:Class ;
+    rdfs:label "Mother's Postpregnancy Weight" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:MotherWeight ;
+    owl:deprecated true ;
+    skos:definition "The weight of the mother after giving birth." ;
+    skos:editorialNote "Should this be a subClassOf PregnancyCharactistic as well? JS: Yes" .
+
+chear:MotherPrePregnancyWeight a owl:Class ;
+    rdfs:label "Mother's Prepregnancy Weight" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:MotherWeight ;
+    owl:deprecated true ;
+    skos:definition "The weight of the mother before giving birth." ;
+    skos:editorialNote "Should this be a subClassOf PregnancyCharactistic as well? JS: Yes" .
+
+chear:MotherRace a owl:Class ;
+    rdfs:label "Mother's Race" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Race ;
+    owl:deprecated true ;
+    skos:definition "Mother's Race" .
+
+chear:MultiRace a owl:Class ;
+    rdfs:label "Multiracial" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Race ;
+    skos:definition "Descending from multiple different ethnic groups." ;
+    skos:editorialNote "Not part of current prov for Race. Should we remove this concept?" .
+
+chear:MultiplexQPCR a owl:Class ;
+    rdfs:label "Multiplex real-time PCR" ;
+    rdfs:subClassOf chear:PolymeraseChainReaction .
+
+chear:NICT a owl:Class ;
+    rdfs:label "Nicotine (total)" ;
+    ns1:identifier "NICT" ;
+    rdfs:subClassOf chear:TobaccoMetabolite ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:NNAL a owl:Class ;
+    rdfs:label "4-(methlynitrosamino)-1-(3-pyridyl)-1-butanol" ;
+    ns1:identifier "NNAL" ;
+    rdfs:subClassOf chear:TobaccoMetabolite ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:NativeHawaiianOrOtherPacificIslander a owl:Class ;
+    rdfs:label "Native Hawaiian or Other Pacific Islander" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Race ;
+    skos:definition "A person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands." .
+
+chear:NeighborhoodCharacteristic a owl:Class ;
+    rdfs:label "Neighborhood Characteristic" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Neighborhood Characteristic Indicator Class" .
+
+chear:NeverSmoked a owl:Class ;
+    rdfs:label "Never Smoked" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:SmokingStatus ;
+    skos:definition "The quality of never smoking in the past." .
+
+chear:NoFormalEducation a owl:Class ;
+    rdfs:label "No Formal Education" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:EducationLevel ;
+    skos:definition "Has not been educated in a formal setting." .
+
+chear:NonHispanicOrLatino a owl:Class ;
+    rdfs:label "Non-Hispanic Ethnicity" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:Ethnicity ;
+    skos:definition "Non-Hispanic Ethnicity" .
+
+chear:NonSpontaneousPreterm a owl:Class ;
+    rdfs:label "Non-Spontaneous Preterm Birth" ;
+    rdfs:subClassOf chear:PretermBirth .
+
+chear:NormalWeight a owl:Class ;
+    rdfs:label "Normal Weight" ;
+    rdfs:subClassOf chear:BMI ;
+    skos:definition "18.5<=BMI<=25" .
+
+chear:Nulliparous a owl:Class ;
+    rdfs:label "Nulliparous" ;
+    rdfs:subClassOf chear:Parity .
+
+chear:Obese a owl:Class ;
+    rdfs:label "Obese" ;
+    rdfs:subClassOf chear:BMI .
+
+chear:OtherGIDisease a owl:Class ;
+    rdfs:label "Other GI Disease" ;
+    rdfs:subClassOf chear:MedicalHistory,
+        sio:Disease ;
+    skos:editorialNote "This is a temp concept that needs addressing" .
+
+chear:OtherMaterialFloor a owl:Class ;
+    rdfs:label "Other Material Finish" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:FloorType ;
+    skos:definition "Flooring is made from another unspecified material." .
+
+chear:Overweight a owl:Class ;
+    rdfs:label "Overweight" ;
+    rdfs:subClassOf chear:BMI .
+
+chear:OverweightOrObese a owl:Class ;
+    rdfs:label "Overweight/Obese" ;
+    rdfs:subClassOf chear:BMI ;
+    skos:definition "BMI > 25" .
+
+chear:PBA a owl:Class ;
+    rdfs:label "3-phenoxybenzoic acid" ;
+    ns1:identifier "PBA" ;
+    rdfs:subClassOf chear:AlkylPhosphatePesticideMetabolite ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:PBB153 a owl:Class ;
+    rdfs:label "2,2',4,4',5,5'-Hexabromobiphenyl" ;
+    ns1:identifier "PBB153" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134094> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:PGA a owl:Class ;
+    rdfs:label "Phenylglyoxylic acid" ;
+    ns1:identifier "PGA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:PHEMA a owl:Class ;
+    rdfs:label "N-Acetyl-S-(1-phenyl-2-hydroxyethyl-L-cysteine + N-Acetyl-S-(2-phenyl-2-hydroxyethyl)-L-cysteine" ;
+    ns1:identifier "PHEMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:PMA a owl:Class ;
+    rdfs:label "N-Acetyl-S-(phenyl)-L-cysteine" ;
+    ns1:identifier "PMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:Parous a owl:Class ;
+    rdfs:label "Parous" ;
+    rdfs:subClassOf chear:Parity .
+
+chear:PerfumeUse a owl:Class ;
+    rdfs:label "Perfume Use" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:PersonalProductUse .
+
+chear:PeripheralBloodMononuclearCell a owl:Class ;
+    rdfs:label "Peripheral Blood Mononuclear Cell" ;
+    rdfs:subClassOf sio:Cell ;
+    skos:definition "Any peripheral blood cell having a round nucleus. These cells consist of lymphocytes (T cells, B cells, NK cells) and monocytes, whereas erythrocytes and platelets have no nuclei, and granulocytes (neutrophils, basophils, and eosinophils) have multi-lobed nuclei." .
+
+chear:PhysicalActivityAndFitness a owl:Class ;
+    rdfs:label "Physical Activity and Fitness" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Physical Activity and Fitness Indicator Class" .
+
+chear:PlannedCaesarianSection a owl:Class ;
+    rdfs:label "Planned Caesarian Section" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:CaesareanSection ;
+    skos:definition "Planned caesarian section." .
+
+chear:PostPregnancy a owl:Class ;
+    rdfs:label "Post-Pregnancy" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:TimeInterval ;
+    skos:definition "The period after birth." .
+
+chear:PrePregnancy a owl:Class ;
+    rdfs:label "Pre-Pregnancy" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:TimeInterval ;
+    skos:definition "The time before a pregnancy." .
+
+chear:Pregnancy a owl:Class ;
+    rdfs:label "Pregnancy" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:TimeInterval ;
+    skos:definition "The time during which one or more offspring develops inside a woman." .
+
+chear:PregnancyComplication a owl:Class ;
+    rdfs:label "Pregnancy Complication" ;
+    rdfs:subClassOf chear:PregnancyCharacteristic .
+
+chear:PrescriptionMedication a owl:Class ;
+    rdfs:label "Prescription Medication and Dietary Supplements" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Prescription Medication and Dietary Supplements are forms of medical treatment." .
+
+chear:PrivateInsurance a owl:Class ;
+    rdfs:label "Private Insurance" ;
+    rdfs:subClassOf chear:Insurance .
+
+chear:PublicInsurance a owl:Class ;
+    rdfs:label "Public Insurance" ;
+    rdfs:subClassOf chear:Insurance .
+
+chear:Q-ToF_LC-MS a owl:Class ;
+    rdfs:label "Quadrapole Time-of-Flight Liquid Chromotography-Mass Spectrometry" ;
+    rdfs:subClassOf chear:LC-MS .
+
+chear:QuitAfterPregnancy a owl:Class ;
+    rdfs:label "Quit Smoking After Pregnancy" ;
+    rdfs:subClassOf chear:PregnancyCharacteristic,
+        chear:PrenatalSmoker,
+        chear:QuitSmoking ;
+    skos:definition "Quit Smoking After Pregnancy" .
+
+chear:QuitBeforePregnancy a owl:Class ;
+    rdfs:label "Quit Smoking Before Pregnancy" ;
+    rdfs:subClassOf chear:PregnancyCharacteristic,
+        chear:PrenatalNonSmoker,
+        chear:QuitSmoking ;
+    skos:definition "A Previous Smoker who Quit Smoking Before Pregnancy" .
+
+chear:RNA_Sequencing a owl:Class ;
+    rdfs:label "RNA Sequencing" ;
+    rdfs:subClassOf chear:NucleicAcidSequencing .
+
+chear:Radioimmunoassay a owl:Class ;
+    rdfs:subClassOf ns2:Immunoassay .
+
+chear:Reichert_AR200 a owl:Class ;
+    rdfs:label "Reichert AR200 Handheld Digital Refractometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:Refractometer ;
+    skos:definition "Lightweight digital refractometer designed for the food, beverage, agricultural, industrial-fluid, chemical, petrochemical, pharmaceutical, medical, and plastic industries." .
+
+chear:Religion a owl:Class ;
+    rdfs:label "Religion" ;
+    rdfs:subClassOf chear:Demographic ;
+    skos:definition "Religious Belief" .
+
+chear:RepeatCaesarianSection a owl:Class ;
+    rdfs:label "Repeat Caesarian Section" ;
+    rdfs:subClassOf chear:CaesareanSection ;
+    skos:definition "Had Repeat Caesarian Section" .
+
+chear:ReplicateNumber a owl:Class ;
+    rdfs:label "Replicate Number" ;
+    rdfs:subClassOf ns2:SampleIndicator ;
+    skos:definition "Replicate Number" .
+
+chear:ReproductiveHealth a owl:Class ;
+    rdfs:label "Reproductive Health" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Reproductive Health Indicator Class" .
+
+chear:ReversePhaseMassSpectrometryProfiling a owl:Class ;
+    rdfs:label "Reverse-Phase Mass Spectrometry Profiling" ;
+    rdfs:subClassOf ns2:MassSpectrometry .
+
+chear:SID-MS a owl:Class ;
+    rdfs:label "Surface-Induced Dissociation (SID)" ;
+    rdfs:subClassOf ns2:TandemMassSpectrometry .
+
+chear:SPMA a owl:Class ;
+    rdfs:label "Mercapturic acid of benzene" ;
+    ns1:identifier "SPMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+chear:SamplePairing a owl:Class ;
+    rdfs:label "A Sample has a Pairing" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:Sampling ;
+    skos:definition "Refers to having paired samples." ;
+    skos:editorialNote "This actually should be a process. What should we do?" .
+
+chear:Screening a owl:Class ;
+    rdfs:label "Screening" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:TimeInterval ;
+    skos:definition "The time period during which a screening process is used to determine the inclusion of a subject in a study." .
+
+chear:ScreeningAge a owl:Class ;
+    rdfs:label "Screening Age" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:MotherAge ;
+    skos:definition "Age (of the mother) at screening" .
+
+chear:SecondTrimester a owl:Class ;
+    rdfs:label "Second Trimester" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:TimeInterval ;
+    skos:definition "From week 13 through 28. Around the middle of the second trimester, movement of the fetus may be felt. At 28 weeks, more than 90% of babies can survive outside of the uterus if provided with high-quality medical care." .
+
+chear:SelfPay a owl:Class ;
+    rdfs:label "No Insurance / Self-funded" ;
+    rdfs:subClassOf chear:Insurance .
+
+chear:ShotgunLipidomics a owl:Class ;
+    rdfs:label "Shotgun Lipidomics" ;
+    rdfs:subClassOf chear:ElectrosprayIonizationMassSpectrometry .
+
+chear:SleepCharacterisitic a owl:Class ;
+    rdfs:label "Sleep Characterisitic" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Sleep Characterisitics Indicator Class" .
+
+chear:SocioeconomicStatusIndex a owl:Class ;
+    rdfs:label "Socioeconomic Status Index" ;
+    rdfs:subClassOf chear:SocioeconomicStatus,
+        sio:Quantity ;
+    skos:definition "A measure of SES." ;
+    skos:editorialNote "This is a specific index, derived from other variables. So, it should somehow be connected to this variables. Also, we may want to be more specific about the type of index that it is. Perhaps there should be a general SESIndex and then subclasses of specific measures?" .
+
+chear:SoilFloor a owl:Class ;
+    rdfs:label "Soil Floor" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:FloorType ;
+    skos:definition "The  flooring is made of soil." .
+
+chear:SolidPhaseSandwichELISA a owl:Class ;
+    rdfs:label "Solid-Phase Sandwich ELISA" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:SandwichELISA .
+
+chear:SomeCollege a owl:Class ;
+    rdfs:label "Some College" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HigherEducation ;
+    skos:definition "Attended Some College" .
+
+chear:SomeHighSchool a owl:Class ;
+    rdfs:label "Some High School" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HighSchoolOrLess ;
+    skos:definition "Education Level of Some High School" .
+
+chear:SomeMiddleSchool a owl:Class ;
+    rdfs:label "Some Middle School" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HighSchoolOrLess ;
+    skos:definition "Attended Some Middle School" .
+
+chear:Son a owl:Class ;
+    rdfs:label "Son" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Restriction ;
+                    owl:onProperty sio:hasAttribute ;
+                    owl:someValuesFrom sio:Male ] ;
+            owl:onProperty sio:isRoleOf ],
+        chear:Child ;
+    skos:definition "A son is a male offspring; a boy or man in relation to his parents." .
+
+chear:SpectraMax_Plus_384 a owl:Class ;
+    rdfs:label "SpectraMax Plus 384 Microplate Reader" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:MicroplateReader ;
+    skos:definition "Get absorbance measurements from 190 to 1000 nm quickly for samples in test tubes, cuvettes, and 96- or 384-well microplates. The SpectraMax® Plus 384 Microplate Reader gives you walk-up convenience for both standard spectrophotometer and microplate reader applications on the same instrument. Monochromator wavelength selection saves you the time and trouble of ever having to change out filters. Typical applications for this powerful reader include DNA and RNA quantification, enzyme kinetic assays, and ELISA based assays. When your project is ready for high throughput, take advantage of StakMax® automated microplate handling compatibility for full robotic integration." .
+
+chear:SpontaneousCaesarianSection a owl:Class ;
+    rdfs:label "Spontaneous Caesarian Section" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:CaesareanSection ;
+    skos:definition "Had a spontaneous caesarian section" .
+
+chear:SpontaneousPretermBirth a owl:Class ;
+    rdfs:label "Spontaneous Preterm Birth" ;
+    rdfs:subClassOf chear:PretermBirth .
+
+chear:Step a owl:Class ;
+    rdfs:label "Step" ;
+    rdfs:subClassOf chear:NonBiologicalRelative ;
+    skos:definition "A stepfamily is a family where at least one parent has children that are not genetically related to the other spouse or partner. Either one parent may have children from a previous relationship. Children in a stepfamily may live with one biological parent, or they may live with each biological parent for a period of time. In addition, visitation rights mean that children in stepfamilies often have contact with both biological parents, even if they permanently live with only one.  A child is referred to as the stepchild, stepdaughter or stepson of their biological parent's new spouse, and that person as the stepparent, stepfather or stepmother of the child.  A stepfather is the husband of one's mother, and not one's biological father. A stepmother is the wife of one's father, and not one's biological mother. A step-grandmother is the wife of one's grandfather, and not one's biological grandmother. A step-grandfather is the husband of one's grandmother, and not one's biological grandfather. Similarly, a stepbrother is the son of a stepparent who one is not biologically related to. A stepsister is the daughter of a stepparent to whom one is not biologically related. A step-grandson is the son of a stepson or stepdaughter who one is not biologically related to. A step-granddaughter is the daughter of a stepson or stepdaughter who one is not biologically related. A parent's spouse of the same sex may also count as a stepparent." .
+
+chear:Stress a owl:Class ;
+    rdfs:label "Stress" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:StressFrequency ;
+    skos:definition "Whether or not a person gets stressed." .
+
+chear:StudyBaseline a owl:Class ;
+    rdfs:label "Study Baseline" ;
+    rdfs:subClassOf sio:TimeInterval ;
+    skos:definition "Point in study set to initial point." .
+
+chear:Subject a owl:Class ;
+    rdfs:label "Subject" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( ns2:Study ) ] ;
+            owl:onProperty sio:inRelationTo ],
+        sio:Role ;
+    skos:definition "A living individual about whom a research investigator (whether a professional or a student) obtains data through 1) intervention or interaction with the individual, or 2) identifiable private information" .
+
+chear:SubjectDOB a owl:Class ;
+    rdfs:label "Subject's Date of Birth" ;
+    rdfs:subClassOf chear:DateOfBirth ;
+    owl:deprecated true .
+
+chear:SubjectIdentifier a owl:Class ;
+    rdfs:label "Subject ID" ;
+    rdfs:subClassOf sio:Identifier ;
+    owl:deprecated true ;
+    skos:definition "Subject Identifier" .
+
+chear:SubjectSex a owl:Class ;
+    rdfs:label "Subject's Sex" ;
+    rdfs:subClassOf sio:BiologicalSex ;
+    owl:deprecated true .
+
+chear:TCP a owl:Class ;
+    rdfs:label "3,5,6-trichloro-2-pyridinol" ;
+    ns1:identifier "TCP" ;
+    rdfs:subClassOf chear:AlkylPhosphatePesticideMetabolite ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:TCVMA a owl:Class ;
+    rdfs:label "N-Acetyl-S-(trichlorovinyl)-L-cysteine" ;
+    ns1:identifier "TCVMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:TNIC a owl:Class ;
+    rdfs:label "Total nicotine" ;
+    ns1:identifier "TNIC" ;
+    rdfs:subClassOf chear:TobaccoMetabolite ;
+    skos:editorialNote "Duplicate of NIC?" .
+
+chear:TTCA a owl:Class ;
+    rdfs:label "2-Thioxothiazolidine-4-carboxylic acid" ;
+    ns1:identifier "TTCA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:TargetedSequencing a owl:Class ;
+    rdfs:label "Targeted Sequencing" ;
+    rdfs:subClassOf chear:NucleicAcidSequencing ;
+    skos:definition "Nucleic acid sequencing that limits the scope of sequencing by filtering out portions of the nucleic acids that do not meet some criteria." .
+
+chear:TeCP2456 a owl:Class ;
+    rdfs:label "2,4,5,6-Tetrachlorophenol" ;
+    ns1:identifier "TeCP2456" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "PHYSICAL DESCRIPTION: Brown flakes or beige solid. Strong odor. (NTP, 1992)" .
+
+chear:TechnicalPostJuniorCollege a owl:Class ;
+    rdfs:label "Technical Post Junior College" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HigherEducation,
+        chear:TechnicalSchool ;
+    skos:definition "Attended a Technical Post Junior College" .
+
+chear:TechnicalPostMiddleSchool a owl:Class ;
+    rdfs:label "Technical Post-Middle School" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HighSchoolOrLess,
+        chear:TechnicalSchool ;
+    skos:definition "Attended a Technical Post-Middle School." .
+
+chear:TechnicalPostPrimarySchool a owl:Class ;
+    rdfs:label "Technical Post Primary School" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HighSchoolOrLess,
+        chear:TechnicalSchool ;
+    skos:definition "Attended a Technical Post Primary School" .
+
+chear:TermBirth a owl:Class ;
+    rdfs:label "TermBirth" ;
+    rdfs:subClassOf chear:BirthOutcome .
+
+chear:ThirdTrimester a owl:Class ;
+    rdfs:label "Third Trimester" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:TimeInterval ;
+    skos:definition "From 29 weeks through 40 weeks." .
+
+chear:ToasterCount a owl:Class ;
+    rdfs:label "Toaster Count" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HouseholdApplianceCount ;
+    skos:definition "Number of appliances used to toast bread." .
+
+chear:TobaccoExposure a owl:Class ;
+    rdfs:label "Tobacco Smoke Exposure" ;
+    rdfs:subClassOf chear:EnvironmentalExposure .
+
+chear:Tri_Cell_DMA_80 a owl:Class ;
+    rdfs:label "Tri-Cell DMA-80 Direct Mercury Analyzer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:DirectMercuryAnalyzer ;
+    skos:definition "The DMA-80 is based on the principles of sample thermal decomposition, mercury amalgamation and atomic absorption detection. The DMA-80 has been used to develop the US EPA method 7473 (Mercury in solids and solutions by thermal decomposition, amalgamation, and atomic absorption spectrophotometry). It is furthermore compliant with ASTM method D-6722-01 (Total mercury in coal and coal combustion residues) and ASTM method D-7623-10 (Total mercury in crude oil)." .
+
+chear:TurbidimetricAntibodyMethod a owl:Class ;
+    rdfs:label "Immunoturbidimetry" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf sio:Assay ;
+    skos:definition "An analytical technique that uses light scattering, a physical phenomenon resulting from the interaction of light with particles in solution, to measure the concentration of particles. The photometric signal is generated by a decrease in light intensity as a direct consequence of increasing turbidity in the reaction well.  Immunoturbidimetry uses the classical antigen-antibody reaction. The antigen-antibody complexes are particles which can be optically detected by an photometer." .
+
+chear:UPLCMSMS a owl:Class ;
+    rdfs:label "Ultra-Performance Liquid Chromatography - Tandem Mass Spectrometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:TandemMassSpectrometer,
+        chear:UPLCMS .
+
+chear:Underweight a owl:Class ;
+    rdfs:label "Underweight" ;
+    rdfs:subClassOf chear:BMI ;
+    skos:definition "BMI < 18.5" .
+
+chear:UnderweightOrNormal a owl:Class ;
+    rdfs:label "Underweight/Normal" ;
+    rdfs:subClassOf chear:BMI .
+
+chear:UnknownEducationLevel a owl:Class ;
+    rdfs:label "Unknown Education Level" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:EducationLevel ;
+    skos:definition "Level of Education is not known" .
+
+chear:UnplannedCaesarianSection a owl:Class ;
+    rdfs:label "Unplanned Caesarian Section" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:CaesareanSection ;
+    skos:definition "Had an unplanned caesarian section." .
+
+chear:VCRPlayerCount a owl:Class ;
+    rdfs:label "VCR Player Count" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HouseholdApplianceCount ;
+    skos:definition "Number of devices that play VCRs in the home." .
+
+chear:VOC1DC a owl:Class ;
+    rdfs:label "N-acel-S-(1,2-dichlorovinl)-L-cys(ng/mL)" ;
+    ns1:identifier "VOC1DC" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOC2DC a owl:Class ;
+    rdfs:label "N-Acel-S-(2,2-Dichlorvinyl)-L-cys(ng/mL)" ;
+    ns1:identifier "VOC2DC" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOC2MH a owl:Class ;
+    rdfs:label "2-Methylhippuric acid (ng/mL)" ;
+    ns1:identifier "VOC2MH" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOC34M a owl:Class ;
+    rdfs:label "3-methipurc acd & 4-methipurc acd(ng/mL)" ;
+    ns1:identifier "VOC34M" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCAAM a owl:Class ;
+    rdfs:label "N-Ace-S-(2-carbamoylethyl)-L-cys(ng/mL)" ;
+    ns1:identifier "VOCAAM" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCAMC a owl:Class ;
+    rdfs:label "N-Ace-S-(N-methlcarbamoyl)-L-cys(ng/mL)" ;
+    ns1:identifier "VOCAMC" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCATC a owl:Class ;
+    rdfs:label "2-amnothiazolne-4-carbxylic acid(ng/mL)" ;
+    ns1:identifier "VOCATC" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCBMA a owl:Class ;
+    rdfs:label "N-Acetyl-S-(benzyl)-L-cysteine(ng/mL)" ;
+    ns1:identifier "VOCBMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCBPM a owl:Class ;
+    rdfs:label "N-Acetyl-S-(n-propyl)-L-cysteine(ng/mL)" ;
+    ns1:identifier "VOCBPM" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCCEM a owl:Class ;
+    rdfs:label "N-Acetyl-S-(2-Carbxyethyl)-L-Cys(ng/mL)" ;
+    ns1:identifier "VOCCEM" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCCYM a owl:Class ;
+    rdfs:label "N-acetyl-S-(2-cyanoethyl)-L-cyst(ng/mL)" ;
+    ns1:identifier "VOCCYM" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCDHB a owl:Class ;
+    rdfs:label "N-Ace-S- (3,4-Dihidxybutl)-L-Cys(ng/mL)" ;
+    ns1:identifier "VOCDHB" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCDPM a owl:Class ;
+    rdfs:label "N-Ace-S-(dimethylphenyl)-L-Cys(ng/mL)" ;
+    ns1:identifier "VOCDPM" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCGAM a owl:Class ;
+    rdfs:label "N-ac-S-(2-carbmo-2-hydxel)-L-cys(ng/mL)" ;
+    ns1:identifier "VOCGAM" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCHEM a owl:Class ;
+    rdfs:label "N-Ace-S-(2-Hydroxyethyl)-L-cys(ng/mL)" ;
+    ns1:identifier "VOCHEM" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCHP2 a owl:Class ;
+    rdfs:label "N-Ace-S-(2-hydroxypropyl)-L-cys(ng/mL)" ;
+    ns1:identifier "VOCHP2" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCHPM a owl:Class ;
+    rdfs:label "N-Ace-S-(3-Hydroxypropyl)-L-Cys(ng/mL)" ;
+    ns1:identifier "VOCHPM" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCMAD a owl:Class ;
+    rdfs:label "Mandelic acid(ng/mL)" ;
+    ns1:identifier "VOCMAD" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCMB1 a owl:Class ;
+    rdfs:label "N-A-S-(1-HydrxMet)-2-Prpn)-L-Cys(ng/mL)" ;
+    ns1:identifier "VOCMB1" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCMB2 a owl:Class ;
+    rdfs:label "N-Ac-S-(2-Hydrxy-3-butnyl)-L-Cys(ng/mL)" ;
+    ns1:identifier "VOCMB2" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCMB3 a owl:Class ;
+    rdfs:label "N-ace-S-(phenl-2-hydxyetl)-L-cys(ng/mL)" ;
+    ns1:identifier "VOCMB3" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCMUC a owl:Class ;
+    rdfs:label "t,t-Muconic acid(ng/mL)" ;
+    ns1:identifier "VOCMUC" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCPHE a owl:Class ;
+    rdfs:label "N-ace-S-(phenl-2-hydxyetl)-L-cys(ng/mL)" ;
+    ns1:identifier "VOCPHE" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCPHG a owl:Class ;
+    rdfs:label "Phenylglyoxylic acid(ng/mL)" ;
+    ns1:identifier "VOCPHG" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCPMA a owl:Class ;
+    rdfs:label "N-Acetyl-S-(phenyl)-L-cysteine(ng/mL)" ;
+    ns1:identifier "VOCPMA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCPMM a owl:Class ;
+    rdfs:label "N-A-S-(3-hydrxprpl-1-metl)-L-cys(ng/mL)" ;
+    ns1:identifier "VOCPMM" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCTCV a owl:Class ;
+    rdfs:label "N-Acetyl-S-(trichlorovinyl)-L-cys(ng/mL)" ;
+    ns1:identifier "VOCTCV" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VOCTTC a owl:Class ;
+    rdfs:label "2-thoxothazlidne-4-carbxylic acid(ng/mL)" ;
+    ns1:identifier "VOCTTC" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:editorialNote "To Do: align with CHEBI." .
+
+chear:VacuumCleanerCount a owl:Class ;
+    rdfs:label "Vacuum Cleaner Count" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HouseholdApplianceCount ;
+    skos:definition "Number of appliances in home used for cleaning rugs." .
+
+chear:VaginalBirth a owl:Class ;
+    rdfs:label "Vaginal Birth" ;
+    rdfs:subClassOf chear:PregnancyCharacteristic,
+        chear:RouteOfDelivery,
+        sio:Birthing ;
+    skos:definition "Had a birthing occur via the vagina." ;
+    skos:editorialNote "Again, can we add a delivery class" .
+
+chear:Visit a owl:Class ;
+    rdfs:label "Visit" ;
+    rdfs:subClassOf sio:TimeInterval ;
+    skos:definition "The time interval of an encounter between a study subject and a study administrator." .
+
+chear:WashingMachineCount a owl:Class ;
+    rdfs:label "Washing Machine Count" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HouseholdApplianceCount ;
+    skos:definition "Number of machines used for washing clothes in the home." .
+
+chear:White a owl:Class ;
+    rdfs:label "White" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Race ;
+    skos:definition "White: A person having origins in any of the original peoples of Europe, the Middle East, or North Africa." .
+
+chear:ZFentonBW a owl:Class ;
+    rdfs:label "Fenton Weighted Z-Score" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf [ a rdf:List ;
+                    rdf:first sio:StandardScore ;
+                    rdf:rest [ a rdf:List ;
+                            rdf:first [ a owl:Restriction ;
+                                    owl:onProperty prov:wasDerivedFrom ;
+                                    owl:someValuesFrom chear:BirthWeight ] ;
+                            rdf:rest [ a rdf:List ;
+                                    rdf:first [ a owl:Restriction ;
+                                            owl:onProperty prov:wasDerivedFrom ;
+                                            owl:someValuesFrom chear:FentonGrowthChart ] ;
+                                    rdf:rest [ a rdf:List ;
+                                            rdf:first [ a owl:Restriction ;
+                                                    owl:onProperty prov:wasDerivedFrom ;
+                                                    owl:someValuesFrom chear:GestationalAgeAtBirth ] ;
+                                            rdf:rest () ] ] ] ] ],
+        chear:BirthOutcome,
+        sio:StandardScore ;
+    skos:definition "Derived from Birth Weight, Gestational Age, and Child Sex" .
+
+chear:mBzP a owl:Class ;
+    rdfs:label "mono-benzyl phthalate" ;
+    ns1:identifier "mBzP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> ;
+    skos:editorialNote "Is this a repeat of MBP?" .
+
+chear:mCHpP a owl:Class ;
+    rdfs:label "mono(7-carboxyheptyl)phthalate" ;
+    ns1:identifier "mCHpP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+chear:mCINP a owl:Class ;
+    rdfs:label "mono-carboxy isononyl phthalate" ;
+    ns1:identifier "mCINP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+chear:mCIOP a owl:Class ;
+    rdfs:label "mono-carboxy isooctyl phthalate" ;
+    ns1:identifier "mCIOP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+chear:mECPP a owl:Class ;
+    rdfs:label "mono-(2-ethyl-5-carboxypentyl) phthalate" ;
+    ns1:identifier "mECPP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> ;
+    skos:editorialNote "Duplicate of MCEPP?" .
+
+chear:mHpP a owl:Class ;
+    rdfs:label "mono-2-heptyl phthalate" ;
+    ns1:identifier "mHpP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+chear:mIDP a owl:Class ;
+    rdfs:label "mono-isodecyl phthalate" ;
+    ns1:identifier "mIDP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+chear:mIPrP a owl:Class ;
+    rdfs:label "mono-isopropyl phthalate" ;
+    ns1:identifier "mIPrP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> ;
+    skos:editorialNote "Duplicate of MiPP?" .
+
+ns2:AgentIndicator a owl:Class ;
+    rdfs:label "Agent Indicator" ;
+    rdfs:subClassOf ns2:Indicator ;
+    skos:definition "Class of Agent Indicators" .
+
+ns2:DataAcquisitionIndicator a owl:Class ;
+    rdfs:label "Data Acquisition Indicator" ;
+    rdfs:subClassOf ns2:Indicator ;
+    skos:definition "Class for Data Acquisition Indicators" .
+
+ns2:ScienceIndicator a owl:Class ;
+    rdfs:label "Science Indicator" ;
+    rdfs:subClassOf ns2:Indicator ;
+    skos:definition "Class for Science Indicators" .
+
+ns2:VariableIndicator a owl:Class ;
+    rdfs:label "Variable Indicator" ;
+    rdfs:subClassOf ns2:Indicator ;
+    skos:definition "Class for Variable or Schema Attribute Indicators" .
+
+ns2:wasApprovedBy a owl:AnnotationProperty .
+
+<http://purl.obolibrary.org/obo/CHEBI_16101> a owl:Class ;
+    rdfs:label "Ethylbenzene" ;
+    ns1:identifier "EB" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:definition "Ethylbenzene is mainly used in the manufacture of styrene. Acute (short-term) exposure to ethylbenzene in humans results in respiratory effects, such as throat irritation and chest constriction, irritation of the eyes, and neurological effects such as dizziness. Chronic (long-term) exposure to ethylbenzene by inhalation in humans has shown conflicting results regarding its effects on the blood. Animal studies have reported effects on the blood, liver, and kidneys from chronic inhalation exposure to ethylbenzene. Limited information is available on the carcinogenic effects of ethylbenzene in humans. In a study by the National Toxicology Program (NTP), exposure to ethylbenzene by inhalation resulted in an increased incidence of kidney and testicular tumors in rats, and lung and liver tumors in mice. EPA has classified ethylbenzene as a Group D, not classifiable as to human carcinogenicity." .
+
+<http://purl.obolibrary.org/obo/CHEBI_164200> a owl:Class ;
+    rdfs:label "Triclosan" ;
+    ns1:identifier "TCS" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "Triclosan is a diphenyl ether derivative used in cosmetics and toilet soaps as an antiseptic. It has some bacteriostatic and fungistatic action." .
+
+<http://purl.obolibrary.org/obo/CHEBI_16716> a owl:Class ;
+    rdfs:label "Benzene" ;
+    ns1:identifier "BZ" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:definition "Toxic, volatile, flammable liquid hydrocarbon byproduct of coal distillation. It is used as an industrial solvent in paints, varnishes, lacquer thinners, gasoline, etc. Benzene causes central nervous system damage acutely and bone marrow damage chronically and is carcinogenic. It was formerly used as parasiticide." .
+
+<http://purl.obolibrary.org/obo/CHEBI_16737> a owl:Class ;
+    rdfs:label "Creatinine" ;
+    ns1:identifier "CRE" ;
+    rdfs:subClassOf chear:TargetedAnalyte ;
+    skos:definition "Creatinine is the breakdown product of creatine, a constituent of muscle tissue, that is excreted by the kidney and whose serum level is used to evaluate kidney function." .
+
+<http://purl.obolibrary.org/obo/CHEBI_16738> a owl:Class ;
+    rdfs:label "2,4-Dichlorophenol" ;
+    ns1:identifier "DCP24" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "2,4-dichlorophenol is a colorless crystalline solid with a medicinal odor. Melting point 45°C. Sinks in water. Strong irritant to tissues; toxic by ingestion." .
+
+<http://purl.obolibrary.org/obo/CHEBI_16793> a owl:Class ;
+    rdfs:label "Inorganic Mercury (Hg2+)" ;
+    ns1:identifier "Hg2" ;
+    rdfs:subClassOf chear:MercurySpecies .
+
+<http://purl.obolibrary.org/obo/CHEBI_17243> a owl:Class ;
+    rdfs:label "mono ethyl hexyl phthalate" ;
+    ns1:identifier "MEHP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> ;
+    skos:definition "PHYSICAL DESCRIPTION: Clear colorless to cloudy white viscous liquid. (NTP, 1992)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_17300> a owl:Class ;
+    rdfs:label "Tetrachloroethene" ;
+    ns1:identifier "TCE" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:definition "TETRACHLOROETHYLENE is a chlorinated hydrocarbon used as an industrial solvent and cooling liquid in electrical transformers. It is a potential carcinogen." .
+
+<http://purl.obolibrary.org/obo/CHEBI_17578> a owl:Class ;
+    rdfs:label "Toluene" ;
+    ns1:identifier "TOL" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:definition "Toluene is a widely used industrial solvent." .
+
+<http://purl.obolibrary.org/obo/CHEBI_17642> a owl:Class ;
+    rdfs:label "Pentachlorophenol" ;
+    ns1:identifier "PCP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "An insecticide and herbicide that has also been used as a wood preservative. Pentachlorphenol is a widespread environmental pollutant. Both chronic and acute pentachlorophenol poisoning are medical concerns. The range of its biological actions is still being actively explored, but it is clearly a potent enzyme inhibitor and has been used as such as an experimental tool." .
+
+<http://purl.obolibrary.org/obo/CHEBI_18231> a owl:Class ;
+    rdfs:label "Arsenic (V) Acid" ;
+    ns1:identifier "Arsenic (V) Acid" ;
+    rdfs:subClassOf chear:ArsenicSpecies .
+
+<http://purl.obolibrary.org/obo/CHEBI_18291> a owl:Class ;
+    rdfs:label "Manganese" ;
+    ns1:identifier "Mn" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "MANGANESE is a trace element with atomic symbol Mn, atomic number 25, and atomic weight 54.94. It is concentrated in cell mitochondria, mostly in the pituitary gland, liver, pancreas, kidney, and bone, influences the synthesis of mucopolysaccharides, stimulates hepatic synthesis of cholesterol and fatty acids, and is a cofactor in many enzymes, including arginase and alkaline phosphatase in the liver. (From AMA Drug Evaluations Annual 1992, p2035)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_18723> a owl:Class ;
+    rdfs:label "Nicotine" ;
+    ns1:identifier "NIC" ;
+    rdfs:subClassOf chear:TobaccoMetabolite ;
+    skos:definition "Nicotine is highly toxic alkaloid. It is the prototypical agonist at nicotinic cholinergic receptors where it dramatically stimulates neurons and ultimately blocks synaptic transmission. Nicotine is also important medically because of its presence in tobacco smoke." .
+
+<http://purl.obolibrary.org/obo/CHEBI_19760> a owl:Class ;
+    rdfs:label "2-hydroxyphenanthrene" ;
+    ns1:identifier "PHEN2" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://purl.obolibrary.org/obo/CHEBI_20184> a owl:Class ;
+    rdfs:label "3-hydroxyphenanthrene" ;
+    ns1:identifier "PHEN3" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://purl.obolibrary.org/obo/CHEBI_20469> a owl:Class ;
+    rdfs:label "4-hydroxyphenanthrene" ;
+    ns1:identifier "PHEN4" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://purl.obolibrary.org/obo/CHEBI_22977> a owl:Class ;
+    rdfs:label "Cadmium" ;
+    ns1:identifier "Cd" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "An element with atomic symbol Cd, atomic number 48, and atomic weight 114. It is a metal and ingestion will lead to CADMIUM POISONING." .
+
+<http://purl.obolibrary.org/obo/CHEBI_25016> a owl:Class ;
+    rdfs:label "Lead" ;
+    ns1:identifier "Pb" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "LEAD is a soft, grayish metal with poisonous salts; atomic number 82, atomic weight 207.19, symbol Pb. (Dorland, 28th)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_25195> a owl:Class ;
+    rdfs:label "Mercury" ;
+    ns1:identifier "Hg" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "A silver metallic element that exists as a liquid at room temperature. It has the atomic symbol Hg (from hydrargyrum, liquid silver), atomic number 80, and atomic weight 200.59. Mercury is used in many industrial applications and its salts have been employed therapeutically as purgatives, antisyphilitics, disinfectants, and astringents. It can be absorbed through the skin and mucous membranes which leads to MERCURY POISONING. Because of its toxicity, the clinical use of mercury and mercurials is diminishing." .
+
+<http://purl.obolibrary.org/obo/CHEBI_27007> a owl:Class ;
+    rdfs:label "Tin" ;
+    ns1:identifier "Sn" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "TIN is a trace element that is required in bone formation. It has the atomic symbol Sn, atomic number 50, and atomic weight 118.71." .
+
+<http://purl.obolibrary.org/obo/CHEBI_2705> a owl:Class ;
+    rdfs:label "Anatabine" ;
+    ns1:identifier "ANAT" ;
+    rdfs:subClassOf chear:TobaccoMetabolite .
+
+<http://purl.obolibrary.org/obo/CHEBI_27131> a owl:Class ;
+    rdfs:label "Trimethylarsine oxide" ;
+    ns1:identifier "Trimethylarsine oxide" ;
+    rdfs:subClassOf chear:ArsenicSpecies .
+
+<http://purl.obolibrary.org/obo/CHEBI_27214> a owl:Class ;
+    rdfs:label "Uranium" ;
+    ns1:identifier "U" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "Uranium. A radioactive element of the actinide series of metals. URANIUM has an atomic symbol U, atomic number 92, and atomic weight 238.03. U-235 is used as the fissionable fuel in nuclear weapons and as fuel in nuclear power reactors." .
+
+<http://purl.obolibrary.org/obo/CHEBI_27300> a owl:Class ;
+    rdfs:label "Vitamin D" ;
+    rdfs:subClassOf chear:Biomolecule,
+        chear:DietAndNutrition ;
+    skos:definition "Vitamin D is a group of fat-soluble prohormones, which can be obtained from sun exposure, food and supplements. Vitamin D is biologically inactive and converted to the biologically active calcitriol via double hydroxylation in the body." .
+
+<http://purl.obolibrary.org/obo/CHEBI_27363> a owl:Class ;
+    rdfs:label "Zinc" ;
+    ns1:identifier "Zn" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "A metallic element of atomic number 30 and atomic weight 65.38. It is a necessary trace element in the diet, forming an essential part of many enzymes, and playing an important role in protein synthesis and in cell division. Zinc deficiency is associated with ANEMIA, short stature, HYPOGONADISM, impaired WOUND HEALING, and geophagia. It is known by the symbol Zn." .
+
+<http://purl.obolibrary.org/obo/CHEBI_27385> a owl:Class ;
+    rdfs:label "Carbon Tetrachloride" ;
+    ns1:identifier "CTET" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:definition "CARBON TETRACHLORIDE is a solvent for oils, fats, lacquers, varnishes, rubber waxes, and resins, and a starting material in the manufacturing of organic compounds. Poisoning by inhalation, ingestion or skin absorption is possible and may be fatal. (Merck Index, 11th ed)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_27417> a owl:Class ;
+    rdfs:label "p-Xylene*" ;
+    ns1:identifier "PXY" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:definition "P-xylene is a colorless watery liquid with a sweet odor. Less dense than water. Insoluble in water. Irritating vapor. Freezing point is 56°F. (USCG, 1999)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_27452> a owl:Class ;
+    rdfs:label "Styrene" ;
+    ns1:identifier "STY" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:definition "STYRENE is a colorless, toxic liquid with a strong aromatic odor. It is used to make rubbers, polymers and copolymers, and polystyrene plastics." .
+
+<http://purl.obolibrary.org/obo/CHEBI_27528> a owl:Class ;
+    rdfs:label "1-hydroxyphenanthrene" ;
+    ns1:identifier "PHEN1" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://purl.obolibrary.org/obo/CHEBI_27560> a owl:Class ;
+    rdfs:label "Boron" ;
+    ns1:identifier "B" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "A trace element with the atomic symbol B, atomic number 5, and atomic weight [10.806; 10.821]. Boron-10, an isotope of boron, is used as a neutron absorber in BORON NEUTRON CAPTURE THERAPY." .
+
+<http://purl.obolibrary.org/obo/CHEBI_27563> a owl:Class ;
+    rdfs:label "Arsenic" ;
+    ns1:identifier "As" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "A shiny gray element with atomic symbol As, atomic number 33, and atomic weight 75. It occurs throughout the universe, mostly in the form of metallic arsenides. Most forms are toxic. According to the Fourth Annual Report on Carcinogens (NTP 85-002, 1985), arsenic and certain arsenic compounds have been listed as known carcinogens. (From Merck Index, 11th ed)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_27568> a owl:Class ;
+    rdfs:label "Selenium" ;
+    ns1:identifier "Se" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "An element with the atomic symbol Se, atomic number 34, and atomic weight 78.96. It is an essential micronutrient for mammals and other animals but is toxic in large amounts. Selenium protects intracellular structures against oxidative damage. It is an essential component of GLUTATHIONE PEROXIDASE." .
+
+<http://purl.obolibrary.org/obo/CHEBI_27638> a owl:Class ;
+    rdfs:label "Cobalt" ;
+    ns1:identifier "Co" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "COBALT is a trace element that is a component of vitamin B12. It has the atomic symbol Co, atomic number 27, and atomic weight 58.93. It is used in nuclear weapons, alloys, and pigments. Deficiency in animals leads to anemia; its excess in humans can lead to erythrocytosis." .
+
+<http://purl.obolibrary.org/obo/CHEBI_27698> a owl:Class ;
+    rdfs:label "Vanadium" ;
+    ns1:identifier "V" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "A metallic element with the atomic symbol V, atomic number 23, and atomic weight 50.94. It is used in the manufacture of vanadium steel. Prolonged exposure can lead to chronic intoxication caused by absorption usually via the lungs." .
+
+<http://purl.obolibrary.org/obo/CHEBI_27789> a owl:Class ;
+    rdfs:label "1,2-Dichloroethane" ;
+    ns1:identifier "DE12" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:definition "Ethylene Dichloride is a clear, colorless, oily, synthetic, flammable liquid chlorinated hydrocarbon with a pleasant chloroform-like smell that emits toxic fumes of hydrochloric acid when heated to decomposition. Ethylene dichloride is primarily used to produce vinyl chloride. Inhalation exposure to this substance induces respiratory distress, nausea and vomiting and affects the central nervous system, liver and kidneys. It is mutagenic in animals and is reasonably anticipated to be a human carcinogen. (NCI05)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_27929> a owl:Class ;
+    rdfs:label "2,5-Dichlorophenol" ;
+    ns1:identifier "DCP25" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "PHYSICAL DESCRIPTION: Prisms (from benzene, petroleum ether) or white crystals. Odor threshold 30 µg/L at 68-72°F; 33 µg/L at 86°F. Taste threshold 0.5 µg/L. (NTP, 1992)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_27998> a owl:Class ;
+    rdfs:label "Tungsten" ;
+    ns1:identifier "W" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "Tungsten. A metallic element with the atomic symbol W, atomic number 74, and atomic weight 183.85. TUNGSTEN is used in many manufacturing applications, including increasing the hardness, toughness, and tensile strength of steel; manufacture of filaments for incandescent light bulbs; and in contact points for automotive and electrical apparatus." .
+
+<http://purl.obolibrary.org/obo/CHEBI_28063> a owl:Class ;
+    rdfs:label "o-Xylene" ;
+    ns1:identifier "OXY" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:definition "O-xylene is a colorless watery liquid with a sweet odor. Less dense than water. Insoluble in water. Irritating vapor. (USCG, 1999)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_28073> a owl:Class ;
+    rdfs:label "Chromium" ;
+    ns1:identifier "Cr" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "A trace element that plays a role in glucose metabolism. It has the atomic symbol Cr, atomic number 24, and atomic weight 52. According to the Fourth Annual Report on Carcinogens (NTP85-002,1985), chromium and some of its compounds have been listed as known carcinogens." .
+
+<http://purl.obolibrary.org/obo/CHEBI_28078> a owl:Class ;
+    rdfs:label "4-Chlorophenol" ;
+    ns1:identifier "MCP4" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "P-chlorophenol is a white crystals with a strong phenol odor. Slightly soluble to soluble in water, depending on the isomer, and denser than water. Noncombustible. Used as an intermediate in organic synthesis of dyes and drugs." .
+
+<http://purl.obolibrary.org/obo/CHEBI_28112> a owl:Class ;
+    rdfs:label "Nickel" ;
+    ns1:identifier "Ni" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "NICKEL is a trace element with the atomic symbol Ni, atomic number 28, and atomic weight 58.69. It is a cofactor of the enzyme UREASE." .
+
+<http://purl.obolibrary.org/obo/CHEBI_28313> a owl:Class ;
+    rdfs:label "Nornicotine" ;
+    ns1:identifier "NORN" ;
+    rdfs:subClassOf chear:TobaccoMetabolite .
+
+<http://purl.obolibrary.org/obo/CHEBI_28488> a owl:Class ;
+    rdfs:label "m-Xylene*" ;
+    ns1:identifier "MXY" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:definition "M-xylene is a colorless watery liquid with a sweet odor. Less dense than water. Insoluble in water. Irritating vapor. (USCG, 1999)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_28520> a owl:Class ;
+    rdfs:label "2,4,5-Trichlorophenol" ;
+    ns1:identifier "TCP245" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "Exposure to 2,4,5-trichlorophenol may occur during its production or use as a pesticide. Acute (short-term) dermal exposure to 2,4,5-trichlorophenol may burn skin in humans. It also irritates the eyes, nose, pharynx, and lungs in humans. No information is available on the chronic (long-term), reproductive, developmental, or carcinogenic effects of 2,4,5-trichlorophenol in humans. In one study, slight degenerative changes were observed in the liver and kidneys of rats chronically exposed to 2,4,5-trichlorophenol in their diet. EPA has classified 2,4,5-trichlorophenol as a Group D, not classifiable as to human carcinogenicity. PHYSICAL DESCRIPTION: Colorless needles, gray flakes or off-white lumpy solid. Phenolic odor. Formerly used as a fungicide and bactericide." .
+
+<http://purl.obolibrary.org/obo/CHEBI_28685> a owl:Class ;
+    rdfs:label "Molybdenum" ;
+    ns1:identifier "Mo" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "MOLYBDENUM is a metallic element with the atomic symbol Mo, atomic number 42, and atomic weight 95.94. It is an essential trace element, being a component of the enzymes xanthine oxidase, aldehyde oxidase, and nitrate reductase. (From Dorland, 27th ed)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_28694> a owl:Class ;
+    rdfs:label "Copper" ;
+    ns1:identifier "Cu" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "COPPER is a heavy metal trace element with the atomic symbol Cu, atomic number 29, and atomic weight 63.55." .
+
+<http://purl.obolibrary.org/obo/CHEBI_28755> a owl:Class ;
+    rdfs:label "2,4,6-Trichlorophenol" ;
+    ns1:identifier "TCP246" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "2 4 6-Trichlorophenol is a synthetic, colorless crystalline solid that is slightly soluble in water and soluble in organic solvents. It has been used primarily in pesticide formulations and as a wood preservative, although most uses have been cancelled in the US. When heated to decomposition, 2,4,6-trichlorophenol emits toxic and corrosive fumes of hydrochloric acid and other toxic gases. Exposure of humans to 2,4,6-trichrophenol via inhalation has been reported to cause respiratory effects, altered pulmonary function and pulmonary lesions. It is reasonably anticipated to be a human carcinogen. (NCI05)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_28984> a owl:Class ;
+    rdfs:label "Aluminum" ;
+    ns1:identifier "Al" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "ALUMINUM is a metallic element that has the atomic number 13, atomic symbol Al, and atomic weight 26.98." .
+
+<http://purl.obolibrary.org/obo/CHEBI_29069> a owl:Class ;
+    rdfs:label "phthalic acid" ;
+    ns1:identifier "PA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> ;
+    skos:definition "PHYSICAL DESCRIPTION: White crystals or fine white powder. (NTP, 1992)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_29287> a owl:Class ;
+    rdfs:label "Gold" ;
+    ns1:identifier "Au" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "GOLD is a yellow metallic element with the atomic symbol Au, atomic number 79, and atomic weight 197. It is used in jewelry, goldplating of other metals, as currency, and in dental restoration. Many of its clinical applications, such as ANTIRHEUMATIC AGENTS, are in the form of its salts." .
+
+<http://purl.obolibrary.org/obo/CHEBI_29852> a owl:Class ;
+    rdfs:label "Monomethylarsonic Acid" ;
+    ns1:identifier "Monomethylarsonic Acid" ;
+    rdfs:subClassOf chear:ArsenicSpecies .
+
+<http://purl.obolibrary.org/obo/CHEBI_30145> a owl:Class ;
+    rdfs:label "Lithium" ;
+    ns1:identifier "Li" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "An element in the alkali metals family. It has the atomic symbol Li, atomic number 3, and atomic weight [6.938; 6.997]. Salts of lithium are used in treating BIPOLAR DISORDER." .
+
+<http://purl.obolibrary.org/obo/CHEBI_30440> a owl:Class ;
+    rdfs:label "Thallium" ;
+    ns1:identifier "Tl" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "THALLIUM is a heavy, bluish white metal, atomic number 81, atomic weight [204.382; 204.385], symbol Tl." .
+
+<http://purl.obolibrary.org/obo/CHEBI_30452> a owl:Class ;
+    rdfs:label "Tellurium" ;
+    ns1:identifier "Te" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "Tellurium. An element that is a member of the chalcogen family. TELLURIUM has the atomic symbol Te, atomic number 52, and atomic weight 127.60. It has been used as a coloring agent and in the manufacture of electrical equipment. Exposure may cause nausea, vomiting, and CNS depression." .
+
+<http://purl.obolibrary.org/obo/CHEBI_30501> a owl:Class ;
+    rdfs:label "Beryllium" ;
+    ns1:identifier "Be" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "Beryllium. An element with the atomic symbol Be, atomic number 4, and atomic weight 9.01218. Short exposure to this element can lead to a type of poisoning known as BERYLLIOSIS." .
+
+<http://purl.obolibrary.org/obo/CHEBI_30512> a owl:Class ;
+    rdfs:label "Silver" ;
+    ns1:identifier "Ag" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "Silver. An element with the atomic symbol Ag, atomic number 47, and atomic weight 107.87. It is a soft metal that is used medically in surgical instruments, dental prostheses, and alloys. Long-continued use of silver salts can lead to a form of poisoning known as ARGYRIA." .
+
+<http://purl.obolibrary.org/obo/CHEBI_30513> a owl:Class ;
+    rdfs:label "Antimony" ;
+    ns1:identifier "Sb" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "ANTIMONY is a metallic element that has the atomic symbol Sb, atomic number 51, and atomic weight 121.75. It is used as a metal alloy and as medicinal and poisonous salts. It is toxic and an irritant to the skin and the mucous membranes." .
+
+<http://purl.obolibrary.org/obo/CHEBI_30514> a owl:Class ;
+    rdfs:label "Cesium" ;
+    ns1:identifier "Cs" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "A member of the alkali metals. It has an atomic symbol Cs, atomic number 50, and atomic weight 132.91. Cesium has many industrial applications, including the construction of atomic clocks based on its atomic vibrational frequency." .
+
+<http://purl.obolibrary.org/obo/CHEBI_30682> a owl:Class ;
+    rdfs:label "Ruthenium" ;
+    ns1:identifier "Ru" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "RUTHENIUM is a hard, brittle, grayish-white rare earth metal with an atomic symbol Ru, atomic number 44, and atomic weight 101.07. It is used as a catalyst and hardener for PLATINUM and PALLADIUM." .
+
+<http://purl.obolibrary.org/obo/CHEBI_30763> a owl:Class ;
+    rdfs:label "4-Hydroxybenzoic acid" ;
+    ns1:identifier "HB4" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> .
+
+<http://purl.obolibrary.org/obo/CHEBI_31575> a owl:Class ;
+    rdfs:label "Ethyl paraben" ;
+    ns1:identifier "EtPB" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_85122> ;
+    skos:definition "Ethylparaben is a Standardized Chemical Allergen. The physiologic effect of ethylparaben is by means of Increased Histamine Release, and Cell-mediated Immunity. The chemical classification of ethylparaben is Allergens." .
+
+<http://purl.obolibrary.org/obo/CHEBI_31835> a owl:Class ;
+    rdfs:label "Methyl Paraben" ;
+    ns1:identifier "MePB" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_85122> ;
+    skos:definition "Methylparaben is a Standardized Chemical Allergen. The physiologic effect of methylparaben is by means of Increased Histamine Release, and Cell-mediated Immunity. The chemical classification of methylparaben is Allergens." .
+
+<http://purl.obolibrary.org/obo/CHEBI_32063> a owl:Class ;
+    rdfs:label "Propyl paraben" ;
+    ns1:identifier "PrPB" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_85122> ;
+    skos:definition "Propylparaben is a Standardized Chemical Allergen. The physiologic effect of propylparaben is by means of Increased Histamine Release, and Cell-mediated Immunity. The chemical classification of propylparaben is Allergens." .
+
+<http://purl.obolibrary.org/obo/CHEBI_32594> a owl:Class ;
+    rdfs:label "Barium" ;
+    ns1:identifier "Ba" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "BARIUM is an element of the alkaline earth group of metals. It has an atomic symbol Ba, atomic number 56, and atomic weight 138. All of its acid-soluble salts are poisonous." .
+
+<http://purl.obolibrary.org/obo/CHEBI_33023> a owl:Class ;
+    rdfs:label "8-isoprostane" ;
+    rdfs:subClassOf chear:BiologicalResponse,
+        chear:Biomolecule .
+
+<http://purl.obolibrary.org/obo/CHEBI_33115> a owl:Class ;
+    rdfs:label "Iodine" ;
+    ns1:identifier "I" ;
+    rdfs:subClassOf chear:Element ;
+    skos:definition "Iodine is a nonmetallic element of the halogen group that is represented by the atomic symbol I, atomic number 53, and atomic weight of 126.90. It is a nutritionally essential element, especially important in thyroid hormone synthesis. In solution, it has anti-infective properties and is used topically." .
+
+<http://purl.obolibrary.org/obo/CHEBI_33204> a owl:Class ;
+    rdfs:label "Ethyl mercury (C2H5Hg+)" ;
+    ns1:identifier "C2H5Hg" ;
+    rdfs:subClassOf chear:MercurySpecies .
+
+<http://purl.obolibrary.org/obo/CHEBI_33216> a owl:Class ;
+    rdfs:label "Bisphenol A" ;
+    ns1:identifier "BPA" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "4,4'-isopropylidenediphenol is a white to light brown flakes or powder. Has a weak medicine odor. Sinks in water. (USCG, 1999)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_33301> a owl:Class ;
+    rdfs:label "Bismuth" ;
+    ns1:identifier "Bi" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "BISMUTH is a metallic element that has the atomic symbol Bi, atomic number 83 and atomic weight 208.98." .
+
+<http://purl.obolibrary.org/obo/CHEBI_33324> a owl:Class ;
+    rdfs:label "Strontium" ;
+    ns1:identifier "Sr" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "STRONTIUM is an element of the alkaline earth family of metals. It has the atomic symbol Sr, atomic number 38, and atomic weight 87.62." .
+
+<http://purl.obolibrary.org/obo/CHEBI_33341> a owl:Class ;
+    rdfs:label "Titanium" ;
+    ns1:identifier "Ti" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "TITANIUM is a dark-gray, metallic element of widespread distribution but occurring in small amounts; atomic number, 22; atomic weight, 47.90; symbol, Ti; specific gravity, 4.5; used for fixation of fractures. (Dorland, 28th ed)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_33344> a owl:Class ;
+    rdfs:label "Niobium" ;
+    ns1:identifier "Nb" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "Niobium. A metal element atomic number 41, atomic weight 92.906, symbol Nb. (From Dorland, 28th ed)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_33364> a owl:Class ;
+    rdfs:label "Platinum" ;
+    ns1:identifier "Pt" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "Platinum. A heavy, soft, whitish metal, resembling tin, atomic number 78, atomic weight 195.09, symbol Pt. (From Dorland, 28th ed) PLATINUM is used in manufacturing equipment for laboratory and industrial use. It occurs as a black powder (platinum black) and as a spongy substance (spongy platinum) and may have been known in Pliny's time as \"alutiae\"." .
+
+<http://purl.obolibrary.org/obo/CHEBI_33375> a owl:Class ;
+    rdfs:label "Gadolinium" ;
+    ns1:identifier "Gd" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "Gadolinium. An element of the rare earth family of metals. GADOLINIUM has the atomic symbol Gd, atomic number 64, and atomic weight 157.25. Its oxide is used in the control rods of some nuclear reactors." .
+
+<http://purl.obolibrary.org/obo/CHEBI_33387> a owl:Class ;
+    rdfs:label "Neptunium" ;
+    ns1:identifier "Np" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "Neptunium. A radioactive element of the actinide metals family. NEPTUNIUM has the atomic symbol Np, atomic number 93, and atomic weight 237." .
+
+<http://purl.obolibrary.org/obo/CHEBI_33388> a owl:Class ;
+    rdfs:label "Plutonium" ;
+    ns1:identifier "Pu" ;
+    rdfs:subClassOf chear:Metal ;
+    skos:definition "Plutonium. A naturally radioactive element of the actinide metals series. It has the atomic symbol Pu, atomic number 94, and atomic weight 242. Plutonium is used as a nuclear fuel, to produce radioisotopes for research, in radionuclide batteries for pacemakers, and as the agent of fission in nuclear weapons." .
+
+<http://purl.obolibrary.org/obo/CHEBI_34093> a owl:Class ;
+    rdfs:label "1-hydroxypyrene" ;
+    ns1:identifier "PYR1" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://purl.obolibrary.org/obo/CHEBI_34283> a owl:Class ;
+    rdfs:label "Oxybenzone" ;
+    ns1:identifier "OXB" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:definition "Oxybenzone is a benzophenone derivative used as a sunscreen agent. Oxybenzone absorbs UVB and UVA II rays, resulting in a photochemical excitation and absorption of energy. Upon return to ground state, the absorbed energy results in emission of longer wavelength radiation and decreased skin penetration of radiation which reduces the risk of DNA damage." .
+
+<http://purl.obolibrary.org/obo/CHEBI_34289> a owl:Class ;
+    rdfs:label "2-hydroxyfluorene" ;
+    ns1:identifier "FLUO2" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://purl.obolibrary.org/obo/CHEBI_34571> a owl:Class ;
+    rdfs:label "Benzyl paraben" ;
+    ns1:identifier "BzPB" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_85122> ;
+    skos:definition "Benzylparaben is a Standardized Chemical Allergen. The physiologic effect of benzylparaben is by means of Increased Histamine Release, and Cell-mediated Immunity. The chemical classification of benzylparaben is Allergens." .
+
+<http://purl.obolibrary.org/obo/CHEBI_34788> a owl:Class ;
+    rdfs:label "Heptyl paraben" ;
+    ns1:identifier "HePB" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_85122> .
+
+<http://purl.obolibrary.org/obo/CHEBI_35143> a owl:Class ;
+    rdfs:label "Hemoglobin" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf sio:Protein ;
+    skos:definition "The iron-containing oxygen-transport metalloprotein in the red blood cells of all vertebrates (with the exception of the fish family Channichthyidae), as well as the tissues of some invertebrates. Hemoglobin in the blood carries oxygen from the respiratory organs (lungs or gills) to the rest of the body (i.e. the tissues). There it releases the oxygen to permit aerobic respiration to provide energy to power the functions of the organism in the process called metabolism." .
+
+<http://purl.obolibrary.org/obo/CHEBI_35255> a owl:Class ;
+    rdfs:label "Chloroform" ;
+    ns1:identifier "CFRM" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
+    skos:definition "CHLOROFORM is a commonly used laboratory solvent. It was previously used as an anesthetic, but was banned from use in the U.S. due to its suspected carcinogenicity." .
+
+<http://purl.obolibrary.org/obo/CHEBI_35549> a owl:Class ;
+    rdfs:label "Perfluorooctanoic acid" ;
+    ns1:identifier "PFOA" ;
+    rdfs:subClassOf chear:Perfluorocarbon .
+
+<http://purl.obolibrary.org/obo/CHEBI_36062> a owl:Class ;
+    rdfs:label "3,4-Dihydroxy benzoic acid" ;
+    ns1:identifier "DHB34" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> .
+
+<http://purl.obolibrary.org/obo/CHEBI_38397> a owl:Class ;
+    rdfs:label "Perfluorononanoic acid" ;
+    ns1:identifier "PFNA" ;
+    rdfs:subClassOf chear:Perfluorocarbon .
+
+<http://purl.obolibrary.org/obo/CHEBI_38855> a owl:Class ;
+    rdfs:label "3-Chlorophenol" ;
+    ns1:identifier "MCP3" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "PHYSICAL DESCRIPTION: White crystals with an odor of phenol. Sinks in and slowly dissolves in water. (NTP, 1992)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_39421> a owl:Class ;
+    rdfs:label "Perfluorooctanesulfonic acid" ;
+    ns1:identifier "PFOS" ;
+    rdfs:subClassOf chear:Perfluorocarbon ;
+    skos:definition "Perfluoroalkyls are stable, synthetic chemicals. Perfluoroalkyls are unique because they repel oil, grease, and water. The two perfluoroalkyls made in the largest amounts in the U. S. areperflurooctanoic acid (PFOA) and perfluorooctane sulfonic acid (PFOS). Perfluoroalkyls have been used in surface protection products such as carpet and clothing treatments and coating for paper and cardboard packaging. They have also been used in fire-fighting foams." .
+
+<http://purl.obolibrary.org/obo/CHEBI_39426> a owl:Class ;
+    rdfs:label "Perfluorobutanoic acid" ;
+    ns1:identifier "PFBA" ;
+    rdfs:subClassOf chear:Perfluorocarbon .
+
+<http://purl.obolibrary.org/obo/CHEBI_40304> a owl:Class ;
+    rdfs:label "8-hydroxy-2'-deoxyguanosine" ;
+    rdfs:subClassOf chear:BiologicalResponse,
+        chear:Biomolecule ;
+    skos:definition "Guanosine substituted at the purine 8-position by a hydroxy group. It is used as a biomarker of oxidative DNA damage." .
+
+<http://purl.obolibrary.org/obo/CHEBI_47083> a owl:Class ;
+    rdfs:label "2-Chlorophenol" ;
+    ns1:identifier "MCP2" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "2-chlorophenol is a colorless to amber liquid with an unpleasant, penetrating odor. Density 1.265 g / cm3. Sinks in water and slowly dissolves. Freezing point 7°C (46°F). Boiling point 175°C (347°F)." .
+
+<http://purl.obolibrary.org/obo/CHEBI_48347> a owl:Class ;
+    rdfs:label "Triclocarban" ;
+    ns1:identifier "TCC" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "Triclocarban is a triclosan analogue with an antibacterial property. Triclocarban exerts its effect by inhibiting the activity of enoyl-(acyl-carrier protein) (ACP) reductase, widely distributed in bacteria, fungi and plants. ACP reductase catalyses the last step in each cycle of fatty acid elongation in the type II fatty acid synthase systems. As a result, this agent interrupts cell membrane synthesis and leads to bacterial growth inhibition." .
+
+<http://purl.obolibrary.org/obo/CHEBI_48765> a owl:Class ;
+    rdfs:label "Dimethylarsinic Acid" ;
+    ns1:identifier "Dimethylarsinic Acid" ;
+    rdfs:subClassOf chear:ArsenicSpecies .
+
+<http://purl.obolibrary.org/obo/CHEBI_49747> a owl:Class ;
+    rdfs:label "Methyl mercury (CH3Hg+)" ;
+    ns1:identifier "CH3Hg" ;
+    rdfs:subClassOf chear:MercurySpecies .
+
+<http://purl.obolibrary.org/obo/CHEBI_49900> a owl:Class ;
+    rdfs:label "Arsenous ( III) Acid" ;
+    ns1:identifier "Arsenous (III) Acid" ;
+    rdfs:subClassOf chear:ArsenicSpecies .
+
+<http://purl.obolibrary.org/obo/CHEBI_52048> a owl:Class ;
+    rdfs:label "2,3,5,6-Tetrachlorophenol" ;
+    ns1:identifier "TeCP2356" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "PHYSICAL DESCRIPTION: Leaflets (from ligroin) or light beige powder. (NTP, 1992)" .
+
+<http://purl.obolibrary.org/obo/CHEBI_68641> a owl:Class ;
+    rdfs:label "Cotinine" ;
+    ns1:identifier "COT" ;
+    rdfs:subClassOf chear:TobaccoMetabolite ;
+    skos:definition "The N-glucuronide conjugate of cotinine is a major urinary metabolite of NICOTINE. It thus serves as a biomarker of exposure to tobacco SMOKING. It has CNS stimulating properties." .
+
+<http://purl.obolibrary.org/obo/CHEBI_70973> a owl:Class ;
+    rdfs:label "monoethyl phthalate (DEP)" ;
+    ns1:identifier "MEP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://purl.obolibrary.org/obo/CHEBI_71182> a owl:Class ;
+    rdfs:label "Hydroxycotinine" ;
+    ns1:identifier "HCOT" ;
+    rdfs:subClassOf chear:TobaccoMetabolite .
+
+<http://purl.obolibrary.org/obo/CHEBI_82392> a owl:Class ;
+    rdfs:label "Arsenobetaine" ;
+    ns1:identifier "Arsenobetaine" ;
+    rdfs:subClassOf chear:ArsenicSpecies .
+
+<http://purl.obolibrary.org/obo/CHEBI_83491> a owl:Class ;
+    rdfs:label "Perfluoro-n-pentanoic acid" ;
+    ns1:identifier "PFPeA" ;
+    rdfs:subClassOf chear:Perfluorocarbon .
+
+<http://purl.obolibrary.org/obo/CHEBI_83492> a owl:Class ;
+    rdfs:label "Perfluorohexanoic acid" ;
+    ns1:identifier "PFHxA" ;
+    rdfs:subClassOf chear:Perfluorocarbon .
+
+<http://purl.obolibrary.org/obo/CHEBI_88522> a owl:Class ;
+    rdfs:label "mono-n-butylphthalate (BzBP, DnBP)" ;
+    ns1:identifier "MnBP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://purl.obolibrary.org/obo/CHEBI_88542> a owl:Class ;
+    rdfs:label "Butyl paraben" ;
+    ns1:identifier "BuPB" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_85122> ;
+    skos:definition "Butylparaben is a Standardized Chemical Allergen. The physiologic effect of butylparaben is by means of Increased Histamine Release, and Cell-mediated Immunity. The chemical classification of butylparaben is Allergens." .
+
+<http://purl.obolibrary.org/obo/CHEBI_89645> a owl:Class ;
+    rdfs:label "3-hydroxyfluorene" ;
+    ns1:identifier "FLUO3" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://purl.obolibrary.org/obo/CHEBI_89749> a owl:Class ;
+    rdfs:label "mono-methyl phthalate" ;
+    ns1:identifier "mMP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://purl.obolibrary.org/obo/ENVO_00003064> a owl:Class ;
+    rdfs:label "Drinking Water" ;
+    skos:definition "Drinking Water" .
+
+<http://purl.obolibrary.org/obo/ENVO_00010483> a owl:Class ;
+    rdfs:label "Environmental Material" ;
+    rdfs:subClassOf ns2:SampleIndicator,
+        sio:Specimen .
+
+<http://purl.obolibrary.org/obo/UBERON_0000033> a owl:Class ;
+    rdfs:label "Head" ;
+    rdfs:subClassOf sio:BiologicalEntity .
+
+<http://purl.obolibrary.org/obo/UBERON_0000916> a owl:Class ;
+    rdfs:label "Abdomen" ;
+    rdfs:subClassOf sio:BiologicalEntity .
+
+<http://purl.obolibrary.org/obo/UBERON_0001037> a owl:Class ;
+    rdfs:label "Hair" ;
+    ns1:identifier "H" ;
+    rdfs:subClassOf sio:Tissue ;
+    skos:definition "A filament, mostly protein, that grows from follicles found in the dermis[WP]. [database_cross_reference: http://en.wikipedia.org/wiki/Hair]" .
+
+<http://purl.obolibrary.org/obo/UBERON_0001088> a owl:Class ;
+    rdfs:label "Urine" ;
+    ns1:identifier "U" ;
+    rdfs:subClassOf chear:BodilyFluid ;
+    skos:definition "Excretion that is the output of a kidney [database_cross_reference: http://en.wikipedia.org/wiki/Urine][database_cross_reference: https://github.com/geneontology/go-ontology/issues/11025]" .
+
+<http://purl.obolibrary.org/obo/UBERON_0001091> a owl:Class ;
+    rdfs:label "Tooth" ;
+    ns1:identifier "T" ;
+    rdfs:subClassOf sio:Tissue ;
+    skos:definition "Skeletal element within the mouth (or in some species, upper part of the digestive tract) that is composed of dentine and is used in procuring or masticating food. [database_cross_reference: http://orcid.org/0000-0002-6601-2165][database_cross_reference: http://en.wikipedia.org/wiki/Tooth_(animal)]" .
+
+<http://purl.obolibrary.org/obo/UBERON_0001836> a owl:Class ;
+    rdfs:label "Saliva" ;
+    ns1:identifier "SL" ;
+    rdfs:subClassOf chear:BodilyFluid ;
+    skos:definition "A fluid produced in the oral cavity by salivary glands, typically used in predigestion, but also in other functions. [database_cross_reference: http://en.wikipedia.org/wiki/Saliva][database_cross_reference: GO:0046541]" .
+
+<http://purl.obolibrary.org/obo/UBERON_0001969> a owl:Class ;
+    rdfs:label "Plasma" ;
+    ns1:identifier "P" ;
+    rdfs:subClassOf chear:BloodComponent ;
+    skos:definition "The liquid component of blood, in which erythrocytes are suspended. [database_cross_reference: http://orcid.org/0000-0002-6601-2165]" .
+
+<http://purl.obolibrary.org/obo/UBERON_0001977> a owl:Class ;
+    rdfs:label "Serum" ;
+    ns1:identifier "S" ;
+    rdfs:subClassOf chear:BloodComponent ;
+    skos:definition "Liquid derived from blood plasma that has clotting factors removed. [database_cross_reference: http://en.wikipedia.org/wiki/Serum_(blood)][database_cross_reference: http://orcid.org/0000-0002-6601-2165]" .
+
+<http://purl.obolibrary.org/obo/UBERON_0001987> a owl:Class ;
+    rdfs:label "Placenta" ;
+    ns1:identifier "PL" ;
+    rdfs:subClassOf chear:PregnancySample,
+        sio:Tissue ;
+    skos:definition "Organ of metabolic interchange between fetus and mother, partly of embryonic origin and partly of maternal origin[GO]. The fetal portion of the placenta is known as the villous chorion. The maternal portion is known as the decidua basalis. The two portions are held together by anchoring villi that are anchored to the decidua basalis by the cytotrophoblastic shell. [database_cross_reference: http://en.wikipedia.org/wiki/Placenta][database_cross_reference: http://www.med.umich.edu/lrc/coursepages/m1/embryology/embryo/06placenta.htm]" .
+
+<http://purl.obolibrary.org/obo/UBERON_0003826> a owl:Class ;
+    rdfs:label "Femur" ;
+    rdfs:subClassOf sio:BiologicalEntity .
+
+<http://purl.obolibrary.org/obo/UBERON_0007109> a owl:Class ;
+    rdfs:label "Meconium" ;
+    ns1:identifier "ME" ;
+    rdfs:subClassOf chear:PregnancySample,
+        <http://purl.obolibrary.org/obo/UBERON_0001988> ;
+    skos:definition "A dark greenish mass that accumulates in the bowel during fetal life and is discharged shortly after birth. [database_cross_reference: BTO:0000838]" .
+
+<http://purl.obolibrary.org/obo/UBERON_0007311> a owl:Class ;
+    rdfs:label "Sputum" ;
+    ns1:identifier "SU" ;
+    rdfs:subClassOf chear:BodilyFluid ;
+    skos:definition "Matter ejected from the lungs, bronchi, and trachea, through the mouth. [database_cross_reference: Dorlands_Medical_Dictionary:MerckSource]" .
+
+<http://purl.obolibrary.org/obo/UBERON_0009565> a owl:Class ;
+    rdfs:label "Nail" ;
+    ns1:identifier "N" ;
+    rdfs:subClassOf sio:Tissue ;
+    skos:definition "A nail that is part of a manual digit. [database_cross_reference: OBOL:automatic]" .
+
+<http://purl.obolibrary.org/obo/UBERON_0012168> a owl:Class ;
+    rdfs:label "Cord Blood" ;
+    ns1:identifier "CB" ;
+    rdfs:subClassOf chear:PregnancySample,
+        <http://purl.obolibrary.org/obo/UBERON_0000178> ;
+    skos:definition "Blood that remains in the placenta and in the attached umbilical cord after childbirth[WP]. [database_cross_reference: http://en.wikipedia.org/wiki/Cord_blood]" .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/10229> a owl:Class ;
+    rdfs:label "9-hydroxyphenanthrene" ;
+    ns1:identifier "PHEN9" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/104820> a owl:Class ;
+    rdfs:label "Arsenocholine" ;
+    ns1:identifier "Arsenocholine" ;
+    rdfs:subClassOf chear:ArsenicSpecies .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/110394> a owl:Class ;
+    rdfs:label "mono-isononyl phthalate" ;
+    ns1:identifier "mINP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/118770> a owl:Class ;
+    rdfs:label "Monoisopropyl phthalate" ;
+    ns1:identifier "MiPP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/119096> a owl:Class ;
+    rdfs:label "mono (2-ethyl-5-oxohexyl) phthalate" ;
+    ns1:identifier "MEOHP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/148386> a owl:Class ;
+    rdfs:label "mono (5-carboxy-2-ethylpentyl) phthalate (DEHP)" ;
+    ns1:identifier "MCEPP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/165618> a owl:Class ;
+    rdfs:label "Monocyclohexyl phthalate" ;
+    ns1:identifier "MCHP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/170295> a owl:Class ;
+    rdfs:label "mono (2-ethyl-5-hydroxyhexyl) phthalate" ;
+    ns1:identifier "MEHHP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/187353> a owl:Class ;
+    rdfs:label "Mono-2-(carboxymethyl) hexyl phthalate" ;
+    ns1:identifier "MCMHP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/20269373> a owl:Class ;
+    rdfs:label "mono-hexyl phthalate" ;
+    ns1:identifier "mHxP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/21013> a owl:Class ;
+    rdfs:label "2,3,4,5-Tetrachlorophenol" ;
+    ns1:identifier "TeCP2345" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "PHYSICAL DESCRIPTION: Needles (from petroleum ether, ligroin) or beige solid. (NTP, 1992)" .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/211457> a owl:Class ;
+    rdfs:label "Nicotine-N-oxide" ;
+    ns1:identifier "NICO" ;
+    rdfs:subClassOf chear:TobaccoMetabolite .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/287064> a owl:Class ;
+    rdfs:label "3,4-Dihydroxy-benzoic acid methyl ester" ;
+    ns1:identifier "OHMeP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/31736> a owl:Class ;
+    rdfs:label "mono benzyl phthalate (BzBP)" ;
+    ns1:identifier "MBP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/37766> a owl:Class ;
+    rdfs:label "6-hydroxychrysene" ;
+    ns1:identifier "CHRY6" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/44284> a owl:Class ;
+    rdfs:label "1-hydroxychrysene" ;
+    ns1:identifier "CHRY1" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/44286> a owl:Class ;
+    rdfs:label "4-hydroxychrysene" ;
+    ns1:identifier "CHRY4" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/47782> a owl:Class ;
+    rdfs:label "2-hydroxychrysene" ;
+    ns1:identifier "CHRY2" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/53435014> a owl:Class ;
+    rdfs:label "mono (3-carboxypropyl) phthalate (multiple)" ;
+    ns1:identifier "MCPP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/6028> a owl:Class ;
+    rdfs:label "2,3,4,6-Tetrachlorophenol" ;
+    ns1:identifier "TeCP2346" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> ;
+    skos:definition "PHYSICAL DESCRIPTION: Brown flakes or beige solid. Strong odor. (NTP, 1992)" .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/6626> a owl:Class ;
+    rdfs:label "Bisphenol S" ;
+    ns1:identifier "BPS" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/67734> a owl:Class ;
+    rdfs:label "Perfluorohexane-1-sulphonic acid" ;
+    ns1:identifier "PFHxS" ;
+    rdfs:subClassOf chear:Perfluorocarbon .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/67815> a owl:Class ;
+    rdfs:label "Perfluorobutanesulfonic acid" ;
+    ns1:identifier "PFBS" ;
+    rdfs:subClassOf chear:Perfluorocarbon .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/7005> a owl:Class ;
+    rdfs:label "1-hydroxynaphthalene" ;
+    ns1:identifier "NAP1" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/74318> a owl:Class ;
+    rdfs:label "9-hydroxyfluorene" ;
+    ns1:identifier "FLUO9" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/75575> a owl:Class ;
+    rdfs:label "Bisphenol F" ;
+    ns1:identifier "BPF" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/77547> a owl:Class ;
+    rdfs:label "Protocatechuic acid ethyl ester" ;
+    ns1:identifier "OHEtP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15882> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/79362> a owl:Class ;
+    rdfs:label "Mono-n-octyl phthalate" ;
+    ns1:identifier "MOP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/8663> a owl:Class ;
+    rdfs:label "2-hydroxynaphthalene" ;
+    ns1:identifier "NAP2" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33666> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/90531> a owl:Class ;
+    rdfs:label "mono-pentyl phthalate" ;
+    ns1:identifier "mPeP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/92272> a owl:Class ;
+    rdfs:label "mono-isobutyl phthalate (DiBP)" ;
+    ns1:identifier "MiBP" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_26092> .
+
+sio:Concentration a owl:Class ;
+    rdfs:label "Concentration" ;
+    rdfs:subClassOf ns2:SampleIndicator .
+
+sio:DeoxyribonucleicAcid a owl:Class ;
+    rdfs:label "DNA" ;
+    ns1:identifier "D" ;
+    rdfs:subClassOf chear:Macromolecule .
+
+sio:RibonucleicAcid a owl:Class ;
+    rdfs:label "RNA" ;
+    ns1:identifier "R" ;
+    rdfs:subClassOf chear:Macromolecule .
+
+sio:SpecificGravity a owl:Class ;
+    rdfs:label "Specific Gravity" ;
+    rdfs:subClassOf sio:Ratio ;
+    skos:definition "Specific gravity is the ratio of the density of a substance to the density of a reference substance; equivalently, it is the ratio of the mass of a substance to the mass of a reference substance for the same given volume. Apparent specific gravity is the ratio of the weight of a volume of the substance to the weight of an equal volume of the reference substance. The reference substance is nearly always water at its densest (4°C) for liquids; for gases it is air at room temperature (21°C). Nonetheless, the temperature and pressure must be specified for both the sample and the reference. Pressure is nearly always 1 atm (101.325 kPa). Temperatures for both sample and reference vary from industry to industry." ;
+    skos:editorialNote "Why is this here? Maybe it belongs in another list" .
+
+skos:definition a owl:AnnotationProperty .
+
+skos:editorialNote a owl:AnnotationProperty .
+
+<uniprot:P01375> a owl:Class ;
+    rdfs:label "Tumor necrosis factor" ;
+    rdfs:subClassOf chear:BiologicalResponse,
+        sio:Protein ;
+    skos:definition "Cytokine that binds to TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. It is mainly secreted by macrophages and can induce cell death of certain tumor cell lines. It is potent pyrogen causing fever by direct action or by stimulation of interleukin-1 secretion and is implicated in the induction of cachexia, Under certain conditions it can stimulate cell proliferation and induce cell differentiation. Impairs regulatory T-cells (Treg) function in individuals with rheumatoid arthritis via FOXP3 dephosphorylation. Upregulates the expression of protein phosphatase 1 (PP1), which dephosphorylates the key 'Ser-418' residue of FOXP3, thereby inactivating FOXP3 and rendering Treg cells functionally defective (PubMed:23396208). Key mediator of cell death in the anticancer action of BCG-stimulated neutrophils in combination with DIABLO/SMAC mimetic in the RT4v6 bladder cancer cell line (PubMed:22517918)." .
+
+<uniprot:P01584> a owl:Class ;
+    rdfs:label "Interleukin-1 beta" ;
+    rdfs:subClassOf chear:BiologicalResponse,
+        sio:Protein ;
+    skos:definition "Potent proinflammatory cytokine. Initially discovered as the major endogenous pyrogen, induces prostaglandin synthesis, neutrophil influx and activation, T-cell activation and cytokine production, B-cell activation and antibody production, and fibroblast proliferation and collagen production. Promotes Th17 differentiation of T-cells." .
+
+<uniprot:P02741> a owl:Class ;
+    rdfs:label "C-reactive protein" ;
+    rdfs:subClassOf chear:BiologicalResponse,
+        sio:Protein ;
+    skos:definition "Displays several functions associated with host defense: it promotes agglutination, bacterial capsular swelling, phagocytosis and complement fixation through its calcium-dependent binding to phosphorylcholine. Can interact with DNA and histones and may scavenge nuclear material released from damaged circulating cells." .
+
+<uniprot:P05231> a owl:Class ;
+    rdfs:label "Interleukin-6" ;
+    rdfs:subClassOf chear:BiologicalResponse,
+        sio:Protein ;
+    skos:definition "Cytokine with a wide variety of biological functions. It is a potent inducer of the acute phase response. Plays an essential role in the final differentiation of B-cells into Ig-secreting cells Involved in lymphocyte and monocyte differentiation. Acts on B-cells, T-cells, hepatocytes, hematopoietic progenitor cells and cells of the CNS. Required for the generation of T(H)17 cells. Also acts as a myokine. It is discharged into the bloodstream after muscle contraction and acts to increase the breakdown of fats and to improve insulin resistance. It induces myeloma and plasmacytoma growth and induces nerve cells differentiation." .
+
+<uniprot:P22301> a owl:Class ;
+    rdfs:label "Interleukin-10" ;
+    rdfs:subClassOf chear:BiologicalResponse,
+        sio:Protein ;
+    skos:definition "Inhibits the synthesis of a number of cytokines, including IFN-gamma, IL-2, IL-3, TNF and GM-CSF produced by activated macrophages and by helper T-cells." .
+
+chear:AFSInstrument a owl:Class ;
+    rdfs:label "Atomic Fluorescence Spectroscopy Instrument" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
+    skos:definition "a type of electromagnetic spectroscopy that analyzes fluorescence from a sample. It involves using a beam of light, usually ultraviolet light, that excites the electrons in molecules of certain compounds and causes them to emit light; typically, but not necessarily, visible light." .
+
+chear:Acculturation a owl:Class ;
+    rdfs:label "Acculturation" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Acculturation explains the process of cultural change and psychological change that results following meeting between cultures. This metaclass contains all classes that measure this process." .
+
+chear:ActiveSmoker a owl:Class ;
+    rdfs:label "Active Smoker" ;
+    rdfs:subClassOf chear:SmokingStatus ;
+    skos:definition "The quality of actively smoking." ;
+    skos:editorialNote "How is this different from \"smoker'?" .
+
+chear:Analyte a owl:Class ;
+    rdfs:label "Analyte" ;
+    rdfs:subClassOf sio:ChemicalEntity .
+
+chear:Assessment a owl:Class ;
+    rdfs:label "Physical and Mental Assessment" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Physical and Mental Assessments Indicator Class" .
+
+chear:AssistedReproductiveTherapy a owl:Class ;
+    rdfs:label "Assisted Reproductive Therapy" ;
+    rdfs:subClassOf chear:PregnancyCharacteristic .
+
+chear:BirthWeight a owl:Class ;
+    rdfs:label "Birth Weight" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:BirthOutcome,
+        chear:Weight ;
+    owl:deprecated true ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ a rdf:List ;
+                    rdf:first sio:Mass ;
+                    rdf:rest [ a rdf:List ;
+                            rdf:first [ a owl:Restriction ;
+                                    owl:allValuesFrom chear:Birth ;
+                                    owl:onProperty sio:measuredAt ] ;
+                            rdf:rest () ] ] ] ;
+    skos:definition "The weight of the child at birth" .
+
+chear:CannedFoodFrequency a owl:Class ;
+    rdfs:label "Canned Food Consumption Frequency" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:DietQuantity ;
+    skos:definition "Frequency of Canned Food Consumption." ;
+    skos:editorialNote "Also want to list this under Environmental Exposures (b/c canned food has chemicals in the lining so sometimes it is used as a proxy)" .
+
+chear:DeliveryCharacteristic a owl:Class ;
+    rdfs:label "Delivery Characteristics" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Attributes related to the delivery of a child." .
+
+chear:DirectMercuryAnalyzer a owl:Class ;
+    rdfs:label "Direct Mercury Analyzer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
+    skos:definition "Direct mercury analysis incorporates the following sequence: thermal decomposition, catalytic conversion, amalgamation, and atomic absorption spectrophotometry. Controlled heating stages are implemented to first dry and then thermally decompose a sample introduced into a quartz tube. A continuous flow of oxygen carries the decomposition products through a hot catalyst bed where halogens, nitrogen, and sulfur oxides are trapped. All mercury species are reduced to Hg(0) and are then carried along with reaction gases to a gold amalgamator where the mercury is selectively trapped. All nonmercury vapors and decomposition products are flushed from the system by the continuous flow of gas. The amalgamator is subsequently heated and releases all trapped mercury to the single-beam, fixed-wavelength atomic absorption spectrophotometer. Absorbance is measured at 253.7 nm as a function of mercury content" .
+
+chear:ElectrosprayIonizationMassSpectrometry a owl:Class ;
+    rdfs:label "Electrospray Ionization Mass Spectrometry" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf ns2:MassSpectrometry ;
+    skos:definition "Mass spectrometry using ESI is called electrospray ionization mass spectrometry (ESI-MS) or, less commonly, electrospray mass spectrometry (ES-MS). ESI is a so-called 'soft ionization' technique, since there is very little fragmentation. This can be advantageous in the sense that the molecular ion (or more accurately a pseudo molecular ion) is always observed, however very little structural information can be gained from the simple mass spectrum obtained. This disadvantage can be overcome by coupling ESI with tandem mass spectrometry (ESI-MS/MS). Another important advantage of ESI is that solution-phase information can be retained into the gas-phase." .
+
+chear:ExposureMonitoringInstrument a owl:Class ;
+    rdfs:label "Exposure Monitoring Instrument" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
+    skos:definition "A physical instrument that monitors the environment for chemical exposures." .
+
+chear:FastFoodFrequency a owl:Class ;
+    rdfs:label "Fast Food Consumption Frequency" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:DietQuantity ;
+    skos:definition "Frequency of Fast Food Consumption." .
+
+chear:FatherEducationLevel a owl:Class ;
+    rdfs:label "Father's Education Level" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:EducationLevel ;
+    owl:deprecated true ;
+    skos:definition "Father's Education Level" .
+
+chear:FentonGrowthChart a owl:Class ;
+    rdfs:label "Fenton Preterm Growth Chart" ;
+    rdfs:subClassOf sio:LineGraph ;
+    skos:definition "A growth chart adusted for gestational age" .
+
+chear:FreshVegetableFrequency a owl:Class ;
+    rdfs:label "Fresh Vegetable Consumption Frequency" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:DietQuantity ;
+    skos:definition "Frequency of Fresh Vegetable Consumption." .
+
+chear:GCMS a owl:Class ;
+    rdfs:label "Gas Chromatographer–Mass Spectrometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:GasChromatographyInstrument,
+        chear:MassSpectrometer ;
+    skos:definition "Gas chromatography–mass spectrometry (GC-MS) is an analytical method that combines the features of gas-chromatography and mass spectrometry to identify different substances within a test sample. Applications of GC-MS include drug detection, fire investigation, environmental analysis, explosives investigation, and identification of unknown samples, including that of material samples obtained from planet Mars during probe missions as early as the 1970s. GC-MS can also be used in airport security to detect substances in luggage or on human beings. Additionally, it can identify trace elements in materials that were previously thought to have disintegrated beyond identification. Like liquid chromatography–mass spectrometry, it allows analysis and detection even of tiny amounts of a substance." .
+
+chear:GasChromatographyInstrument a owl:Class ;
+    rdfs:label "Gas Chromatography Instrument" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:ChromatographyInstrument ;
+    skos:definition "Gas chromatography (GC) is a common type of chromatography used in analytical chemistry for separating and analyzing compounds that can be vaporized without decomposition. Typical uses of GC include testing the purity of a particular substance, or separating the different components of a mixture (the relative amounts of such components can also be determined). In some situations, GC may help in identifying a compound. In preparative chromatography, GC can be used to prepare pure compounds from a mixture." .
+
+chear:GestationalAgeAtBirth a owl:Class ;
+    rdfs:label "Gestational Age at Birth" ;
+    rdfs:subClassOf chear:GestationalAge ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf [ a rdf:List ;
+                    rdf:first chear:GestationalAge ;
+                    rdf:rest [ a rdf:List ;
+                            rdf:first [ a owl:Restriction ;
+                                    owl:allValuesFrom chear:Birth ;
+                                    owl:onProperty sio:measuredAt ] ;
+                            rdf:rest () ] ] ] ;
+    skos:definition "Describes how far along a pregnancy is, usually measured in weeks, as measured at birth." .
+
+chear:HDMS a owl:Class ;
+    rdfs:label "Hydrogen–Deuterium Exchange Mass Spectrometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:MassSpectrometer ;
+    skos:definition "Hydrogen–deuterium exchange mass spectrometry can determine the overall deuterium content of molecules which have undergone H/D exchange. Because of the sample preparation required, it is typically considered to provide an accurate measurement of non-exchangeable hydrogen atoms only." .
+
+chear:HHEducationLevel a owl:Class ;
+    rdfs:label "Head of Household's Education Level" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:EducationLevel ;
+    skos:definition "Head of Household's Education Level" .
+
+chear:HPLCMS a owl:Class ;
+    rdfs:label "High-Performance Liquid Chromatography-Mass Spectrometry" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:HPLC,
+        chear:LCMS,
+        chear:MassSpectrometer ;
+    skos:definition "Liquid chromatography–mass spectrometry (LC-MS) is an analytical chemistry technique that combines the physical separation capabilities of liquid chromatography (or HPLC) with the mass analysis capabilities of mass spectrometry (MS). Coupled chromatography - MS systems are popular in chemical analysis because the individual capabilities of each technique are enhanced synergistically. While liquid chromatography separates mixtures with multiple components, mass spectrometry provides structural identity of the individual components with high molecular specificity and detection sensitivity. This tandem technique can be used to analyze biochemical, organic, and inorganic compounds commonly found in complex samples of environmental and biological origin. Therefore, LC-MS may be applied in a wide range of sectors including biotechnology, environment monitoring, food processing, and pharmaceutical, agrochemical, and cosmetic industries." .
+
+chear:Household a owl:Class ;
+    rdfs:label "Household" ;
+    rdfs:subClassOf chear:HousingCharacteristic,
+        sio:Community ;
+    skos:definition "A household consists of one or more people who live in the same dwelling and also share meals or living accommodation, and may consist of a single family or some other grouping of people. A single dwelling will be considered to contain multiple households if either meals or living space are not shared. The household is the basic unit of analysis in many social, microeconomic and government models, and is important to the fields of economics and inheritance." .
+
+chear:ICPMSInstrument a owl:Class ;
+    rdfs:label "Inductively Coupled Plasma Mass Spectrometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:MassSpectrometer ;
+    skos:definition "A type of mass spectrometry which is capable of detecting metals and several non-metals at concentrations as low as one part in 10^15 (part per quadrillion, ppq) on non-interfered low-background isotopes. This is achieved by ionizing the sample with inductively coupled plasma and then using a mass spectrometer to separate and quantify those ions." .
+
+chear:ICPMSQQQ a owl:Class ;
+    rdfs:label "Triple Quadrupole Inductively Coupled Plasma Mass Spectrometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:ICPMSInstrument ;
+    skos:definition "A tandem mass spectrometer consisting of two quadrupole mass analyzers in series, with a (non-mass-resolving) radio frequency (RF)–only quadrupole between them to act as a cell for collision-induced dissociation." .
+
+chear:LC-MS a owl:Class ;
+    rdfs:label "Liquid Chromotography-Mass Spectrometery" ;
+    rdfs:subClassOf ns2:MassSpectrometry .
+
+chear:LCMSMS a owl:Class ;
+    rdfs:label "Liquid Chromatography - Tandem Mass Spectrometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:LCMS,
+        chear:TandemMassSpectrometer ;
+    skos:definition "Liquid chromatography and tandem Mass Spectrometry. MS/MS is the combination of two mass analyzers in one mass spec instrument." .
+
+chear:Language a owl:Class ;
+    rdfs:label "Language" ;
+    rdfs:subClassOf chear:Acculturation ;
+    skos:editorialNote "Needs to be rooted in sio" .
+
+chear:MentalHealth a owl:Class ;
+    rdfs:label "Mental Health" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Mental Health Indicator" .
+
+chear:MethylationAssay a owl:Class ;
+    rdfs:label "Methylation Assay" ;
+    rdfs:subClassOf sio:Assay ;
+    skos:definition "An assay that measures the methylation levels of sections of a genome." .
+
+chear:MicroarrayAssay a owl:Class ;
+    rdfs:label "Microarray Assay" ;
+    rdfs:subClassOf sio:Assay ;
+    skos:definition "An assay that uses a microarray to perform measurements." .
+
+chear:MotherAge a owl:Class ;
+    rdfs:label "Mother's Age" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Demographic,
+        sio:Age ;
+    owl:deprecated true ;
+    skos:definition "Mother's Age in Years" ;
+    skos:editorialNote "Don't we need to be clear about the point in time age is measured? For example, age at child's birth, age at conception?" .
+
+chear:MotherEducationLevel a owl:Class ;
+    rdfs:label "Mother's Education Level" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:EducationLevel ;
+    owl:deprecated true ;
+    skos:definition "Mother's Education Level" .
+
+chear:NonSmoker a owl:Class ;
+    rdfs:label "Non-smoker" ;
+    rdfs:subClassOf chear:SmokingStatus ;
+    skos:definition "Doesn't smoker cigarettes." .
+
+chear:Occupation a owl:Class ;
+    rdfs:label "Occupation" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Demographic,
+        chear:SocioeconomicStatus,
+        sio:Role .
+
+chear:OralHealth a owl:Class ;
+    rdfs:label "Oral Health" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Oral Health Indicator Class" .
+
+chear:ParentalHealthAndFamilyHistory a owl:Class ;
+    rdfs:label "Parental Health and Family History" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Parental Health and Family History Indicator Class" .
+
+chear:PrenatalNonSmoker a owl:Class ;
+    rdfs:label "Prenatal Nonsmoker" ;
+    rdfs:subClassOf chear:NonSmoker ;
+    skos:definition "Could be a former smoker or a non-smoker, so neither should be encoded as the superclass." ;
+    skos:editorialNote "Should this be a subClassOf PregnancyCharactistic as well?" .
+
+chear:PrenatalSmoker a owl:Class ;
+    rdfs:label "Prenatal Smoker" ;
+    rdfs:subClassOf chear:Smoker ;
+    skos:definition "The quality of having smoked while being pregnant." ;
+    skos:editorialNote "Should this be a subClassOf PregnancyCharactistic as well?" .
+
+chear:PreviousSmoker a owl:Class ;
+    rdfs:label "Previous Smoker" ;
+    rdfs:subClassOf chear:SmokingStatus ;
+    skos:definition "The quality of having smoked in the past." .
+
+chear:Refractometer a owl:Class ;
+    rdfs:label "Refractometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
+    skos:definition "A laboratory or field device for the measurement of an index of refraction (refractometry). The index of refraction is calculated from Snell's law while for mixtures, the index of refraction can be calculated from the composition of the material using several mixing rules such as the Gladstone–Dale relation and Lorentz–Lorenz equation." .
+
+chear:SandwichELISA a owl:Class ;
+    rdfs:label "Sandwich ELISA" ;
+    rdfs:subClassOf chear:ELISA ;
+    skos:definition "Sandwich ELISAs involve attachment of a capture antibody to a solid phase support. Samples containing known or unknown antigen are then added in a matrix or buffer that will minimize attachment to the solid phase. An enzyme-labeled antibody is then added for detection." .
+
+chear:Sibling a owl:Class ;
+    rdfs:label "Sibling" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( [ a owl:Restriction ;
+                                owl:allValuesFrom chear:Sibling ;
+                                owl:onProperty sio:hasRole ] sio:Human ) ] ;
+            owl:onProperty sio:inRelationTo ],
+        chear:Relative ;
+    skos:definition "One of two or more individuals having one or both parents in common. A male sibling is a brother, and a female sibling is a sister. In most societies throughout the world, siblings often grow up together, thereby facilitating the development of strong emotional bonds. The emotional bond between siblings is often complicated and is influenced by factors such as parental treatment, birth order, personality, and personal experiences outside the family. However, there are cases where siblings grow up in separate homes, in different environments." .
+
+chear:SmallMolecule a owl:Class ;
+    rdfs:label "Small Molecule" ;
+    rdfs:subClassOf chear:Biomolecule ;
+    skos:definition "A small molecule is a low molecular weight (< 900 daltons) organic compound that may help regulate a biological process, with a size on the order of 1 nm. Most drugs are small molecules." .
+
+chear:Smoker a owl:Class ;
+    rdfs:label "Smoker" ;
+    rdfs:subClassOf chear:SmokingStatus ;
+    skos:definition "The quality of smoking cigarettes." .
+
+chear:SomeElementarySchool a owl:Class ;
+    rdfs:label "Some Elementary School" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HighSchoolOrLess ;
+    skos:definition "Attended Some Elementary School" .
+
+chear:StressFrequency a owl:Class ;
+    rdfs:label "Stress Frequency" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:MentalHealth,
+        sio:BiologicalQuality ;
+    skos:definition "How frequently a person gets stressed." ;
+    skos:editorialNote "Again, we might want to link this to a specific assessment?" .
+
+chear:UHPLC a owl:Class ;
+    rdfs:label "Ultra High Performance Liquid Chromatography Instrument" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:HPLC ;
+    skos:definition "Modern HPLC systems have been improved to work at much higher pressures, and therefore are able to use much smaller particle sizes in the columns (<2 μm). These \"Ultra High Performance Liquid Chromatography\" systems or UHPLCs can work at up to 120 MPa (17,405 lbf/in^2), or about 1200 atmospheres." .
+
+chear:UPLCMS a owl:Class ;
+    rdfs:label "Ultra Performance Liquid Chromatography - Mass Spectrometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:MassSpectrometer,
+        chear:UHPLC .
+
+ns2:AnalyticalMethod a owl:Class .
+
+ns2:Spectroscopy a owl:Class .
+
+<http://purl.obolibrary.org/obo/DOID_6050> a owl:Class ;
+    rdfs:label "esophageal disease" ;
+    rdfs:subClassOf sio:Disease .
+
+<http://purl.obolibrary.org/obo/UBERON_0000178> a owl:Class ;
+    rdfs:label "Whole Blood" ;
+    ns1:identifier "WB" ;
+    rdfs:subClassOf chear:BodilyFluid ;
+    skos:definition "A fluid that is composed of blood plasma and erythrocytes. [database_cross_reference: http://orcid.org/0000-0002-6601-2165][database_cross_reference: http://en.wikipedia.org/wiki/Blood][database_cross_reference: https://github.com/obophenotype/uberon/issues/9][database_cross_reference: FMA:9670]" .
+
+<http://purl.obolibrary.org/obo/UBERON_0001988> a owl:Class ;
+    rdfs:label "Feces" ;
+    rdfs:subClassOf chear:Biospecimen ;
+    skos:definition "Portion of semisolid bodily waste discharged through the anus[MW,modified] [database_cross_reference: http://en.wikipedia.org/wiki/Feces][database_cross_reference: http://www.merriam-webster.com/dictionary/feces]" .
+
+sio:BiologicalReproduction a owl:Class .
+
+sio:ChemicalEntity a owl:Class .
+
+sio:Circumference a owl:Class ;
+    rdfs:label "Circumference" ;
+    rdfs:subClassOf chear:Anthropometry .
+
+sio:Community a owl:Class .
+
+sio:Height a owl:Class ;
+    rdfs:label "Height" ;
+    rdfs:subClassOf chear:Anthropometry .
+
+sio:LineGraph a owl:Class .
+
+sio:MaterialEntity a owl:Class .
+
+sio:MedicalProcedure a owl:Class .
+
+sio:Normal a owl:Class .
+
+sio:ObjectQuality a owl:Class .
+
+sio:Race a owl:Class ;
+    rdfs:label "Race" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Demographic,
+        sio:BiologicalQuality .
+
+sio:Ratio a owl:Class .
+
+sio:Sampling a owl:Class .
+
+sio:Sum a owl:Class .
+
+chear:Ancestor a owl:Class ;
+    rdfs:label "Ancestor" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( [ a owl:Restriction ;
+                                owl:allValuesFrom chear:Descendant ;
+                                owl:onProperty sio:hasRole ] sio:Human ) ] ;
+            owl:onProperty sio:inRelationTo ],
+        chear:Relative ;
+    skos:definition "An ancestor or forebear is a parent or (recursively) the parent of an ancestor (i.e., a grandparent, great-grandparent, great-great-grandparent, and so forth). Ancestor is \"any person from whom one is descended. In law the person from whom an estate has been inherited.\"" .
+
+chear:AtomicSpectroscopy a owl:Class ;
+    rdfs:label "Atomic Spectroscopy" ;
+    rdfs:subClassOf ns2:Spectroscopy .
+
+chear:Birth a owl:Class ;
+    rdfs:label "Birth" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:TimeInterval ;
+    skos:definition "The ending of a pregnancy by one or more babies leaving a woman's uterus by vagina passage or c-section." .
+
+chear:BloodComponent a owl:Class ;
+    rdfs:label "Blood Component" ;
+    rdfs:subClassOf chear:BodilyFluid ;
+    skos:definition "A derivable component of whole blood." .
+
+chear:ChromatographyInstrument a owl:Class ;
+    rdfs:label "Chromatography Instrument" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
+    skos:definition "Chromatography is a laboratory technique for the separation of a mixture. The mixture is dissolved in a fluid called the mobile phase, which carries it through a structure holding another material called the stationary phase. The various constituents of the mixture travel at different speeds, causing them to separate. The separation is based on differential partitioning between the mobile and stationary phases. Subtle differences in a compound's partition coefficient result in differential retention on the stationary phase and thus affect the separation." .
+
+chear:Descendant a owl:Class ;
+    rdfs:label "Descendant" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( [ a owl:Restriction ;
+                                owl:allValuesFrom chear:Ancestor ;
+                                owl:onProperty sio:hasRole ] sio:Human ) ] ;
+            owl:onProperty sio:inRelationTo ],
+        chear:Relative ;
+    skos:definition "The child of a human, or any grandchild, great-grandchild, and so on." .
+
+chear:DevelopmentalQuality a owl:Class ;
+    rdfs:label "Developmental Quality" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf sio:BiologicalQuality ;
+    skos:definition "Refers to which stage of development a person is in." .
+
+chear:DietAndNutrition a owl:Class ;
+    rdfs:label "Diet and Nutrition" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Diet and Nutrition Indicator" .
+
+chear:ELISA a owl:Class ;
+    rdfs:label "enzyme-linked immunosorbent assay (ELISA)" ;
+    rdfs:subClassOf ns2:Immunoassay ;
+    skos:definition "ELISA is an immunoassay that uses antibodies and color change to identify a substance (Wikipedia)" .
+
+chear:Element a owl:Class ;
+    rdfs:label "Element" ;
+    rdfs:subClassOf chear:TargetedAnalyte .
+
+chear:EnvironmentalExposure a owl:Class ;
+    rdfs:label "Environmental Exposure" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "EnvironmentalExposure Indicator Class" ;
+    skos:editorialNote "may need to refine this name in order to clearly differentiate from environmental exposures measured within CHEAR. Perhaps ExternalEnvironmental Exposure. Ok for now but we may want to discuss." .
+
+chear:GestationalAge a owl:Class ;
+    rdfs:label "Gestational Age" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:BirthOutcome,
+        sio:Age ;
+    skos:definition "Describes how far along a pregnancy is, usually measured in weeks." .
+
+chear:HealthcareAccess a owl:Class ;
+    rdfs:label "Healthcare Access" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Healthcare Access" .
+
+chear:LCMS a owl:Class ;
+    rdfs:label "Liquid Chromatography–Mass Spectrometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:LiquidChromatographyInstrument,
+        chear:MassSpectrometer ;
+    skos:definition "An analytical chemistry technique that combines the physical separation capabilities of liquid chromatography (or HPLC) with the mass analysis capabilities of mass spectrometry (MS). Coupled chromatography - MS systems are popular in chemical analysis because the individual capabilities of each technique are enhanced synergistically. While liquid chromatography separates mixtures with multiple components, mass spectrometry provides structural identity of the individual components with high molecular specificity and detection sensitivity. This tandem technique can be used to analyze biochemical, organic, and inorganic compounds commonly found in complex samples of environmental and biological origin." .
+
+chear:LiquidChromatographyInstrument a owl:Class ;
+    rdfs:label "Liquid Chromatography Instrument" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:ChromatographyInstrument ;
+    skos:definition "A separation technique in which the mobile phase is a liquid. It can be carried out either in a column or a plane. Present day liquid chromatography that generally utilizes very small packing particles and a relatively high pressure is referred to as high performance liquid chromatography (HPLC)." .
+
+chear:Macromolecule a owl:Class ;
+    rdfs:label "Macromolecule" ;
+    rdfs:subClassOf chear:Biomolecule ;
+    skos:definition "A very large molecule, such as protein, commonly created by polymerization of smaller subunits (monomers). They are typically composed of thousands of atoms or more. The most common macromolecules in biochemistry are biopolymers (nucleic acids, proteins, carbohydrates and polyphenols) and large non-polymeric molecules (such as lipids and macrocycles)." .
+
+chear:MicroplateReader a owl:Class ;
+    rdfs:label "Microplate Reader" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
+    skos:definition "Instruments which are used to detect biological, chemical or physical events of samples in microtiter plates. They are widely used in research, drug discovery, bioassay validation, quality control and manufacturing processes in the pharmaceutical and biotechnological industry and academic organizations. Sample reactions can be assayed in 6-1536 well format microtiter plates. The most common microplate format used in academic research laboratories or clinical diagnostic laboratories is 96-well (8 by 12 matrix) with a typical reaction volume between 100 and 200 µL per well. Higher density microplates (384- or 1536-well microplates) are typically used for screening applications, when throughput (number of samples per day processed) and assay cost per sample become critical parameters, with a typical assay volume between 5 and 50 µL per well. Common detection modes for microplate assays are absorbance, fluorescence intensity, luminescence, time-resolved fluorescence, and fluorescence polarization." .
+
+chear:MotherBMI a owl:Class ;
+    rdfs:label "Mother's Body Mass Index" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:BMI ;
+    owl:deprecated true ;
+    skos:definition "Mother's Body Mass Index" .
+
+chear:MotherWeight a owl:Class ;
+    rdfs:label "Mother's Weight" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Weight ;
+    owl:deprecated true ;
+    skos:definition "Mother's Weight" .
+
+chear:Parity a owl:Class ;
+    rdfs:label "Parity" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:PregnancyCharacteristic,
+        sio:Count ;
+    skos:definition "Number of Pregnancies that were carried to a viable Gestational Age." .
+
+chear:PersonalProductUse a owl:Class ;
+    rdfs:label "Personal Product Use" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Personal Product Use Indicator Class" .
+
+chear:PolymeraseChainReaction a owl:Class ;
+    rdfs:label "Polymerase Chain Reaction" ;
+    rdfs:subClassOf sio:Assay .
+
+chear:PretermBirth a owl:Class ;
+    rdfs:label "Preterm Birth" ;
+    rdfs:subClassOf chear:BirthOutcome .
+
+chear:QuitSmoking a owl:Class ;
+    rdfs:label "Quit Smoking" ;
+    rdfs:subClassOf chear:PreviousSmoker ;
+    skos:definition "Quit Smoking Cigarettes" .
+
+chear:RoomCount a owl:Class ;
+    rdfs:label "Room Count" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HousingCharacteristic,
+        sio:Count ;
+    skos:definition "Total Number of Rooms in the Home" .
+
+chear:RouteOfDelivery a owl:Class ;
+    rdfs:label "Route Of Delivery" ;
+    rdfs:subClassOf chear:DeliveryCharacteristic .
+
+ns2:Chromatography a owl:Class .
+
+sio:BiologicalSex a owl:Class ;
+    rdfs:label "Biological Sex" ;
+    rdfs:subClassOf chear:Demographic .
+
+sio:Birthing a owl:Class .
+
+sio:Cell a owl:Class ;
+    rdfs:label "Cell" ;
+    rdfs:subClassOf chear:Biospecimen .
+
+sio:Disease a owl:Class .
+
+sio:Ethnicity a owl:Class ;
+    rdfs:label "Ethnicity" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Demographic,
+        sio:BiologicalQuality .
+
+sio:Identifier a owl:Class .
+
+sio:Length a owl:Class .
+
+sio:Specimen a owl:Class .
+
+sio:StandardScore a owl:Class .
+
+sio:StatusDescriptor a owl:Class .
+
+sio:measuredAt a owl:ObjectProperty .
+
+chear:ATIDU a owl:Class ;
+    rdfs:label "Alcohol, Tobacco, and Illicit Drug Use" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Alcohol, Tobacco, and Illicit Drug Use Indicator Class" .
+
+chear:Child a owl:Class ;
+    rdfs:label "Child" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( [ a owl:Restriction ;
+                                owl:allValuesFrom chear:Parent ;
+                                owl:onProperty sio:hasRole ] sio:Human ) ] ;
+            owl:onProperty sio:inRelationTo ],
+        chear:Descendant ;
+    skos:definition "A relationship with a parent (such as sons and daughters of any age)." .
+
+chear:DietQuantity a owl:Class ;
+    rdfs:label "Diet Quantity" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:DietAndNutrition,
+        sio:Quantity ;
+    skos:definition "A quantity relating to diet and nutrition." ;
+    skos:editorialNote "What differentiated diet from nutrition? That is why is this needed since we have the DietAndNutrition Class" .
+
+chear:EOPerHPF a owl:Class ;
+    rdfs:label "eosinophils per high-power field" ;
+    rdfs:comment "A histological count of the eosinophils in a high-power microscopic field of view, or 0.158 mm^2 (x400)." ;
+    rdfs:subClassOf sio:Count .
+
+chear:EducationGrade a owl:Class ;
+    rdfs:label "Education Grade" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:EducationLevel ;
+    skos:definition "The highest grade of education achieved" .
+
+chear:FloorType a owl:Class ;
+    rdfs:label "Floor Type" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HousingCharacteristic,
+        sio:MaterialEntity ;
+    skos:definition "Type of material that makes up the floor." .
+
+chear:HadMedicalTherapy a owl:Class ;
+    rdfs:label "Medical Therapy Procedure" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:MedicalHistory,
+        sio:MedicalProcedure ;
+    skos:definition "Had Medical Therapy Procedure to aide in treatment." .
+
+chear:Height a owl:Class ;
+    rdfs:label "Height" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Anthropometry ;
+    skos:definition "Height" .
+
+chear:HigherEducation a owl:Class ;
+    rdfs:label "Higher Education" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:EducationLevel ;
+    skos:definition "Has Education Level Greater than High School" .
+
+chear:IQ a owl:Class ;
+    rdfs:label "Intelligence Quotient" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Assessment,
+        sio:Quantity ;
+    skos:definition "A measure of intelligence" .
+
+chear:MercurySpecies a owl:Class ;
+    rdfs:label "Mercury Species" ;
+    rdfs:subClassOf chear:TargetedAnalyte .
+
+chear:NonBiologicalRelative a owl:Class ;
+    rdfs:label "Non-Biological Relative" ;
+    rdfs:subClassOf chear:Relative ;
+    skos:definition "People that are considered relatives but are not related by blood. This includes relatives by marriage, adoption, or fosterage." .
+
+chear:NucleicAcidSequencing a owl:Class ;
+    rdfs:label "Nucleic Acid Sequencing" ;
+    rdfs:subClassOf sio:Assay .
+
+chear:Parent a owl:Class ;
+    rdfs:label "Parent" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( [ a owl:Restriction ;
+                                owl:allValuesFrom chear:Child ;
+                                owl:onProperty sio:hasRole ] sio:Human ) ] ;
+            owl:onProperty sio:inRelationTo ],
+        chear:Ancestor ;
+    skos:definition "A parent is the caretaker of a child (where \"child\" refers to offspring, not necessarily age). A biological parent is a person whose gamete resulted in a child, a male through the sperm, and a female through the ovum. Parents are first-degree relatives and have 50% genetic meet. A female can also become a parent through surrogacy. Some parents may be adoptive parents, who nurture and raise an offspring, but are not actually biologically related to the child. Orphans without adoptive parents can be raised by their grandparents or other family members." .
+
+chear:PregnancySample a owl:Class ;
+    rdfs:label "Pregnancy Sample" ;
+    rdfs:subClassOf chear:Biospecimen ;
+    skos:definition "A sample that is taken at or near pregnancy or birth." .
+
+chear:TandemMassSpectrometer a owl:Class ;
+    rdfs:label "Tandem Mass Spectrometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:MassSpectrometer ;
+    skos:definition "Tandem mass spectrometry, also known as MS/MS or MS2, involves multiple steps of mass spectrometry selection, with some form of fragmentation occurring in between the stages. In a tandem mass spectrometer, ions are formed in the ion source and separated by mass-to-charge ratio in the first stage of mass spectrometry (MS1). Ions of a particular mass-to-charge ratio (precursor ions) are selected and fragment ions (product ions) are created by collision-induced dissociation, ion-molecule reaction, photodissociation, or other process. The resulting ions are then separated and detected in a second stage of mass spectrometry (MS2)." .
+
+chear:TechnicalSchool a owl:Class ;
+    rdfs:label "Technical School" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:EducationLevel ;
+    skos:definition "Attended a Technical School." .
+
+chear:Weight a owl:Class ;
+    rdfs:label "Weight" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Anthropometry,
+        sio:Mass ;
+    skos:definition "The resulting Force from the interaction between a person's Mass and Gravity." .
+
+<http://purl.obolibrary.org/obo/DOID_13922> a owl:Class ;
+    rdfs:label "eosinophilic esophagitis" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/DOID_6050> .
+
+<http://purl.obolibrary.org/obo/UBERON_0001043> a owl:Class ;
+    rdfs:label "Esophagus" ;
+    rdfs:subClassOf sio:Organ .
+
+sio:BiologicalEntity a owl:Class .
+
+sio:Mass a owl:Class .
+
+sio:isPhenotypeOf a owl:ObjectProperty .
+
+chear:CaesareanSection a owl:Class ;
+    rdfs:label "Caesarian Section" ;
+    rdfs:subClassOf chear:PregnancyCharacteristic,
+        chear:RouteOfDelivery ;
+    skos:definition "Caesarian Section Medical Procedure. One-third of pregnancies in the US end in C-Sections." .
+
+chear:DateOfBirth a owl:Class ;
+    rdfs:label "Date of Birth" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Demographic,
+        sio:TimeInterval ;
+    skos:definition "Date of day on which a person was born." .
+
+chear:HPLC a owl:Class ;
+    rdfs:label "High-Performance Liquid Chromatography" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf chear:LiquidChromatographyInstrument ;
+    skos:definition "High-performance liquid chromatography (HPLC; formerly referred to as high-pressure liquid chromatography), is a technique in analytical chemistry used to separate, identify, and quantify each component in a mixture. It relies on pumps to pass a pressurized liquid solvent containing the sample mixture through a column filled with a solid adsorbent material. Each component in the sample interacts slightly differently with the adsorbent material, causing different flow rates for the different components and leading to the separation of the components as they flow out the column." .
+
+chear:MedicalHistory a owl:Class ;
+    rdfs:label "Medical History" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Medical History Indicator Class" .
+
+ns2:Immunoassay a owl:Class .
+
+sio:Age a owl:Class ;
+    rdfs:label "Age" ;
+    rdfs:subClassOf chear:Demographic .
+
+sio:BiologicalQuality a owl:Class .
+
+sio:Role a owl:Class .
+
+sio:Tissue a owl:Class ;
+    rdfs:label "Tissue" ;
+    rdfs:subClassOf chear:Biospecimen .
+
+sio:hasValue a owl:DatatypeProperty .
+
+chear:Biomolecule a owl:Class ;
+    rdfs:label "Biomolecule" ;
+    rdfs:subClassOf chear:Biospecimen ;
+    skos:definition "A biospecimen that is composed of molecular entities." .
+
+chear:BodilyFluid a owl:Class ;
+    rdfs:label "Bodily Fluid" ;
+    rdfs:subClassOf chear:Biospecimen ;
+    skos:definition "Liquids originating from inside the bodies of living people. They include fluids that are excreted or secreted from the body, and body water that normally is not." .
+
+chear:Insurance a owl:Class ;
+    rdfs:label "Insurance" ;
+    rdfs:subClassOf chear:HealthcareAccess,
+        chear:SocioeconomicStatus .
+
+chear:SmokingStatus a owl:Class ;
+    rdfs:label "Smoking Status" ;
+    rdfs:subClassOf chear:ATIDU,
+        sio:StatusDescriptor ;
+    skos:definition "Smoking Status" ;
+    skos:editorialNote "We need to discuss this entire hierarchy." .
+
+chear:SocioeconomicStatus a owl:Class ;
+    rdfs:label "Socioeconomic Status" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Socioeconomic Status Indicator Class" .
+
+ns2:SampleIndicator a owl:Class ;
+    rdfs:label "Sample Indicator" ;
+    rdfs:subClassOf ns2:Indicator,
+        ns2:StudyIndicator ;
+    skos:definition "Class for Sample Indicators" .
+
+sio:Quantity a owl:Class .
+
+prov:wasDerivedFrom a owl:ObjectProperty .
+
+chear:Biospecimen a owl:Class ;
+    rdfs:label "Biospecimen" ;
+    rdfs:subClassOf ns2:SampleIndicator,
+        sio:Specimen ;
+    skos:definition "A biological laboratory specimen held by a biorepository for research. Such a specimen would be taken by sampling so as to be representative of any other specimen taken from the source of the specimen. When biological specimens are stored, ideally they remain equivalent to freshly-collected specimens for the purposes of research." .
+
+chear:HighSchoolOrLess a owl:Class ;
+    rdfs:label "High School or Less" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:EducationLevel ;
+    skos:definition "Education Level of High School or Less" .
+
+chear:HousingCharacteristic a owl:Class ;
+    rdfs:label "Housing Characteristic" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Housing Characteristic Indicator Class" .
+
+chear:Relative a owl:Class ;
+    rdfs:label "Relative" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( [ a owl:Restriction ;
+                                owl:allValuesFrom chear:Relative ;
+                                owl:onProperty sio:hasRole ] sio:Human ) ] ;
+            owl:onProperty sio:inRelationTo ],
+        chear:Demographic,
+        sio:Role ;
+    skos:definition "Broadly, kinship patterns may be considered to include people related by both descent – i.e. social relations during development – and by marriage. Human kinship relations through marriage are commonly called \"affinity\" in contrast to the relationships that arise in one's group of origin, which may be called one's descent group. In some cultures, kinship relationships may be considered to extend out to people an individual has economic or political relationships with, or other forms of social connections. Within a culture, some descent groups may be considered to lead back to gods or animal ancestors (totems). This may be conceived of on a more or less literal basis." .
+
+ns2:Indicator a owl:Class .
+
+ns2:MassSpectrometry a owl:Class .
+
+<http://purl.obolibrary.org/obo/CHEBI_85122> a owl:Class ;
+    rdfs:label "Paraben" ;
+    rdfs:subClassOf chear:TargetedAnalyte .
+
+sio:Protein a owl:Class .
+
+chear:Anthropometry a owl:Class ;
+    rdfs:label "Anthropometry" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Attributes pertaining to the scientific study of the measurements and proportions of the human body." .
+
+chear:ArsenicSpecies a owl:Class ;
+    rdfs:label "Arsenic Species" ;
+    rdfs:subClassOf chear:TargetedAnalyte ;
+    skos:definition "A molecular entity with arsenic components." .
+
+chear:BiologicalResponse a owl:Class ;
+    rdfs:label "Biological Response" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Indicator of biological response to environmental exposure" .
+
+chear:MassSpectrometer a owl:Class ;
+    rdfs:label "Mass Spectrometer" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
+    skos:definition "Mass spectrometry (MS) is an analytical technique that ionizes chemical species and sorts the ions based on their mass-to-charge ratio. In simpler terms, a mass spectrum measures the masses within a sample. Mass spectrometry is used in many different fields and is applied to pure samples as well as complex mixtures." .
+
+ns2:TandemMassSpectrometry a owl:Class .
+
+sio:hasAttribute a owl:ObjectProperty .
+
+chear:AlkylPhosphatePesticideMetabolite a owl:Class ;
+    rdfs:label "Alkyl Phosphate Pesticide Metabolite" ;
+    rdfs:subClassOf chear:TargetedAnalyte .
+
+chear:HouseholdApplianceCount a owl:Class ;
+    rdfs:label "Household Appliance Count" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:HousingCharacteristic,
+        sio:Count ;
+    skos:definition "Total number of appliances that can be found in the home." .
+
+chear:Perfluorocarbon a owl:Class ;
+    rdfs:label "PFC" ;
+    rdfs:subClassOf chear:TargetedAnalyte .
+
+<http://hadatac.org/ont/vstoi#PhysicalInstrument> a owl:Class .
+
+sio:Assay a owl:Class ;
+    rdfs:subClassOf ns2:AnalyticalMethod .
+
+sio:Count a owl:Class .
+
+chear:BMI a owl:Class ;
+    rdfs:label "Body Mass Index" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf [ a rdf:List ;
+                    rdf:first [ a owl:Restriction ;
+                            owl:onProperty prov:wasDerivedFrom ;
+                            owl:someValuesFrom sio:Height ] ;
+                    rdf:rest [ a rdf:List ;
+                            rdf:first [ a owl:Restriction ;
+                                    owl:onProperty prov:wasDerivedFrom ;
+                                    owl:someValuesFrom sio:Mass ] ;
+                            rdf:rest () ] ] ],
+        chear:Anthropometry,
+        sio:Quantity ;
+    skos:definition "Body Mass Index" ;
+    skos:editorialNote "Should we note that this is derived from height and weight? JS: I think so" .
+
+chear:Race a owl:Class ;
+    rdfs:label "Race" ;
+    rdfs:subClassOf sio:Race ;
+    skos:definition "Race" .
+
+chear:BirthOutcome a owl:Class ;
+    rdfs:label "Birth Outcome" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Birth Outcomes Indicator Class" .
+
+chear:EducationLevel a owl:Class ;
+    rdfs:label "Level of Education" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Demographic,
+        chear:SocioeconomicStatus,
+        sio:ObjectQuality ;
+    skos:definition "A Person's Level of Education" .
+
+chear:PregnancyCharacteristic a owl:Class ;
+    rdfs:label "Pregnancy Characteristic" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Pregnancy Characteristic Indicator Class" .
+
+chear:TobaccoMetabolite a owl:Class ;
+    rdfs:label "Tobacco Metabolite" ;
+    rdfs:subClassOf chear:TargetedAnalyte .
+
+chear:TargetedAnalyte a owl:Class ;
+    rdfs:label "Targeted Analyte" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf chear:Analyte,
+        ns2:StudyIndicator ;
+    skos:definition "A targeted analyte is one that has been selected by the CHEAR program as a prioritized analyte for CHEAR lab hubs to measure." .
+
+<http://purl.obolibrary.org/obo/CHEBI_134094> a owl:Class ;
+    rdfs:label "Polybrominated Diphenyl Ether" ;
+    rdfs:subClassOf chear:TargetedAnalyte .
+
+sio:TimeInterval a owl:Class .
+
+chear:Demographic a owl:Class ;
+    rdfs:label "Demographic" ;
+    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns2:StudyIndicator ;
+    skos:definition "Demographics are quantifiable characteristics of a given population." .
+
+<http://purl.obolibrary.org/obo/CHEBI_15882> a owl:Class ;
+    rdfs:label "Environmental Phenol" ;
+    rdfs:subClassOf chear:TargetedAnalyte .
+
+<http://purl.obolibrary.org/obo/CHEBI_33666> a owl:Class ;
+    rdfs:label "PAH" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> .
+
+ns2:StudyIndicator a owl:Class ;
+    rdfs:label "Study Indicator" ;
+    rdfs:subClassOf ns2:Indicator ;
+    skos:definition "Class for Study Indicators" .
+
+<http://purl.obolibrary.org/obo/CHEBI_26092> a owl:Class ;
+    rdfs:label "Phthalate" ;
+    rdfs:subClassOf chear:TargetedAnalyte .
+
+chear:Metal a owl:Class ;
+    rdfs:label "Metal" ;
+    rdfs:subClassOf chear:Element ;
+    skos:definition "For environmental purposes, CHEAR metals are metals and metalliods." .
+
+<http://purl.obolibrary.org/obo/CHEBI_134179> a owl:Class ;
+    rdfs:label "Volatile Organic Compound" ;
+    rdfs:subClassOf chear:TargetedAnalyte .
+

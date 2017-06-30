@@ -10,8 +10,9 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix chear: <http://hadatac.org/ont/chear/> .
+@prefix chear: <http://hadatac.org/ont/chear#> .
 @prefix uberon: <http://purl.obolibrary.org/obo/UBERON_>.
+@prefix : <http://hadatac.org/ont/chear#>.
 
 
 

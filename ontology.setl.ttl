@@ -144,11 +144,11 @@
 #              :LocalSensingPerspectiveType,
               :LocalStudyIndicatorType;
     setl:hasContext '''{
-  "@vocab" :  "https://chear.tw.rpi.edu/",
   "owl": "http://www.w3.org/2002/07/owl#",
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
   "sio" :     "http://semanticscience.org/resource/",
   "chear" :   "http://hadatac.org/ont/chear#",
+  "@vocab" :   "http://hadatac.org/ont/chear#",
   "skos" :    "http://www.w3.org/2004/02/skos/core#",
   "prov" :    "http://www.w3.org/ns/prov#",
   "chebi" :   "http://purl.obolibrary.org/obo/CHEBI_",
@@ -288,7 +288,7 @@
     prov:used
         :analytes_table;
     setl:hasContext '''{
-  "@vocab" :  "https://chear.tw.rpi.edu/",
+  "@vocab" :   "http://hadatac.org/ont/chear#",
   "owl": "http://www.w3.org/2002/07/owl#",
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
   "sio" :     "http://semanticscience.org/resource/",

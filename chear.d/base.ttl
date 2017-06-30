@@ -15,6 +15,7 @@
 @prefix vstoi: <http://hadatac.org/ont/vstoi#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix hasneto: <http://hadatac.org/ont/hasneto#> .
+@prefix : <http://hadatac.org/ont/chear#>.
 
 <http://hadatac.org/ont/chear> a owl:Ontology ;
 	owl:versionIRI <http://hadatac.org/ont/chear/1.1> ;
