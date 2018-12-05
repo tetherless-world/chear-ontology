@@ -12,6 +12,8 @@ import setlr
 from os import listdir
 from rdflib import *
 
+import logging
+
 CHEAR_DIR='chear.d/'
 SETL_FILE='ontology.setl.ttl'
 
@@ -21,6 +23,9 @@ prov = Namespace('http://www.w3.org/ns/prov#')
 dc = Namespace('http://purl.org/dc/terms/')
 pv = Namespace('http://purl.org/net/provenance/ns#')
 
+logging_level = logging.INFO
+logging.basicConfig(level=logging_level)
+
 def build():
     setl_graph = Graph()
     setl_graph.load(SETL_FILE,format="turtle")
@@ -28,7 +33,7 @@ def build():
     formats = ['ttl','owl','json']
     ontology_output_files = [setl_graph.resource(URIRef('file://'+cwd+'/chear.'+x)) for x in formats]
     for filename in os.listdir(CHEAR_DIR):
-        if not filename.endswith('.ttl'):
+        if not filename.endswith('.ttl') or filename.startswith('#'):
             continue
         print 'Adding fragment', filename
 
@@ -40,8 +45,6 @@ def build():
         fragment.add(prov.wasGeneratedBy, fragment_extract)
         fragment_extract.add(RDF.type, setl.Extract)
         fragment_extract.add(prov.used, URIRef('file://'+CHEAR_DIR+filename))
-
-    print setl_graph.serialize(format="turtle")
 
     setlr._setl(setl_graph)
 

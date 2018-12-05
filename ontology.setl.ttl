@@ -14,112 +14,88 @@
 @prefix csvw:          <http://www.w3.org/ns/csvw#> .
 @prefix pv:            <http://purl.org/net/provenance/ns#>.
 @prefix prv:           <http://hadatac.org/ont/prov#>.
-@prefix labkey:        <http://chear.tw.rpi.edu/labkey/query/CHEAR%20Production/selectRows.api?schemaName=lists&query.queryName=>.
 
 @prefix :              <https://hadatac.org/setl/> .
 
 @prefix chear:    <http://hadatac.org/ont/chear#> .
 
-:LocalAnalyteType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalAnalyteType;
-  ].
-
-:LocalAttributeType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalAttributeType;
-  ].
-
-:LocalDetectorType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalDetectorType;
-  ].
-
-:LocalInstrumentPerspectiveType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalInstrumentPerspectiveType;
-  ].
-
-:LocalInstrumentType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalInstrumentType;
-  ].
-
-:LocalMethodType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalMethodType;
-  ].
-
-:LocalObjectType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalObjectType;
-  ].
-
-:LocalPlatformType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalPlatformType;
-  ].
-
-:LocalProcessType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalProcessType;
-  ].
-
-:LocalSampleType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalSampleType;
-  ].
-
-:LocalScaleType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalScaleType;
-  ].
-
-:LocalSensingPerspectiveType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalSensingPerspectiveType;
-  ].
-
-:LocalStudyIndicatorType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalStudyIndicatorType;
-  ].
-
-:LocalRoleType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalRoleType;
-  ].
-
-:LocalTimeIntervalType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:LocalTimeIntervalType;
-  ].
-
-:IndicatorType a setl:JSON;
-  prov:wasGeneratedBy [
-    a setl:Extract;
-    prov:used labkey:IndicatorType;
-  ].
 
 :analytes_table a csvw:Table, setl:Table;
   prov:wasGeneratedBy [
     a setl:Extract;
     prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=0>;
+  ].
+  
+:attributes_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=99342435>;
+  ].
+
+:instrument_perspectives_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=2136275427>;
+  ].
+
+:instruments_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=1602379898>;
+  ].
+
+:methods_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=1751401330>;
+  ].
+
+:objects_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=901041093>;
+  ].
+
+:roles_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=96467471>;
+  ].
+
+:samples_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=487418460>;
+  ].
+
+:indicators_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=1372995492>;
+  ].
+
+:studies_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=2079819994>;
+  ].
+
+:time_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=2119994014>;
+  ].
+
+:units_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=1938457669>;
+  ].
+
+:cogat_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=106241699>;
   ].
 
 
@@ -127,171 +103,24 @@
   prov:wasGeneratedBy [
     a setl:Transform, setl:JSLDT;
     prov:used
-#              :LocalAnalyteType,
-              :LocalAttributeType,
-              :LocalDetectorType,
-              :IndicatorType,
-#              :LocalInstrumentPerspectiveType,
-              :LocalInstrumentType,
-              :LocalMethodType,
-              :LocalObjectType,
-              :LocalPlatformType,
-#              :LocalProcessType,
-              :LocalSampleType,
-              :LocalScaleType,
-              :LocalRoleType,
-              :LocalTimeIntervalType,
-#              :LocalSensingPerspectiveType,
-              :LocalStudyIndicatorType;
-    setl:hasContext '''{
-  "owl": "http://www.w3.org/2002/07/owl#",
-  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-  "sio" :     "http://semanticscience.org/resource/",
-  "chear" :   "http://hadatac.org/ont/chear#",
-  "@vocab" :   "http://hadatac.org/ont/chear#",
-  "skos" :    "http://www.w3.org/2004/02/skos/core#",
-  "prov" :    "http://www.w3.org/ns/prov#",
-  "chebi" :   "http://purl.obolibrary.org/obo/CHEBI_",
-  "obo" :   "http://purl.obolibrary.org/obo/",
-  "pubchem" : "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/",
-  "dc"   :    "http://purl.org/dc/terms/",
-  "hasco" : "http://hadatac.org/ont/hasco#",
-  "vstoi" : "http://hadatac.org/ont/vstoi#",
-  "hasneto" : "http://hadatac.org/ont/hasneto#",
-  "uberon" : "http://purl.obolibrary.org/obo/UBERON_",
-  "do": "http://purl.obolibrary.org/obo/DOID_",
-  "prv" : "http://hadatac.org/ont/prov#",
-  "chear-kb" : "http://hadatac.org/kb/chear#",
-  "envo": "http://purl.obolibrary.org/obo/ENVO_",
-  "cmo"  :    "http://purl.org/twc/ontologies/cmo.owl#"
-}''';
-  prov:value '''[{
-    "@id": "http://hadatac.org/ont/chear",
-    "@context": "https://raw.githubusercontent.com/jimmccusker/ontext/master/owl-context.jsonld",
-    "@graph": [{
-      "@for": "r in row['rows']",
-      "@do": {
-        "@if" : "'owl:deprecated' not in r or r['owl:deprecated'] != '1.0' or r['owl:deprecated'] != '1.1'",
-        "@id": "{{r['hasURI']}}",
-        "@type": [
-          "owl:Class",
-          {
-            "@if" : "'rdf:type' in r and r['rdf:type'] is not None and len(r['rdf:type'].strip()) > 0",
-            "@for" : "t in re.split('\\\\s*[,&]\\\\s*', r['rdf:type'])",
-            "@do" : "{{t}}"
-          }
-        ],
-        "owl:deprecated": {
-          "@if" : "'owl:deprecated' in r and r['owl:deprecated'] is not None",
-          "@value" : true
-        },
-        "rdfs:label": {
-          "@if" : "'rdfs:label' in r and r['rdfs:label'] is not None and len(r['rdfs:label'].strip()) > 0",
-          "@value" : "{{r['rdfs:label']}}"
-        },
-        "dc:identifier": {
-          "@if" : "'dcterms:identifier' in r and r['dcterms:identifier'] is not None and len(r['dcterms:identifier'].strip()) > 0",
-          "@value" : "{{r['dcterms:identifier'].strip()}}"
-        },
-        "skos:editorialNote": {
-          "@if" : "'skos:editorialNote' in r and r['skos:editorialNote'] is not None and len(r['skos:editorialNote'].strip()) > 0",
-          "@value" : "{{r['skos:editorialNote']}}"
-        },
-        "skos:editorialNote": {
-          "@if" : "'skos:editorialNote' in r and r['skos:editorialNote'] is not None and len(r['skos:editorialNote'].strip()) > 0",
-          "@value" : "{{r['skos:editorialNote']}}"
-        },
-        "skos:definition": [
-          {
-            "@if" : "'rdfs:comment' in r and r['rdfs:comment'] is not None and len(r['rdfs:comment'].strip()) > 0",
-            "@value" : "{{r['rdfs:comment']}}"
-          },
-          {
-            "@if" : "'skos:definition' in r and r['skos:definition'] is not None and len(r['skos:definition'].strip()) > 0",
-            "@value" : "{{r['skos:definition']}}"
-          }
-        ],
-        "hasco:wasApprovedBy": [
-          {
-            "@if" : "'hasco:approvedBy' in r and r['hasco:approvedBy'] is not None and len(r['hasco:approvedBy'].strip()) > 0",
-            "@value" : "{{r['hasco:approvedBy']}}"
-          }
-        ],
-        "rdfs:subClassOf": [
-          { "@if" : "'hasneto:hasUnit' in r and not isempty(r['hasneto:hasUnit'])",
-            "@type" : "owl:Restriction",
-            "on" : { "@id":"sio:hasUnit"},
-            "owl:hasValue" : { "@id": "{{r['hasneto:hasUnit']}}" }
-          },
-          { "@if" : "'prov:wasGeneratedBy' in r and not isempty(r['prov:wasGeneratedBy'])",
-            "@for" : "s in re.split('\\\\s*[,&]\\\\s*', r['prov:wasGeneratedBy'])",
-            "@do" : {
-              "@type" : "owl:Restriction",
-              "owl:onProperty" : { "@id":"prov:wasDerivedFrom"},
-              "owl:allValuesFrom" : { "@id": "{{s}}" }
-            }
-          },
-          { "@if" : "'sio:isAttributeOf' in r and not isempty(r['sio:isAttributeOf'])",
-            "@for" : "s in re.split('\\\\s*[,&]\\\\s*', r['sio:isAttributeOf'])",
-            "@do" : { "@type" : "Restriction", "on" : "sio:isAttributeOf", "only" : "{{s}}" }
-          },
-          {
-            "@if" : "'sio:hasUnit' in r and not isempty(r['sio:hasUnit'])",
-            "@type" : "owl:Restriction", "on" : "sio:hasUnit", "value" : { "@id": "{{r['sio:hasUnit']}}" }
-          },
-          { "@if" : "'start' in r and not isempty(r.start)",
-            "@type" : "Restriction", "on" : "sio:hasStartTime",
-            "only" : {
-              "@type" : "Class", "and" : [
-                { "@id": "{{r['sio:hasUnit']}}" },
-                { "@type" : "Restriction", "on" : "sio:hasValue", "value" : {"@value" : "{{r.start}}", "@type" : "xsd:integer"} }
-              ]}
-          },
-          { "@if" : "'end' in r and not isempty(r.end)",
-            "@type" : "Restriction", "on" : "sio:hasEndTime",
-            "only" : {
-              "@type" : "Class", "and" : [
-                { "@id": "{{r['sio:hasUnit']}}" },
-                { "@type" : "Restriction", "on" : "sio:hasValue", "value" : {"@value" : "{{r.end}}", "@type" : "xsd:integer"} }
-              ]}
-          },
-          {
-            "@if" : "'sio:inRelationTo' in r and not isempty(r['sio:inRelationTo'])",
-            "@type" : "owl:Restriction", "on" : "sio:inRelationTo", "only" : {
-              "@type" : "Class", "and" : [
-                { "@id": "{{r['sio:inRelationTo']}}" },
-                {
-                  "@if" : "'sio:inRelationTo o sio:hasRole' in r and not isempty(r['sio:inRelationTo o sio:hasRole'])",
-                  "@type" : "Restriction", "on" : "sio:hasRole", "only" : {"@id" : "{{r['sio:inRelationTo o sio:hasRole']}}"}
-                }
-              ]
-            }
-          },
-          {
-            "@if" : "'sio:isRoleOf o sio:hasAttribute' in r and not isempty(r['sio:isRoleOf o sio:hasAttribute'])",
-            "@type" : "owl:Restriction", "on" : "sio:isRoleOf",
-            "only" : {
-              "@type" : "Restriction", "on" : "sio:hasAttribute", "some" : {"@id" : "{{r['sio:isRoleOf o sio:hasAttribute']}}"}
-            }
-          },
-          {
-            "@if" : "'rdfs:subClassOf' in r and r['rdfs:subClassOf'] is not None and len(r['rdfs:subClassOf'].strip()) > 0",
-            "@for" : "s in re.split('\\\\s*[,&]\\\\s*', r['rdfs:subClassOf'])",
-            "@do" : { "@id": "{{s}}", "@type": "owl:Class"}
-          }
-        ]
-      }
-    }]
-}]'''];
-  prov:wasGeneratedBy [
-    a setl:Transform, setl:JSLDT;
-    prov:used
-        :analytes_table;
+        :analytes_table,
+        :attributes_table,
+        :instrument_perspectives_table,
+        :instruments_table,
+        :methods_table,
+        :objects_table,
+        :roles_table,
+        :samples_table,
+        :indicators_table,
+        :studies_table,
+        :time_table,
+        :units_table;
     setl:hasContext '''{
   "@vocab" :   "http://hadatac.org/ont/chear#",
   "owl": "http://www.w3.org/2002/07/owl#",
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
   "sio" :     "http://semanticscience.org/resource/",
+  "foaf" : "http://xmlns.com/foaf/0.1/",
   "chear" :   "http://hadatac.org/ont/chear#",
   "skos" :    "http://www.w3.org/2004/02/skos/core#",
   "prov" :    "http://www.w3.org/ns/prov#",
@@ -302,6 +131,7 @@
   "hasco" : "http://hadatac.org/ont/hasco#",
   "vstoi" : "http://hadatac.org/ont/vstoi#",
   "hasneto" : "http://hadatac.org/ont/hasneto#",
+  "vivo": "http://vivoweb.org/ontology/core#",
   "uberon" : "http://purl.obolibrary.org/obo/UBERON_",
   "envo" : "http://purl.obolibrary.org/obo/ENVO_",
   "do": "http://purl.obolibrary.org/obo/DOID_",
@@ -311,12 +141,155 @@
 }''';
   prov:value '''[{
     "@id": "http://hadatac.org/ont/chear",
-    "@context": "https://raw.githubusercontent.com/jimmccusker/ontext/master/owl-context.jsonld",
+    "@context": {
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "comment": "rdfs:comment",
+    "isa": {
+      "@id":"rdfs:subClassOf",
+      "@type":"@id"
+    },
+    "Property": "rdfs:Property",
+    "Relation": "owl:ObjectProperty",
+    "Attribute": "owl:DatatypeProperty",
+    "AnnotationProperty": "owl:AnnotationProperty",
+    "Transitive": "owl:TransitiveProperty",
+    "Reflexive": "owl:ReflexiveProperty",
+    "Irreflexive": "owl:IrreflexiveProperty",
+    "Symmetric": "owl:SymmetricProperty",
+    "Asymmetric": "owl:AsymmetricProperty",
+    "Functional": "owl:FunctionalProperty",
+    "InverseFunctional": "owl:InverseFunctionalProperty",
+    "Class": "owl:Class",
+    "Restriction": "owl:Restriction",
+    "AllDifferent": "owl:AllDifferent",
+    "Ontology": "owl:Ontology",
+    "imports": {
+      "@id": "owl:imports",
+      "@type": "@id"
+    },
+    "value":"owl:hasValue",
+    "distinct": {
+      "@id": "owl:distinctMembers",
+      "@type": "@id"
+    },
+    "distinct": {
+      "@id": "owl:distinctMembers",
+      "@type": "@id"
+    },
+    "definedBy": {
+      "@id": "rdfs:isDefinedBy",
+      "@type": "@id"
+    },
+    "subPropertyOf": {
+      "@id": "rdfs:subPropertyOf",
+      "@type": "@id"
+    },
+    "range": {
+      "@id": "rdfs:range",
+      "@type": "@id"
+    },
+    "domain": {
+      "@id": "rdfs:domain",
+      "@type": "@id"
+    },
+    "seeAlso": {
+      "@id": "rdfs:seeAlso",
+      "@type": "@id"
+    },
+    "label": {
+      "@id": "rdfs:label"
+    },
+    "not" : {
+      "@id":"owl:disjointWith",
+      "@type":"@id"
+    },
+    "complement" : {
+      "@id":"owl:complementOf",
+      "@type":"@id"
+    },
+    "some" : {
+      "@id":"owl:someValuesFrom",
+      "@type":"@id"
+    },
+    "only" : {
+      "@id":"owl:allValuesFrom",
+      "@type":"@id"
+    },
+    "on" : {
+      "@id":"owl:onProperty",
+      "@type":"@id"
+    },
+    "inverse" : {
+      "@id":"owl:inverseOf",
+      "@type":"@id"
+    },
+    "equivalent" : {
+      "@id":"owl:equivalentClass",
+      "@type":"@id"
+    },
+    "and" : {
+      "@id":"owl:intersectionOf",
+      "@type":"@id",
+      "@container":"@list"
+    },
+    "or" : {
+      "@id":"owl:unionOf",
+      "@type":"@id",
+      "@container":"@list"
+    },
+    "key" : {
+      "@id":"owl:hasKey",
+      "@type":"@id",
+      "@container":"@list"
+    },
+    "in": {
+      "@id": "owl:oneOf",
+      "@type": "@id",
+      "@container": "@list"
+    },
+    "min": {
+      "@id": "owl:minCardinality",
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "max": {
+      "@id": "owl:maxCardinality",
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "minq": {
+      "@id": "owl:minQualifiedCardinality",
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "maxq": {
+      "@id": "owl:maxQualifiedCardinality",
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "exactq": {
+      "@id": "owl:qualifiedCardinality",
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "exactly": {
+      "@id": "owl:cardinality",
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "onClass": {
+      "@id": "owl:onClass",
+      "@type": "@id"
+    },
+    "hasSelf": {
+      "@id": "owl:hasSelf",
+      "@type": "xsd:boolean"
+    }
+  }
+},
     "@graph": [{
-        "@if" : "'owl:deprecated' not in row or row['owl:deprecated'] != '1.0' or row['owl:deprecated'] != '1.1'",
+        "@if" : "'owl:deprecated' not in row or isempty(row['owl:deprecated']) or not float(row['owl:deprecated']) < 1.2",
         "@id": "{{row['hasURI']}}",
         "@type": [
-          "owl:Class",
+          { "@if" : "not isempty(row['rdfs:subClassOf'])", "@id" : "owl:Class"},
           {
             "@if" : "'rdf:type' in row and row['rdf:type'] is not None and len(row['rdf:type'].strip()) > 0",
             "@for" : "t in re.split('\\\\s*[,&]\\\\s*', row['rdf:type'])",
@@ -324,7 +297,7 @@
           }
         ],
         "owl:deprecated": {
-          "@if" : "'owl:deprecated' in row and row['owl:deprecated'] is not None",
+          "@if" : "not isempty(row['owl:deprecated']) and not float(row['owl:deprecated']) > 1.2",
           "@value" : true
         },
         "rdfs:label": {
@@ -359,10 +332,29 @@
             "@value" : "{{row['hasco:approvedBy']}}"
           }
         ],
+        "vivo:abbreviation": [
+          {
+            "@if" : "'vivo:abbreviation' in row and row['vivo:abbreviation'] is not None and len(row['vivo:abbreviation'].strip()) > 0",
+            "@value" : "{{row['vivo:abbreviation']}}"
+          }
+        ],
+        "skos:notation": [
+          {
+            "@if" : "'skos:notation' in row and row['skos:notation'] is not None and len(row['skos:notation'].strip()) > 0",
+            "@value" : "{{row['skos:notation']}}"
+          }
+        ],
+        "owl:equivalentClass": [
+          {
+            "@if" : "'owl:equivalentClass' in row and row['owl:equivalentClass'] is not None and len(row['owl:equivalentClass'].strip()) > 0",
+            "@for" : "s in re.split('\\\\s*[,&]\\\\s*', row['owl:equivalentClass'])",
+            "@do" : { "@id": "{{s}}", "@type": "owl:Class"}
+          }
+        ],
         "rdfs:subClassOf": [
           { "@if" : "'hasneto:hasUnit' in row and not isempty(row['hasneto:hasUnit'])",
             "@type" : "owl:Restriction",
-            "on" : { "@id":"sio:hasUnit"},
+            "owl:onProperty" : { "@id":"sio:hasUnit"},
             "owl:hasValue" : { "@id": "{{row['hasneto:hasUnit']}}" }
           },
           { "@if" : "'prov:wasGeneratedBy' in row and not isempty(row['prov:wasGeneratedBy'])",
@@ -375,18 +367,18 @@
           },
           { "@if" : "'sio:isAttributeOf' in row and not isempty(row['sio:isAttributeOf'])",
             "@for" : "s in re.split('\\\\s*[,&]\\\\s*', row['sio:isAttributeOf'])",
-            "@do" : { "@type" : "Restriction", "on" : "sio:isAttributeOf", "only" : "{{s}}" }
+            "@do" : { "@type" : "Restriction", "owl:onProperty" : "sio:isAttributeOf", "only" : "{{s}}" }
           },
           {
             "@if" : "'sio:hasUnit' in row and not isempty(row['sio:hasUnit'])",
-            "@type" : "owl:Restriction", "on" : "sio:hasUnit", "value" : { "@id": "{{row['sio:hasUnit']}}" }
+            "@type" : "owl:Restriction", "owl:onProperty" : "sio:hasUnit", "value" : { "@id": "{{row['sio:hasUnit']}}" }
           },
           { "@if" : "'start' in row and not isempty(row.start)",
-            "@type" : "Restriction", "on" : "sio:hasStartTime",
+            "@type" : "Restriction", "owl:onProperty" : "sio:hasStartTime",
             "only" : {
               "@type" : "Class", "and" : [
                 { "@id": "{{row['sio:hasUnit']}}" },
-                { "@type" : "Restriction", "on" : "sio:hasValue", "value" : {"@value" : "{{r.start}}", "@type" : "xsd:integer"} }
+                { "@type" : "Restriction", "owl:onProperty" : "sio:hasValue", "value" : {"@value" : "{{r.start}}", "@type" : "xsd:integer"} }
               ]}
           },
           { "@if" : "'end' in row and not isempty(row.end)",
@@ -431,12 +423,40 @@
 
 <chear.ttl> a pv:File;
     dcterms:format "text/turtle";
+    setl:hasContext '''{
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "sio" :     "http://semanticscience.org/resource/",
+  "chear" :   "http://hadatac.org/ont/chear#",
+  "skos" :    "http://www.w3.org/2004/02/skos/core#",
+  "prov" :    "http://www.w3.org/ns/prov#",
+  "obo" :   "http://purl.obolibrary.org/obo/",
+  "pubchem" : "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/",
+  "dc"   :    "http://purl.org/dc/terms/",
+  "hasco" : "http://hadatac.org/ont/hasco#",
+  "vstoi" : "http://hadatac.org/ont/vstoi#",
+  "cmo"  :    "http://purl.org/twc/ontologies/cmo.owl#"
+}''';
     prov:wasGeneratedBy [
       a setl:Load;
       prov:used <http://hadatac.org/ont/chear> ;
     ].
     
 <chear.owl> a pv:File;
+    setl:hasContext '''{
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "sio" :     "http://semanticscience.org/resource/",
+  "chear" :   "http://hadatac.org/ont/chear#",
+  "skos" :    "http://www.w3.org/2004/02/skos/core#",
+  "prov" :    "http://www.w3.org/ns/prov#",
+  "obo" :   "http://purl.obolibrary.org/obo/",
+  "pubchem" : "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/",
+  "dc"   :    "http://purl.org/dc/terms/",
+  "hasco" : "http://hadatac.org/ont/hasco#",
+  "vstoi" : "http://hadatac.org/ont/vstoi#",
+  "cmo"  :    "http://purl.org/twc/ontologies/cmo.owl#"
+}''';
     dcterms:format "application/rdf+xml";
     prov:wasGeneratedBy [
       a setl:Load;
@@ -444,8 +464,24 @@
     ].
 
 <chear.json> a pv:File;
+    setl:hasContext '''{
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "sio" :     "http://semanticscience.org/resource/",
+  "chear" :   "http://hadatac.org/ont/chear#",
+  "skos" :    "http://www.w3.org/2004/02/skos/core#",
+  "prov" :    "http://www.w3.org/ns/prov#",
+  "obo" :   "http://purl.obolibrary.org/obo/",
+  "pubchem" : "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/",
+  "dc"   :    "http://purl.org/dc/terms/",
+  "hasco" : "http://hadatac.org/ont/hasco#",
+  "vstoi" : "http://hadatac.org/ont/vstoi#",
+  "cmo"  :    "http://purl.org/twc/ontologies/cmo.owl#"
+}''';
     dcterms:format "application/json";
     prov:wasGeneratedBy [
       a setl:Load;
       prov:used <http://hadatac.org/ont/chear> ;
     ].
+
+
