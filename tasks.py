@@ -1,11 +1,11 @@
-from fabric.api import local, lcd, get, env
-from fabric.operations import require, prompt
-from fabric.utils import abort
+from invoke import task, run
+
+#from fabric.api import local, lcd, get, env
+#from fabric.operations import require, prompt
+#from fabric.utils import abort
 import requests
 import rdflib
-from rdflib.plugins.stores.sparqlstore import SPARQLUpdateStore
 import getpass
-import urllib2
 import os.path
 import os
 import setlr
@@ -23,10 +23,11 @@ prov = Namespace('http://www.w3.org/ns/prov#')
 dc = Namespace('http://purl.org/dc/terms/')
 pv = Namespace('http://purl.org/net/provenance/ns#')
 
-logging_level = logging.INFO
+logging_level = logging.DEBUG
 logging.basicConfig(level=logging_level)
 
-def build():
+@task
+def build(ctx):
     setl_graph = Graph()
     setl_graph.load(SETL_FILE,format="turtle")
     cwd = os.getcwd()
@@ -35,7 +36,7 @@ def build():
     for filename in os.listdir(CHEAR_DIR):
         if not filename.endswith('.ttl') or filename.startswith('#'):
             continue
-        print 'Adding fragment', filename
+        print('Adding fragment', filename)
 
         fragment = setl_graph.resource(BNode())
         for ontology_output_file in ontology_output_files:

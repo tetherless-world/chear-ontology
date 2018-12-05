@@ -1,5 +1,5 @@
 rdflib
-fabric
+invoke
 requests
 labkey
 Jinja2
