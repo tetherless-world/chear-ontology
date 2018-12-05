@@ -3,3 +3,4 @@ fabric
 requests
 labkey
 Jinja2
+setlr
