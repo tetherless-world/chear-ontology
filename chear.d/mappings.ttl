@@ -1,0 +1,143 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+###  http://purl.obolibrary.org/obo/CHEBI_48505
+#<http://purl.obolibrary.org/obo/CHEBI_48505> rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15963> .
+
+
+###  http://purl.obolibrary.org/obo/CMO_0000047
+<http://purl.obolibrary.org/obo/CMO_0000047> rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000000> .
+
+
+###  http://purl.obolibrary.org/obo/CMO_0000048
+<http://purl.obolibrary.org/obo/CMO_0000048> rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000000> .
+
+
+###  http://purl.obolibrary.org/obo/CMO_0000704
+<http://purl.obolibrary.org/obo/CMO_0000704> rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000000> .
+
+
+###  http://purl.obolibrary.org/obo/CMO_0001818
+<http://purl.obolibrary.org/obo/CMO_0001818> rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000000> .
+
+
+###  http://purl.obolibrary.org/obo/CMO_0001819
+<http://purl.obolibrary.org/obo/CMO_0001819> rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000000> .
+
+
+###  http://purl.obolibrary.org/obo/DDANAT_0000002
+<http://purl.obolibrary.org/obo/DDANAT_0000002> rdfs:subClassOf <http://semanticscience.org/resource/UnicellularOrganism> .
+
+
+###  http://purl.obolibrary.org/obo/FAO_0000001
+<http://purl.obolibrary.org/obo/FAO_0000001> rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411261> .
+
+
+###  http://purl.obolibrary.org/obo/FLOPO_0000089
+<http://purl.obolibrary.org/obo/FLOPO_0000089> rdfs:subClassOf <http://semanticscience.org/resource/Phenotype> .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00001002
+<http://purl.obolibrary.org/obo/FOODON_00001002> rdfs:subClassOf <http://semanticscience.org/resource/Product> .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03411564
+<http://purl.obolibrary.org/obo/FOODON_03411564> rdfs:subClassOf <http://semanticscience.org/resource/BiologicalEntity> .
+
+
+###  http://purl.obolibrary.org/obo/GOCHE_50906
+<http://purl.obolibrary.org/obo/GOCHE_50906> rdfs:subClassOf <http://semanticscience.org/resource/MaterialEntity> .
+
+
+###  http://purl.obolibrary.org/obo/HsapDv_0000000
+<http://purl.obolibrary.org/obo/HsapDv_0000000> rdfs:subClassOf <http://semanticscience.org/resource/Age> .
+
+
+###  http://purl.obolibrary.org/obo/MPATH_0
+<http://purl.obolibrary.org/obo/MPATH_0> rdfs:subClassOf <http://semanticscience.org/resource/BiologicalQuality> .
+
+
+###  http://purl.obolibrary.org/obo/NBO_0000243
+<http://purl.obolibrary.org/obo/NBO_0000243> rdfs:subClassOf <http://semanticscience.org/resource/Phenotype> .
+
+
+###  http://purl.obolibrary.org/obo/NBO_0000313
+<http://purl.obolibrary.org/obo/NBO_0000313> rdfs:subClassOf <http://semanticscience.org/resource/Behaviour> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C3262
+<http://purl.obolibrary.org/obo/NCIT_C3262> rdfs:subClassOf <http://semanticscience.org/resource/Disease> .
+
+
+###  http://purl.obolibrary.org/obo/OMIM_000000
+<http://purl.obolibrary.org/obo/OMIM_000000> rdfs:subClassOf <http://semanticscience.org/resource/Capability> .
+
+
+###  http://purl.obolibrary.org/obo/OMP_0000000
+<http://purl.obolibrary.org/obo/OMP_0000000> rdfs:subClassOf <http://semanticscience.org/resource/Phenotype> .
+
+
+###  http://purl.obolibrary.org/obo/PCO_0000000
+<http://purl.obolibrary.org/obo/PCO_0000000> rdfs:subClassOf <http://semanticscience.org/resource/Collection> .
+
+
+###  http://purl.obolibrary.org/obo/PR_000021082
+<http://purl.obolibrary.org/obo/PR_000021082> rdfs:subClassOf <http://semanticscience.org/resource/Product> .
+
+
+###  http://purl.obolibrary.org/obo/SO_0000110
+<http://purl.obolibrary.org/obo/SO_0000110> rdfs:subClassOf <http://semanticscience.org/resource/BiopolymerSequence> .
+
+
+###  http://purl.obolibrary.org/obo/SO_0000400
+<http://purl.obolibrary.org/obo/SO_0000400> rdfs:subClassOf <http://semanticscience.org/resource/BiopolymerSequence> .
+
+
+###  http://purl.obolibrary.org/obo/SO_0001060
+<http://purl.obolibrary.org/obo/SO_0001060> rdfs:subClassOf <http://semanticscience.org/resource/BiopolymerSequence> .
+
+
+###  http://purl.obolibrary.org/obo/SO_0001260
+<http://purl.obolibrary.org/obo/SO_0001260> rdfs:subClassOf <http://semanticscience.org/resource/BiopolymerSequence> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000462
+<http://purl.obolibrary.org/obo/SYMP_0000462> rdfs:subClassOf <http://semanticscience.org/resource/Phenotype> .
+
+
+###  http://purl.obolibrary.org/obo/TRANS_0000000
+<http://purl.obolibrary.org/obo/TRANS_0000000> rdfs:subClassOf <http://semanticscience.org/resource/Process> .
+
+
+###  http://purl.obolibrary.org/obo/UPHENO_0001001
+<http://purl.obolibrary.org/obo/UPHENO_0001001> owl:equivalentClass <http://semanticscience.org/resource/Phenotype> ;
+                                                rdfs:subClassOf <http://semanticscience.org/resource/BiologicalQuality> .
+
+
+###  http://semanticscience.org/resource/Phenotype
+
+###  http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> rdfs:subClassOf <http://semanticscience.org/resource/Entity> .
+
+
+###  http://www.w3.org/ns/prov#Dictionary
+<http://www.w3.org/ns/prov#Dictionary> rdfs:subClassOf <http://semanticscience.org/resource/Collection> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.obolibrary.org/obo/GO_0016265> owl:deprecated "true"^^xsd:boolean .
+
+
+<http://purl.obolibrary.org/obo/SO_0000000> owl:deprecated "true"^^xsd:boolean .
+
+
+<http://purl.obolibrary.org/obo/UBERON_0036255> owl:deprecated "true"^^xsd:boolean .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

@@ -1,0 +1,135 @@
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix skos:          <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov:          <http://www.w3.org/ns/prov#> .
+@prefix sio:           <http://semanticscience.org/resource/> .
+@prefix dcat:          <http://www.w3.org/ns/dcat#> .
+@prefix dcterms:       <http://purl.org/dc/terms/> .
+@prefix void:          <http://rdfs.org/ns/void#> .
+@prefix foaf:          <http://xmlns.com/foaf/0.1/> .
+@prefix ov:            <http://open.vocab.org/terms/> .
+@prefix setl:          <http://purl.org/twc/vocab/setl/> .
+@prefix csvw:          <http://www.w3.org/ns/csvw#> .
+@prefix pv:            <http://purl.org/net/provenance/ns#>.
+@prefix prv:           <http://hadatac.org/ont/prov#>.
+
+@prefix :              <https://hadatac.org/setl/> .
+
+@prefix chear:    <http://hadatac.org/ont/chear#> .
+
+:cogat_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=106241699>;
+  ].
+
+
+<http://hadatac.org/ont/cogat> a void:Dataset;
+  prov:wasGeneratedBy [
+    a setl:Transform, setl:JSLDT;
+    prov:used
+        :cogat_table;
+    setl:hasContext '''{
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "sio" :     "http://semanticscience.org/resource/",
+  "chear" :   "http://hadatac.org/ont/chear#",
+  "skos" :    "http://www.w3.org/2004/02/skos/core#",
+  "prov" :    "http://www.w3.org/ns/prov#",
+  "chebi" :   "http://purl.obolibrary.org/obo/CHEBI_",
+  "obo" :   "http://purl.obolibrary.org/obo/",
+  "pubchem" : "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/",
+  "dc"   :    "http://purl.org/dc/terms/",
+  "hasco" : "http://hadatac.org/ont/hasco#",
+  "vstoi" : "http://hadatac.org/ont/vstoi#",
+  "hasneto" : "http://hadatac.org/ont/hasneto#",
+  "uberon" : "http://purl.obolibrary.org/obo/UBERON_",
+  "envo" : "http://purl.obolibrary.org/obo/ENVO_",
+  "do": "http://purl.obolibrary.org/obo/DOID_",
+  "prv" : "http://hadatac.org/ont/prov#",
+  "cogat" : "http://www.cognitiveatlas.org/ontology/cogat.owl#",
+  "@vocab" : "http://www.cognitiveatlas.org/ontology/cogat.owl#",
+  "chear-kb" : "http://hadatac.org/kb/chear#",
+  "cogpo" : "http://www.cogpo.org/ontologies/working/CogPOver2011.owl#",
+  "cmo"  :    "http://purl.org/twc/ontologies/cmo.owl#"
+}''';
+  prov:value '''[
+  {
+    "@id": "http://www.cognitiveatlas.org/ontology/cogat.owl#",
+    "@graph": [
+      {
+        "@id": "http://hadatac.org/ont/cogat",
+        "rdfs:label" : "Cognitive Atlas Ontology",
+        "foaf:homepage" : { "@id" : "http://www.cognitiveatlas.org"} ,
+        "rdfs:comment" : "The Cognitive Atlas is a collaborative knowledge building project that aims to develop an ontology that characterizes the state of current thought in cognitive science. It defines a set of mental concepts along with a set of mental tasks, and the measurement relations between those classes.",
+        "@type" : "owl:Ontology",
+        "dc:creator" : "Russell Poldrack, poldrack@gmail.com"
+      },
+      {
+        "@if" : "not isempty(row['Class ID']) and row.Obsolete != 'TRUE'",
+        "@id": "{{row['Class ID']}}",
+        "@type": "owl:Class",
+        "rdfs:label": {
+          "@if" : "not isempty(row['Preferred Label'])",
+          "@value" : "{{row['Preferred Label'].replace('_',' ')}}"
+        },
+        "skos:altLabel": [
+          {
+            "@if" : "not isempty(row['Synonyms'])",
+            "@for" : "l in re.split('\\\\s*[,&]\\\\s*',row.Synonyms)",
+            "@do" : { "@value" : "{{l.replace('(','').replace(')','')}}" }
+          },
+          {
+            "@if" : "not isempty(row['http://www.w3.org/2004/02/skos/core#altLabel'])",
+            "@for" : "l in re.split('\\\\s*[,&]\\\\s*',row['http://www.w3.org/2004/02/skos/core#altLabel'])",
+            "@do" : { "@value" : "{{l.replace('(','').replace(')','')}}" }
+          }
+        ],
+        "skos:definition": [ { "@if": "not isempty(row.Definitions)", "@value" : "{{row.Definitions}}"}],
+        "dc:contributor" : [ {
+          "@if" : "not isempty(row['http://purl.org/dc/terms/Contributor'])",
+          "@value" : "{{row['http://purl.org/dc/terms/Contributor']}}"
+        } ],
+        "dc:date" : [ {
+          "@if" : "not isempty(row['http://purl.org/dc/terms/Date'])",
+          "@value" : "{{row['http://purl.org/dc/terms/Date']}}",
+          "@type" : "xsd:dateTime"
+        } ],
+        "rdfs:subClassOf": [
+          { "@if" : "'Parents' in row and not isempty(row.Parents)",
+            "@for" : "s in re.split('\\\\s*[,&]\\\\s*', row.Parents)",
+            "@do" : { "@id": "{{s}}", "@type": "owl:Class"}
+          },
+          { "@if" : "not isempty(row['http://data.bioontology.org/metadata/obo/part_of'])",
+            "@for" : "p in row['http://data.bioontology.org/metadata/obo/part_of'].split('|')",
+            "@do" : {
+              "@type" : "owl:Restriction",
+              "owl:onProperty" : { "@id":"sio:isPartOf"},
+              "owl:someValuesFrom" : { "@id": "{{p}}" }
+            }
+          },
+          { "@if" : "not isempty(row['http://www.obofoundry.org/ro/ro.owl#has_part'])",
+            "@for" : "p in row['http://www.obofoundry.org/ro/ro.owl#has_part'].split('|')",
+            "@do" : {
+              "@type" : "owl:Restriction",
+              "owl:onProperty" : { "@id":"sio:hasPart"},
+              "owl:someValuesFrom" : { "@id": "{{p}}" }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]''']
+.
+
+
+<cogat.ttl> a pv:File;
+    dcterms:format "text/turtle";
+    prov:wasGeneratedBy [
+      a setl:Load;
+      prov:used <http://hadatac.org/ont/cogat> ;
+    ].
+    

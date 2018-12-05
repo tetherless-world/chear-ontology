@@ -1,0 +1,267 @@
+@prefix : <http://hadatac.org/ont/chear#>.
+@prefix do: <http://purl.obolibrary.org/obo/DOID_> .
+@prefix uo: <http://purl.obolibrary.org/obo/UO_> .
+@prefix fma: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix chear: <http://hadatac.org/ont/chear#> .
+@prefix uberon: <http://purl.obolibrary.org/obo/UBERON_> .
+@prefix hasco: <http://hadatac.org/ont/hasco#>.
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://semanticscience.org/resource/hasAttribute
+
+sio:hasAttribute a owl:ObjectProperty .
+# 
+# http://semanticscience.org/resource/isPhenotypeOf
+
+sio:isPhenotypeOf a owl:ObjectProperty .
+# 
+# http://semanticscience.org/resource/measuredAt
+
+sio:measuredAt a owl:ObjectProperty .
+# 
+# http://www.w3.org/ns/prov#wasDerivedFrom
+
+prov:wasDerivedFrom a owl:ObjectProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://semanticscience.org/resource/hasValue
+
+sio:hasValue a owl:DatatypeProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://hadatac.org/ont/chear#APGAR
+
+chear:APGAR a owl:Class ;
+	rdfs:subClassOf _:genid1 .
+
+_:genid1 a owl:Restriction ;
+	owl:onProperty sio:hasValue ;
+	owl:allValuesFrom _:genid2 .
+
+_:genid2 a rdfs:Datatype ;
+	owl:intersectionOf _:genid7 .
+
+_:genid7 a rdf:List ;
+	rdf:first _:genid8 .
+
+_:genid8 a rdfs:Datatype ;
+	owl:onDatatype xsd:integer ;
+	owl:withRestrictions _:genid9 .
+
+_:genid9 a rdf:List ;
+	rdf:first _:genid10 .
+
+_:genid10 xsd:minInclusive "0"^^xsd:integer .
+
+_:genid9 rdf:rest rdf:nil .
+
+_:genid7 rdf:rest _:genid3 .
+
+_:genid3 a rdf:List ;
+	rdf:first _:genid4 .
+
+_:genid4 a rdfs:Datatype ;
+	owl:onDatatype xsd:integer ;
+	owl:withRestrictions _:genid5 .
+
+_:genid5 a rdf:List ;
+	rdf:first _:genid6 .
+
+_:genid6 xsd:maxInclusive "10"^^xsd:integer .
+
+_:genid5 rdf:rest rdf:nil .
+
+_:genid3 rdf:rest rdf:nil .
+# 
+# http://hadatac.org/ont/chear#BMI
+
+chear:BMI a owl:Class ;
+	rdfs:subClassOf _:genid11 .
+
+_:genid11 owl:intersectionOf _:genid14 .
+
+_:genid14 a rdf:List ;
+	rdf:first _:genid15 .
+
+_:genid15 a owl:Restriction ;
+	owl:onProperty prov:wasDerivedFrom ;
+	owl:someValuesFrom sio:Height .
+
+_:genid14 rdf:rest _:genid12 .
+
+_:genid12 a rdf:List ;
+	rdf:first _:genid13 .
+
+_:genid13 a owl:Restriction ;
+	owl:onProperty prov:wasDerivedFrom ;
+	owl:someValuesFrom sio:Mass .
+
+_:genid12 rdf:rest rdf:nil .
+
+_:genid11 a owl:Class .
+# 
+# http://hadatac.org/ont/chear#Birth
+
+chear:Birth a owl:Class .
+# 
+# http://hadatac.org/ont/chear#BirthWeight
+
+chear:BirthWeight a owl:Class ;
+	owl:equivalentClass _:genid16 .
+
+_:genid16 owl:intersectionOf _:genid19 .
+
+_:genid19 a rdf:List ;
+	rdf:first sio:Mass ;
+	rdf:rest _:genid17 .
+
+_:genid17 a rdf:List ;
+	rdf:first _:genid18 .
+
+_:genid18 a owl:Restriction ;
+	owl:onProperty sio:measuredAt ;
+	owl:allValuesFrom chear:Birth .
+
+_:genid17 rdf:rest rdf:nil .
+
+_:genid16 a owl:Class .
+# 
+# http://hadatac.org/ont/chear#FentonGrowthChart
+
+chear:FentonGrowthChart a owl:Class ;
+	rdfs:subClassOf sio:LineGraph ;
+	rdfs:label "Fenton Preterm Growth Chart" ;
+	skos:definition "A growth chart adusted for gestational age" .
+# 
+# http://hadatac.org/ont/chear#GestationalAge
+
+chear:GestationalAge a owl:Class .
+# 
+# http://hadatac.org/ont/chear#GestationalAgeAtBirth
+
+chear:GestationalAgeAtBirth a owl:Class ;
+	owl:equivalentClass _:genid20 .
+
+_:genid20 owl:intersectionOf _:genid23 .
+
+_:genid23 a rdf:List ;
+	rdf:first chear:GestationalAge ;
+	rdf:rest _:genid21 .
+
+_:genid21 a rdf:List ;
+	rdf:first _:genid22 .
+
+_:genid22 a owl:Restriction ;
+	owl:onProperty sio:measuredAt ;
+	owl:allValuesFrom chear:Birth .
+
+_:genid21 rdf:rest rdf:nil .
+
+_:genid20 a owl:Class .
+
+chear:GestationalAgeAtBirth rdfs:subClassOf chear:GestationalAge ;
+	rdfs:label "Gestational Age at Birth" ;
+	skos:definition "Describes how far along a pregnancy is, usually measured in weeks, as measured at birth." .
+# 
+# http://hadatac.org/ont/chear#ZFentonBW
+
+chear:ZFentonBW a owl:Class ;
+	rdfs:subClassOf _:genid24 .
+
+_:genid24 owl:intersectionOf _:genid31 .
+
+_:genid31 a rdf:List ;
+	rdf:first sio:StandardScore ;
+	rdf:rest _:genid29 .
+
+_:genid29 a rdf:List ;
+	rdf:first _:genid30 .
+
+_:genid30 a owl:Restriction ;
+	owl:onProperty prov:wasDerivedFrom ;
+	owl:someValuesFrom chear:BirthWeight .
+
+_:genid29 rdf:rest _:genid27 .
+
+_:genid27 a rdf:List ;
+	rdf:first _:genid28 .
+
+_:genid28 a owl:Restriction ;
+	owl:onProperty prov:wasDerivedFrom ;
+	owl:someValuesFrom chear:FentonGrowthChart .
+
+_:genid27 rdf:rest _:genid25 .
+
+_:genid25 a rdf:List ;
+	rdf:first _:genid26 .
+
+_:genid26 a owl:Restriction ;
+	owl:onProperty prov:wasDerivedFrom ;
+	owl:someValuesFrom chear:GestationalAgeAtBirth .
+
+_:genid25 rdf:rest rdf:nil .
+
+_:genid24 a owl:Class .
+# 
+# http://semanticscience.org/resource/Height
+
+sio:Height a owl:Class .
+# 
+# http://semanticscience.org/resource/LineGraph
+
+sio:LineGraph a owl:Class .
+# 
+# http://semanticscience.org/resource/Mass
+
+sio:Mass a owl:Class .
+# 
+# http://semanticscience.org/resource/StandardScore
+
+sio:StandardScore a owl:Class .
+# 
+# Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi
