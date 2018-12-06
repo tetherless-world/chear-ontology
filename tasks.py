@@ -30,7 +30,7 @@ logging.basicConfig(level=logging_level)
 def build(ctx):
     setl_graph = Graph()
     setl_graph.load(SETL_FILE,format="turtle")
-    cwd = os.getcwd()
+    cwd = os.getcwd().replace('\\','/')
     formats = ['ttl','owl','json']
     ontology_output_files = [setl_graph.resource(URIRef('file://'+cwd+'/chear.'+x)) for x in formats]
     for filename in os.listdir(CHEAR_DIR):
