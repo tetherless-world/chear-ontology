@@ -1,6 +1,8 @@
 @prefix : <http://hadatac.org/ont/chear#>.
 @prefix do: <http://purl.obolibrary.org/obo/DOID_> .
 @prefix uo: <http://purl.obolibrary.org/obo/UO_> .
+@prefix cmo: <http://purl.obolibrary.org/obo/CMO_> .
+@prefix efo: <http://www.ebi.ac.uk/efo/EFO_> .
 @prefix fma: <http://purl.org/sig/ont/fma/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -120,7 +122,7 @@ _:genid3 rdf:rest rdf:nil .
 # 
 # http://hadatac.org/ont/chear#BMI
 
-chear:BMI a owl:Class ;
+cmo:0000105 a owl:Class ;
 	rdfs:subClassOf _:genid11 .
 
 _:genid11 owl:intersectionOf _:genid14 .
@@ -180,7 +182,7 @@ chear:FentonGrowthChart a owl:Class ;
 # 
 # http://hadatac.org/ont/chear#GestationalAge
 
-chear:GestationalAge a owl:Class .
+efo:0005112 a owl:Class .
 # 
 # http://hadatac.org/ont/chear#GestationalAgeAtBirth
 
@@ -190,7 +192,7 @@ chear:GestationalAgeAtBirth a owl:Class ;
 _:genid20 owl:intersectionOf _:genid23 .
 
 _:genid23 a rdf:List ;
-	rdf:first chear:GestationalAge ;
+	rdf:first efo:0005112 ;
 	rdf:rest _:genid21 .
 
 _:genid21 a rdf:List ;
@@ -204,7 +206,7 @@ _:genid21 rdf:rest rdf:nil .
 
 _:genid20 a owl:Class .
 
-chear:GestationalAgeAtBirth rdfs:subClassOf chear:GestationalAge ;
+chear:GestationalAgeAtBirth rdfs:subClassOf efo:0005112 ;
 	rdfs:label "Gestational Age at Birth" ;
 	skos:definition "Describes how far along a pregnancy is, usually measured in weeks, as measured at birth." .
 # 

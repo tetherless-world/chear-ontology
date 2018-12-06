@@ -1,0 +1,161 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://hadatac.org/ont/chear#NormalWeight
+<http://hadatac.org/ont/chear#NormalWeight> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
+                                                              owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105>
+                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                               owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
+                                                                                                                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                    owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                                                                                                           owl:onDatatype xsd:float ;
+                                                                                                                                                                           owl:withRestrictions ( [ xsd:minExclusive "18.5"^^xsd:float
+                                                                                                                                                                                                  ]
+                                                                                                                                                                                                )
+                                                                                                                                                                         ]
+                                                                                                                                                                         [ rdf:type rdfs:Datatype ;
+                                                                                                                                                                           owl:onDatatype xsd:float ;
+                                                                                                                                                                           owl:withRestrictions ( [ xsd:maxExclusive "25.0"^^xsd:float
+                                                                                                                                                                                                  ]
+                                                                                                                                                                                                )
+                                                                                                                                                                         ]
+                                                                                                                                                                       )
+                                                                                                                                                  ]
+                                                                                                                             ]
+                                                                                                                           ) ;
+                                                                                                        rdf:type owl:Class
+                                                                                                      ]
+                                                                                 ]
+                                                            ] .
+
+
+###  http://hadatac.org/ont/chear#UnderweightOrNormal
+<http://hadatac.org/ont/chear#UnderweightOrNormal> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
+                                                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                                                          owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105>
+                                                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                                                      owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
+                                                                                                                                      owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                           owl:onDatatype xsd:float ;
+                                                                                                                                                           owl:withRestrictions ( [ xsd:maxExclusive "25.0"^^xsd:float
+                                                                                                                                                                                  ]
+                                                                                                                                                                                )
+                                                                                                                                                         ]
+                                                                                                                                    ]
+                                                                                                                                  ) ;
+                                                                                                               rdf:type owl:Class
+                                                                                                             ]
+                                                                                        ]
+                                                                   ] .
+
+
+###  http://purl.obolibrary.org/obo/HP_0001513
+<http://purl.obolibrary.org/obo/HP_0001513> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
+                                                              owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105>
+                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                               owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
+                                                                                                                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                    owl:onDatatype xsd:float ;
+                                                                                                                                                    owl:withRestrictions ( [ xsd:minExclusive "29.9"^^xsd:float
+                                                                                                                                                                           ]
+                                                                                                                                                                         )
+                                                                                                                                                  ]
+                                                                                                                             ]
+                                                                                                                           ) ;
+                                                                                                        rdf:type owl:Class
+                                                                                                      ]
+                                                                                 ]
+                                                            ] .
+
+
+###  http://purl.obolibrary.org/obo/HP_0004324
+<http://purl.obolibrary.org/obo/HP_0004324> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
+                                                              owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105>
+                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                               owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
+                                                                                                                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                    owl:onDatatype xsd:float ;
+                                                                                                                                                    owl:withRestrictions ( [ xsd:minExclusive "25.0"^^xsd:float
+                                                                                                                                                                           ]
+                                                                                                                                                                         )
+                                                                                                                                                  ]
+                                                                                                                             ]
+                                                                                                                           ) ;
+                                                                                                        rdf:type owl:Class
+                                                                                                      ]
+                                                                                 ]
+                                                            ] .
+
+
+###  http://purl.obolibrary.org/obo/HP_0025502
+<http://purl.obolibrary.org/obo/HP_0025502> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
+                                                              owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105>
+                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                               owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
+                                                                                                                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                    owl:intersectionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                                                                                                           owl:onDatatype xsd:float ;
+                                                                                                                                                                           owl:withRestrictions ( [ xsd:minExclusive "25.0"^^xsd:float
+                                                                                                                                                                                                  ]
+                                                                                                                                                                                                )
+                                                                                                                                                                         ]
+                                                                                                                                                                         [ rdf:type rdfs:Datatype ;
+                                                                                                                                                                           owl:onDatatype xsd:float ;
+                                                                                                                                                                           owl:withRestrictions ( [ xsd:maxExclusive "29.9"^^xsd:float
+                                                                                                                                                                                                  ]
+                                                                                                                                                                                                )
+                                                                                                                                                                         ]
+                                                                                                                                                                       )
+                                                                                                                                                  ]
+                                                                                                                             ]
+                                                                                                                           ) ;
+                                                                                                        rdf:type owl:Class
+                                                                                                      ]
+                                                                                 ]
+                                                            ] .
+
+
+###  http://purl.obolibrary.org/obo/HP_0045082
+<http://purl.obolibrary.org/obo/HP_0045082> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
+                                                              owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105>
+                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                               owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
+                                                                                                                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                    owl:onDatatype xsd:float ;
+                                                                                                                                                    owl:withRestrictions ( [ xsd:maxExclusive "18.5"^^xsd:float
+                                                                                                                                                                           ]
+                                                                                                                                                                         )
+                                                                                                                                                  ]
+                                                                                                                             ]
+                                                                                                                           ) ;
+                                                                                                        rdf:type owl:Class
+                                                                                                      ]
+                                                                                 ]
+                                                            ] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

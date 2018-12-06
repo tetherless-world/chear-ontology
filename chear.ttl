@@ -1,54 +1,46 @@
 @prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
-@prefix ns2: <http://hadatac.org/ont/hasco#> .
-@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://hadatac.org/ont/hasco#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<cseo:Never_Smoker> a ns2:QualityValue,
+<cseo:Never_Smoker> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Never Smoked" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/Exo_0000113> ;
     ns1:definition "The quality of never smoking in the past." ;
     ns1:notation "56" .
 
-<evs:Thesaurus.owl#American_Indian_or_Alaska_Native> a ns2:QualityValue,
+<evs:Thesaurus.owl#American_Indian_or_Alaska_Native> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "American Indian Or AlaskanNative" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Race> ;
     ns1:definition "Denotes a person having origins in one of the indigenous peoples of North America, who lived on the continent prior to the European colonization. The term includes individuals belonging to a large number of tribes, states, and ethnic groups, many of them still enduring as communities." ;
     ns1:notation "5" .
 
-<evs:Thesaurus.owl#Multiracial> a ns2:QualityValue,
+<evs:Thesaurus.owl#Multiracial> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Multiracial" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Race> ;
     ns1:definition "Having ancestors of several or various races." ;
     ns1:editorialNote "Not part of current prov for Race. Should we remove this concept?" ;
     ns1:notation "54" .
 
-<file:///Users/jimmccusker/src/chear-ontology/phenX:011100> a ns2:QuantityVariable,
-        owl:Class ;
-    rdfs:label "Household Income" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf <http://hadatac.org/ont/chear#SocioeconomicStatus>,
-        <http://semanticscience.org/resource/Quantity> ;
-    ns1:definition "Question asking the respondent for his or her family’s total family income from the last calendar year." .
-
 <http://hadatac.org/kb/chear#IPT-Questionnaire> a owl:Class ;
-    rdfs:subClassOf ns2:InstrumentPerspective .
+    rdfs:subClassOf ns3:InstrumentPerspective .
 
 <http://hadatac.org/ont/chear> a owl:Ontology ;
     rdfs:comment """Children's health and wellbeing are influenced by interactions between environmental and genetic factors. NIEHS is establishing an infrastructure, the Children's Health Exposure Analysis Resource (CHEAR), to provide the extramural research community access to laboratory and data analyses that add or expand the inclusion of environmental exposures in children's health research. The goal of CHEAR is to provide tools so researchers can assess the full range of environmental exposures which may affect children's health. We anticipate that CHEAR will be used by children's health researchers conducting epidemiological or clinical studies that currently have limited consideration of environmental exposures, or those who have collected exposure data but seek more extensive analyses.
 
 Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
-    owl:imports <file:///Users/jimmccusker/src/chear-ontology/cogat.ttl>,
-        <file:///Users/jimmccusker/src/chear-ontology/hasco_import.ttl>,
+    owl:imports <http://hadatac.org/ont/cogat/>,
+        <http://hadatac.org/ont/hasco/>,
         <http://purl.obolibrary.org/obo/cl-basic.owl>,
         <http://purl.obolibrary.org/obo/cmo.owl>,
         <http://purl.obolibrary.org/obo/envo.owl>,
@@ -57,7 +49,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
         <http://purl.org/twc/bio/obo/hp-basic.owl>,
         <http://semanticscience.org/ontology/sio-subset-labels.owl>,
         <https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-simple.owl> ;
-    owl:versionIRI <http://hadatac.org/ont/chear/1.2> .
+    owl:versionIRI <http://hadatac.org/ont/chear/2.0> .
 
 <http://hadatac.org/ont/chear#34202> a owl:Class ;
     rdfs:label "PCB153" ;
@@ -81,10 +73,10 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     ns1:editorialNote "To Do: align with CHEBI." ;
     ns1:notation "AMCC" .
 
-<http://hadatac.org/ont/chear#APGAR> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#APGAR> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Apgar Score" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a rdfs:Datatype ;
                     owl:intersectionOf [ a rdf:List ;
@@ -113,11 +105,11 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#AbsorbanceReader> a owl:Class ;
     rdfs:label "Absorbance Reader" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MicroplateReader> ;
     ns1:definition "Absorbance readers are used for assays such as ELISA assays, protein and nucleic acid quantification or enzyme activity assays. A light source illuminates the sample using a specific wavelength (selected by an optical filter, or a monochromator), and a light detector located on the other side of the well measures how much of the initial (100%) light is transmitted through the sample: the amount of transmitted light will typically be related to the concentration of the molecule of interest." .
 
-<http://hadatac.org/ont/chear#ActiveNonTobaccoSmoker> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#ActiveNonTobaccoSmoker> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Active Non-Tobacco Smoker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#ActiveSmoker> ;
@@ -129,16 +121,16 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#NonBiologicalRelative> ;
     ns1:definition "Adoption is a process whereby a person assumes the parenting of another, usually a child, from that person's biological or legal parent or parents, and, in so doing, permanently transfers all rights and responsibilities, along with filiation, from the biological parent or parents." .
 
-<http://hadatac.org/ont/chear#Adult> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#Adult> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Adult" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Demographic>,
         <http://hadatac.org/ont/chear#DevelopmentalQuality> ;
     ns1:definition "Refers to a person above a threshold age." ;
     ns1:notation "3" .
 
-<http://hadatac.org/ont/chear#AdvancedDegree> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#AdvancedDegree> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Advanced Graduate Degree" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/ExO_0000041> ;
@@ -147,18 +139,18 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#Agilent_1100_HPLC> a owl:Class ;
     rdfs:label "Agilent 1100 HPLC" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HPLC> .
 
 <http://hadatac.org/ont/chear#Agilent_8800_QQQ_ICP_MS> a owl:Class ;
     rdfs:label "Aligent 8800 Triple Quadrupole ICP-MS" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#ICPMSQQQ> .
 
-<http://hadatac.org/ont/chear#AnalysisMode> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#AnalysisMode> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Analysis Mode" ;
-    rdfs:subClassOf ns2:SampleIndicator ;
+    rdfs:subClassOf ns3:SampleIndicator ;
     ns1:definition "Analysis Mode" .
 
 <http://hadatac.org/ont/chear#AtomicAbsorptionSpectroscopy> a owl:Class ;
@@ -263,25 +255,13 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#BIRD-MS> a owl:Class ;
     rdfs:label "Blackbody Infrared Radiative Dissociation (BIRD)" ;
-    rdfs:subClassOf ns2:TandemMassSpectrometry .
+    rdfs:subClassOf ns3:TandemMassSpectrometry .
 
 <http://hadatac.org/ont/chear#BMA> a owl:Class ;
     rdfs:label "N-Acetyl-S-(benzyl)-L-cysteine" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> ;
     ns1:editorialNote "To Do: align with CHEBI." ;
     ns1:notation "BMA" .
-
-<http://hadatac.org/ont/chear#BMI> a owl:Class ;
-    rdfs:subClassOf [ a owl:Class ;
-            owl:intersectionOf [ a rdf:List ;
-                    rdf:first [ a owl:Restriction ;
-                            owl:onProperty <http://www.w3.org/ns/prov#wasDerivedFrom> ;
-                            owl:someValuesFrom <http://semanticscience.org/resource/Height> ] ;
-                    rdf:rest [ a rdf:List ;
-                            rdf:first [ a owl:Restriction ;
-                                    owl:onProperty <http://www.w3.org/ns/prov#wasDerivedFrom> ;
-                                    owl:someValuesFrom <http://semanticscience.org/resource/Mass> ] ;
-                            rdf:rest () ] ] ] .
 
 <http://hadatac.org/ont/chear#BP3> a owl:Class ;
     rdfs:label "Benzophenone-3" ;
@@ -301,17 +281,17 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#NeurocognitiveAssessent> ;
     ns1:definition "Standardized rating scale designed to specifically measure the range of executive function in preschool-aged children" .
 
-<http://hadatac.org/ont/chear#BathroomCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#BathroomCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Bathroom Count" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#RoomCount> ;
     ns1:definition "Total Number of Bathrooms in the Home" .
 
-<http://hadatac.org/ont/chear#BedroomCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#BedroomCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Bedroom Count" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#RoomCount> ;
     ns1:definition "Total Number of Bedrooms in the Home" .
 
@@ -327,22 +307,22 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#BirthCohortStudy> a owl:Class ;
     rdfs:label "Birth Cohort Study" ;
-    rdfs:subClassOf ns2:CohortStudy .
+    rdfs:subClassOf ns3:CohortStudy .
 
 <http://hadatac.org/ont/chear#BisulfitePyrosequencing> a owl:Class ;
     rdfs:label "Bisulfite Pyrosequencing" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#NucleicAcidSequencing> .
 
-<http://hadatac.org/ont/chear#BoilerCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#BoilerCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Boiler Count" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HouseholdApplianceCount> ;
     ns1:definition "A boiler is an object that heats up water. This attribute quantifies the number of boilers  in the home." .
 
 <http://hadatac.org/ont/chear#BuccalCell> a owl:Class ;
     rdfs:label "Buccal Cell" ;
-    ns3:identifier "BU" ;
+    ns2:identifier "BU" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Cell> ;
     ns1:definition "Cells collected from the inner epithelium of the cheek" .
 
@@ -374,7 +354,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#CID-MS> a owl:Class ;
     rdfs:label "Collision-Induced Dissociation (CID)" ;
-    rdfs:subClassOf ns2:TandemMassSpectrometry .
+    rdfs:subClassOf ns3:TandemMassSpectrometry .
 
 <http://hadatac.org/ont/chear#COTT> a owl:Class ;
     rdfs:label "Cotinine (total)" ;
@@ -384,7 +364,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#CVAFSInstrument> a owl:Class ;
     rdfs:label "Cold Vapor Atomic Fluorescence Spectroscopy Instrument" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#AFSInstrument> ;
     ns1:definition "Used in the measurement of trace amounts of volatile heavy metals such as mercury, cold vapour AFS makes use of the unique characteristic of mercury that allows vapour measurement at room temperature." .
 
@@ -394,15 +374,15 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     ns1:editorialNote "To Do: align with CHEBI." ;
     ns1:notation "CYMA" .
 
-<http://hadatac.org/ont/chear#CannedFoodConsumption> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#CannedFoodConsumption> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Canned Food Consumption" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#CannedFoodFrequency> ;
     ns1:definition "Whether or not canned food is consumed." ;
     ns1:notation "9" .
 
-<http://hadatac.org/ont/chear#CarCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#CarCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Car Count" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HousingCharacteristic>,
@@ -410,18 +390,18 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     ns1:definition "Total Number of Cars in the Home" ;
     ns1:editorialNote "Again, this isn't related to physical properties of housing. This is more closely related to Socioeconomic Status. Consider moving it." .
 
-<http://hadatac.org/ont/chear#CementFloor> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#CementFloor> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Cement Floor" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#FloorType> ;
     ns1:definition "Cement Floor Type" ;
     ns1:notation "10" .
 
-<http://hadatac.org/ont/chear#Childhood> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#Childhood> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Childhood" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Demographic>,
         <http://hadatac.org/ont/chear#DevelopmentalQuality> ;
     ns1:definition "Refers to a person under a threshold age." ;
@@ -429,7 +409,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#ChildhoodCohortStudy> a owl:Class ;
     rdfs:label "Childhood Cohort Study" ;
-    rdfs:subClassOf ns2:CohortStudy .
+    rdfs:subClassOf ns3:CohortStudy .
 
 <http://hadatac.org/ont/chear#ChildhoodPeriod> a owl:Class ;
     rdfs:label "Childhood Period" ;
@@ -445,17 +425,17 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     rdfs:label "Fibrinogen Assay (Clauss method)" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Assay> .
 
-<http://hadatac.org/ont/chear#CollectionDate> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#CollectionDate> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Collection Date of Sample" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://semanticscience.org/resource/TimeInterval> ;
     ns1:definition "Collection Date of Sample" .
 
-<http://hadatac.org/ont/chear#CollegeGraduate> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#CollegeGraduate> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "College Graduate" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <ontoad:C0424933> ;
     ns1:definition "The quality of having graduated from College" ;
     ns1:notation "12" .
@@ -739,18 +719,18 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#CompetitiveImmunoassay> a owl:Class ;
     rdfs:label "Competitive Immunoassay" ;
-    rdfs:subClassOf ns2:Immunoassay .
+    rdfs:subClassOf ns3:Immunoassay .
 
-<http://hadatac.org/ont/chear#ComputerCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#ComputerCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Computer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HouseholdApplianceCount> ;
     ns1:definition "A machine used for computation and much more." .
 
 <http://hadatac.org/ont/chear#Conception> a owl:Class ;
     rdfs:label "Conception" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( <http://hadatac.org/ont/chear#Conceiving> ) ] ;
@@ -760,7 +740,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
         <http://semanticscience.org/resource/TimeInterval> ;
     ns1:definition "When a sperm fertilizes an egg" .
 
-<http://hadatac.org/ont/chear#ConsumedAlcohol> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#ConsumedAlcohol> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Consumed Alcohol" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#AlcoholUse> ;
@@ -826,17 +806,17 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     ns1:editorialNote "To Do: align with CHEBI." ;
     ns1:notation "DPMA" .
 
-<http://hadatac.org/ont/chear#DVDPlayerCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#DVDPlayerCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "DVD Player Count" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HouseholdApplianceCount> ;
     ns1:definition "Number of devices in the home that play DVDs." .
 
-<http://hadatac.org/ont/chear#DateOfBirth> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#DateOfBirth> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Date of Birth" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Demographic>,
         <http://semanticscience.org/resource/TimeInterval> ;
     ns1:definition "Date of day on which a person was born." .
@@ -851,22 +831,22 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
         <http://hadatac.org/ont/chear#Child> ;
     ns1:definition "The female offspring in relation to her parents." .
 
-<http://hadatac.org/ont/chear#DentalFillings> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#DentalFillings> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Dental Fillings" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#OralHealth> ;
     ns1:notation "13" .
 
-<http://hadatac.org/ont/chear#DidNotConsumeAlcohol> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#DidNotConsumeAlcohol> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Did Not Consume Alcohol" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#AlcoholUse> ;
     ns1:notation "53" .
 
-<http://hadatac.org/ont/chear#DietTreatment> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#DietTreatment> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Diet Treatment Medical Therapy" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MedicalTherapy> ;
     ns1:definition "Diet Treatment is a form of Medical Therapy." ;
     ns1:notation "26" .
@@ -876,7 +856,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Quantity> ;
     ns1:definition "Variables derived from taking the difference of two other variables. For example, the first difference of a time series {yt} is defined as Dyt = yt - yt-1" .
 
-<http://hadatac.org/ont/chear#DrugHistory> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#DrugHistory> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Drug History" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#ATIDU> ;
@@ -884,36 +864,36 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#ECD-MS> a owl:Class ;
     rdfs:label "Electron Capture Dissociation (ECD)" ;
-    rdfs:subClassOf ns2:TandemMassSpectrometry .
+    rdfs:subClassOf ns3:TandemMassSpectrometry .
 
 <http://hadatac.org/ont/chear#EDD-MS> a owl:Class ;
     rdfs:label "Electron-Detachment Dissociation (EDD)" ;
-    rdfs:subClassOf ns2:TandemMassSpectrometry .
+    rdfs:subClassOf ns3:TandemMassSpectrometry .
 
 <http://hadatac.org/ont/chear#EIA> a owl:Class ;
     rdfs:label "Enzyme Immunoassay" ;
-    rdfs:subClassOf ns2:Immunoassay .
+    rdfs:subClassOf ns3:Immunoassay .
 
 <http://hadatac.org/ont/chear#ETD-MS> a owl:Class ;
     rdfs:label "Electron Transfer Dissociation (ETD)" ;
-    rdfs:subClassOf ns2:TandemMassSpectrometry .
+    rdfs:subClassOf ns3:TandemMassSpectrometry .
 
 <http://hadatac.org/ont/chear#EarlyChildVigTest> a owl:Class ;
     rdfs:label "Early Childhood Vigilance Test" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#NeurocognitiveAssessent> ;
     ns1:definition "a computer-based assessment of sustained attention during which the child is required to watch a screen where various animated stimuli disappear and reappear" .
 
-<http://hadatac.org/ont/chear#ElectiveCaesarianSection> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#ElectiveCaesarianSection> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Elective Caesarian Section" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#CaesareanSection> ;
     ns1:definition "A caesarian section that was chosen by the mother but was not medically necessary." ;
     ns1:notation "19" .
 
-<http://hadatac.org/ont/chear#ElementarySchool> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#ElementarySchool> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Elementary School" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#SomeElementarySchool> ;
     ns1:definition "Finished Elementary School" ;
     ns1:notation "15" .
@@ -966,17 +946,17 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
                                                     owl:onProperty <http://semanticscience.org/resource/hasValue> ] ) ] ] ) ] ;
             owl:onProperty <http://semanticscience.org/resource/isPhenotypeOf> ] .
 
-<http://hadatac.org/ont/chear#FastFoodConsumption> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#FastFoodConsumption> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Fast Food Consumption" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#FastFoodFrequency> ;
     ns1:definition "Whether or not fast food is consumed." ;
     ns1:notation "16" .
 
 <http://hadatac.org/ont/chear#Father> a owl:Class ;
     rdfs:label "Father" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
@@ -987,7 +967,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#FirstTrimester> a owl:Class ;
     rdfs:label "First Trimester" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( <http://hadatac.org/ont/chear#Conceiving> ) ] ;
@@ -996,7 +976,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
         <http://semanticscience.org/resource/TimeInterval> ;
     ns1:definition "From pregnancy week 1 through 12 and includes conception. Conception is when the sperm fertilizes the egg. The fertilized egg then travels down the fallopian tube and attaches to the inside of the uterus, where it begins to form the embryo and placenta. The first trimester carries the highest risk of miscarriage (natural death of embryo or fetus)." .
 
-<http://hadatac.org/ont/chear#ForcepsAssistedBirth> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#ForcepsAssistedBirth> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Forceps-Assisted Birth" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#VaginalBirth> ;
@@ -1008,17 +988,17 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#NonBiologicalRelative> ;
     ns1:definition "Fosterage, the practice of a family bringing up a child not their own, differs from adoption in that the child's parents, not the foster-parents, remain the acknowledged parents. In many modern western societies foster care can be organized by the state to care for children with troubled family backgrounds, usually on a temporary basis. In many pre-modern societies fosterage was a form of patronage, whereby influential families cemented political relationships by bringing up each other's children, similar to arranged marriages, also based on dynastic or alliance calculations." .
 
-<http://hadatac.org/ont/chear#FreezeThawCycleCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#FreezeThawCycleCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Freeze/Thaw Cycles Count" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Count> ;
     ns1:definition "Number of Freeze/Thaw cycles." .
 
-<http://hadatac.org/ont/chear#FreshVegetableConsumption> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#FreshVegetableConsumption> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Fresh Vegetable Consumption" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#FreshVegetableFrequency> ;
     ns1:definition "Whether or not Fresh Vegetables are consumed." ;
     ns1:notation "29" .
@@ -1031,11 +1011,11 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#GC> a owl:Class ;
     rdfs:label "Gas Chromatography" ;
-    rdfs:subClassOf ns2:Chromatography .
+    rdfs:subClassOf ns3:Chromatography .
 
 <http://hadatac.org/ont/chear#GCMSMS> a owl:Class ;
     rdfs:label "Gas Chromatographer-Tandem Mass Spectrometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#GCMS>,
         <http://hadatac.org/ont/chear#TandemMassSpectrometer> ;
     ns1:definition "MS/MS is the combination of two mass analyzers in one mass spec instrument." .
@@ -1045,17 +1025,17 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Assay> ;
     ns1:definition "Gel electrophoresis is a method for separation and analysis of macromolecules (DNA, RNA and proteins) and their fragments, based on their size and charge." .
 
-<http://hadatac.org/ont/chear#Gravida> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#Gravida> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Gravida" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PregnancyCharacteristic>,
         <http://semanticscience.org/resource/Count> ;
     ns1:definition "Pregnancy Count, regardless of whether pregnancy was carried to Term." .
 
 <http://hadatac.org/ont/chear#GravimetricAnalysisInstrument> a owl:Class ;
     rdfs:label "Gravimetric Analysis Instrument" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
     ns1:definition "Gravimetric analysis describes a set of methods used in analytical chemistry for the quantitative determination of an analyte (the ion being analyzed) based on its mass. The principle behind this type of analysis is that once an ion's mass has been determined as a unique compound, that known measurement can then be used to determine the same analyte's mass in a mixture, as long as the relative quantities of the other constituents are known." .
 
@@ -1066,12 +1046,12 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#HHEducationGrade> a owl:Class ;
     rdfs:label "Head of Household's Education Grade" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#EducationGrade>,
         <http://hadatac.org/ont/chear#HHEducationLevel> ;
     ns1:definition "Highest grade of education achieved by the head of household" .
 
-<http://hadatac.org/ont/chear#HMOInsurance> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#HMOInsurance> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Health Maintenance Organization Insurance" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Insurance> ;
@@ -1079,7 +1059,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#HP-LC> a owl:Class ;
     rdfs:label "High Performance Liquid Chromatography" ;
-    rdfs:subClassOf ns2:Chromatography .
+    rdfs:subClassOf ns3:Chromatography .
 
 <http://hadatac.org/ont/chear#HPLCFLD> a owl:Class ;
     rdfs:label "HPLC with Fluorescence Level Detector" ;
@@ -1088,7 +1068,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#HPLCMSMS> a owl:Class ;
     rdfs:label "High Performance Liquid Chromatography - Tandem Mass Spectrometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HPLCMS>,
         <http://hadatac.org/ont/chear#LCMSMS> ;
     ns1:definition "Liquid chromatography and tandem Mass Spectrometry. MS/MS (Tandem MS) is the combination of two mass analyzers in one mass spec instrument." .
@@ -1111,17 +1091,17 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     ns1:editorialNote "To Do: align with CHEBI." ;
     ns1:notation "HPMMA" .
 
-<http://hadatac.org/ont/chear#HaircareProductUse> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#HaircareProductUse> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Haircare Product Use" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PersonalProductUse> ;
     ns1:notation "30" .
 
 <http://hadatac.org/ont/chear#HeadOfHousehold> a owl:Class ;
     rdfs:label "Head Of Household",
         "Head of Household" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( <http://hadatac.org/ont/chear#Household> ) ] ;
@@ -1131,18 +1111,18 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     ns1:definition "Head of Household is a filing status for individual United States taxpayers. To use the Head of Household filing status, a taxpayer must: (1) Be unmarried or considered unmarried at the end of the year (2) Have paid more than half the cost of keeping up a home for the tax year (either one's own home or the home of a qualifying parent) (3) Usually have a qualifying person who lived with the head in the home for more than half of the tax year unless the qualifying person is a dependent parent.",
         "The Person is the head of Household" .
 
-<http://hadatac.org/ont/chear#HighSchoolGraduate> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#HighSchoolGraduate> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Graduated From High School" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HighSchoolOrLess> ;
     ns1:definition "The quality of having graduated from High School" ;
     ns1:notation "32" .
 
-<http://hadatac.org/ont/chear#HispanicOrLatino> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#HispanicOrLatino> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Hispanic or Latino Ethnicity" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Ethnicity> ;
     ns1:definition "A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race. The term “Spanish origin” can also be used in addition to “Hispanic or Latino.”" ;
     ns1:notation "47" .
@@ -1155,21 +1135,21 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#ICP-MS> a owl:Class ;
     rdfs:label "Inductively Coupled Plasma Mass Spectrometry" ;
-    rdfs:subClassOf ns2:MassSpectrometry .
+    rdfs:subClassOf ns3:MassSpectrometry .
 
-<http://hadatac.org/ont/chear#IQ> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#IQ> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Intelligence Quotient" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Assessment>,
         <http://semanticscience.org/resource/Quantity> ;
     ns1:definition "A measure of intelligence" .
 
 <http://hadatac.org/ont/chear#IRMPD-MS> a owl:Class ;
     rdfs:label "Infrared Multiphoton Dissociation (IRMPD)" ;
-    rdfs:subClassOf ns2:TandemMassSpectrometry .
+    rdfs:subClassOf ns3:TandemMassSpectrometry .
 
-<http://hadatac.org/ont/chear#InVitroFertilization> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#InVitroFertilization> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "In Vitro Fertilization" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#AssistedReproductiveTherapy> ;
@@ -1180,7 +1160,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MethylationAssay>,
         <http://hadatac.org/ont/chear#MicroarrayAssay> .
 
-<http://hadatac.org/ont/chear#InsuranceType> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#InsuranceType> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Insurance Type" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Insurance> ;
@@ -1188,7 +1168,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#Ion_Mobility_Synapt_G2Si> a owl:Class ;
     rdfs:label "SYNAPT G2-Si Mass Spectrometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HDMS> .
 
 <http://hadatac.org/ont/chear#KABC_Seq> a owl:Class ;
@@ -1201,37 +1181,37 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#NeurocognitiveAssessent> ;
     ns1:definition "culturally fair, cognitive ability test for children" .
 
-<http://hadatac.org/ont/chear#KnownFoodAllergies> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#KnownFoodAllergies> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Known Food Allergies" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MedicalHistory> .
 
 <http://hadatac.org/ont/chear#LC-MS-MS> a owl:Class ;
     rdfs:label "Liquid Chromotography -tandem mass spectrometry" ;
-    rdfs:subClassOf ns2:MassSpectrometry .
+    rdfs:subClassOf ns3:MassSpectrometry .
 
 <http://hadatac.org/ont/chear#LC-MS3> a owl:Class ;
     rdfs:label "Liquid Chromotography-Multistage Mass Spectrometery" ;
-    rdfs:subClassOf ns2:MassSpectrometry .
+    rdfs:subClassOf ns3:MassSpectrometry .
 
-<http://hadatac.org/ont/chear#LandfillProximity> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#LandfillProximity> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Landfill Proximity" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#EnvironmentalExposure>,
         <http://semanticscience.org/resource/Length> ;
     ns1:definition "How close a household is to a landfill." .
 
-<http://hadatac.org/ont/chear#Language> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#Language> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Language" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Acculturation> ;
     ns1:editorialNote "Needs to be rooted in sio" .
 
-<http://hadatac.org/ont/chear#LightBulbCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#LightBulbCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Light Bulb Count" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HousingCharacteristic>,
         <http://semanticscience.org/resource/Count> ;
     ns1:definition "Total Number of Lightbulbs in the Home" .
@@ -1243,7 +1223,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#LongRangePCR> a owl:Class ;
     rdfs:label "Long Range Polymerase Chain Reaction" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PolymeraseChainReaction> ;
     ns1:definition "Amplification of DNA lengths that cannot typically be amplified using routine PCR methods or reagents. For simple DNA templates, polymerases optimized for Long Range PCR can amplify up to 30 kb and beyond. For complex, genomic templates, 20 kb is a typical target." .
 
@@ -1313,9 +1293,9 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#MaternalWeightGain> a owl:Class ;
     rdfs:label "Maternal Weight Gain" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PregnancyCharacteristic>,
-        <http://hadatac.org/ont/chear#Weight> ;
+        <http://purl.obolibrary.org/obo/CMO_0000012> ;
     ns1:definition "The amount of weight gained during a pregnacy." .
 
 <http://hadatac.org/ont/chear#Metabolite> a owl:Class ;
@@ -1325,21 +1305,21 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#MicroPEM> a owl:Class ;
     rdfs:label "MicroPEM" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#ExposureMonitoringInstrument> ;
     ns1:definition "The MicroPEM device monitors individual exposures to very fine airborne particles—or particulate matter—at two sizes. PM10 has a diameter of less than 10 micrometers (PM10), which is approximately 1/30th the size of a human hair, and PM2.5, which at diameters of less than 2.5 micrometers, is even smaller." .
 
-<http://hadatac.org/ont/chear#MicrowaveOvenCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#MicrowaveOvenCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Microwave Oven Count" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HouseholdApplianceCount> ;
     ns1:definition "Number of machines in the home used to heat up food using microwaves." ;
     ns1:editorialNote "Putting a note here, but it applies to all of the appliances. These are used to calculate the SES Index that was reported within one of the pilots. So, there needs to be some connection between these terms." .
 
 <http://hadatac.org/ont/chear#Mother> a owl:Class ;
     rdfs:label "Mother" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
@@ -1364,62 +1344,70 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     ns1:editorialNote "To Do: align with CHEBI." ;
     ns1:notation "NNAL" .
 
-<http://hadatac.org/ont/chear#NativeHawaiianOrOtherPacificIslander> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#NativeHawaiianOrOtherPacificIslander> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Native Hawaiian or Other Pacific Islander" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Race> ;
     ns1:definition "A person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands." ;
     ns1:notation "55" .
 
 <http://hadatac.org/ont/chear#NeighborhoodCharacteristic> a owl:Class ;
     rdfs:label "Neighborhood Characteristic" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Neighborhood Characteristic Indicator Class" .
 
-<http://hadatac.org/ont/chear#NoFormalEducation> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#NoFormalEducation> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "No Formal Education" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/ExO_0000041> ;
     ns1:definition "Has not been educated in a formal setting." ;
     ns1:notation "57" .
 
-<http://hadatac.org/ont/chear#NonHispanicOrLatino> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#NonHispanicOrLatino> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Non-Hispanic Ethnicity" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Ethnicity> ;
     ns1:definition "Non-Hispanic Ethnicity" ;
     ns1:notation "58" .
 
-<http://hadatac.org/ont/chear#NonSpontaneousPreterm> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#NonSpontaneousPreterm> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Non-Spontaneous Preterm Birth" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PretermBirth> ;
     ns1:notation "60" .
 
-<http://hadatac.org/ont/chear#NormalWeight> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#NormalWeight> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Normal Weight" ;
-    rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000105> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
+            owl:someValuesFrom [ a owl:Restriction ;
+                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                    owl:someValuesFrom [ a owl:Class ;
+                            owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105> [ a owl:Restriction ;
+                                        owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
+                                        owl:someValuesFrom [ a rdfs:Datatype ;
+                                                owl:intersectionOf ( [ a rdfs:Datatype ;
+                                                            owl:onDatatype xsd:float ;
+                                                            owl:withRestrictions ( [ xsd:minExclusive "18.5"^^xsd:float ] ) ] [ a rdfs:Datatype ;
+                                                            owl:onDatatype xsd:float ;
+                                                            owl:withRestrictions ( [ xsd:maxExclusive "25.0"^^xsd:float ] ) ] ) ] ] ) ] ] ],
+        <http://hadatac.org/ont/chear#BodyWeightQuality>,
+        <http://hadatac.org/ont/chear#UnderweightOrNormal> ;
     ns1:definition "18.5<=BMI<=25" ;
     ns1:notation "61" .
 
-<http://hadatac.org/ont/chear#Nulliparous> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#Nulliparous> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Nulliparous" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0002370> ;
     ns1:notation "62" .
 
-<http://hadatac.org/ont/chear#Obese> a ns2:QualityValue,
-        owl:Class ;
-    rdfs:label "Obese" ;
-    rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000105> ;
-    ns1:notation "63" .
-
-<http://hadatac.org/ont/chear#OtherGIDisease> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#OtherGIDisease> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Other GI Disease" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MedicalHistory>,
@@ -1427,26 +1415,13 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     ns1:editorialNote "This is a temp concept that needs addressing" ;
     ns1:notation "69" .
 
-<http://hadatac.org/ont/chear#OtherMaterialFloor> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#OtherMaterialFloor> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Other Material Finish" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#FloorType> ;
     ns1:definition "Flooring is made from another unspecified material." ;
     ns1:notation "70" .
-
-<http://hadatac.org/ont/chear#Overweight> a ns2:QualityValue,
-        owl:Class ;
-    rdfs:label "Overweight" ;
-    rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000105> ;
-    ns1:notation "71" .
-
-<http://hadatac.org/ont/chear#OverweightOrObese> a ns2:QualityValue,
-        owl:Class ;
-    rdfs:label "Overweight/Obese" ;
-    rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000105> ;
-    ns1:definition "BMI > 25" ;
-    ns1:notation "72" .
 
 <http://hadatac.org/ont/chear#PBA> a owl:Class ;
     rdfs:label "3-phenoxybenzoic acid" ;
@@ -1498,7 +1473,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     ns1:editorialNote "To Do: align with CHEBI." ;
     ns1:notation "PMA" .
 
-<http://hadatac.org/ont/chear#PPITreatment> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#PPITreatment> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Proton Pump Inhibitor Treatment" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MedicalTherapy> ;
@@ -1508,20 +1483,20 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#ParentalHealthAndFamilyHistory> a owl:Class ;
     rdfs:label "Parental Health and Family History" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Parental Health and Family History Indicator Class" .
 
-<http://hadatac.org/ont/chear#Parous> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#Parous> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Parous" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0002370> ;
     ns1:notation "73" .
 
-<http://hadatac.org/ont/chear#PerfumeUse> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#PerfumeUse> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Perfume Use" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PersonalProductUse> ;
     ns1:notation "74" .
 
@@ -1532,21 +1507,21 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#PhysicalActivityAndFitness> a owl:Class ;
     rdfs:label "Physical Activity and Fitness" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Physical Activity and Fitness Indicator Class" .
 
-<http://hadatac.org/ont/chear#PlannedCaesarianSection> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#PlannedCaesarianSection> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Planned Caesarian Section" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#CaesareanSection> ;
     ns1:definition "Planned caesarian section." ;
     ns1:notation "18" .
 
 <http://hadatac.org/ont/chear#PostPregnancy> a owl:Class ;
     rdfs:label "Post-Pregnancy" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( <http://semanticscience.org/resource/Birthing> ) ] ;
@@ -1557,7 +1532,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#PrePregnancy> a owl:Class ;
     rdfs:label "Pre-Pregnancy" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( <http://hadatac.org/ont/chear#Conceiving> ) ] ;
@@ -1568,7 +1543,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#Pregnancy> a owl:Class ;
     rdfs:label "Pregnancy" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( <http://hadatac.org/ont/chear#Conceiving> ) ] ;
@@ -1580,9 +1555,9 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#PregnancyCohortStudy> a owl:Class ;
     rdfs:label "Pregnancy Cohort Study" ;
-    rdfs:subClassOf ns2:CohortStudy .
+    rdfs:subClassOf ns3:CohortStudy .
 
-<http://hadatac.org/ont/chear#PregnancyComplication> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#PregnancyComplication> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Pregnancy Complication" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PregnancyCharacteristic> ;
@@ -1590,17 +1565,17 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#PrescriptionMedication> a owl:Class ;
     rdfs:label "Prescription Medication and Dietary Supplements" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Prescription Medication and Dietary Supplements are forms of medical treatment." .
 
-<http://hadatac.org/ont/chear#PrivateInsurance> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#PrivateInsurance> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Private Insurance" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PrivateInsuranceOrSelfPay> ;
     ns1:notation "103" .
 
-<http://hadatac.org/ont/chear#PublicInsurance> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#PublicInsurance> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Public Insurance" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Insurance> ;
@@ -1610,7 +1585,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     rdfs:label "Quadrapole Time-of-Flight Liquid Chromotography-Mass Spectrometry" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#LC-MS> .
 
-<http://hadatac.org/ont/chear#QuitAfterPregnancy> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#QuitAfterPregnancy> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Quit Smoking After Pregnancy" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PregnancyCharacteristic>,
@@ -1619,7 +1594,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     ns1:definition "Quit Smoking After Pregnancy" ;
     ns1:notation "80" .
 
-<http://hadatac.org/ont/chear#QuitBeforePregnancy> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#QuitBeforePregnancy> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Quit Smoking Before Pregnancy" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PregnancyCharacteristic>,
@@ -1633,21 +1608,21 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#NucleicAcidSequencing> .
 
 <http://hadatac.org/ont/chear#Radioimmunoassay> a owl:Class ;
-    rdfs:subClassOf ns2:Immunoassay .
+    rdfs:subClassOf ns3:Immunoassay .
 
 <http://hadatac.org/ont/chear#Reichert_AR200> a owl:Class ;
     rdfs:label "Reichert AR200 Handheld Digital Refractometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Refractometer> ;
     ns1:definition "Lightweight digital refractometer designed for the food, beverage, agricultural, industrial-fluid, chemical, petrochemical, pharmaceutical, medical, and plastic industries." .
 
-<http://hadatac.org/ont/chear#Religion> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#Religion> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Religion" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Demographic> ;
     ns1:definition "Religious Belief" .
 
-<http://hadatac.org/ont/chear#RepeatCaesarianSection> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#RepeatCaesarianSection> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Repeat Caesarian Section" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#CaesareanSection> ;
@@ -1656,22 +1631,22 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#ReplicateNumber> a owl:Class ;
     rdfs:label "Replicate Number" ;
-    rdfs:subClassOf ns2:SampleIndicator ;
+    rdfs:subClassOf ns3:SampleIndicator ;
     ns1:definition "Replicate Number" .
 
 <http://hadatac.org/ont/chear#ReproductiveHealth> a owl:Class ;
     rdfs:label "Reproductive Health" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Reproductive Health Indicator Class" .
 
 <http://hadatac.org/ont/chear#ReversePhaseMassSpectrometryProfiling> a owl:Class ;
     rdfs:label "Reverse-Phase Mass Spectrometry Profiling" ;
-    rdfs:subClassOf ns2:MassSpectrometry .
+    rdfs:subClassOf ns3:MassSpectrometry .
 
 <http://hadatac.org/ont/chear#SID-MS> a owl:Class ;
     rdfs:label "Surface-Induced Dissociation (SID)" ;
-    rdfs:subClassOf ns2:TandemMassSpectrometry .
+    rdfs:subClassOf ns3:TandemMassSpectrometry .
 
 <http://hadatac.org/ont/chear#SPMA> a owl:Class ;
     rdfs:label "Mercapturic acid of benzene" ;
@@ -1680,20 +1655,20 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#SamplePairing> a owl:Class ;
     rdfs:label "A Sample has a Pairing" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Sampling> ;
     ns1:definition "Refers to having paired samples." ;
     ns1:editorialNote "This actually should be a process. What should we do?" .
 
 <http://hadatac.org/ont/chear#Screening> a owl:Class ;
     rdfs:label "Screening" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://semanticscience.org/resource/TimeInterval> ;
     ns1:definition "The time period during which a screening process is used to determine the inclusion of a subject in a study." .
 
 <http://hadatac.org/ont/chear#SecondTrimester> a owl:Class ;
     rdfs:label "Second Trimester" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( <http://hadatac.org/ont/chear#Conceiving> ) ] ;
@@ -1702,7 +1677,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
         <http://semanticscience.org/resource/TimeInterval> ;
     ns1:definition "From week 13 through 28. Around the middle of the second trimester, movement of the fetus may be felt. At 28 weeks, more than 90% of babies can survive outside of the uterus if provided with high-quality medical care." .
 
-<http://hadatac.org/ont/chear#SelfPay> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#SelfPay> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "No Insurance / Self-funded" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PrivateInsuranceOrSelfPay> ;
@@ -1714,11 +1689,11 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#SleepCharacterisitic> a owl:Class ;
     rdfs:label "Sleep Characterisitic" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Sleep Characterisitics Indicator Class" .
 
-<http://hadatac.org/ont/chear#SocioeconomicStatusIndex> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#SocioeconomicStatusIndex> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Socioeconomic Status Index" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#SocioeconomicStatus>,
@@ -1726,39 +1701,39 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     ns1:definition "A measure of SES." ;
     ns1:editorialNote "This is a specific index, derived from other variables. So, it should somehow be connected to this variables. Also, we may want to be more specific about the type of index that it is. Perhaps there should be a general SESIndex and then subclasses of specific measures?" .
 
-<http://hadatac.org/ont/chear#SoilFloor> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#SoilFloor> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Soil Floor" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#FloorType> ;
     ns1:definition "The  flooring is made of soil." ;
     ns1:notation "84" .
 
 <http://hadatac.org/ont/chear#SolidPhaseSandwichELISA> a owl:Class ;
     rdfs:label "Solid-Phase Sandwich ELISA" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#SandwichELISA> .
 
-<http://hadatac.org/ont/chear#SomeCollege> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#SomeCollege> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Some College" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <ontoad:C0424933> ;
     ns1:definition "Attended Some College" ;
     ns1:notation "85" .
 
-<http://hadatac.org/ont/chear#SomeHighSchool> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#SomeHighSchool> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Some High School" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HighSchoolOrLess> ;
     ns1:definition "Education Level of Some High School" ;
     ns1:notation "87" .
 
-<http://hadatac.org/ont/chear#SomeMiddleSchool> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#SomeMiddleSchool> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Some Middle School" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HighSchoolOrLess> ;
     ns1:definition "Attended Some Middle School" ;
     ns1:notation "90" .
@@ -1775,19 +1750,19 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#SpectraMax_Plus_384> a owl:Class ;
     rdfs:label "SpectraMax Plus 384 Microplate Reader" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MicroplateReader> ;
     ns1:definition "Get absorbance measurements from 190 to 1000 nm quickly for samples in test tubes, cuvettes, and 96- or 384-well microplates. The SpectraMax® Plus 384 Microplate Reader gives you walk-up convenience for both standard spectrophotometer and microplate reader applications on the same instrument. Monochromator wavelength selection saves you the time and trouble of ever having to change out filters. Typical applications for this powerful reader include DNA and RNA quantification, enzyme kinetic assays, and ELISA based assays. When your project is ready for high throughput, take advantage of StakMax® automated microplate handling compatibility for full robotic integration." .
 
-<http://hadatac.org/ont/chear#SpontaneousCaesarianSection> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#SpontaneousCaesarianSection> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Spontaneous Caesarian Section" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#CaesareanSection> ;
     ns1:definition "Had a spontaneous caesarian section" ;
     ns1:notation "22" .
 
-<http://hadatac.org/ont/chear#SpontaneousPretermBirth> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#SpontaneousPretermBirth> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Spontaneous Preterm Birth" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PretermBirth> ;
@@ -1798,18 +1773,18 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#NonBiologicalRelative> ;
     ns1:definition "A stepfamily is a family where at least one parent has children that are not genetically related to the other spouse or partner. Either one parent may have children from a previous relationship. Children in a stepfamily may live with one biological parent, or they may live with each biological parent for a period of time. In addition, visitation rights mean that children in stepfamilies often have contact with both biological parents, even if they permanently live with only one. A child is referred to as the stepchild, stepdaughter or stepson of their biological parent's new spouse, and that person as the stepparent, stepfather or stepmother of the child. A stepfather is the husband of one's mother, and not one's biological father. A stepmother is the wife of one's father, and not one's biological mother. A step-grandmother is the wife of one's grandfather, and not one's biological grandmother. A step-grandfather is the husband of one's grandmother, and not one's biological grandfather. Similarly, a stepbrother is the son of a stepparent who one is not biologically related to. A stepsister is the daughter of a stepparent to whom one is not biologically related. A step-grandson is the son of a stepson or stepdaughter who one is not biologically related to. A step-granddaughter is the daughter of a stepson or stepdaughter who one is not biologically related. A parent's spouse of the same sex may also count as a stepparent." .
 
-<http://hadatac.org/ont/chear#SteroidTreatment> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#SteroidTreatment> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Steroid Treatment form of Medical Therapy" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MedicalTherapy> ;
     ns1:definition "Had a form of treatment which uses steroids." ;
     ns1:notation "28" .
 
-<http://hadatac.org/ont/chear#Stress> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#Stress> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Stress" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#StressFrequency> ;
     ns1:definition "Whether or not a person gets stressed." ;
     ns1:notation "92" .
@@ -1821,10 +1796,10 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#Subject> a owl:Class ;
     rdfs:label "Subject" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
-                    owl:intersectionOf ( ns2:Study ) ] ;
+                    owl:intersectionOf ( ns3:Study ) ] ;
             owl:onProperty <http://semanticscience.org/resource/inRelationTo> ],
         <http://semanticscience.org/resource/Role> ;
     ns1:definition "A living individual about whom a research investigator (whether a professional or a student) obtains data through 1) intervention or interaction with the individual, or 2) identifiable private information" .
@@ -1864,34 +1839,34 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     ns1:definition "PHYSICAL DESCRIPTION: Brown flakes or beige solid. Strong odor. (NTP, 1992)" ;
     ns1:notation "TeCP2456" .
 
-<http://hadatac.org/ont/chear#TechnicalPostJuniorCollege> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#TechnicalPostJuniorCollege> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Technical Post Junior College" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf <http://hadatac.org/ont/chear#HigherEducation>,
-        <http://hadatac.org/ont/chear#TechnicalSchool> ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf <http://hadatac.org/ont/chear#TechnicalSchool>,
+        <http://purl.obolibrary.org/obo/ExO_0000041> ;
     ns1:definition "Attended a Technical Post Junior College" ;
     ns1:notation "93" .
 
-<http://hadatac.org/ont/chear#TechnicalPostMiddleSchool> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#TechnicalPostMiddleSchool> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Technical Post-Middle School" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HighSchoolOrLess>,
         <http://hadatac.org/ont/chear#TechnicalSchool> ;
     ns1:definition "Attended a Technical Post-Middle School." ;
     ns1:notation "94" .
 
-<http://hadatac.org/ont/chear#TechnicalPostPrimarySchool> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#TechnicalPostPrimarySchool> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Technical Post Primary School" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HighSchoolOrLess>,
         <http://hadatac.org/ont/chear#TechnicalSchool> ;
     ns1:definition "Attended a Technical Post Primary School" ;
     ns1:notation "95" .
 
-<http://hadatac.org/ont/chear#TermBirth> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#TermBirth> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "TermBirth" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#BirthOutcome> ;
@@ -1899,7 +1874,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#ThirdTrimester> a owl:Class ;
     rdfs:label "Third Trimester" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( <http://hadatac.org/ont/chear#Conceiving> ) ] ;
@@ -1908,14 +1883,14 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
         <http://semanticscience.org/resource/TimeInterval> ;
     ns1:definition "From 29 weeks through 40 weeks." .
 
-<http://hadatac.org/ont/chear#ToasterCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#ToasterCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Toaster Count" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HouseholdApplianceCount> ;
     ns1:definition "Number of appliances used to toast bread." .
 
-<http://hadatac.org/ont/chear#TobaccoExposure> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#TobaccoExposure> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Tobacco Smoke Exposure" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#EnvironmentalExposure> ;
@@ -1923,62 +1898,49 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://hadatac.org/ont/chear#Tri_Cell_DMA_80> a owl:Class ;
     rdfs:label "Tri-Cell DMA-80 Direct Mercury Analyzer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#DirectMercuryAnalyzer> ;
     ns1:definition "The DMA-80 is based on the principles of sample thermal decomposition, mercury amalgamation and atomic absorption detection. The DMA-80 has been used to develop the US EPA method 7473 (Mercury in solids and solutions by thermal decomposition, amalgamation, and atomic absorption spectrophotometry). It is furthermore compliant with ASTM method D-6722-01 (Total mercury in coal and coal combustion residues) and ASTM method D-7623-10 (Total mercury in crude oil)." .
 
 <http://hadatac.org/ont/chear#TurbidimetricAntibodyMethod> a owl:Class ;
     rdfs:label "Immunoturbidimetry" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Assay> ;
     ns1:definition "An analytical technique that uses light scattering, a physical phenomenon resulting from the interaction of light with particles in solution, to measure the concentration of particles. The photometric signal is generated by a decrease in light intensity as a direct consequence of increasing turbidity in the reaction well.  Immunoturbidimetry uses the classical antigen-antibody reaction. The antigen-antibody complexes are particles which can be optically detected by an photometer." .
 
 <http://hadatac.org/ont/chear#UPLCMSMS> a owl:Class ;
     rdfs:label "Ultra-Performance Liquid Chromatography - Tandem Mass Spectrometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#TandemMassSpectrometer>,
         <http://hadatac.org/ont/chear#UPLCMS> .
 
-<http://hadatac.org/ont/chear#Underweight> a ns2:QualityValue,
-        owl:Class ;
-    rdfs:label "Underweight" ;
-    rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000105> ;
-    ns1:definition "BMI < 18.5" ;
-    ns1:notation "99" .
-
-<http://hadatac.org/ont/chear#UnderweightOrNormal> a ns2:QualityValue,
-        owl:Class ;
-    rdfs:label "Underweight/Normal" ;
-    rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000105> ;
-    ns1:notation "100" .
-
-<http://hadatac.org/ont/chear#UnknownEducationLevel> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#UnknownEducationLevel> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Unknown Education Level" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/ExO_0000041> ;
     ns1:definition "Level of Education is not known" ;
     ns1:notation "101" .
 
-<http://hadatac.org/ont/chear#UnknownRace> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#UnknownRace> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Unknown Race" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Race> ;
     ns1:definition "Unknown Race" ;
     ns1:notation "48" .
 
-<http://hadatac.org/ont/chear#UnplannedCaesarianSection> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#UnplannedCaesarianSection> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Unplanned Caesarian Section" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#CaesareanSection> ;
     ns1:definition "Had an unplanned caesarian section." ;
     ns1:notation "23" .
 
-<http://hadatac.org/ont/chear#VCRPlayerCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#VCRPlayerCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "VCR Player Count" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HouseholdApplianceCount> ;
     ns1:definition "Number of devices that play VCRs in the home." .
 
@@ -2150,10 +2112,10 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     ns1:editorialNote "To Do: align with CHEBI." ;
     ns1:notation "VOCTTC" .
 
-<http://hadatac.org/ont/chear#VacuumCleanerCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#VacuumCleanerCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Vacuum Cleaner Count" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HouseholdApplianceCount> ;
     ns1:definition "Number of appliances in home used for cleaning rugs." .
 
@@ -2162,23 +2124,23 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     rdfs:subClassOf <http://semanticscience.org/resource/TimeInterval> ;
     ns1:definition "The time interval of an encounter between a study subject and a study administrator." .
 
-<http://hadatac.org/ont/chear#WashingMachineCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#WashingMachineCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Washing Machine Count" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HouseholdApplianceCount> ;
     ns1:definition "Number of machines used for washing clothes in the home." .
 
-<http://hadatac.org/ont/chear#WeightForHeightZScore> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#WeightForHeightZScore> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Weight for Height Z-Score" ;
     rdfs:subClassOf <http://semanticscience.org/resource/StandardScore> ;
     ns1:definition "Z-Score of the weight/height ratio at a given age." .
 
-<http://hadatac.org/ont/chear#ZFentonBW> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#ZFentonBW> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Fenton Weighted Z-Score" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf [ a rdf:List ;
                     rdf:first <http://semanticscience.org/resource/StandardScore> ;
@@ -2299,6 +2261,14 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     ns1:notation "x103 µL" .
 
 <http://hadatac.org/ont/hasco/wasApprovedBy> a owl:AnnotationProperty .
+
+<http://purl.bioontology.org/ontology/phenX/011100> a ns3:QuantityVariable,
+        owl:Class ;
+    rdfs:label "Household Income" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf <http://hadatac.org/ont/chear#SocioeconomicStatus>,
+        <http://semanticscience.org/resource/Quantity> ;
+    ns1:definition "Question asking the respondent for his or her family’s total family income from the last calendar year." .
 
 <http://purl.obolibrary.org/obo/CHEBI_12313426> a owl:Class ;
     rdfs:label "Cis-Nonachlor" ;
@@ -2910,7 +2880,7 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://purl.obolibrary.org/obo/CHEBI_35143> a owl:Class ;
     rdfs:label "Hemoglobin" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Protein> ;
     ns1:definition "The iron-containing oxygen-transport metalloprotein in the red blood cells of all vertebrates (with the exception of the fish family Channichthyidae), as well as the tissues of some invertebrates. Hemoglobin in the blood carries oxygen from the respiratory organs (lungs or gills) to the rest of the body (i.e. the tissues). There it releases the oxygen to permit aerobic respiration to provide energy to power the functions of the organism in the process called metabolism." .
 
@@ -3148,14 +3118,6 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     rdfs:label "neuron" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Cell> .
 
-<http://purl.obolibrary.org/obo/CMO_0000012> a ns2:QuantityVariable,
-        owl:Class ;
-    rdfs:label "Weight" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf <http://hadatac.org/ont/chear#Anthropometry>,
-        <http://semanticscience.org/resource/Mass> ;
-    ns1:definition "The resulting Force from the interaction between a person's Mass and Gravity." .
-
 <http://purl.obolibrary.org/obo/CMO_0000025> a owl:Class ;
     rdfs:subClassOf <http://semanticscience.org/resource/Count> .
 
@@ -3177,6 +3139,18 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 <http://purl.obolibrary.org/obo/CMO_0000047> rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000000> .
 
 <http://purl.obolibrary.org/obo/CMO_0000048> rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000000> .
+
+<http://purl.obolibrary.org/obo/CMO_0000105> a owl:Class ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf [ a rdf:List ;
+                    rdf:first [ a owl:Restriction ;
+                            owl:onProperty <http://www.w3.org/ns/prov#wasDerivedFrom> ;
+                            owl:someValuesFrom <http://semanticscience.org/resource/Height> ] ;
+                    rdf:rest [ a rdf:List ;
+                            rdf:first [ a owl:Restriction ;
+                                    owl:onProperty <http://www.w3.org/ns/prov#wasDerivedFrom> ;
+                                    owl:someValuesFrom <http://semanticscience.org/resource/Mass> ] ;
+                            rdf:rest () ] ] ] .
 
 <http://purl.obolibrary.org/obo/CMO_0000508> a owl:Class ;
     rdfs:subClassOf <http://semanticscience.org/resource/Concentration> .
@@ -3202,13 +3176,13 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://purl.obolibrary.org/obo/ENVO_00010483> a owl:Class ;
     rdfs:label "Environmental Material" ;
-    rdfs:subClassOf ns2:SampleIndicator,
+    rdfs:subClassOf ns3:SampleIndicator,
         <http://semanticscience.org/resource/Specimen> .
 
-<http://purl.obolibrary.org/obo/Exo_0000132> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/Exo_0000132> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "African American" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Race> ;
     owl:equivalentClass <http://purl.obolibrary.org/obo/HANCESTRO_0568> ;
     ns1:definition "A person having origins in any of the Black racial groups of Africa. Terms such as \"Haitian\" or \"Negro\" can be used in addition to \"Black or African American\"." ;
@@ -3216,16 +3190,16 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://purl.obolibrary.org/obo/Exo_0000135> a owl:Class ;
     rdfs:label "Asian" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Race> ;
     owl:equivalentClass <http://purl.obolibrary.org/obo/HANCESTRO_0008> ;
     ns1:definition "A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent, including for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam." ;
     ns1:notation "6" .
 
-<http://purl.obolibrary.org/obo/Exo_0000158> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/Exo_0000158> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "White" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Race> ;
     ns1:definition "A person having origins in any of the original peoples of Europe, the Middle East, or North Africa." ;
     ns1:notation "102" .
@@ -3246,6 +3220,76 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
     rdfs:label "Phenotype" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MedicalHistory> .
 
+<http://purl.obolibrary.org/obo/HP_0001513> a ns3:QualityValue,
+        owl:Class ;
+    rdfs:label "Obese" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
+            owl:someValuesFrom [ a owl:Restriction ;
+                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                    owl:someValuesFrom [ a owl:Class ;
+                            owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105> [ a owl:Restriction ;
+                                        owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
+                                        owl:someValuesFrom [ a rdfs:Datatype ;
+                                                owl:onDatatype xsd:float ;
+                                                owl:withRestrictions ( [ xsd:minExclusive "29.9"^^xsd:float ] ) ] ] ) ] ] ],
+        <http://hadatac.org/ont/chear#BodyWeightQuality> ;
+    ns1:notation "63" .
+
+<http://purl.obolibrary.org/obo/HP_0004324> a ns3:QualityValue,
+        owl:Class ;
+    rdfs:label "Increased Body Weight" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
+            owl:someValuesFrom [ a owl:Restriction ;
+                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                    owl:someValuesFrom [ a owl:Class ;
+                            owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105> [ a owl:Restriction ;
+                                        owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
+                                        owl:someValuesFrom [ a rdfs:Datatype ;
+                                                owl:onDatatype xsd:float ;
+                                                owl:withRestrictions ( [ xsd:minExclusive "25.0"^^xsd:float ] ) ] ] ) ] ] ],
+        <http://hadatac.org/ont/chear#BodyWeightQuality> ;
+    ns1:definition "BMI > 25" ;
+    ns1:notation "72" .
+
+<http://purl.obolibrary.org/obo/HP_0025502> a ns3:QualityValue,
+        owl:Class ;
+    rdfs:label "Overweight" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
+            owl:someValuesFrom [ a owl:Restriction ;
+                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                    owl:someValuesFrom [ a owl:Class ;
+                            owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105> [ a owl:Restriction ;
+                                        owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
+                                        owl:someValuesFrom [ a rdfs:Datatype ;
+                                                owl:intersectionOf ( [ a rdfs:Datatype ;
+                                                            owl:onDatatype xsd:float ;
+                                                            owl:withRestrictions ( [ xsd:minExclusive "25.0"^^xsd:float ] ) ] [ a rdfs:Datatype ;
+                                                            owl:onDatatype xsd:float ;
+                                                            owl:withRestrictions ( [ xsd:maxExclusive "29.9"^^xsd:float ] ) ] ) ] ] ) ] ] ],
+        <http://hadatac.org/ont/chear#BodyWeightQuality> ;
+    ns1:notation "71" .
+
+<http://purl.obolibrary.org/obo/HP_0045082> a ns3:QualityValue,
+        owl:Class ;
+    rdfs:label "Underweight" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
+            owl:someValuesFrom [ a owl:Restriction ;
+                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                    owl:someValuesFrom [ a owl:Class ;
+                            owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105> [ a owl:Restriction ;
+                                        owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
+                                        owl:someValuesFrom [ a rdfs:Datatype ;
+                                                owl:onDatatype xsd:float ;
+                                                owl:withRestrictions ( [ xsd:maxExclusive "18.5"^^xsd:float ] ) ] ] ) ] ] ],
+        <http://hadatac.org/ont/chear#BodyWeightQuality>,
+        <http://hadatac.org/ont/chear#UnderweightOrNormal> ;
+    ns1:definition "BMI < 18.5" ;
+    ns1:notation "99" .
+
 <http://purl.obolibrary.org/obo/HsapDv_0000000> rdfs:subClassOf <http://semanticscience.org/resource/Age> .
 
 <http://purl.obolibrary.org/obo/IAO_0000027> a owl:Class ;
@@ -3263,84 +3307,84 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://purl.obolibrary.org/obo/NCIT_C3262> rdfs:subClassOf <http://semanticscience.org/resource/Disease> .
 
-<http://purl.obolibrary.org/obo/NCIT_C51775> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/NCIT_C51775> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Widowed" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Unmarried> ;
     ns1:definition "Indicates a person who is no longer married because of the death of his/her spouse and has not remarried." ;
     ns1:notation "39" .
 
-<http://purl.obolibrary.org/obo/NCIT_C51776> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/NCIT_C51776> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Divorced" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Unmarried> ;
     ns1:definition "Indicates a person whose marriage has been legally dissolved and has not remarried." ;
     ns1:notation "40" .
 
-<http://purl.obolibrary.org/obo/NCIT_C51777> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/NCIT_C51777> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Separated" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C51773> ;
     ns1:definition "Indicates a person living apart from his/her spouse by legal arrangement." ;
     ns1:notation "41" .
 
-<http://purl.obolibrary.org/obo/NCIT_C52658> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/NCIT_C52658> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Full Time Employment" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/Exo_0000034> ;
     ns1:definition "Employed for a standard number of hours of working time, at least 50% or 20 hours per week." ;
     ns1:notation "64" .
 
-<http://purl.obolibrary.org/obo/NCIT_C53262> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/NCIT_C53262> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Domestic Partnership" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Unmarried> ;
     ns1:definition "Indicates a person who is a member of an unmarried couple, including same sex couples, living together in longstanding relationships, that are registered or unregistered." ;
     ns1:notation "42" .
 
-<http://purl.obolibrary.org/obo/NCIT_C75560> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/NCIT_C75560> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Homemaker" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/Exo_0000034> ;
     ns1:definition "A person who manages a home as their main daily activity." ;
     ns1:notation "68" .
 
-<http://purl.obolibrary.org/obo/NCIT_C75562> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/NCIT_C75562> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Part Time Employment" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/Exo_0000034> ;
     ns1:definition "Employment involving less than the standard or customary working time." ;
     ns1:notation "65" .
 
-<http://purl.obolibrary.org/obo/NCIT_C75563> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/NCIT_C75563> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Unemployment" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/Exo_0000034> ;
     ns1:definition "The state of not having a job." ;
     ns1:notation "67" .
 
-<http://purl.obolibrary.org/obo/NCIT_C76240> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/NCIT_C76240> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Annulled" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C51774> ;
     ns1:definition "A marital status in which a voidable marriage is legally declared null and void, as though it never existed. Specific grounds for annullment vary within the presiding jurisdiction, whether geographic or religious." ;
     ns1:notation "43" .
 
-<http://purl.obolibrary.org/obo/NCIT_C76241> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/NCIT_C76241> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Interlocutory Marital Status" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MaritalStatus> ;
     ns1:definition "The condition existing when an order or judgement is considered temporary until either a specified period of time has passed or specific information is provided to assist in rendering a permanent decision." ;
     ns1:notation "44" .
 
-<http://purl.obolibrary.org/obo/NCIT_C76242> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/NCIT_C76242> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Polygamous" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MaritalStatus> ;
     ns1:definition "A type of living arrangement or mating system in which at least one member of a relationship has more than one mate." ;
     ns1:notation "45" .
 
-<http://purl.obolibrary.org/obo/OGMS_0000098> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/OGMS_0000098> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Hospitalization" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HospitalUtilization>,
@@ -3380,43 +3424,43 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://purl.obolibrary.org/obo/UBERON_0001037> a owl:Class ;
     rdfs:label "Hair" ;
-    ns3:identifier "H" ;
+    ns2:identifier "H" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Tissue> ;
     ns1:definition "A filament, mostly protein, that grows from follicles found in the dermis[WP]. [database_cross_reference: http://en.wikipedia.org/wiki/Hair]" .
 
 <http://purl.obolibrary.org/obo/UBERON_0001088> a owl:Class ;
     rdfs:label "Urine" ;
-    ns3:identifier "U" ;
+    ns2:identifier "U" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#BodilyFluid> ;
     ns1:definition "Excretion that is the output of a kidney [database_cross_reference: http://en.wikipedia.org/wiki/Urine][database_cross_reference: https://github.com/geneontology/go-ontology/issues/11025]" .
 
 <http://purl.obolibrary.org/obo/UBERON_0001091> a owl:Class ;
     rdfs:label "Tooth" ;
-    ns3:identifier "T" ;
+    ns2:identifier "T" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Tissue> ;
     ns1:definition "Skeletal element within the mouth (or in some species, upper part of the digestive tract) that is composed of dentine and is used in procuring or masticating food. [database_cross_reference: http://orcid.org/0000-0002-6601-2165][database_cross_reference: http://en.wikipedia.org/wiki/Tooth_(animal)]" .
 
 <http://purl.obolibrary.org/obo/UBERON_0001836> a owl:Class ;
     rdfs:label "Saliva" ;
-    ns3:identifier "SL" ;
+    ns2:identifier "SL" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#BodilyFluid> ;
     ns1:definition "A fluid produced in the oral cavity by salivary glands, typically used in predigestion, but also in other functions. [database_cross_reference: http://en.wikipedia.org/wiki/Saliva][database_cross_reference: GO:0046541]" .
 
 <http://purl.obolibrary.org/obo/UBERON_0001969> a owl:Class ;
     rdfs:label "Plasma" ;
-    ns3:identifier "P" ;
+    ns2:identifier "P" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#BloodComponent> ;
     ns1:definition "The liquid component of blood, in which erythrocytes are suspended. [database_cross_reference: http://orcid.org/0000-0002-6601-2165]" .
 
 <http://purl.obolibrary.org/obo/UBERON_0001977> a owl:Class ;
     rdfs:label "Serum" ;
-    ns3:identifier "S" ;
+    ns2:identifier "S" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#BloodComponent> ;
     ns1:definition "Liquid derived from blood plasma that has clotting factors removed. [database_cross_reference: http://en.wikipedia.org/wiki/Serum_(blood)][database_cross_reference: http://orcid.org/0000-0002-6601-2165]" .
 
 <http://purl.obolibrary.org/obo/UBERON_0001987> a owl:Class ;
     rdfs:label "Placenta" ;
-    ns3:identifier "PL" ;
+    ns2:identifier "PL" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PregnancySample>,
         <http://semanticscience.org/resource/Tissue> ;
     ns1:definition "Organ of metabolic interchange between fetus and mother, partly of embryonic origin and partly of maternal origin[GO]. The fetal portion of the placenta is known as the villous chorion. The maternal portion is known as the decidua basalis. The two portions are held together by anchoring villi that are anchored to the decidua basalis by the cytotrophoblastic shell. [database_cross_reference: http://en.wikipedia.org/wiki/Placenta][database_cross_reference: http://www.med.umich.edu/lrc/coursepages/m1/embryology/embryo/06placenta.htm]" .
@@ -3427,26 +3471,26 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://purl.obolibrary.org/obo/UBERON_0007109> a owl:Class ;
     rdfs:label "Meconium" ;
-    ns3:identifier "ME" ;
+    ns2:identifier "ME" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PregnancySample>,
         <http://purl.obolibrary.org/obo/UBERON_0001988> ;
     ns1:definition "A dark greenish mass that accumulates in the bowel during fetal life and is discharged shortly after birth. [database_cross_reference: BTO:0000838]" .
 
 <http://purl.obolibrary.org/obo/UBERON_0007311> a owl:Class ;
     rdfs:label "Sputum" ;
-    ns3:identifier "SU" ;
+    ns2:identifier "SU" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#BodilyFluid> ;
     ns1:definition "Matter ejected from the lungs, bronchi, and trachea, through the mouth. [database_cross_reference: Dorlands_Medical_Dictionary:MerckSource]" .
 
 <http://purl.obolibrary.org/obo/UBERON_0009565> a owl:Class ;
     rdfs:label "Nail" ;
-    ns3:identifier "N" ;
+    ns2:identifier "N" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Tissue> ;
     ns1:definition "A nail that is part of a manual digit. [database_cross_reference: OBOL:automatic]" .
 
 <http://purl.obolibrary.org/obo/UBERON_0012168> a owl:Class ;
     rdfs:label "Cord Blood" ;
-    ns3:identifier "CB" ;
+    ns2:identifier "CB" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PregnancySample>,
         <http://purl.obolibrary.org/obo/UBERON_0000178> ;
     ns1:definition "Blood that remains in the placenta and in the attached umbilical cord after childbirth[WP]. [database_cross_reference: http://en.wikipedia.org/wiki/Cord_blood]" .
@@ -4449,51 +4493,44 @@ Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" ;
 
 <http://semanticscience.org/resource/Attribute> a owl:Class ;
     rdfs:label "Attribute" ;
-    rdfs:subClassOf ns2:ScienceIndicator .
+    rdfs:subClassOf ns3:ScienceIndicator .
 
-<http://semanticscience.org/resource/BiologicalSex> a ns2:QualityVariable,
+<http://semanticscience.org/resource/BiologicalSex> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Biological Sex" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Demographic> .
 
-<http://semanticscience.org/resource/Circumference> a ns2:QuantityVariable,
+<http://semanticscience.org/resource/Circumference> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Circumference" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Anthropometry> .
 
 <http://semanticscience.org/resource/DeoxyribonucleicAcid> a owl:Class ;
     rdfs:label "DNA" ;
-    ns3:identifier "D" ;
+    ns2:identifier "D" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Macromolecule> .
 
 <http://semanticscience.org/resource/Object> a owl:Class ;
     rdfs:label "Object" ;
-    rdfs:subClassOf ns2:ScienceIndicator .
+    rdfs:subClassOf ns3:ScienceIndicator .
 
 <http://semanticscience.org/resource/RibonucleicAcid> a owl:Class ;
     rdfs:label "RNA" ;
-    ns3:identifier "R" ;
+    ns2:identifier "R" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Macromolecule> .
 
-<http://semanticscience.org/resource/SIO_000040> a ns2:QuantityVariable,
-        owl:Class ;
-    rdfs:label "Height" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf <http://hadatac.org/ont/chear#Anthropometry> ;
-    ns1:definition "Height" .
-
-<http://semanticscience.org/resource/SIO_000405> a ns2:QualityValue,
-        owl:Class ;
-    rdfs:label "Student" ;
-    rdfs:subClassOf <http://purl.obolibrary.org/obo/Exo_0000034> ;
-    ns1:notation "66" .
-
-<http://semanticscience.org/resource/SpecificGravity> a ns2:QuantityVariable,
+<http://semanticscience.org/resource/SpecificGravity> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Specific Gravity" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Ratio> ;
     ns1:definition "Specific gravity is the ratio of the density of a substance to the density of a reference substance; equivalently, it is the ratio of the mass of a substance to the mass of a reference substance for the same given volume. Apparent specific gravity is the ratio of the weight of a volume of the substance to the weight of an equal volume of the reference substance. The reference substance is nearly always water at its densest (4°C) for liquids; for gases it is air at room temperature (21°C). Nonetheless, the temperature and pressure must be specified for both the sample and the reference. Pressure is nearly always 1 atm (101.325 kPa). Temperatures for both sample and reference vary from industry to industry." ;
     ns1:editorialNote "Why is this here? Maybe it belongs in another list" .
+
+<http://semanticscience.org/resource/StudentRole> a ns3:QualityValue,
+        owl:Class ;
+    rdfs:label "Student" ;
+    rdfs:subClassOf <http://purl.obolibrary.org/obo/Exo_0000034> ;
+    ns1:notation "66" .
 
 <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00001> a owl:Class ;
     rdfs:label "Cognitive Entity" ;
@@ -4556,34 +4593,22 @@ ns1:editorialNote a owl:AnnotationProperty .
         <http://semanticscience.org/resource/Protein> ;
     ns1:definition "Key player in the regulation of energy balance and body weight control. Once released into the circulation, has central and peripheral effects by binding LEPR, found in many tissues, which results in the activation of several major signaling pathways." .
 
-<efo:EFO_0005112> a ns2:QuantityVariable,
-        owl:Class ;
-    rdfs:label "Gestational Age" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf <efo:EFO_0005112>,
-        <http://hadatac.org/ont/chear#BirthOutcome>,
-        <http://semanticscience.org/resource/Age> ;
-    owl:equivalentClass <http://purl.obolibrary.org/obo/NCIT_C87080> ;
-    ns1:definition "The age of the conceptus, beginning from the time of FERTILIZATION. In clinical obstetrics, the gestational age is often estimated as the time from the last day of the last MENSTRUATION which is about 2 weeks before OVULATION and fertilization" .
-
-<file:///Users/jimmccusker/src/chear-ontology/phenx:011000> a owl:Class .
-
 <http://dbpedia.org/resource/CE_1> a owl:NamedIndividual ;
     rdfs:label "First Year of the Common Era" .
 
 <http://hadatac.org/ont/chear#AFSInstrument> a owl:Class ;
     rdfs:label "Atomic Fluorescence Spectroscopy Instrument" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
     ns1:definition "a type of electromagnetic spectroscopy that analyzes fluorescence from a sample. It involves using a beam of light, usually ultraviolet light, that excites the electrons in molecules of certain compounds and causes them to emit light; typically, but not necessarily, visible light." .
 
 <http://hadatac.org/ont/chear#Acculturation> a owl:Class ;
     rdfs:label "Acculturation" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Acculturation explains the process of cultural change and psychological change that results following meeting between cultures. This metaclass contains all classes that measure this process." .
 
-<http://hadatac.org/ont/chear#ActiveSmoker> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#ActiveSmoker> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Smoking Status" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/Exo_0000113> ;
@@ -4591,7 +4616,7 @@ ns1:editorialNote a owl:AnnotationProperty .
     ns1:editorialNote "How is this different from \"smoker'?" ;
     ns1:notation "2" .
 
-<http://hadatac.org/ont/chear#AssistedReproductiveTherapy> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#AssistedReproductiveTherapy> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Assisted Reproductive Therapy" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PregnancyCharacteristic> ;
@@ -4607,48 +4632,48 @@ ns1:editorialNote a owl:AnnotationProperty .
                                     owl:onProperty <http://semanticscience.org/resource/measuredAt> ] ;
                             rdf:rest () ] ] ] .
 
-<http://hadatac.org/ont/chear#CannedFoodFrequency> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#CannedFoodFrequency> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Canned Food Consumption Frequency" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#DietQuantity> ;
     ns1:definition "Frequency of Canned Food Consumption." ;
     ns1:editorialNote "Also want to list this under Environmental Exposures (b/c canned food has chemicals in the lining so sometimes it is used as a proxy)" .
 
 <http://hadatac.org/ont/chear#DeliveryCharacteristic> a owl:Class ;
     rdfs:label "Delivery Characteristics" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Attributes related to the delivery of a child." .
 
 <http://hadatac.org/ont/chear#DirectMercuryAnalyzer> a owl:Class ;
     rdfs:label "Direct Mercury Analyzer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
     ns1:definition "Direct mercury analysis incorporates the following sequence: thermal decomposition, catalytic conversion, amalgamation, and atomic absorption spectrophotometry. Controlled heating stages are implemented to first dry and then thermally decompose a sample introduced into a quartz tube. A continuous flow of oxygen carries the decomposition products through a hot catalyst bed where halogens, nitrogen, and sulfur oxides are trapped. All mercury species are reduced to Hg(0) and are then carried along with reaction gases to a gold amalgamator where the mercury is selectively trapped. All nonmercury vapors and decomposition products are flushed from the system by the continuous flow of gas. The amalgamator is subsequently heated and releases all trapped mercury to the single-beam, fixed-wavelength atomic absorption spectrophotometer. Absorbance is measured at 253.7 nm as a function of mercury content" .
 
-<http://hadatac.org/ont/chear#EducationGrade> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#EducationGrade> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Education Grade" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/ExO_0000041> ;
     ns1:definition "The highest grade of education achieved" .
 
 <http://hadatac.org/ont/chear#ElectrosprayIonizationMassSpectrometry> a owl:Class ;
     rdfs:label "Electrospray Ionization Mass Spectrometry" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
-    rdfs:subClassOf ns2:MassSpectrometry ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    rdfs:subClassOf ns3:MassSpectrometry ;
     ns1:definition "Mass spectrometry using ESI is called electrospray ionization mass spectrometry (ESI-MS) or, less commonly, electrospray mass spectrometry (ES-MS). ESI is a so-called 'soft ionization' technique, since there is very little fragmentation. This can be advantageous in the sense that the molecular ion (or more accurately a pseudo molecular ion) is always observed, however very little structural information can be gained from the simple mass spectrum obtained. This disadvantage can be overcome by coupling ESI with tandem mass spectrometry (ESI-MS/MS). Another important advantage of ESI is that solution-phase information can be retained into the gas-phase." .
 
 <http://hadatac.org/ont/chear#ExposureMonitoringInstrument> a owl:Class ;
     rdfs:label "Exposure Monitoring Instrument" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
     ns1:definition "A physical instrument that monitors the environment for chemical exposures." .
 
-<http://hadatac.org/ont/chear#FastFoodFrequency> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#FastFoodFrequency> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Fast Food Consumption Frequency" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#DietQuantity> ;
     ns1:definition "Frequency of Fast Food Consumption." .
 
@@ -4657,32 +4682,32 @@ ns1:editorialNote a owl:AnnotationProperty .
     rdfs:subClassOf <http://semanticscience.org/resource/LineGraph> ;
     ns1:definition "A growth chart adusted for gestational age" .
 
-<http://hadatac.org/ont/chear#FreshVegetableFrequency> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#FreshVegetableFrequency> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Fresh Vegetable Consumption Frequency" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#DietQuantity> ;
     ns1:definition "Frequency of Fresh Vegetable Consumption." .
 
 <http://hadatac.org/ont/chear#GCMS> a owl:Class ;
     rdfs:label "Gas Chromatographer–Mass Spectrometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#GasChromatographyInstrument>,
         <http://hadatac.org/ont/chear#MassSpectrometer> ;
     ns1:definition "Gas chromatography–mass spectrometry (GC-MS) is an analytical method that combines the features of gas-chromatography and mass spectrometry to identify different substances within a test sample. Applications of GC-MS include drug detection, fire investigation, environmental analysis, explosives investigation, and identification of unknown samples, including that of material samples obtained from planet Mars during probe missions as early as the 1970s. GC-MS can also be used in airport security to detect substances in luggage or on human beings. Additionally, it can identify trace elements in materials that were previously thought to have disintegrated beyond identification. Like liquid chromatography–mass spectrometry, it allows analysis and detection even of tiny amounts of a substance." .
 
 <http://hadatac.org/ont/chear#GasChromatographyInstrument> a owl:Class ;
     rdfs:label "Gas Chromatography Instrument" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#ChromatographyInstrument> ;
     ns1:definition "Gas chromatography (GC) is a common type of chromatography used in analytical chemistry for separating and analyzing compounds that can be vaporized without decomposition. Typical uses of GC include testing the purity of a particular substance, or separating the different components of a mixture (the relative amounts of such components can also be determined). In some situations, GC may help in identifying a compound. In preparative chromatography, GC can be used to prepare pure compounds from a mixture." .
 
 <http://hadatac.org/ont/chear#GestationalAgeAtBirth> a owl:Class ;
     rdfs:label "Gestational Age at Birth" ;
-    rdfs:subClassOf <http://hadatac.org/ont/chear#GestationalAge> ;
+    rdfs:subClassOf <http://www.ebi.ac.uk/efo/EFO_0005112> ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf [ a rdf:List ;
-                    rdf:first <http://hadatac.org/ont/chear#GestationalAge> ;
+                    rdf:first <http://www.ebi.ac.uk/efo/EFO_0005112> ;
                     rdf:rest [ a rdf:List ;
                             rdf:first [ a owl:Restriction ;
                                     owl:allValuesFrom <http://hadatac.org/ont/chear#Birth> ;
@@ -4692,25 +4717,23 @@ ns1:editorialNote a owl:AnnotationProperty .
 
 <http://hadatac.org/ont/chear#HDMS> a owl:Class ;
     rdfs:label "Hydrogen–Deuterium Exchange Mass Spectrometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MassSpectrometer> ;
     ns1:definition "Hydrogen–deuterium exchange mass spectrometry can determine the overall deuterium content of molecules which have undergone H/D exchange. Because of the sample preparation required, it is typically considered to provide an accurate measurement of non-exchangeable hydrogen atoms only." .
 
 <http://hadatac.org/ont/chear#HHEducationLevel> a owl:Class ;
     rdfs:label "Head of Household's Education Level" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/ExO_0000041> ;
     ns1:definition "Head of Household's Education Level" .
 
 <http://hadatac.org/ont/chear#HPLCMS> a owl:Class ;
     rdfs:label "High-Performance Liquid Chromatography-Mass Spectrometry" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HPLC>,
         <http://hadatac.org/ont/chear#LCMS>,
         <http://hadatac.org/ont/chear#MassSpectrometer> ;
     ns1:definition "Liquid chromatography–mass spectrometry (LC-MS) is an analytical chemistry technique that combines the physical separation capabilities of liquid chromatography (or HPLC) with the mass analysis capabilities of mass spectrometry (MS). Coupled chromatography - MS systems are popular in chemical analysis because the individual capabilities of each technique are enhanced synergistically. While liquid chromatography separates mixtures with multiple components, mass spectrometry provides structural identity of the individual components with high molecular specificity and detection sensitivity. This tandem technique can be used to analyze biochemical, organic, and inorganic compounds commonly found in complex samples of environmental and biological origin. Therefore, LC-MS may be applied in a wide range of sectors including biotechnology, environment monitoring, food processing, and pharmaceutical, agrochemical, and cosmetic industries." .
-
-<http://hadatac.org/ont/chear#HigherEducation> a owl:Class .
 
 <http://hadatac.org/ont/chear#Household> a owl:Class ;
     rdfs:label "Household" ;
@@ -4720,13 +4743,13 @@ ns1:editorialNote a owl:AnnotationProperty .
 
 <http://hadatac.org/ont/chear#ICPMSInstrument> a owl:Class ;
     rdfs:label "Inductively Coupled Plasma Mass Spectrometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MassSpectrometer> ;
     ns1:definition "A type of mass spectrometry which is capable of detecting metals and several non-metals at concentrations as low as one part in 10^15 (part per quadrillion, ppq) on non-interfered low-background isotopes. This is achieved by ionizing the sample with inductively coupled plasma and then using a mass spectrometer to separate and quantify those ions." .
 
 <http://hadatac.org/ont/chear#ICPMSQQQ> a owl:Class ;
     rdfs:label "Triple Quadrupole Inductively Coupled Plasma Mass Spectrometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#ICPMSInstrument> ;
     ns1:definition "A tandem mass spectrometer consisting of two quadrupole mass analyzers in series, with a (non-mass-resolving) radio frequency (RF)–only quadrupole between them to act as a cell for collision-induced dissociation." .
 
@@ -4737,18 +4760,18 @@ ns1:editorialNote a owl:AnnotationProperty .
 
 <http://hadatac.org/ont/chear#LC-MS> a owl:Class ;
     rdfs:label "Liquid Chromotography-Mass Spectrometery" ;
-    rdfs:subClassOf ns2:MassSpectrometry .
+    rdfs:subClassOf ns3:MassSpectrometry .
 
 <http://hadatac.org/ont/chear#LCMSMS> a owl:Class ;
     rdfs:label "Liquid Chromatography - Tandem Mass Spectrometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#LCMS>,
         <http://hadatac.org/ont/chear#TandemMassSpectrometer> ;
     ns1:definition "Liquid chromatography and tandem Mass Spectrometry. MS/MS is the combination of two mass analyzers in one mass spec instrument." .
 
 <http://hadatac.org/ont/chear#MentalHealth> a owl:Class ;
     rdfs:label "Mental Health" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Assessment> ;
     ns1:definition "Mental Health Indicator" .
 
@@ -4762,7 +4785,7 @@ ns1:editorialNote a owl:AnnotationProperty .
     rdfs:subClassOf <http://semanticscience.org/resource/Assay> ;
     ns1:definition "An assay that uses a microarray to perform measurements." .
 
-<http://hadatac.org/ont/chear#NonSmoker> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#NonSmoker> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Non-smoker" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/Exo_0000113> ;
@@ -4771,11 +4794,11 @@ ns1:editorialNote a owl:AnnotationProperty .
 
 <http://hadatac.org/ont/chear#OralHealth> a owl:Class ;
     rdfs:label "Oral Health" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Oral Health Indicator Class" .
 
-<http://hadatac.org/ont/chear#PrenatalNonSmoker> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#PrenatalNonSmoker> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Prenatal Nonsmoker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#NonSmoker> ;
@@ -4783,7 +4806,7 @@ ns1:editorialNote a owl:AnnotationProperty .
     ns1:editorialNote "Should this be a subClassOf PregnancyCharactistic as well?" ;
     ns1:notation "76" .
 
-<http://hadatac.org/ont/chear#PrenatalSmoker> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#PrenatalSmoker> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Prenatal Smoker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Smoker> ;
@@ -4791,7 +4814,7 @@ ns1:editorialNote a owl:AnnotationProperty .
     ns1:editorialNote "Should this be a subClassOf PregnancyCharactistic as well?" ;
     ns1:notation "77" .
 
-<http://hadatac.org/ont/chear#PreviousSmoker> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#PreviousSmoker> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Previous Smoker" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/Exo_0000113> ;
@@ -4800,7 +4823,7 @@ ns1:editorialNote a owl:AnnotationProperty .
 
 <http://hadatac.org/ont/chear#Refractometer> a owl:Class ;
     rdfs:label "Refractometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
     ns1:definition "A laboratory or field device for the measurement of an index of refraction (refractometry). The index of refraction is calculated from Snell's law while for mixtures, the index of refraction can be calculated from the composition of the material using several mixing rules such as the Gladstone–Dale relation and Lorentz–Lorenz equation." .
 
@@ -4811,7 +4834,7 @@ ns1:editorialNote a owl:AnnotationProperty .
 
 <http://hadatac.org/ont/chear#Sibling> a owl:Class ;
     rdfs:label "Sibling" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( [ a owl:Restriction ;
@@ -4826,25 +4849,25 @@ ns1:editorialNote a owl:AnnotationProperty .
     rdfs:subClassOf <http://hadatac.org/ont/chear#Biomolecule> ;
     ns1:definition "A small molecule is a low molecular weight (< 900 daltons) organic compound that may help regulate a biological process, with a size on the order of 1 nm. Most drugs are small molecules." .
 
-<http://hadatac.org/ont/chear#Smoker> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#Smoker> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Smoker" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/Exo_0000113> ;
     ns1:definition "The quality of smoking cigarettes." ;
     ns1:notation "105" .
 
-<http://hadatac.org/ont/chear#SomeElementarySchool> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#SomeElementarySchool> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Some Elementary School" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HighSchoolOrLess> ;
     ns1:definition "Attended Some Elementary School" ;
     ns1:notation "86" .
 
-<http://hadatac.org/ont/chear#StressFrequency> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#StressFrequency> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Stress Frequency" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MentalHealth>,
         <http://semanticscience.org/resource/BiologicalQuality> ;
     ns1:definition "How frequently a person gets stressed." ;
@@ -4854,17 +4877,17 @@ ns1:editorialNote a owl:AnnotationProperty .
 
 <http://hadatac.org/ont/chear#UHPLC> a owl:Class ;
     rdfs:label "Ultra High Performance Liquid Chromatography Instrument" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HPLC> ;
     ns1:definition "Modern HPLC systems have been improved to work at much higher pressures, and therefore are able to use much smaller particle sizes in the columns (<2 μm). These \"Ultra High Performance Liquid Chromatography\" systems or UHPLCs can work at up to 120 MPa (17,405 lbf/in^2), or about 1200 atmospheres." .
 
 <http://hadatac.org/ont/chear#UPLCMS> a owl:Class ;
     rdfs:label "Ultra Performance Liquid Chromatography - Mass Spectrometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MassSpectrometer>,
         <http://hadatac.org/ont/chear#UHPLC> .
 
-<http://hadatac.org/ont/chear#VaginalBirth> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#VaginalBirth> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Vaginal Birth" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PregnancyCharacteristic>,
@@ -4874,15 +4897,23 @@ ns1:editorialNote a owl:AnnotationProperty .
     ns1:editorialNote "Again, can we add a delivery class" ;
     ns1:notation "24" .
 
-<http://hadatac.org/ont/chear#Weight> a owl:Class .
+ns3:AnalyticalMethod a owl:Class .
 
-ns2:AnalyticalMethod a owl:Class .
+ns3:InstrumentPerspective a owl:Class .
 
-ns2:InstrumentPerspective a owl:Class .
+ns3:Spectroscopy a owl:Class .
 
-ns2:Spectroscopy a owl:Class .
+<http://purl.bioontology.org/ontology/phenX/011000> a owl:Class .
 
 <http://purl.bioontology.org/ontology/phenX/030600> a owl:Class .
+
+<http://purl.obolibrary.org/obo/CMO_0000012> a ns3:QuantityVariable,
+        owl:Class ;
+    rdfs:label "Weight" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf <http://hadatac.org/ont/chear#Anthropometry>,
+        <http://semanticscience.org/resource/Mass> ;
+    ns1:definition "The resulting Force from the interaction between a person's Mass and Gravity." .
 
 <http://purl.obolibrary.org/obo/DOID_6050> a owl:Class ;
     rdfs:label "esophageal disease" ;
@@ -4894,14 +4925,14 @@ ns2:Spectroscopy a owl:Class .
 
 <http://purl.obolibrary.org/obo/HANCESTRO_0568> a owl:Class .
 
-<http://purl.obolibrary.org/obo/NCIT_C51773> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/NCIT_C51773> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Married" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MaritalStatus> ;
     ns1:definition "Indicates a person currently joined in a legally binding matrimonial union. Classify common law marriage as married. Includes married couples living together and not living together." ;
     ns1:notation "37" .
 
-<http://purl.obolibrary.org/obo/NCIT_C51774> a ns2:QualityValue,
+<http://purl.obolibrary.org/obo/NCIT_C51774> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Never Married" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Unmarried> ;
@@ -4912,7 +4943,7 @@ ns2:Spectroscopy a owl:Class .
 
 <http://purl.obolibrary.org/obo/UBERON_0000178> a owl:Class ;
     rdfs:label "Whole Blood" ;
-    ns3:identifier "WB" ;
+    ns2:identifier "WB" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#BodilyFluid> ;
     ns1:definition "A fluid that is composed of blood plasma and erythrocytes. [database_cross_reference: http://orcid.org/0000-0002-6601-2165][database_cross_reference: http://en.wikipedia.org/wiki/Blood][database_cross_reference: https://github.com/obophenotype/uberon/issues/9][database_cross_reference: FMA:9670]" .
 
@@ -4929,12 +4960,14 @@ ns2:Spectroscopy a owl:Class .
 
 <http://semanticscience.org/resource/Entity> a owl:Class ;
     rdfs:label "Entity" ;
-    rdfs:subClassOf ns2:ScienceIndicator .
+    rdfs:subClassOf ns3:ScienceIndicator .
 
-<http://semanticscience.org/resource/Height> a ns2:QuantityVariable,
+<http://semanticscience.org/resource/Height> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Height" ;
-    rdfs:subClassOf <http://hadatac.org/ont/chear#Anthropometry> .
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf <http://hadatac.org/ont/chear#Anthropometry> ;
+    ns1:definition "Height" .
 
 <http://semanticscience.org/resource/Length> a owl:Class .
 
@@ -4942,10 +4975,12 @@ ns2:Spectroscopy a owl:Class .
 
 <http://semanticscience.org/resource/ObjectQuality> a owl:Class .
 
-<http://semanticscience.org/resource/Race> a ns2:QualityVariable,
+<http://semanticscience.org/resource/Quality> a owl:Class .
+
+<http://semanticscience.org/resource/Race> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Race" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Demographic>,
         <http://semanticscience.org/resource/BiologicalQuality> .
 
@@ -4959,7 +4994,7 @@ ns2:Spectroscopy a owl:Class .
     owl:equivalentClass <http://purl.org/cpr/medication> ;
     ns1:definition "Drugs intended for human or veterinary use, presented in their finished dosage form. Included here are materials used in the preparation and/or formulation of the finished dosage form." .
 
-<http://hadatac.org/ont/chear#AlcoholUse> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#AlcoholUse> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Alcohol Use" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#ATIDU> ;
@@ -4968,7 +5003,7 @@ ns2:Spectroscopy a owl:Class .
 
 <http://hadatac.org/ont/chear#Ancestor> a owl:Class ;
     rdfs:label "Ancestor" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( [ a owl:Restriction ;
@@ -4980,7 +5015,7 @@ ns2:Spectroscopy a owl:Class .
 
 <http://hadatac.org/ont/chear#AtomicSpectroscopy> a owl:Class ;
     rdfs:label "Atomic Spectroscopy" ;
-    rdfs:subClassOf ns2:Spectroscopy .
+    rdfs:subClassOf ns3:Spectroscopy .
 
 <http://hadatac.org/ont/chear#Beginning> a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -4990,7 +5025,7 @@ ns2:Spectroscopy a owl:Class .
 
 <http://hadatac.org/ont/chear#Birth> a owl:Class ;
     rdfs:label "Birth" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Beginning>,
         <http://hadatac.org/ont/chear#FromBirth>,
         <http://semanticscience.org/resource/TimeInterval> ;
@@ -5003,13 +5038,13 @@ ns2:Spectroscopy a owl:Class .
 
 <http://hadatac.org/ont/chear#ChromatographyInstrument> a owl:Class ;
     rdfs:label "Chromatography Instrument" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
     ns1:definition "Chromatography is a laboratory technique for the separation of a mixture. The mixture is dissolved in a fluid called the mobile phase, which carries it through a structure holding another material called the stationary phase. The various constituents of the mixture travel at different speeds, causing them to separate. The separation is based on differential partitioning between the mobile and stationary phases. Subtle differences in a compound's partition coefficient result in differential retention on the stationary phase and thus affect the separation." .
 
 <http://hadatac.org/ont/chear#Descendant> a owl:Class ;
     rdfs:label "Descendant" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( [ a owl:Restriction ;
@@ -5019,22 +5054,22 @@ ns2:Spectroscopy a owl:Class .
         <http://hadatac.org/ont/chear#Relative> ;
     ns1:definition "The child of a human, or any grandchild, great-grandchild, and so on." .
 
-<http://hadatac.org/ont/chear#DevelopmentalQuality> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#DevelopmentalQuality> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Developmental Quality" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://semanticscience.org/resource/BiologicalQuality> ;
     ns1:definition "Refers to which stage of development a person is in." .
 
 <http://hadatac.org/ont/chear#DietAndNutrition> a owl:Class ;
     rdfs:label "Diet and Nutrition" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Diet and Nutrition Indicator" .
 
 <http://hadatac.org/ont/chear#ELISA> a owl:Class ;
     rdfs:label "enzyme-linked immunosorbent assay (ELISA)" ;
-    rdfs:subClassOf ns2:Immunoassay ;
+    rdfs:subClassOf ns3:Immunoassay ;
     ns1:definition "ELISA is an immunoassay that uses antibodies and color change to identify a substance (Wikipedia)" .
 
 <http://hadatac.org/ont/chear#Element> a owl:Class ;
@@ -5043,34 +5078,32 @@ ns2:Spectroscopy a owl:Class .
 
 <http://hadatac.org/ont/chear#EnvironmentalExposure> a owl:Class ;
     rdfs:label "Environmental Exposure" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "EnvironmentalExposure Indicator Class" ;
     ns1:editorialNote "may need to refine this name in order to clearly differentiate from environmental exposures measured within CHEAR. Perhaps ExternalEnvironmental Exposure. Ok for now but we may want to discuss." .
 
-<http://hadatac.org/ont/chear#GestationalAge> a owl:Class .
-
 <http://hadatac.org/ont/chear#HealthcareAccess> a owl:Class ;
     rdfs:label "Healthcare Access" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Healthcare Access" .
 
 <http://hadatac.org/ont/chear#HospitalUtilization> a owl:Class ;
     rdfs:label "Hospital Utilization" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HealthcareAccess> ;
     ns1:definition "Hospital Utilization" .
 
 <http://hadatac.org/ont/chear#LCMS> a owl:Class ;
     rdfs:label "Liquid Chromatography–Mass Spectrometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#LiquidChromatographyInstrument>,
         <http://hadatac.org/ont/chear#MassSpectrometer> ;
     ns1:definition "An analytical chemistry technique that combines the physical separation capabilities of liquid chromatography (or HPLC) with the mass analysis capabilities of mass spectrometry (MS). Coupled chromatography - MS systems are popular in chemical analysis because the individual capabilities of each technique are enhanced synergistically. While liquid chromatography separates mixtures with multiple components, mass spectrometry provides structural identity of the individual components with high molecular specificity and detection sensitivity. This tandem technique can be used to analyze biochemical, organic, and inorganic compounds commonly found in complex samples of environmental and biological origin." .
 
 <http://hadatac.org/ont/chear#LiquidChromatographyInstrument> a owl:Class ;
     rdfs:label "Liquid Chromatography Instrument" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#ChromatographyInstrument> ;
     ns1:definition "A separation technique in which the mobile phase is a liquid. It can be carried out either in a column or a plane. Present day liquid chromatography that generally utilizes very small packing particles and a relatively high pressure is referred to as high performance liquid chromatography (HPLC)." .
 
@@ -5081,79 +5114,95 @@ ns2:Spectroscopy a owl:Class .
 
 <http://hadatac.org/ont/chear#MicroplateReader> a owl:Class ;
     rdfs:label "Microplate Reader" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
     ns1:definition "Instruments which are used to detect biological, chemical or physical events of samples in microtiter plates. They are widely used in research, drug discovery, bioassay validation, quality control and manufacturing processes in the pharmaceutical and biotechnological industry and academic organizations. Sample reactions can be assayed in 6-1536 well format microtiter plates. The most common microplate format used in academic research laboratories or clinical diagnostic laboratories is 96-well (8 by 12 matrix) with a typical reaction volume between 100 and 200 µL per well. Higher density microplates (384- or 1536-well microplates) are typically used for screening applications, when throughput (number of samples per day processed) and assay cost per sample become critical parameters, with a typical assay volume between 5 and 50 µL per well. Common detection modes for microplate assays are absorbance, fluorescence intensity, luminescence, time-resolved fluorescence, and fluorescence polarization." .
 
 <http://hadatac.org/ont/chear#PersonalProductUse> a owl:Class ;
     rdfs:label "Personal Product Use" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Personal Product Use Indicator Class" .
 
 <http://hadatac.org/ont/chear#PolymeraseChainReaction> a owl:Class ;
     rdfs:label "Polymerase Chain Reaction" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Assay> .
 
-<http://hadatac.org/ont/chear#PretermBirth> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#PretermBirth> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Preterm Birth" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#BirthOutcome> ;
     ns1:definition "Preterm birth, also known as premature birth, is the birth of a baby at fewer than 37 weeks gestational age." ;
     ns1:notation "88" .
 
-<http://hadatac.org/ont/chear#PrivateInsuranceOrSelfPay> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#PrivateInsuranceOrSelfPay> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Private Insurance or Self Pay" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Insurance> ;
     ns1:notation "51" .
 
-<http://hadatac.org/ont/chear#QuitSmoking> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#QuitSmoking> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Quit Smoking" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PreviousSmoker> ;
     ns1:definition "Quit Smoking Cigarettes" ;
     ns1:notation "82" .
 
-<http://hadatac.org/ont/chear#RoomCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#RoomCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Room Count" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HousingCharacteristic>,
         <http://semanticscience.org/resource/Count> ;
     ns1:definition "Total Number of Rooms in the Home" .
 
-<http://hadatac.org/ont/chear#RouteOfDelivery> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#RouteOfDelivery> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Route Of Delivery" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#DeliveryCharacteristic> .
 
-ns2:Chromatography a owl:Class .
+<http://hadatac.org/ont/chear#UnderweightOrNormal> a ns3:QualityValue,
+        owl:Class ;
+    rdfs:label "Underweight/Normal" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
+            owl:someValuesFrom [ a owl:Restriction ;
+                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
+                    owl:someValuesFrom [ a owl:Class ;
+                            owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105> [ a owl:Restriction ;
+                                        owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
+                                        owl:someValuesFrom [ a rdfs:Datatype ;
+                                                owl:onDatatype xsd:float ;
+                                                owl:withRestrictions ( [ xsd:maxExclusive "25.0"^^xsd:float ] ) ] ] ) ] ] ],
+        <http://hadatac.org/ont/chear#BodyWeightQuality> ;
+    ns1:notation "100" .
+
+ns3:Chromatography a owl:Class .
 
 <http://purl.obolibrary.org/obo/CHEBI_22726> a owl:Class ;
     rdfs:label "Benzophenone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#TargetedAnalyte> .
 
-<http://purl.obolibrary.org/obo/PATO_0002370> a ns2:QuantityVariable,
+<http://purl.obolibrary.org/obo/PATO_0002370> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Parity" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PregnancyCharacteristic>,
         <http://semanticscience.org/resource/Count> ;
     ns1:definition """
 
 The number of time that a viviparous organism has given birth""" .
 
-<http://semanticscience.org/resource/Age> a ns2:QuantityVariable,
+<http://semanticscience.org/resource/Age> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Age" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Demographic> .
 
-<http://semanticscience.org/resource/Ethnicity> a ns2:QualityVariable,
+<http://semanticscience.org/resource/Ethnicity> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Ethnicity" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Demographic>,
         <http://semanticscience.org/resource/BiologicalQuality> .
 
@@ -5163,7 +5212,7 @@ The number of time that a viviparous organism has given birth""" .
 
 <http://semanticscience.org/resource/Process> a owl:Class ;
     rdfs:label "Process" ;
-    rdfs:subClassOf ns2:ScienceIndicator .
+    rdfs:subClassOf ns3:ScienceIndicator .
 
 <http://semanticscience.org/resource/Ratio> a owl:Class .
 
@@ -5173,23 +5222,23 @@ The number of time that a viviparous organism has given birth""" .
 
 <http://semanticscience.org/resource/measuredAt> a owl:ObjectProperty .
 
-<ontoad:C0424933> a ns2:QualityValue,
+<ontoad:C0424933> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Higher Education" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/ExO_0000041> ;
     ns1:definition "College or university education beyond the successful completion of high school or grammar school, or the attainment of an approved equivalent" ;
     ns1:notation "31" .
 
 <http://hadatac.org/ont/chear#ATIDU> a owl:Class ;
     rdfs:label "Alcohol, Tobacco, and Illicit Drug Use" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Alcohol, Tobacco, and Illicit Drug Use Indicator Class" .
 
 <http://hadatac.org/ont/chear#Child> a owl:Class ;
     rdfs:label "Child" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( [ a owl:Restriction ;
@@ -5199,10 +5248,10 @@ The number of time that a viviparous organism has given birth""" .
         <http://hadatac.org/ont/chear#Descendant> ;
     ns1:definition "A relationship with a parent (such as sons and daughters of any age)." .
 
-<http://hadatac.org/ont/chear#DietQuantity> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#DietQuantity> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Diet Quantity" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#DietAndNutrition>,
         <http://semanticscience.org/resource/Quantity> ;
     ns1:definition "A quantity relating to diet and nutrition." ;
@@ -5213,10 +5262,10 @@ The number of time that a viviparous organism has given birth""" .
     rdfs:comment "A histological count of the eosinophils in a high-power microscopic field of view, or 0.158 mm^2 (x400)." ;
     rdfs:subClassOf <http://semanticscience.org/resource/Count> .
 
-<http://hadatac.org/ont/chear#FloorType> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#FloorType> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Floor Type" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HousingCharacteristic>,
         <http://semanticscience.org/resource/MaterialEntity> ;
     ns1:definition "Type of material that makes up the floor." .
@@ -5227,10 +5276,10 @@ The number of time that a viviparous organism has given birth""" .
             owl:onProperty <http://semanticscience.org/resource/inRelationTo> ;
             owl:someValuesFrom <http://semanticscience.org/resource/Birthing> ] .
 
-<http://hadatac.org/ont/chear#MedicalTherapy> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#MedicalTherapy> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Medical Therapy Procedure" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MedicalHistory>,
         <http://semanticscience.org/resource/MedicalProcedure> ;
     ns1:definition "Medical Therapy Procedure to aide in treatment." .
@@ -5250,7 +5299,7 @@ The number of time that a viviparous organism has given birth""" .
 
 <http://hadatac.org/ont/chear#Parent> a owl:Class ;
     rdfs:label "Parent" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( [ a owl:Restriction ;
@@ -5267,19 +5316,19 @@ The number of time that a viviparous organism has given birth""" .
 
 <http://hadatac.org/ont/chear#TandemMassSpectrometer> a owl:Class ;
     rdfs:label "Tandem Mass Spectrometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MassSpectrometer> ;
     ns1:definition "Tandem mass spectrometry, also known as MS/MS or MS2, involves multiple steps of mass spectrometry selection, with some form of fragmentation occurring in between the stages. In a tandem mass spectrometer, ions are formed in the ion source and separated by mass-to-charge ratio in the first stage of mass spectrometry (MS1). Ions of a particular mass-to-charge ratio (precursor ions) are selected and fragment ions (product ions) are created by collision-induced dissociation, ion-molecule reaction, photodissociation, or other process. The resulting ions are then separated and detected in a second stage of mass spectrometry (MS2)." .
 
-<http://hadatac.org/ont/chear#TechnicalSchool> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#TechnicalSchool> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Technical School" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/ExO_0000041> ;
     ns1:definition "Attended a Technical School." ;
     ns1:notation "96" .
 
-ns2:CohortStudy a owl:Class .
+ns3:CohortStudy a owl:Class .
 
 <http://purl.obolibrary.org/obo/DOID_13922> a owl:Class ;
     rdfs:label "eosinophilic esophagitis" ;
@@ -5289,10 +5338,10 @@ ns2:CohortStudy a owl:Class .
     rdfs:label "Esophagus" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Organ> .
 
-<http://semanticscience.org/resource/Concentration> a ns2:QuantityVariable,
+<http://semanticscience.org/resource/Concentration> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Concentration" ;
-    rdfs:subClassOf ns2:SampleIndicator .
+    rdfs:subClassOf ns3:SampleIndicator .
 
 <http://semanticscience.org/resource/Mass> a owl:Class .
 
@@ -5300,46 +5349,56 @@ ns2:CohortStudy a owl:Class .
 
 <http://semanticscience.org/resource/isPhenotypeOf> a owl:ObjectProperty .
 
+<http://www.ebi.ac.uk/efo/EFO_0005112> a ns3:QuantityVariable,
+        owl:Class ;
+    rdfs:label "Gestational Age" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf <http://hadatac.org/ont/chear#BirthOutcome>,
+        <http://semanticscience.org/resource/Age>,
+        <http://www.ebi.ac.uk/efo/EFO_0005112> ;
+    owl:equivalentClass <http://purl.obolibrary.org/obo/NCIT_C87080> ;
+    ns1:definition "The age of the conceptus, beginning from the time of FERTILIZATION. In clinical obstetrics, the gestational age is often estimated as the time from the last day of the last MENSTRUATION which is about 2 weeks before OVULATION and fertilization" .
+
 <http://hadatac.org/ont/chear#Analyte> a owl:Class ;
     rdfs:label "Analyte" ;
     rdfs:subClassOf <http://semanticscience.org/resource/ChemicalEntity> .
 
 <http://hadatac.org/ont/chear#Assessment> a owl:Class ;
     rdfs:label "Physical and Mental Assessment" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Physical and Mental Assessments Indicator Class" .
 
 <http://hadatac.org/ont/chear#HPLC> a owl:Class ;
     rdfs:label "High-Performance Liquid Chromatography" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#LiquidChromatographyInstrument> ;
     ns1:definition "High-performance liquid chromatography (HPLC; formerly referred to as high-pressure liquid chromatography), is a technique in analytical chemistry used to separate, identify, and quantify each component in a mixture. It relies on pumps to pass a pressurized liquid solvent containing the sample mixture through a column filled with a solid adsorbent material. Each component in the sample interacts slightly differently with the adsorbent material, causing different flow rates for the different components and leading to the separation of the components as they flow out the column." .
 
-<http://hadatac.org/ont/chear#Insurance> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#Insurance> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Insurance" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HealthcareAccess>,
         <http://hadatac.org/ont/chear#SocioeconomicStatus> .
 
-<http://hadatac.org/ont/chear#MaritalStatus> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#MaritalStatus> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Marital Status" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Demographic>,
         <http://semanticscience.org/resource/StatusDescriptor> ;
     ns1:definition "A person's current conjugal status." .
 
-<http://hadatac.org/ont/chear#Unmarried> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#Unmarried> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Unmarried" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#MaritalStatus> ;
     ns1:definition "Indicates a person not currently joined in a legally binding matrimonial union." ;
     ns1:notation "46" .
 
-ns2:Immunoassay a owl:Class .
+ns3:Immunoassay a owl:Class .
 
-ns2:ScienceIndicator a owl:Class .
+ns3:ScienceIndicator a owl:Class .
 
 <http://semanticscience.org/resource/BiologicalEntity> a owl:Class .
 
@@ -5355,8 +5414,8 @@ ns2:ScienceIndicator a owl:Class .
 
 <http://hadatac.org/ont/chear#Anthropometry> a owl:Class ;
     rdfs:label "Anthropometry" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Attributes pertaining to the scientific study of the measurements and proportions of the human body." .
 
 <http://hadatac.org/ont/chear#Biomolecule> a owl:Class ;
@@ -5366,8 +5425,8 @@ ns2:ScienceIndicator a owl:Class .
 
 <http://hadatac.org/ont/chear#BirthOutcome> a owl:Class ;
     rdfs:label "Birth Outcome" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Birth Outcomes Indicator Class" .
 
 <http://hadatac.org/ont/chear#BodilyFluid> a owl:Class ;
@@ -5375,7 +5434,7 @@ ns2:ScienceIndicator a owl:Class .
     rdfs:subClassOf <http://hadatac.org/ont/chear#Biospecimen> ;
     ns1:definition "Liquids originating from inside the bodies of living people. They include fluids that are excreted or secreted from the body, and body water that normally is not." .
 
-<http://hadatac.org/ont/chear#CaesareanSection> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#CaesareanSection> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "Caesarian Section" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#PregnancyCharacteristic>,
@@ -5385,8 +5444,8 @@ ns2:ScienceIndicator a owl:Class .
 
 <http://hadatac.org/ont/chear#MedicalHistory> a owl:Class ;
     rdfs:label "Medical History" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Medical History Indicator Class" .
 
 <http://hadatac.org/ont/chear#RelativeTime> a owl:Class ;
@@ -5397,27 +5456,27 @@ ns2:ScienceIndicator a owl:Class .
 
 <http://hadatac.org/ont/chear#SocioeconomicStatus> a owl:Class ;
     rdfs:label "Socioeconomic Status" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Socioeconomic Status Indicator Class" .
 
-ns2:SampleIndicator a owl:Class .
+ns3:SampleIndicator a owl:Class .
 
 <http://purl.obolibrary.org/obo/CMO_0000000> a owl:Class ;
     rdfs:label "Clinical Measurement" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Assessment> ;
     ns1:definition "A quantitative or qualitative value which is the result of an act of assessing a morphological or physiological state or property in a single individual or sample or a group of individuals or samples, based on direct observation or experimental manipulation. " .
 
-<http://purl.obolibrary.org/obo/Exo_0000034> a ns2:QualityVariable,
+<http://purl.obolibrary.org/obo/Exo_0000034> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Occupation" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Demographic>,
         <http://hadatac.org/ont/chear#SocioeconomicStatus>,
         <http://semanticscience.org/resource/Role> ;
     ns1:definition "An individual attribute that is the usual or principal work or business of an individual." .
 
-<http://purl.obolibrary.org/obo/Exo_0000113> a ns2:QualityVariable,
+<http://purl.obolibrary.org/obo/Exo_0000113> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Smoking Status" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#ATIDU>,
@@ -5432,9 +5491,15 @@ ns2:SampleIndicator a owl:Class .
 
 <http://hadatac.org/ont/chear#Biospecimen> a owl:Class ;
     rdfs:label "Biospecimen" ;
-    rdfs:subClassOf ns2:SampleIndicator,
+    rdfs:subClassOf ns3:SampleIndicator,
         <http://semanticscience.org/resource/Specimen> ;
     ns1:definition "A biological laboratory specimen held by a biorepository for research. Such a specimen would be taken by sampling so as to be representative of any other specimen taken from the source of the specimen. When biological specimens are stored, ideally they remain equivalent to freshly-collected specimens for the purposes of research." .
+
+<http://hadatac.org/ont/chear#BodyWeightQuality> a owl:Class ;
+    rdfs:label "Body Weight Quality" ;
+    rdfs:subClassOf <http://hadatac.org/ont/chear#Anthropometry>,
+        <http://semanticscience.org/resource/Quality> ;
+    ns1:definition "A categorization of body mass relative to the height, as defined using Body Mass Index." .
 
 <http://hadatac.org/ont/chear#FromConception> a owl:Class ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#RelativeTime> ;
@@ -5442,23 +5507,23 @@ ns2:SampleIndicator a owl:Class .
             owl:onProperty <http://semanticscience.org/resource/inRelationTo> ;
             owl:someValuesFrom <http://hadatac.org/ont/chear#Conceiving> ] .
 
-<http://hadatac.org/ont/chear#HighSchoolOrLess> a ns2:QualityValue,
+<http://hadatac.org/ont/chear#HighSchoolOrLess> a ns3:QualityValue,
         owl:Class ;
     rdfs:label "High School or Less" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/ExO_0000041> ;
     ns1:definition "Education Level of High School or Less" ;
     ns1:notation "33" .
 
 <http://hadatac.org/ont/chear#HousingCharacteristic> a owl:Class ;
     rdfs:label "Housing Characteristic" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Housing Characteristic Indicator Class" .
 
 <http://hadatac.org/ont/chear#Relative> a owl:Class ;
     rdfs:label "Relative" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( [ a owl:Restriction ;
@@ -5469,11 +5534,21 @@ ns2:SampleIndicator a owl:Class .
         <http://semanticscience.org/resource/Role> ;
     ns1:definition "Broadly, kinship patterns may be considered to include people related by both descent – i.e. social relations during development – and by marriage. Human kinship relations through marriage are commonly called \"affinity\" in contrast to the relationships that arise in one's group of origin, which may be called one's descent group. In some cultures, kinship relationships may be considered to extend out to people an individual has economic or political relationships with, or other forms of social connections. Within a culture, some descent groups may be considered to lead back to gods or animal ancestors (totems). This may be conceived of on a more or less literal basis." .
 
-ns2:MassSpectrometry a owl:Class .
+ns3:MassSpectrometry a owl:Class .
 
 <http://purl.obolibrary.org/obo/CHEBI_85122> a owl:Class ;
     rdfs:label "Paraben" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#TargetedAnalyte> .
+
+<http://purl.org/twc/ontologies/cmo.owl#0000105> a ns3:QuantityVariable,
+        owl:Class ;
+    rdfs:label "Body Mass Index" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf <http://hadatac.org/ont/chear#Anthropometry>,
+        <http://semanticscience.org/resource/Quantity> ;
+    owl:equivalentClass <http://purl.obolibrary.org/obo/ExO_0000105> ;
+    ns1:definition "A measurement relating body weight to height in an organism; typically calculated as the weight of an individual divided by the height of that individual squared. For quadrupeds, the square of body height is often replaced by the square of body length" ;
+    ns1:editorialNote "Should we note that this is derived from height and weight? JS: I think so" .
 
 <http://semanticscience.org/resource/BiologicalQuality> a owl:Class .
 
@@ -5489,75 +5564,62 @@ ns2:MassSpectrometry a owl:Class .
 
 <http://hadatac.org/ont/chear#MassSpectrometer> a owl:Class ;
     rdfs:label "Mass Spectrometer" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jim-McCusker" ;
     rdfs:subClassOf <http://hadatac.org/ont/vstoi#PhysicalInstrument> ;
     ns1:definition "Mass spectrometry (MS) is an analytical technique that ionizes chemical species and sorts the ions based on their mass-to-charge ratio. In simpler terms, a mass spectrum measures the masses within a sample. Mass spectrometry is used in many different fields and is applied to pure samples as well as complex mixtures." .
 
-<http://hadatac.org/ont/chear#Race> a ns2:QualityVariable,
+<http://hadatac.org/ont/chear#Race> a ns3:QualityVariable,
         owl:Class ;
     rdfs:label "Race" ;
     rdfs:subClassOf <http://semanticscience.org/resource/Race> ;
     ns1:definition "Race" .
 
-ns2:TandemMassSpectrometry a owl:Class .
+ns3:TandemMassSpectrometry a owl:Class .
 
 <http://purl.obolibrary.org/obo/CHEBI_53156> a owl:Class ;
     rdfs:label "Polychlorobiphenyl" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_36683> .
 
-<http://purl.obolibrary.org/obo/CMO_0000105> a ns2:QuantityVariable,
-        owl:Class ;
-    rdfs:label "Body Mass Index" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf <http://hadatac.org/ont/chear#Anthropometry>,
-        <http://purl.obolibrary.org/obo/CMO_0000105>,
-        <http://semanticscience.org/resource/Quantity> ;
-    owl:equivalentClass <http://purl.obolibrary.org/obo/ExO_0000105> ;
-    ns1:definition "A measurement relating body weight to height in an organism; typically calculated as the weight of an individual divided by the height of that individual squared. For quadrupeds, the square of body height is often replaced by the square of body length" ;
-    ns1:editorialNote "Should we note that this is derived from height and weight? JS: I think so" .
-
 <http://semanticscience.org/resource/Quantity> a owl:Class .
-
-<http://semanticscience.org/resource/hasAttribute> a owl:ObjectProperty .
 
 <http://hadatac.org/ont/chear#AlkylPhosphatePesticideMetabolite> a owl:Class ;
     rdfs:label "Alkyl Phosphate Pesticide Metabolite" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#TargetedAnalyte> .
 
-<http://hadatac.org/ont/chear#HouseholdApplianceCount> a ns2:QuantityVariable,
+<http://hadatac.org/ont/chear#HouseholdApplianceCount> a ns3:QuantityVariable,
         owl:Class ;
     rdfs:label "Household Appliance Count" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#HousingCharacteristic>,
         <http://semanticscience.org/resource/Count> ;
     ns1:definition "Total number of appliances that can be found in the home." .
 
 <http://hadatac.org/ont/vstoi#PhysicalInstrument> a owl:Class .
 
-<http://purl.obolibrary.org/obo/ExO_0000041> a ns2:QualityVariable,
-        owl:Class ;
-    rdfs:label "Education" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf <http://hadatac.org/ont/chear#Demographic>,
-        <http://hadatac.org/ont/chear#SocioeconomicStatus>,
-        <http://semanticscience.org/resource/ObjectQuality> ;
-    owl:equivalentClass <file:///Users/jimmccusker/src/chear-ontology/phenx:011000> ;
-    ns1:definition "The act or process of imparting or acquiring knowledge." .
-
 <http://semanticscience.org/resource/Assay> a owl:Class ;
-    rdfs:subClassOf ns2:AnalyticalMethod .
+    rdfs:subClassOf ns3:AnalyticalMethod .
 
 <http://semanticscience.org/resource/Protein> a owl:Class .
 
 <http://hadatac.org/ont/chear#BiologicalResponse> a owl:Class ;
     rdfs:label "Biological Response" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Indicator of biological response to environmental exposure" .
+
+<http://purl.obolibrary.org/obo/ExO_0000041> a ns3:QualityVariable,
+        owl:Class ;
+    rdfs:label "Education" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf <http://hadatac.org/ont/chear#Demographic>,
+        <http://hadatac.org/ont/chear#SocioeconomicStatus>,
+        <http://semanticscience.org/resource/ObjectQuality> ;
+    owl:equivalentClass <http://purl.bioontology.org/ontology/phenX/011000> ;
+    ns1:definition "The act or process of imparting or acquiring knowledge." .
 
 <http://hadatac.org/ont/chear#PregnancyCharacteristic> a owl:Class ;
     rdfs:label "Pregnancy Characteristic" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Pregnancy Characteristic Indicator Class" .
 
 <http://semanticscience.org/resource/Cell> a owl:Class ;
@@ -5578,13 +5640,15 @@ ns2:TandemMassSpectrometry a owl:Class .
 
 <http://hadatac.org/ont/chear#Demographic> a owl:Class ;
     rdfs:label "Demographic" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
-    rdfs:subClassOf ns2:StudyIndicator ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    rdfs:subClassOf ns3:StudyIndicator ;
     ns1:definition "Demographics are quantifiable characteristics of a given population." .
 
 <http://purl.obolibrary.org/obo/CHEBI_36683> a owl:Class ;
     rdfs:label "Organochlorine Compound" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#TargetedAnalyte> .
+
+<http://semanticscience.org/resource/hasAttribute> a owl:ObjectProperty .
 
 <http://hadatac.org/ont/chear#Perfluorocarbon> a owl:Class ;
     rdfs:label "PFC" ;
@@ -5596,9 +5660,9 @@ ns2:TandemMassSpectrometry a owl:Class .
 
 <http://hadatac.org/ont/chear#TargetedAnalyte> a owl:Class ;
     rdfs:label "Targeted Analyte" ;
-    ns2:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
+    ns3:wasApprovedBy "chear-kb:PER-Jeanette-Stingone" ;
     rdfs:subClassOf <http://hadatac.org/ont/chear#Analyte>,
-        ns2:StudyIndicator ;
+        ns3:StudyIndicator ;
     ns1:definition "A targeted analyte is one that has been selected by the CHEAR program as a prioritized analyte for CHEAR lab hubs to measure." .
 
 <http://purl.obolibrary.org/obo/CHEBI_35366> a owl:Class ;
@@ -5614,7 +5678,7 @@ ns2:TandemMassSpectrometry a owl:Class .
     rdfs:label "PAH" ;
     rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_134179> .
 
-ns2:StudyIndicator a owl:Class .
+ns3:StudyIndicator a owl:Class .
 
 <http://purl.obolibrary.org/obo/CHEBI_26092> a owl:Class ;
     rdfs:label "Phthalate" ;

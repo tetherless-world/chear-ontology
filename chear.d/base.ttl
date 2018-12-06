@@ -18,9 +18,9 @@
 @prefix : <http://hadatac.org/ont/chear#>.
 
 <http://hadatac.org/ont/chear> a owl:Ontology ;
-	owl:versionIRI <http://hadatac.org/ont/chear/1.2> ;
-    owl:imports <cogat.ttl>,
-        <hasco_import.ttl>,
+	owl:versionIRI <http://hadatac.org/ont/chear/2.0> ;
+    owl:imports <http://hadatac.org/ont/cogat/>,
+        <http://hadatac.org/ont/hasco/>,
         obo:cl-basic.owl,
         obo:cmo.owl,
         <https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-simple.owl>,
