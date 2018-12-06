@@ -23,7 +23,7 @@ prov = Namespace('http://www.w3.org/ns/prov#')
 dc = Namespace('http://purl.org/dc/terms/')
 pv = Namespace('http://purl.org/net/provenance/ns#')
 
-logging_level = logging.DEBUG
+logging_level = logging.INFO
 logging.basicConfig(level=logging_level)
 
 @task
