@@ -40,7 +40,7 @@ def build(ctx):
 
         fragment = setl_graph.resource(BNode())
         for ontology_output_file in ontology_output_files:
-            print ontoly_output_file
+            print (ontoly_output_file)
             ontology_output_file.value(prov.wasGeneratedBy).add(prov.used, fragment)
         fragment.add(RDF.type, setlr.void.Dataset)
         fragment_extract = setl_graph.resource(BNode())
