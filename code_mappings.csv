@@ -463,10 +463,11 @@ Zn,chebi:27363,Zinc
 mg/dl,chear:milligram_per_deciliter,milligram per deciliter
 umol/L,chear:micromole_per_liter,micromole per liter
 mg/g,chear:milligram_per_gram,milligram per gram
+ug/g,chear:microgram_per_gram,microgram per gram
 mmol/L,chear:millimole_per_liter,millimole per liter
 IU/L,chear:international_units_per_litre,international units per litre
 uU/mL,chear:microunits_per_milliliter,microunits per milliliter
-(mg/dL)*(µU/mL),chear:homa_ir_unit,HOMA-IR
+(mg/dL)*(ÂµU/mL),chear:homa_ir_unit,HOMA-IR
 pg/mL,chear:picograms_per_milliliter,picograms per milliliter
 ug/m3,chear:micrograms_per_meter_cubed,micrograms per meter cubed
 parasites/uL,chear:parasites_per_microgram,parasites per microgram
