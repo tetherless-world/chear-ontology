@@ -401,7 +401,7 @@ uCi,obo:UO_0000146,microcurie
 ucurie/ml,obo:UO_0000321,microcurie per milliliter
 ueinstein/sm2,obo:UO_0000160,microeinstein per square meter per second
 ug,obo:UO_0000023,microgram
-ug/dl,chear:microgram_per_deciliter,microgram per deciliter
+ug/dl,chear:micrograms_per_deciliter,microgram per deciliter
 ug/L,obo:UO_0000301,microgram per liter
 ug/ml,obo:UO_0000274,microgram per milliliter
 uGy,obo:UO_0000141,microgray
@@ -463,7 +463,7 @@ Zn,chebi:27363,Zinc
 mg/dl,chear:milligram_per_deciliter,milligram per deciliter
 umol/L,chear:micromole_per_liter,micromole per liter
 mg/g,chear:milligram_per_gram,milligram per gram
-ug/g,chear:microgram_per_gram,microgram per gram
+ug/g,chear:micrograms_per_gram,microgram per gram
 mmol/L,chear:millimole_per_liter,millimole per liter
 IU/L,chear:international_units_per_litre,international units per litre
 uU/mL,chear:microunits_per_milliliter,microunits per milliliter
