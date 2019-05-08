@@ -18,14 +18,14 @@
 @prefix : <http://hadatac.org/ont/chear#>.
 
 <http://hadatac.org/ont/chear> a owl:Ontology ;
-	owl:versionIRI <http://hadatac.org/ont/chear/2.0> ;
+	owl:versionIRI <http://hadatac.org/ont/chear/2.7> ;
     owl:imports <http://hadatac.org/ont/cogat/>,
         <http://hadatac.org/ont/hasco/>,
         obo:cl-basic.owl,
         obo:cmo.owl,
-        <https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-simple.owl>,
-        obo:envo.owl,
-        <http://purl.org/twc/bio/obo/hp-basic.owl>,
+#        <https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-simple.owl>,
+#        obo:envo.owl,
+#        <http://purl.org/twc/bio/obo/hp-basic.owl>,
         obo:stato.owl,
         obo:uo.owl,
         <http://semanticscience.org/ontology/sio-subset-labels.owl> ;

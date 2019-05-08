@@ -3,6 +3,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/>.
 
 ###  http://purl.obolibrary.org/obo/CHEBI_48505
 #<http://purl.obolibrary.org/obo/CHEBI_48505> rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15963> .
@@ -30,10 +31,6 @@
 
 ###  http://purl.obolibrary.org/obo/DDANAT_0000002
 <http://purl.obolibrary.org/obo/DDANAT_0000002> rdfs:subClassOf <http://semanticscience.org/resource/UnicellularOrganism> .
-
-
-###  http://purl.obolibrary.org/obo/FAO_0000001
-<http://purl.obolibrary.org/obo/FAO_0000001> rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411261> .
 
 
 ###  http://purl.obolibrary.org/obo/FLOPO_0000089
@@ -109,13 +106,18 @@
 
 
 ###  http://purl.obolibrary.org/obo/TRANS_0000000
-<http://purl.obolibrary.org/obo/TRANS_0000000> rdfs:subClassOf <http://semanticscience.org/resource/Process> .
+<http://purl.obolibrary.org/obo/TRANS_0000000> rdfs:subClassOf <http://semanticscience.org/resource/Process> ;
+  rdfs:label "Pathogen Transmission".
 
+
+<http://purl.obolibrary.org/obo/PATO_0001428> a owl:Class;
+  owl:subClassOf sio:PH.
 
 ###  http://purl.obolibrary.org/obo/UPHENO_0001001
 <http://purl.obolibrary.org/obo/UPHENO_0001001> owl:equivalentClass <http://semanticscience.org/resource/Phenotype> ;
                                                 rdfs:subClassOf <http://semanticscience.org/resource/BiologicalQuality> .
 
+<http://purl.obolibrary.org/obo/CL_0000261> a owl:Class; rdfs:subClassOf sio:Cell.
 
 ###  http://semanticscience.org/resource/Phenotype
 

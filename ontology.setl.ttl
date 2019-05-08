@@ -98,6 +98,13 @@
     prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=106241699>;
   ].
 
+:labels_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1ZSIl_4XTa78ZIqWJaKr-dFUNEChdU_5OScNdP4ALkxQ/export?exportFormat=csv&gid=196531008>;
+  ].
+
+
 
 <http://hadatac.org/ont/chear> a void:Dataset;
   prov:wasGeneratedBy [
@@ -124,23 +131,29 @@
   "chear" :   "http://hadatac.org/ont/chear#",
   "skos" :    "http://www.w3.org/2004/02/skos/core#",
   "prov" :    "http://www.w3.org/ns/prov#",
+  "uniprot" :   "http://www.uniprot.org/uniprot/",
   "chebi" :   "http://purl.obolibrary.org/obo/CHEBI_",
+  "cl" :   "http://purl.obolibrary.org/obo/CL_",
+  "stato" :   "http://purl.obolibrary.org/obo/STATO_",
   "hp" :   "http://purl.obolibrary.org/obo/HP_",
   "efo" :   "http://www.ebi.ac.uk/efo/EFO_",
   "obo" :   "http://purl.obolibrary.org/obo/",
   "phenx" : "http://purl.bioontology.org/ontology/phenX/",
   "pubchem" : "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/",
   "dc"   :    "http://purl.org/dc/terms/",
-  "hasco" : "http://hadatac.org/ont/hasco#",
+  "hasco" : "http://hadatac.org/ont/hasco/",
   "vstoi" : "http://hadatac.org/ont/vstoi#",
   "hasneto" : "http://hadatac.org/ont/hasneto#",
   "vivo": "http://vivoweb.org/ontology/core#",
   "uberon" : "http://purl.obolibrary.org/obo/UBERON_",
   "envo" : "http://purl.obolibrary.org/obo/ENVO_",
+  "radlex" : "http://radlex.org/RID/RID",
   "do": "http://purl.obolibrary.org/obo/DOID_",
+  "doid": "http://purl.obolibrary.org/obo/DOID_",
   "prv" : "http://hadatac.org/ont/prov#",
   "chear-kb" : "http://hadatac.org/kb/chear#",
-  "cmo"  :    "http://purl.org/twc/ontologies/cmo.owl#"
+  "CSEO" : "http://scai.fraunhofer.de/CSEO#",
+  "cmo"  :    "http://purl.obolibrary.org/obo/CMO_"
 }''';
   prov:value '''[{
     "@id": "http://hadatac.org/ont/chear",
@@ -347,13 +360,6 @@
             "@value" : "{{row['skos:notation']}}"
           }
         ],
-        "owl:equivalentClass": [
-          {
-            "@if" : "'owl:equivalentClass' in row and row['owl:equivalentClass'] is not None and len(row['owl:equivalentClass'].strip()) > 0",
-            "@for" : "s in re.split('\\\\s*[,&]\\\\s*', row['owl:equivalentClass'])",
-            "@do" : { "@id": "{{s}}", "@type": "owl:Class"}
-          }
-        ],
         "rdfs:subClassOf": [
           { "@if" : "'hasneto:hasUnit' in row and not isempty(row['hasneto:hasUnit'])",
             "@type" : "owl:Restriction",
@@ -437,8 +443,7 @@
   "pubchem" : "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/",
   "dc"   :    "http://purl.org/dc/terms/",
   "hasco" : "http://hadatac.org/ont/hasco#",
-  "vstoi" : "http://hadatac.org/ont/vstoi#",
-  "cmo"  :    "http://purl.org/twc/ontologies/cmo.owl#"
+  "vstoi" : "http://hadatac.org/ont/vstoi#"
 }''';
     prov:wasGeneratedBy [
       a setl:Load;
@@ -457,8 +462,7 @@
   "pubchem" : "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/",
   "dc"   :    "http://purl.org/dc/terms/",
   "hasco" : "http://hadatac.org/ont/hasco#",
-  "vstoi" : "http://hadatac.org/ont/vstoi#",
-  "cmo"  :    "http://purl.org/twc/ontologies/cmo.owl#"
+  "vstoi" : "http://hadatac.org/ont/vstoi#"
 }''';
     dcterms:format "application/rdf+xml";
     prov:wasGeneratedBy [
@@ -478,8 +482,7 @@
   "pubchem" : "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/",
   "dc"   :    "http://purl.org/dc/terms/",
   "hasco" : "http://hadatac.org/ont/hasco#",
-  "vstoi" : "http://hadatac.org/ont/vstoi#",
-  "cmo"  :    "http://purl.org/twc/ontologies/cmo.owl#"
+  "vstoi" : "http://hadatac.org/ont/vstoi#"
 }''';
     dcterms:format "application/json";
     prov:wasGeneratedBy [

@@ -13,7 +13,7 @@
                                                               owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
                                                                                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
-                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105>
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/CMO_0000105>
                                                                                                                              [ rdf:type owl:Restriction ;
                                                                                                                                owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
                                                                                                                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
@@ -44,7 +44,7 @@
                                                                      owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
                                                                      owl:someValuesFrom [ rdf:type owl:Restriction ;
                                                                                           owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
-                                                                                          owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105>
+                                                                                          owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/CMO_0000105>
                                                                                                                                     [ rdf:type owl:Restriction ;
                                                                                                                                       owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
                                                                                                                                       owl:someValuesFrom [ rdf:type rdfs:Datatype ;
@@ -66,7 +66,7 @@
                                                               owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
                                                                                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
-                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105>
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/CMO_0000105>
                                                                                                                              [ rdf:type owl:Restriction ;
                                                                                                                                owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
                                                                                                                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
@@ -88,7 +88,7 @@
                                                               owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
                                                                                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
-                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105>
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/CMO_0000105>
                                                                                                                              [ rdf:type owl:Restriction ;
                                                                                                                                owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
                                                                                                                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
@@ -110,7 +110,7 @@
                                                               owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
                                                                                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
-                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105>
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/CMO_0000105>
                                                                                                                              [ rdf:type owl:Restriction ;
                                                                                                                                owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
                                                                                                                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
@@ -141,7 +141,7 @@
                                                               owl:onProperty <http://semanticscience.org/resource/isAttributeOf> ;
                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
                                                                                    owl:onProperty <http://semanticscience.org/resource/hasAttribute> ;
-                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/twc/ontologies/cmo.owl#0000105>
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/CMO_0000105>
                                                                                                                              [ rdf:type owl:Restriction ;
                                                                                                                                owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000129> ;
                                                                                                                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;

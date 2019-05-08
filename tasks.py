@@ -29,13 +29,11 @@ logging.basicConfig(level=logging_level)
 @task
 def build(ctx):
     setl_graph = Graph()
-    setl_text = None
-    with open(SETL_FILE) as i:
-        setl_text = i.read()
-    setl_graph.parse(SETL_FILE,format="turtle",baseURI='')
+    setl_graph.parse(SETL_FILE,format="turtle")
     cwd = os.getcwd()
     formats = ['ttl','owl','json']
-    ontology_output_files = [setl_graph.resource(URIRef('chear.'+x)) for x in formats]
+    ontology_output_files = [setl_graph.resource(URIRef('file://'+cwd+'/chear.'+x)) for x in formats]
+    print (len(setl_graph))
     for filename in os.listdir(CHEAR_DIR):
         if not filename.endswith('.ttl') or filename.startswith('#'):
             continue
@@ -43,6 +41,7 @@ def build(ctx):
 
         fragment = setl_graph.resource(BNode())
         for ontology_output_file in ontology_output_files:
+            print(ontology_output_file.identifier, list(ontology_output_file[prov.wasGeneratedBy]))
             ontology_output_file.value(prov.wasGeneratedBy).add(prov.used, fragment)
         fragment.add(RDF.type, setlr.void.Dataset)
         fragment_extract = setl_graph.resource(BNode())
