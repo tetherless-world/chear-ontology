@@ -401,7 +401,7 @@ uCi,obo:UO_0000146,microcurie
 ucurie/ml,obo:UO_0000321,microcurie per milliliter
 ueinstein/sm2,obo:UO_0000160,microeinstein per square meter per second
 ug,obo:UO_0000023,microgram
-ug/dl,chear:MicrogramPerDecilter,microgram per deciliter
+ug/dl,chear:microgram_per_deciliter,microgram per deciliter
 ug/L,obo:UO_0000301,microgram per liter
 ug/ml,obo:UO_0000274,microgram per milliliter
 uGy,obo:UO_0000141,microgray
