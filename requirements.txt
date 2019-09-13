@@ -1,7 +1,6 @@
 git+git://github.com/jimmccusker/rdflib.git@sparqlwrapper-fork#egg=rdflib
 invoke
 requests
-labkey
 Jinja2
 git+git://github.com/jimmccusker/rdflib-jsonld.git#egg=rdflib-jsonld
 setlr
