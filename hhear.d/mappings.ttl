@@ -1,0 +1,143 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/>.
+
+###  http://purl.obolibrary.org/obo/CHEBI_48505
+#<http://purl.obolibrary.org/obo/CHEBI_48505> rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_15963> .
+
+
+###  http://purl.obolibrary.org/obo/CMO_0000047
+<http://purl.obolibrary.org/obo/CMO_0000047> rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000000> .
+
+
+###  http://purl.obolibrary.org/obo/CMO_0000048
+<http://purl.obolibrary.org/obo/CMO_0000048> rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000000> .
+
+
+###  http://purl.obolibrary.org/obo/CMO_0000704
+<http://purl.obolibrary.org/obo/CMO_0000704> rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000000> .
+
+
+###  http://purl.obolibrary.org/obo/CMO_0001818
+<http://purl.obolibrary.org/obo/CMO_0001818> rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000000> .
+
+
+###  http://purl.obolibrary.org/obo/CMO_0001819
+<http://purl.obolibrary.org/obo/CMO_0001819> rdfs:subClassOf <http://purl.obolibrary.org/obo/CMO_0000000> .
+
+
+###  http://purl.obolibrary.org/obo/DDANAT_0000002
+<http://purl.obolibrary.org/obo/DDANAT_0000002> rdfs:subClassOf <http://semanticscience.org/resource/SIO_010376> .
+
+
+###  http://purl.obolibrary.org/obo/FLOPO_0000089
+<http://purl.obolibrary.org/obo/FLOPO_0000089> rdfs:subClassOf <http://semanticscience.org/resource/SIO_010056> .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00001002
+<http://purl.obolibrary.org/obo/FOODON_00001002> rdfs:subClassOf <http://semanticscience.org/resource/SIO_010363> .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03411564
+<http://purl.obolibrary.org/obo/FOODON_03411564> rdfs:subClassOf <http://semanticscience.org/resource/SIO_010046> .
+
+
+###  http://purl.obolibrary.org/obo/GOCHE_50906
+<http://purl.obolibrary.org/obo/GOCHE_50906> rdfs:subClassOf <http://semanticscience.org/resource/SIO_000004> .
+
+
+###  http://purl.obolibrary.org/obo/HsapDv_0000000
+<http://purl.obolibrary.org/obo/HsapDv_0000000> rdfs:subClassOf <http://semanticscience.org/resource/SIO_001013> .
+
+
+###  http://purl.obolibrary.org/obo/MPATH_0
+<http://purl.obolibrary.org/obo/MPATH_0> rdfs:subClassOf <http://semanticscience.org/resource/SIO_000475> .
+
+
+###  http://purl.obolibrary.org/obo/NBO_0000243
+<http://purl.obolibrary.org/obo/NBO_0000243> rdfs:subClassOf <http://semanticscience.org/resource/SIO_010056> .
+
+
+###  http://purl.obolibrary.org/obo/NBO_0000313
+<http://purl.obolibrary.org/obo/NBO_0000313> rdfs:subClassOf <http://semanticscience.org/resource/SIO_001195> .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C3262
+<http://purl.obolibrary.org/obo/NCIT_C3262> rdfs:subClassOf <http://semanticscience.org/resource/SIO_010299> .
+
+
+###  http://purl.obolibrary.org/obo/OMIM_000000
+<http://purl.obolibrary.org/obo/OMIM_000000> rdfs:subClassOf <http://semanticscience.org/resource/SIO_000112> .
+
+
+###  http://purl.obolibrary.org/obo/OMP_0000000
+<http://purl.obolibrary.org/obo/OMP_0000000> rdfs:subClassOf <http://semanticscience.org/resource/SIO_010056> .
+
+
+###  http://purl.obolibrary.org/obo/PCO_0000000
+<http://purl.obolibrary.org/obo/PCO_0000000> rdfs:subClassOf <http://semanticscience.org/resource/SIO_000616> .
+
+
+###  http://purl.obolibrary.org/obo/PR_000021082
+<http://purl.obolibrary.org/obo/PR_000021082> rdfs:subClassOf <http://semanticscience.org/resource/SIO_010363> .
+
+
+###  http://purl.obolibrary.org/obo/SO_0000110
+<http://purl.obolibrary.org/obo/SO_0000110> rdfs:subClassOf <http://semanticscience.org/resource/SIO_000030> .
+
+
+###  http://purl.obolibrary.org/obo/SO_0000400
+<http://purl.obolibrary.org/obo/SO_0000400> rdfs:subClassOf <http://semanticscience.org/resource/SIO_000030> .
+
+
+###  http://purl.obolibrary.org/obo/SO_0001060
+<http://purl.obolibrary.org/obo/SO_0001060> rdfs:subClassOf <http://semanticscience.org/resource/SIO_000030> .
+
+
+###  http://purl.obolibrary.org/obo/SO_0001260
+<http://purl.obolibrary.org/obo/SO_0001260> rdfs:subClassOf <http://semanticscience.org/resource/SIO_000030> .
+
+
+###  http://purl.obolibrary.org/obo/SYMP_0000462
+<http://purl.obolibrary.org/obo/SYMP_0000462> rdfs:subClassOf <http://semanticscience.org/resource/SIO_010056> .
+
+
+###  http://purl.obolibrary.org/obo/TRANS_0000000
+<http://purl.obolibrary.org/obo/TRANS_0000000> rdfs:subClassOf <http://semanticscience.org/resource/SIO_000006> ;
+  rdfs:label "Pathogen Transmission".
+
+
+
+###  http://purl.obolibrary.org/obo/UPHENO_0001001
+<http://purl.obolibrary.org/obo/UPHENO_0001001> owl:equivalentClass <http://semanticscience.org/resource/SIO_010056> ;
+                                                rdfs:subClassOf <http://semanticscience.org/resource/SIO_000475> .
+
+<http://purl.obolibrary.org/obo/CL_0000261> a owl:Class; rdfs:subClassOf sio:SIO_010001.
+
+###  http://semanticscience.org/resource/Phenotype
+
+###  http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> rdfs:subClassOf <http://semanticscience.org/resource/SIO_000000> .
+
+
+###  http://www.w3.org/ns/prov#Dictionary
+<http://www.w3.org/ns/prov#Dictionary> rdfs:subClassOf <http://semanticscience.org/resource/SIO_000616> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.obolibrary.org/obo/GO_0016265> owl:deprecated "true"^^xsd:boolean .
+
+
+<http://purl.obolibrary.org/obo/SO_0000000> owl:deprecated "true"^^xsd:boolean .
+
+
+<http://purl.obolibrary.org/obo/UBERON_0036255> owl:deprecated "true"^^xsd:boolean .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

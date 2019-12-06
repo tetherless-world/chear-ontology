@@ -1,4 +1,4 @@
-@prefix : <http://hadatac.org/ont/chear#> .
+@prefix : <http://purl.org/twc/HHEAR#> .
 @prefix do: <http://purl.obolibrary.org/obo/DOID_> .
 @prefix uo: <http://purl.obolibrary.org/obo/uo#> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
@@ -15,23 +15,25 @@
 @prefix vstoi: <http://hadatac.org/ont/vstoi#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix hasneto: <http://hadatac.org/ont/hasneto#> .
-@prefix : <http://hadatac.org/ont/chear#>.
+@prefix : <http://purl.org/twc/HHEAR#>.
 
-<http://hadatac.org/ont/chear> a owl:Ontology ;
-	owl:versionIRI <http://hadatac.org/ont/chear/2.8> ;
-    owl:imports <http://hadatac.org/ont/cogat/>,
-        <http://hadatac.org/ont/hasco/>,
+<http://purl.org/twc/HHEAR> a owl:Ontology ;
+	owl:versionIRI <http://purl.org/twc/HHEAR/1.0> ;
+    owl:imports
+        <http://semanticscience.org/ontology/sio.owl>,
+        <http://hadatac.org/ont/prov/>,
+        <http://hadatac.org/ont/cogat/>,
+#        <http://hadatac.org/ont/hasco/>,
         obo:cl-basic.owl,
         obo:cmo.owl,
 #        <https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-simple.owl>,
 #        obo:envo.owl,
 #        <http://purl.org/twc/bio/obo/hp-basic.owl>,
         obo:stato.owl,
-        obo:uo.owl,
-        <http://semanticscience.org/ontology/sio-subset-labels.owl> ;
-	rdfs:comment """Children's health and wellbeing are influenced by interactions between environmental and genetic factors. NIEHS is establishing an infrastructure, the Children's Health Exposure Analysis Resource (CHEAR), to provide the extramural research community access to laboratory and data analyses that add or expand the inclusion of environmental exposures in children's health research. The goal of CHEAR is to provide tools so researchers can assess the full range of environmental exposures which may affect children's health. We anticipate that CHEAR will be used by children's health researchers conducting epidemiological or clinical studies that currently have limited consideration of environmental exposures, or those who have collected exposure data but seek more extensive analyses.
+        obo:uo.owl;
+	rdfs:comment """The Human Health Exposure Analysis Resource (HHEAR) measures exposures that cover the breadth of the “exposome,” which encompasses all environmental exposures including chemical, physical, and biological stressors, as well as lifestyle and social environments, from conception through adulthood.
 
-Read more at: https://www.niehs.nih.gov/research/supported/exposure/chear/""" .
+Read more at: https://hhearprogram.org""" .
 # 
 # 
 # #################################################################

@@ -1,0 +1,1545 @@
+,class,label,numeric_uri,label_uri
+0,http://semanticscience.org/resource/SIO_001025,prognosis,sio:SIO_001025,sio:Prognosis
+1,http://semanticscience.org/resource/SIO_000999,procedure,sio:SIO_000999,sio:Procedure
+2,http://semanticscience.org/resource/SIO_000165,thesis document,sio:SIO_000165,sio:ThesisDocument
+3,http://semanticscience.org/resource/SIO_011105,protactinium atom,sio:SIO_011105,sio:ProtactiniumAtom
+4,http://semanticscience.org/resource/SIO_001349,gene-disease association linked with chromosomal rearrangement,sio:SIO_001349,sio:Gene-diseaseAssociationLinkedWithChromosomalRearrangement
+5,http://semanticscience.org/resource/SIO_000783,spatial boundary,sio:SIO_000783,sio:SpatialBoundary
+6,http://semanticscience.org/resource/SIO_000170,diary,sio:SIO_000170,sio:Diary
+7,http://semanticscience.org/resource/SIO_000017,function,sio:SIO_000017,sio:Function
+8,http://semanticscience.org/resource/SIO_001071,text span start position,sio:SIO_001071,sio:TextSpanStartPosition
+9,http://semanticscience.org/resource/SIO_010432,ligand,sio:SIO_010432,sio:Ligand
+10,http://semanticscience.org/resource/SIO_000519,bar,sio:SIO_000519,sio:Bar
+11,http://semanticscience.org/resource/SIO_000921,dependent variable,sio:SIO_000921,sio:DependentVariable
+12,http://semanticscience.org/resource/SIO_010309,catabolism,sio:SIO_010309,sio:Catabolism
+13,http://semanticscience.org/resource/SIO_001054,measuring,sio:SIO_001054,sio:Measuring
+14,http://semanticscience.org/resource/SIO_001294,very poor quality,sio:SIO_001294,sio:VeryPoorQuality
+15,http://semanticscience.org/resource/SIO_011078,bohrium atom,sio:SIO_011078,sio:BohriumAtom
+16,http://semanticscience.org/resource/SIO_001144,maintenance of frequency of process,sio:SIO_001144,sio:MaintenanceOfFrequencyOfProcess
+17,http://semanticscience.org/resource/SIO_001191,SOAP web service,sio:SIO_001191,sio:SOAPWebService
+18,http://semanticscience.org/resource/SIO_001295,poor quality,sio:SIO_001295,sio:PoorQuality
+19,http://semanticscience.org/resource/SIO_010283,chemical transport,sio:SIO_010283,sio:ChemicalTransport
+20,http://semanticscience.org/resource/SIO_011070,astatine atom,sio:SIO_011070,sio:AstatineAtom
+21,http://semanticscience.org/resource/SIO_010379,virus,sio:SIO_010379,sio:Virus
+22,http://semanticscience.org/resource/SIO_001125,regulation of transcription,sio:SIO_001125,sio:RegulationOfTranscription
+23,http://semanticscience.org/resource/SIO_000104,language,sio:SIO_000104,sio:Language
+24,http://semanticscience.org/resource/SIO_011044,rhodium atom,sio:SIO_011044,sio:RhodiumAtom
+25,http://semanticscience.org/resource/SIO_000907,heatmap,sio:SIO_000907,sio:Heatmap
+26,http://semanticscience.org/resource/SIO_000593,interacting,sio:SIO_000593,sio:Interacting
+27,http://semanticscience.org/resource/SIO_001009,toxic,sio:SIO_001009,sio:Toxic
+28,http://semanticscience.org/resource/SIO_000038,1D extent quantity,sio:SIO_000038,sio:1DExtentQuantity
+29,http://semanticscience.org/resource/SIO_010517,isomerization reaction,sio:SIO_010517,sio:IsomerizationReaction
+30,http://semanticscience.org/resource/SIO_001103,to gain a covalent bond,sio:SIO_001103,sio:ToGainACovalentBond
+31,http://semanticscience.org/resource/SIO_010374,to be conformationally changed,sio:SIO_010374,sio:ToBeConformationallyChanged
+32,http://semanticscience.org/resource/SIO_011048,indium atom,sio:SIO_011048,sio:IndiumAtom
+33,http://semanticscience.org/resource/SIO_000130,pattern,sio:SIO_000130,sio:Pattern
+34,http://semanticscience.org/resource/SIO_001284,satisfaction,sio:SIO_001284,sio:Satisfaction
+35,http://semanticscience.org/resource/SIO_010369,to be electronically modified,sio:SIO_010369,sio:ToBeElectronicallyModified
+36,http://semanticscience.org/resource/SIO_000727,secretary role,sio:SIO_000727,sio:SecretaryRole
+37,http://semanticscience.org/resource/SIO_000005,quality,sio:SIO_000005,sio:Quality
+38,http://semanticscience.org/resource/SIO_000193,copyright section,sio:SIO_000193,sio:CopyrightSection
+39,http://semanticscience.org/resource/SIO_000951,pain,sio:SIO_000951,sio:Pain
+40,http://semanticscience.org/resource/SIO_000559,chemical synthesis,sio:SIO_000559,sio:ChemicalSynthesis
+41,http://semanticscience.org/resource/SIO_011074,actinium atom,sio:SIO_011074,sio:ActiniumAtom
+42,http://semanticscience.org/resource/SIO_000399,study subject,sio:SIO_000399,sio:StudySubject
+43,http://semanticscience.org/resource/SIO_000393,patient,sio:SIO_000393,sio:Patient
+44,http://semanticscience.org/resource/SIO_011117,lawrencium atom,sio:SIO_011117,sio:LawrenciumAtom
+45,http://semanticscience.org/resource/SIO_000763,primary database key,sio:SIO_000763,sio:PrimaryDatabaseKey
+46,http://semanticscience.org/resource/SIO_001168,audio recording,sio:SIO_001168,sio:AudioRecording
+47,http://semanticscience.org/resource/SIO_000154,article,sio:SIO_000154,sio:Article
+48,http://semanticscience.org/resource/SIO_001088,concentration,sio:SIO_001088,sio:Concentration
+49,http://semanticscience.org/resource/SIO_000667,sofware execution,sio:SIO_000667,sio:SofwareExecution
+50,http://semanticscience.org/resource/SIO_000565,diffusion equation,sio:SIO_000565,sio:DiffusionEquation
+51,http://semanticscience.org/resource/SIO_001131,rna mediated regulation of translation,sio:SIO_001131,sio:RnaMediatedRegulationOfTranslation
+52,http://semanticscience.org/resource/SIO_000031,start date,sio:SIO_000031,sio:StartDate
+53,http://semanticscience.org/resource/SIO_000813,angst,sio:SIO_000813,sio:Angst
+54,http://semanticscience.org/resource/SIO_010070,3' untranslated region,sio:SIO_010070,sio:3'UntranslatedRegion
+55,http://semanticscience.org/resource/SIO_011023,chromium atom,sio:SIO_011023,sio:ChromiumAtom
+56,http://semanticscience.org/resource/SIO_000318,longitude,sio:SIO_000318,sio:Longitude
+57,http://semanticscience.org/resource/SIO_010441,submolecule,sio:SIO_010441,sio:Submolecule
+58,http://semanticscience.org/resource/SIO_000052,quantity,sio:SIO_000052,sio:Quantity
+59,http://semanticscience.org/resource/SIO_000954,sick,sio:SIO_000954,sio:Sick
+60,http://semanticscience.org/resource/SIO_010528,chemical degradation pathway,sio:SIO_010528,sio:ChemicalDegradationPathway
+61,http://semanticscience.org/resource/SIO_000502,polyhedral skeleton,sio:SIO_000502,sio:PolyhedralSkeleton
+62,http://semanticscience.org/resource/SIO_001208,decreased chemical destruction,sio:SIO_001208,sio:DecreasedChemicalDestruction
+63,http://semanticscience.org/resource/SIO_000514,major tick mark,sio:SIO_000514,sio:MajorTickMark
+64,http://semanticscience.org/resource/SIO_000929,pie chart,sio:SIO_000929,sio:PieChart
+65,http://semanticscience.org/resource/SIO_000648,object model,sio:SIO_000648,sio:ObjectModel
+66,http://semanticscience.org/resource/SIO_001214,moderate,sio:SIO_001214,sio:Moderate
+67,http://semanticscience.org/resource/SIO_001004,opinion,sio:SIO_001004,sio:Opinion
+68,http://semanticscience.org/resource/SIO_010343,enzyme,sio:SIO_010343,sio:Enzyme
+69,http://semanticscience.org/resource/SIO_000670,end time,sio:SIO_000670,sio:EndTime
+70,http://semanticscience.org/resource/SIO_000511,line,sio:SIO_000511,sio:Line
+71,http://semanticscience.org/resource/SIO_000487,rat,sio:SIO_000487,sio:Rat
+72,http://semanticscience.org/resource/SIO_000960,real,sio:SIO_000960,sio:Real
+73,http://semanticscience.org/resource/SIO_010518,addition reaction,sio:SIO_010518,sio:AdditionReaction
+74,http://semanticscience.org/resource/SIO_001227,small cytoplasmic RNA (scRNA) gene,sio:SIO_001227,sio:SmallCytoplasmicRNA(scrna)Gene
+75,http://semanticscience.org/resource/SIO_010010,deoxyribonucleic acid,sio:SIO_010010,sio:DeoxyribonucleicAcid
+76,http://semanticscience.org/resource/SIO_010307,molecular modification,sio:SIO_010307,sio:MolecularModification
+77,http://semanticscience.org/resource/SIO_000309,volume number,sio:SIO_000309,sio:VolumeNumber
+78,http://semanticscience.org/resource/SIO_010468,alpha helix,sio:SIO_010468,sio:AlphaHelix
+79,http://semanticscience.org/resource/SIO_001375,book section,sio:SIO_001375,sio:BookSection
+80,http://semanticscience.org/resource/SIO_000845,hurt,sio:SIO_000845,sio:Hurt
+81,http://semanticscience.org/resource/SIO_000937,textual chart,sio:SIO_000937,sio:TextualChart
+82,http://semanticscience.org/resource/SIO_010420,receptor,sio:SIO_010420,sio:Receptor
+83,http://semanticscience.org/resource/SIO_010009,ribonucleic acid,sio:SIO_010009,sio:RibonucleicAcid
+84,http://semanticscience.org/resource/SIO_000957,communication device,sio:SIO_000957,sio:CommunicationDevice
+85,http://semanticscience.org/resource/SIO_000197,materials and methods section,sio:SIO_000197,sio:MaterialsAndMethodsSection
+86,http://semanticscience.org/resource/SIO_000411,hate,sio:SIO_000411,sio:Hate
+87,http://semanticscience.org/resource/SIO_000159,edited publication,sio:SIO_000159,sio:EditedPublication
+88,http://semanticscience.org/resource/SIO_010444,gene component,sio:SIO_010444,sio:GeneComponent
+89,http://semanticscience.org/resource/SIO_000964,standard operating procedure,sio:SIO_000964,sio:StandardOperatingProcedure
+90,http://semanticscience.org/resource/SIO_001254,left closed interval,sio:SIO_001254,sio:LeftClosedInterval
+91,http://semanticscience.org/resource/SIO_010338,pharmaceutical component,sio:SIO_010338,sio:PharmaceuticalComponent
+92,http://semanticscience.org/resource/SIO_011060,rhenium atom,sio:SIO_011060,sio:RheniumAtom
+93,http://semanticscience.org/resource/SIO_000504,polyhedral surface,sio:SIO_000504,sio:PolyhedralSurface
+94,http://semanticscience.org/resource/SIO_000859,pride,sio:SIO_000859,sio:Pride
+95,http://semanticscience.org/resource/SIO_010042,haplotype,sio:SIO_010042,sio:Haplotype
+96,http://semanticscience.org/resource/SIO_010089,to serve as a template for protein synthesis,sio:SIO_010089,sio:ToServeAsATemplateForProteinSynthesis
+97,http://semanticscience.org/resource/SIO_001170,slideshow,sio:SIO_001170,sio:Slideshow
+98,http://semanticscience.org/resource/SIO_000351,to supply energy,sio:SIO_000351,sio:ToSupplyEnergy
+99,http://semanticscience.org/resource/SIO_001232,transfer RNA (tRNA),sio:SIO_001232,sio:TransferRNA(trna)
+100,http://semanticscience.org/resource/SIO_000696,to be observed,sio:SIO_000696,sio:ToBeObserved
+101,http://semanticscience.org/resource/SIO_001055,observing,sio:SIO_001055,sio:Observing
+102,http://semanticscience.org/resource/SIO_011080,meitnerium atom,sio:SIO_011080,sio:MeitneriumAtom
+103,http://semanticscience.org/resource/SIO_010004,chemical entity,sio:SIO_010004,sio:ChemicalEntity
+104,http://semanticscience.org/resource/SIO_000298,excerpt,sio:SIO_000298,sio:Excerpt
+105,http://semanticscience.org/resource/SIO_000434,minute,sio:SIO_000434,sio:Minute
+106,http://semanticscience.org/resource/SIO_000151,manuscript,sio:SIO_000151,sio:Manuscript
+107,http://semanticscience.org/resource/SIO_000933,bubble chart,sio:SIO_000933,sio:BubbleChart
+108,http://semanticscience.org/resource/SIO_010310,anabolism,sio:SIO_010310,sio:Anabolism
+109,http://semanticscience.org/resource/SIO_000085,question,sio:SIO_000085,sio:Question
+110,http://semanticscience.org/resource/SIO_010780,ring,sio:SIO_010780,sio:Ring
+111,http://semanticscience.org/resource/SIO_000678,abstract role,sio:SIO_000678,sio:AbstractRole
+112,http://semanticscience.org/resource/SIO_000099,software module,sio:SIO_000099,sio:SoftwareModule
+113,http://semanticscience.org/resource/SIO_000766,street name,sio:SIO_000766,sio:StreetName
+114,http://semanticscience.org/resource/SIO_011032,arsenic atom,sio:SIO_011032,sio:ArsenicAtom
+115,http://semanticscience.org/resource/SIO_000124,hypernym,sio:SIO_000124,sio:Hypernym
+116,http://semanticscience.org/resource/SIO_010437,signal transducer,sio:SIO_010437,sio:SignalTransducer
+117,http://semanticscience.org/resource/SIO_000914,binary scale,sio:SIO_000914,sio:BinaryScale
+118,http://semanticscience.org/resource/SIO_010008,nucleic acid,sio:SIO_010008,sio:NucleicAcid
+119,http://semanticscience.org/resource/SIO_000394,doctor,sio:SIO_000394,sio:Doctor
+120,http://semanticscience.org/resource/SIO_000780,to bind to,sio:SIO_000780,sio:ToBindTo
+121,http://semanticscience.org/resource/SIO_000102,software interpreter,sio:SIO_000102,sio:SoftwareInterpreter
+122,http://semanticscience.org/resource/SIO_010087,inactive ingredient,sio:SIO_010087,sio:InactiveIngredient
+123,http://semanticscience.org/resource/SIO_000459,left value axis,sio:SIO_000459,sio:LeftValueAxis
+124,http://semanticscience.org/resource/SIO_000893,reagent role,sio:SIO_000893,sio:ReagentRole
+125,http://semanticscience.org/resource/SIO_010411,reagent,sio:SIO_010411,sio:Reagent
+126,http://semanticscience.org/resource/SIO_011116,nobelium atom,sio:SIO_011116,sio:NobeliumAtom
+127,http://semanticscience.org/resource/SIO_001034,reviewed,sio:SIO_001034,sio:Reviewed
+128,http://semanticscience.org/resource/SIO_010513,double displacement reaction,sio:SIO_010513,sio:DoubleDisplacementReaction
+129,http://semanticscience.org/resource/SIO_001143,maintenance of duration of process,sio:SIO_001143,sio:MaintenanceOfDurationOfProcess
+130,http://semanticscience.org/resource/SIO_000711,academic role,sio:SIO_000711,sio:AcademicRole
+131,http://semanticscience.org/resource/SIO_001358,to retrieve,sio:SIO_001358,sio:ToRetrieve
+132,http://semanticscience.org/resource/SIO_000817,arousal,sio:SIO_000817,sio:Arousal
+133,http://semanticscience.org/resource/SIO_011082,roentgenium atom,sio:SIO_011082,sio:RoentgeniumAtom
+134,http://semanticscience.org/resource/SIO_010457,cation,sio:SIO_010457,sio:Cation
+135,http://semanticscience.org/resource/SIO_000070,measurement value,sio:SIO_000070,sio:MeasurementValue
+136,http://semanticscience.org/resource/SIO_001086,to add a covalent bond,sio:SIO_001086,sio:ToAddACovalentBond
+137,http://semanticscience.org/resource/SIO_000639,to passively interact with,sio:SIO_000639,sio:ToPassivelyInteractWith
+138,http://semanticscience.org/resource/SIO_000094,algorithm,sio:SIO_000094,sio:Algorithm
+139,http://semanticscience.org/resource/SIO_000554,normal,sio:SIO_000554,sio:Normal
+140,http://semanticscience.org/resource/SIO_001320,cellular phone number,sio:SIO_001320,sio:CellularPhoneNumber
+141,http://semanticscience.org/resource/SIO_000842,grief,sio:SIO_000842,sio:Grief
+142,http://semanticscience.org/resource/SIO_000406,academic,sio:SIO_000406,sio:Academic
+143,http://semanticscience.org/resource/SIO_000263,deductive argument,sio:SIO_000263,sio:DeductiveArgument
+144,http://semanticscience.org/resource/SIO_001323,email address,sio:SIO_001323,sio:EmailAddress
+145,http://semanticscience.org/resource/SIO_011100,erbium atom,sio:SIO_011100,sio:ErbiumAtom
+146,http://semanticscience.org/resource/SIO_000610,regulation of capability,sio:SIO_000610,sio:RegulationOfCapability
+147,http://semanticscience.org/resource/SIO_001152,maintenance of quantity of object production,sio:SIO_001152,sio:MaintenanceOfQuantityOfObjectProduction
+148,http://semanticscience.org/resource/SIO_010061,generation number,sio:SIO_010061,sio:GenerationNumber
+149,http://semanticscience.org/resource/SIO_000833,embarassment,sio:SIO_000833,sio:Embarassment
+150,http://semanticscience.org/resource/SIO_001374,brief,sio:SIO_001374,sio:Brief
+151,http://semanticscience.org/resource/SIO_000532,terminal point,sio:SIO_000532,sio:TerminalPoint
+152,http://semanticscience.org/resource/SIO_010060,family history,sio:SIO_010060,sio:FamilyHistory
+153,http://semanticscience.org/resource/SIO_010461,positive charge,sio:SIO_010461,sio:PositiveCharge
+154,http://semanticscience.org/resource/SIO_000039,depth,sio:SIO_000039,sio:Depth
+155,http://semanticscience.org/resource/SIO_011028,copper atom,sio:SIO_011028,sio:CopperAtom
+156,http://semanticscience.org/resource/SIO_010784,ionic compound,sio:SIO_010784,sio:IonicCompound
+157,http://semanticscience.org/resource/SIO_000103,software script,sio:SIO_000103,sio:SoftwareScript
+158,http://semanticscience.org/resource/SIO_010013,chemical interaction,sio:SIO_010013,sio:ChemicalInteraction
+159,http://semanticscience.org/resource/SIO_001180,mass spectrometry experiment,sio:SIO_001180,sio:MassSpectrometryExperiment
+160,http://semanticscience.org/resource/SIO_000316,design specification,sio:SIO_000316,sio:DesignSpecification
+161,http://semanticscience.org/resource/SIO_000321,cartesian coordinate system,sio:SIO_000321,sio:CartesianCoordinateSystem
+162,http://semanticscience.org/resource/SIO_011026,cobalt atom,sio:SIO_011026,sio:CobaltAtom
+163,http://semanticscience.org/resource/SIO_010056,phenotype,sio:SIO_010056,sio:Phenotype
+164,http://semanticscience.org/resource/SIO_001127,regulation of molecular quantity,sio:SIO_001127,sio:RegulationOfMolecularQuantity
+165,http://semanticscience.org/resource/SIO_000019,site,sio:SIO_000019,sio:Site
+166,http://semanticscience.org/resource/SIO_000963,not started,sio:SIO_000963,sio:NotStarted
+167,http://semanticscience.org/resource/SIO_001251,left open interval,sio:SIO_001251,sio:LeftOpenInterval
+168,http://semanticscience.org/resource/SIO_011019,calcium atom,sio:SIO_011019,sio:CalciumAtom
+169,http://semanticscience.org/resource/SIO_000081,image,sio:SIO_000081,sio:Image
+170,http://semanticscience.org/resource/SIO_011022,vanadium atom,sio:SIO_011022,sio:VanadiumAtom
+171,http://semanticscience.org/resource/SIO_000719,to translocate,sio:SIO_000719,sio:ToTranslocate
+172,http://semanticscience.org/resource/SIO_000935,treemap,sio:SIO_000935,sio:Treemap
+173,http://semanticscience.org/resource/SIO_011007,oxygen atom,sio:SIO_011007,sio:OxygenAtom
+174,http://semanticscience.org/resource/SIO_010026,genetic polymorphism,sio:SIO_010026,sio:GeneticPolymorphism
+175,http://semanticscience.org/resource/SIO_000887,buffer role,sio:SIO_000887,sio:BufferRole
+176,http://semanticscience.org/resource/SIO_011031,germanium atom,sio:SIO_011031,sio:GermaniumAtom
+177,http://semanticscience.org/resource/SIO_000675,unique identifier,sio:SIO_000675,sio:UniqueIdentifier
+178,http://semanticscience.org/resource/SIO_001115,member count,sio:SIO_001115,sio:MemberCount
+179,http://semanticscience.org/resource/SIO_010278,ploidy,sio:SIO_010278,sio:Ploidy
+180,http://semanticscience.org/resource/SIO_001327,protein expression value,sio:SIO_001327,sio:ProteinExpressionValue
+181,http://semanticscience.org/resource/SIO_000988,pseudogene,sio:SIO_000988,sio:Pseudogene
+182,http://semanticscience.org/resource/SIO_010443,intron,sio:SIO_010443,sio:Intron
+183,http://semanticscience.org/resource/SIO_010284,active transport,sio:SIO_010284,sio:ActiveTransport
+184,http://semanticscience.org/resource/SIO_000920,independent variable,sio:SIO_000920,sio:IndependentVariable
+185,http://semanticscience.org/resource/SIO_000388,to assemble,sio:SIO_000388,sio:ToAssemble
+186,http://semanticscience.org/resource/SIO_001366,information maintenance,sio:SIO_001366,sio:InformationMaintenance
+187,http://semanticscience.org/resource/SIO_000123,antonym,sio:SIO_000123,sio:Antonym
+188,http://semanticscience.org/resource/SIO_000282,exclusive disjunction (xor),sio:SIO_000282,sio:ExclusiveDisjunction(xor)
+189,http://semanticscience.org/resource/SIO_011039,zirconium atom,sio:SIO_011039,sio:ZirconiumAtom
+190,http://semanticscience.org/resource/SIO_011066,thallium atom,sio:SIO_011066,sio:ThalliumAtom
+191,http://semanticscience.org/resource/SIO_000531,drop line,sio:SIO_000531,sio:DropLine
+192,http://semanticscience.org/resource/SIO_000803,inhibitor role,sio:SIO_000803,sio:InhibitorRole
+193,http://semanticscience.org/resource/SIO_000946,flowchart,sio:SIO_000946,sio:Flowchart
+194,http://semanticscience.org/resource/SIO_000752,row,sio:SIO_000752,sio:Row
+195,http://semanticscience.org/resource/SIO_001384,statement of consequence,sio:SIO_001384,sio:StatementOfConsequence
+196,http://semanticscience.org/resource/SIO_011104,thorium atom,sio:SIO_011104,sio:ThoriumAtom
+197,http://semanticscience.org/resource/SIO_001259,collection item,sio:SIO_001259,sio:CollectionItem
+198,http://semanticscience.org/resource/SIO_010296,process down-regulation,sio:SIO_010296,sio:ProcessDown-regulation
+199,http://semanticscience.org/resource/SIO_000481,deletion variant role,sio:SIO_000481,sio:DeletionVariantRole
+200,http://semanticscience.org/resource/SIO_000188,abstract section,sio:SIO_000188,sio:AbstractSection
+201,http://semanticscience.org/resource/SIO_000530,plateau line,sio:SIO_000530,sio:PlateauLine
+202,http://semanticscience.org/resource/SIO_000441,1D cartesian point,sio:SIO_000441,sio:1DCartesianPoint
+203,http://semanticscience.org/resource/SIO_000509,start point,sio:SIO_000509,sio:StartPoint
+204,http://semanticscience.org/resource/SIO_010336,deoxyribonucleotide residue,sio:SIO_010336,sio:DeoxyribonucleotideResidue
+205,http://semanticscience.org/resource/SIO_001173,double stranded DNA,sio:SIO_001173,sio:DoubleStrandedDNA
+206,http://semanticscience.org/resource/SIO_001241,catalog,sio:SIO_001241,sio:Catalog
+207,http://semanticscience.org/resource/SIO_000583,dying,sio:SIO_000583,sio:Dying
+208,http://semanticscience.org/resource/SIO_011089,ununoctium atom,sio:SIO_011089,sio:UnunoctiumAtom
+209,http://semanticscience.org/resource/SIO_001200,decreased molecular degradation from decreased regulation,sio:SIO_001200,sio:DecreasedMolecularDegradationFromDecreasedRegulation
+210,http://semanticscience.org/resource/SIO_000704,positional role,sio:SIO_000704,sio:PositionalRole
+211,http://semanticscience.org/resource/SIO_001311,neither satisfied or dissatisfied qualifier,sio:SIO_001311,sio:NeitherSatisfiedOrDissatisfiedQualifier
+212,http://semanticscience.org/resource/SIO_011038,yttrium atom,sio:SIO_011038,sio:YttriumAtom
+213,http://semanticscience.org/resource/SIO_000157,conference proceedings,sio:SIO_000157,sio:ConferenceProceedings
+214,http://semanticscience.org/resource/SIO_001260,list item,sio:SIO_001260,sio:ListItem
+215,http://semanticscience.org/resource/SIO_000608,curve,sio:SIO_000608,sio:Curve
+216,http://semanticscience.org/resource/SIO_001269,maternally transmitted,sio:SIO_001269,sio:MaternallyTransmitted
+217,http://semanticscience.org/resource/SIO_010435,inhibitor,sio:SIO_010435,sio:Inhibitor
+218,http://semanticscience.org/resource/SIO_010448,stop codon,sio:SIO_010448,sio:StopCodon
+219,http://semanticscience.org/resource/SIO_010022,secondary structure descriptor,sio:SIO_010022,sio:SecondaryStructureDescriptor
+220,http://semanticscience.org/resource/SIO_011010,sodium atom,sio:SIO_011010,sio:SodiumAtom
+221,http://semanticscience.org/resource/SIO_010074,amino acid residue,sio:SIO_010074,sio:AminoAcidResidue
+222,http://semanticscience.org/resource/SIO_000176,reference,sio:SIO_000176,sio:Reference
+223,http://semanticscience.org/resource/SIO_000806,uncharged,sio:SIO_000806,sio:Uncharged
+224,http://semanticscience.org/resource/SIO_001207,increased chemical destruction,sio:SIO_001207,sio:IncreasedChemicalDestruction
+225,http://semanticscience.org/resource/SIO_000144,parameter,sio:SIO_000144,sio:Parameter
+226,http://semanticscience.org/resource/SIO_001250,chemical-pathway association,sio:SIO_001250,sio:Chemical-pathwayAssociation
+227,http://semanticscience.org/resource/SIO_000284,hypothesis,sio:SIO_000284,sio:Hypothesis
+228,http://semanticscience.org/resource/SIO_000328,positional identifier,sio:SIO_000328,sio:PositionalIdentifier
+229,http://semanticscience.org/resource/SIO_000494,to actively interact with,sio:SIO_000494,sio:ToActivelyInteractWith
+230,http://semanticscience.org/resource/SIO_001365,rate of change,sio:SIO_001365,sio:RateOfChange
+231,http://semanticscience.org/resource/SIO_000619,regulatory authority,sio:SIO_000619,sio:RegulatoryAuthority
+232,http://semanticscience.org/resource/SIO_000467,global minimal stationary point,sio:SIO_000467,sio:GlobalMinimalStationaryPoint
+233,http://semanticscience.org/resource/SIO_001224,amino acid,sio:SIO_001224,sio:AminoAcid
+234,http://semanticscience.org/resource/SIO_000750,database,sio:SIO_000750,sio:Database
+235,http://semanticscience.org/resource/SIO_000375,to supply electricity,sio:SIO_000375,sio:ToSupplyElectricity
+236,http://semanticscience.org/resource/SIO_001301,collection ovopub,sio:SIO_001301,sio:CollectionOvopub
+237,http://semanticscience.org/resource/SIO_000462,linear value axis,sio:SIO_000462,sio:LinearValueAxis
+238,http://semanticscience.org/resource/SIO_000374,to reduce energy,sio:SIO_000374,sio:ToReduceEnergy
+239,http://semanticscience.org/resource/SIO_010498,single bond,sio:SIO_010498,sio:SingleBond
+240,http://semanticscience.org/resource/SIO_000453,y-axis,sio:SIO_000453,sio:Y-axis
+241,http://semanticscience.org/resource/SIO_000148,document,sio:SIO_000148,sio:Document
+242,http://semanticscience.org/resource/SIO_001319,telephone number,sio:SIO_001319,sio:TelephoneNumber
+243,http://semanticscience.org/resource/SIO_000433,hour,sio:SIO_000433,sio:Hour
+244,http://semanticscience.org/resource/SIO_001265,heterozygous,sio:SIO_001265,sio:Heterozygous
+245,http://semanticscience.org/resource/SIO_000660,hole,sio:SIO_000660,sio:Hole
+246,http://semanticscience.org/resource/SIO_001041,study design,sio:SIO_001041,sio:StudyDesign
+247,http://semanticscience.org/resource/SIO_000693,corporation,sio:SIO_000693,sio:Corporation
+248,http://semanticscience.org/resource/SIO_010033,hydrogen bond,sio:SIO_010033,sio:HydrogenBond
+249,http://semanticscience.org/resource/SIO_000962,virtual,sio:SIO_000962,sio:Virtual
+250,http://semanticscience.org/resource/SIO_000353,to observe,sio:SIO_000353,sio:ToObserve
+251,http://semanticscience.org/resource/SIO_001138,decreased duration of process from increased regulation,sio:SIO_001138,sio:DecreasedDurationOfProcessFromIncreasedRegulation
+252,http://semanticscience.org/resource/SIO_001038,editor reviewed,sio:SIO_001038,sio:EditorReviewed
+253,http://semanticscience.org/resource/SIO_010095,RNA transcript component,sio:SIO_010095,sio:RNATranscriptComponent
+254,http://semanticscience.org/resource/SIO_001091,heterogeneous,sio:SIO_001091,sio:Heterogeneous
+255,http://semanticscience.org/resource/SIO_011072,francium atom,sio:SIO_011072,sio:FranciumAtom
+256,http://semanticscience.org/resource/SIO_000162,periodical,sio:SIO_000162,sio:Periodical
+257,http://semanticscience.org/resource/SIO_000185,title,sio:SIO_000185,sio:Title
+258,http://semanticscience.org/resource/SIO_001114,maximal value,sio:SIO_001114,sio:MaximalValue
+259,http://semanticscience.org/resource/SIO_000588,creating,sio:SIO_000588,sio:Creating
+260,http://semanticscience.org/resource/SIO_010674,binary compound,sio:SIO_010674,sio:BinaryCompound
+261,http://semanticscience.org/resource/SIO_000055,shape,sio:SIO_000055,sio:Shape
+262,http://semanticscience.org/resource/SIO_000916,decimal scale,sio:SIO_000916,sio:DecimalScale
+263,http://semanticscience.org/resource/SIO_001139,regulation of process spatial extent,sio:SIO_001139,sio:RegulationOfProcessSpatialExtent
+264,http://semanticscience.org/resource/SIO_001203,increased molecular production from increased regulation,sio:SIO_001203,sio:IncreasedMolecularProductionFromIncreasedRegulation
+265,http://semanticscience.org/resource/SIO_010523,electrophilic addition reaction,sio:SIO_010523,sio:ElectrophilicAdditionReaction
+266,http://semanticscience.org/resource/SIO_001205,increased molecular production from decreased regulation,sio:SIO_001205,sio:IncreasedMolecularProductionFromDecreasedRegulation
+267,http://semanticscience.org/resource/SIO_010512,displacement reaction,sio:SIO_010512,sio:DisplacementReaction
+268,http://semanticscience.org/resource/SIO_000911,histogram,sio:SIO_000911,sio:Histogram
+269,http://semanticscience.org/resource/SIO_000122,synonym,sio:SIO_000122,sio:Synonym
+270,http://semanticscience.org/resource/SIO_011115,mendelevium atom,sio:SIO_011115,sio:MendeleviumAtom
+271,http://semanticscience.org/resource/SIO_000478,sequence variant role,sio:SIO_000478,sio:SequenceVariantRole
+272,http://semanticscience.org/resource/SIO_000771,versioned record,sio:SIO_000771,sio:VersionedRecord
+273,http://semanticscience.org/resource/SIO_010043,protein,sio:SIO_010043,sio:Protein
+274,http://semanticscience.org/resource/SIO_000587,biological reproduction,sio:SIO_000587,sio:BiologicalReproduction
+275,http://semanticscience.org/resource/SIO_001215,severe,sio:SIO_001215,sio:Severe
+276,http://semanticscience.org/resource/SIO_000172,address,sio:SIO_000172,sio:Address
+277,http://semanticscience.org/resource/SIO_001161,number of objects consumed,sio:SIO_001161,sio:NumberOfObjectsConsumed
+278,http://semanticscience.org/resource/SIO_001201,increased molecular degradation from decreased regulation,sio:SIO_001201,sio:IncreasedMolecularDegradationFromDecreasedRegulation
+279,http://semanticscience.org/resource/SIO_001169,issue,sio:SIO_001169,sio:Issue
+280,http://semanticscience.org/resource/SIO_001118,sequence,sio:SIO_001118,sio:Sequence
+281,http://semanticscience.org/resource/SIO_000939,phrase net diagram,sio:SIO_000939,sio:PhraseNetDiagram
+282,http://semanticscience.org/resource/SIO_010427,liquid solution component,sio:SIO_010427,sio:LiquidSolutionComponent
+283,http://semanticscience.org/resource/SIO_000822,contentment,sio:SIO_000822,sio:Contentment
+284,http://semanticscience.org/resource/SIO_001321,fax number,sio:SIO_001321,sio:FaxNumber
+285,http://semanticscience.org/resource/SIO_000142,inclusion criterion,sio:SIO_000142,sio:InclusionCriterion
+286,http://semanticscience.org/resource/SIO_001334,edge,sio:SIO_001334,sio:Edge
+287,http://semanticscience.org/resource/SIO_000611,regulation of catalytic capability,sio:SIO_000611,sio:RegulationOfCatalyticCapability
+288,http://semanticscience.org/resource/SIO_000521,directed line segment,sio:SIO_000521,sio:DirectedLineSegment
+289,http://semanticscience.org/resource/SIO_010289,biochemical inhibition,sio:SIO_010289,sio:BiochemicalInhibition
+290,http://semanticscience.org/resource/SIO_001389,hgvs notation,sio:SIO_001389,sio:HgvsNotation
+291,http://semanticscience.org/resource/SIO_000072,cartesian coordinate,sio:SIO_000072,sio:CartesianCoordinate
+292,http://semanticscience.org/resource/SIO_000979,vowel,sio:SIO_000979,sio:Vowel
+293,http://semanticscience.org/resource/SIO_000120,scientific name,sio:SIO_000120,sio:ScientificName
+294,http://semanticscience.org/resource/SIO_001016,ethnic group,sio:SIO_001016,sio:EthnicGroup
+295,http://semanticscience.org/resource/SIO_000083,statistical graph,sio:SIO_000083,sio:StatisticalGraph
+296,http://semanticscience.org/resource/SIO_000452,x-axis,sio:SIO_000452,sio:X-axis
+297,http://semanticscience.org/resource/SIO_000576,membrane transport,sio:SIO_000576,sio:MembraneTransport
+298,http://semanticscience.org/resource/SIO_000903,bottom value axis,sio:SIO_000903,sio:BottomValueAxis
+299,http://semanticscience.org/resource/SIO_010071,organic submolecule,sio:SIO_010071,sio:OrganicSubmolecule
+300,http://semanticscience.org/resource/SIO_010032,PDB record identifier,sio:SIO_010032,sio:PDBRecordIdentifier
+301,http://semanticscience.org/resource/SIO_001067,controlled observational cohort study,sio:SIO_001067,sio:ControlledObservationalCohortStudy
+302,http://semanticscience.org/resource/SIO_000378,to change appearance,sio:SIO_000378,sio:ToChangeAppearance
+303,http://semanticscience.org/resource/SIO_000385,to change energetically,sio:SIO_000385,sio:ToChangeEnergetically
+304,http://semanticscience.org/resource/SIO_000708,professor role,sio:SIO_000708,sio:ProfessorRole
+305,http://semanticscience.org/resource/SIO_001218,weak,sio:SIO_001218,sio:Weak
+306,http://semanticscience.org/resource/SIO_010059,dead,sio:SIO_010059,sio:Dead
+307,http://semanticscience.org/resource/SIO_000573,passive movement,sio:SIO_000573,sio:PassiveMovement
+308,http://semanticscience.org/resource/SIO_000329,cylindrical coordinate system,sio:SIO_000329,sio:CylindricalCoordinateSystem
+309,http://semanticscience.org/resource/SIO_000702,to be interacted with,sio:SIO_000702,sio:ToBeInteractedWith
+310,http://semanticscience.org/resource/SIO_011036,rubidium atom,sio:SIO_011036,sio:RubidiumAtom
+311,http://semanticscience.org/resource/SIO_010000,organism,sio:SIO_010000,sio:Organism
+312,http://semanticscience.org/resource/SIO_000376,to change materially,sio:SIO_000376,sio:ToChangeMaterially
+313,http://semanticscience.org/resource/SIO_000430,day,sio:SIO_000430,sio:Day
+314,http://semanticscience.org/resource/SIO_010088,to serve as a template for molecular synthesis,sio:SIO_010088,sio:ToServeAsATemplateForMolecularSynthesis
+315,http://semanticscience.org/resource/SIO_000692,to be actively interacted with,sio:SIO_000692,sio:ToBeActivelyInteractedWith
+316,http://semanticscience.org/resource/SIO_000908,streamgraph,sio:SIO_000908,sio:Streamgraph
+317,http://semanticscience.org/resource/SIO_001027,medical health record,sio:SIO_001027,sio:MedicalHealthRecord
+318,http://semanticscience.org/resource/SIO_001271,helicity,sio:SIO_001271,sio:Helicity
+319,http://semanticscience.org/resource/SIO_000823,curiosity,sio:SIO_000823,sio:Curiosity
+320,http://semanticscience.org/resource/SIO_000931,network diagram,sio:SIO_000931,sio:NetworkDiagram
+321,http://semanticscience.org/resource/SIO_010425,supernatant,sio:SIO_010425,sio:Supernatant
+322,http://semanticscience.org/resource/SIO_010298,medical data,sio:SIO_010298,sio:MedicalData
+323,http://semanticscience.org/resource/SIO_001348,fusion gene-disease association,sio:SIO_001348,sio:FusionGene-diseaseAssociation
+324,http://semanticscience.org/resource/SIO_001123,gene-disease association linked with altered gene expression,sio:SIO_001123,sio:Gene-diseaseAssociationLinkedWithAlteredGeneExpression
+325,http://semanticscience.org/resource/SIO_011092,neodymium atom,sio:SIO_011092,sio:NeodymiumAtom
+326,http://semanticscience.org/resource/SIO_000513,tick mark,sio:SIO_000513,sio:TickMark
+327,http://semanticscience.org/resource/SIO_000596,data storage device,sio:SIO_000596,sio:DataStorageDevice
+328,http://semanticscience.org/resource/SIO_000944,interval,sio:SIO_000944,sio:Interval
+329,http://semanticscience.org/resource/SIO_001336,epimer,sio:SIO_001336,sio:Epimer
+330,http://semanticscience.org/resource/SIO_010373,to be inhibited,sio:SIO_010373,sio:ToBeInhibited
+331,http://semanticscience.org/resource/SIO_000100,software library,sio:SIO_000100,sio:SoftwareLibrary
+332,http://semanticscience.org/resource/SIO_010533,regulatory pathway,sio:SIO_010533,sio:RegulatoryPathway
+333,http://semanticscience.org/resource/SIO_011109,americium atom,sio:SIO_011109,sio:AmericiumAtom
+334,http://semanticscience.org/resource/SIO_000623,OBO ontology,sio:SIO_000623,sio:OBOOntology
+335,http://semanticscience.org/resource/SIO_001113,minimal value,sio:SIO_001113,sio:MinimalValue
+336,http://semanticscience.org/resource/SIO_001165,user account,sio:SIO_001165,sio:UserAccount
+337,http://semanticscience.org/resource/SIO_000472,scientific data,sio:SIO_000472,sio:ScientificData
+338,http://semanticscience.org/resource/SIO_000651,textual entity,sio:SIO_000651,sio:TextualEntity
+339,http://semanticscience.org/resource/SIO_000080,figure,sio:SIO_000080,sio:Figure
+340,http://semanticscience.org/resource/SIO_010046,biological entity,sio:SIO_010046,sio:BiologicalEntity
+341,http://semanticscience.org/resource/SIO_010058,alive,sio:SIO_010058,sio:Alive
+342,http://semanticscience.org/resource/SIO_010377,cellular organism,sio:SIO_010377,sio:CellularOrganism
+343,http://semanticscience.org/resource/SIO_001023,medical screening,sio:SIO_001023,sio:MedicalScreening
+344,http://semanticscience.org/resource/SIO_000820,boredom,sio:SIO_000820,sio:Boredom
+345,http://semanticscience.org/resource/SIO_001309,very dissatisfied qualifier,sio:SIO_001309,sio:VeryDissatisfiedQualifier
+346,http://semanticscience.org/resource/SIO_001287,indecision,sio:SIO_001287,sio:Indecision
+347,http://semanticscience.org/resource/SIO_011035,krypton atom,sio:SIO_011035,sio:KryptonAtom
+348,http://semanticscience.org/resource/SIO_010424,centrifugation pellet,sio:SIO_010424,sio:CentrifugationPellet
+349,http://semanticscience.org/resource/SIO_010522,nucleophilic addition reaction,sio:SIO_010522,sio:NucleophilicAdditionReaction
+350,http://semanticscience.org/resource/SIO_010024,quaternary structure,sio:SIO_010024,sio:QuaternaryStructure
+351,http://semanticscience.org/resource/SIO_000760,referencing cell,sio:SIO_000760,sio:ReferencingCell
+352,http://semanticscience.org/resource/SIO_001192,web service invocation,sio:SIO_001192,sio:WebServiceInvocation
+353,http://semanticscience.org/resource/SIO_000997,aborted,sio:SIO_000997,sio:Aborted
+354,http://semanticscience.org/resource/SIO_010430,test role,sio:SIO_010430,sio:TestRole
+355,http://semanticscience.org/resource/SIO_000106,book,sio:SIO_000106,sio:Book
+356,http://semanticscience.org/resource/SIO_001024,medical procedure,sio:SIO_001024,sio:MedicalProcedure
+357,http://semanticscience.org/resource/SIO_010337,ribonucleotide residue,sio:SIO_010337,sio:RibonucleotideResidue
+358,http://semanticscience.org/resource/SIO_010515,synthesis reaction,sio:SIO_010515,sio:SynthesisReaction
+359,http://semanticscience.org/resource/SIO_000529,decreasing line,sio:SIO_000529,sio:DecreasingLine
+360,http://semanticscience.org/resource/SIO_000595,parameterized data transformation,sio:SIO_000595,sio:ParameterizedDataTransformation
+361,http://semanticscience.org/resource/SIO_010779,structural isomer,sio:SIO_010779,sio:StructuralIsomer
+362,http://semanticscience.org/resource/SIO_000480,insertion variant role,sio:SIO_000480,sio:InsertionVariantRole
+363,http://semanticscience.org/resource/SIO_000961,fictional,sio:SIO_000961,sio:Fictional
+364,http://semanticscience.org/resource/SIO_000196,introduction section,sio:SIO_000196,sio:IntroductionSection
+365,http://semanticscience.org/resource/SIO_011025,iron atom,sio:SIO_011025,sio:IronAtom
+366,http://semanticscience.org/resource/SIO_000315,functional specification,sio:SIO_000315,sio:FunctionalSpecification
+367,http://semanticscience.org/resource/SIO_000649,information processing,sio:SIO_000649,sio:InformationProcessing
+368,http://semanticscience.org/resource/SIO_010345,chemical reaction,sio:SIO_010345,sio:ChemicalReaction
+369,http://semanticscience.org/resource/SIO_000194,correspondence section,sio:SIO_000194,sio:CorrespondenceSection
+370,http://semanticscience.org/resource/SIO_000517,quadrilateral,sio:SIO_000517,sio:Quadrilateral
+371,http://semanticscience.org/resource/SIO_000040,height,sio:SIO_000040,sio:Height
+372,http://semanticscience.org/resource/SIO_001353,specialized object,sio:SIO_001353,sio:SpecializedObject
+373,http://semanticscience.org/resource/SIO_000429,month,sio:SIO_000429,sio:Month
+374,http://semanticscience.org/resource/SIO_000161,manual,sio:SIO_000161,sio:Manual
+375,http://semanticscience.org/resource/SIO_000305,process number,sio:SIO_000305,sio:ProcessNumber
+376,http://semanticscience.org/resource/SIO_000828,disgust,sio:SIO_000828,sio:Disgust
+377,http://semanticscience.org/resource/SIO_001074,t-statistic,sio:SIO_001074,sio:T-statistic
+378,http://semanticscience.org/resource/SIO_011075,rutherfordium atom,sio:SIO_011075,sio:RutherfordiumAtom
+379,http://semanticscience.org/resource/SIO_000829,dread,sio:SIO_000829,sio:Dread
+380,http://semanticscience.org/resource/SIO_001175,positive nucleic acid strand,sio:SIO_001175,sio:PositiveNucleicAcidStrand
+381,http://semanticscience.org/resource/SIO_001048,intervention study,sio:SIO_001048,sio:InterventionStudy
+382,http://semanticscience.org/resource/SIO_000751,decreased,sio:SIO_000751,sio:Decreased
+383,http://semanticscience.org/resource/SIO_001092,structural quality,sio:SIO_001092,sio:StructuralQuality
+384,http://semanticscience.org/resource/SIO_000831,positive emotion,sio:SIO_000831,sio:PositiveEmotion
+385,http://semanticscience.org/resource/SIO_001171,database cross-reference,sio:SIO_001171,sio:DatabaseCross-reference
+386,http://semanticscience.org/resource/SIO_010039,pharmaceutical preparation,sio:SIO_010039,sio:PharmaceuticalPreparation
+387,http://semanticscience.org/resource/SIO_001240,nmr device,sio:SIO_001240,sio:NmrDevice
+388,http://semanticscience.org/resource/SIO_000985,protein coding gene,sio:SIO_000985,sio:ProteinCodingGene
+389,http://semanticscience.org/resource/SIO_000051,compositional quality,sio:SIO_000051,sio:CompositionalQuality
+390,http://semanticscience.org/resource/SIO_001281,humiliation,sio:SIO_001281,sio:Humiliation
+391,http://semanticscience.org/resource/SIO_000138,class,sio:SIO_000138,sio:Class
+392,http://semanticscience.org/resource/SIO_000676,social role,sio:SIO_000676,sio:SocialRole
+393,http://semanticscience.org/resource/SIO_000437,2D cartesian point,sio:SIO_000437,sio:2DCartesianPoint
+394,http://semanticscience.org/resource/SIO_000410,anger,sio:SIO_000410,sio:Anger
+395,http://semanticscience.org/resource/SIO_000834,envy,sio:SIO_000834,sio:Envy
+396,http://semanticscience.org/resource/SIO_001255,pharmacokinetic pathway,sio:SIO_001255,sio:PharmacokineticPathway
+397,http://semanticscience.org/resource/SIO_001300,ovopub,sio:SIO_001300,sio:Ovopub
+398,http://semanticscience.org/resource/SIO_001058,word end position,sio:SIO_001058,sio:WordEndPosition
+399,http://semanticscience.org/resource/SIO_010011,lipid,sio:SIO_010011,sio:Lipid
+400,http://semanticscience.org/resource/SIO_011090,cerium atom,sio:SIO_011090,sio:CeriumAtom
+401,http://semanticscience.org/resource/SIO_000759,unique cell,sio:SIO_000759,sio:UniqueCell
+402,http://semanticscience.org/resource/SIO_000432,millenium,sio:SIO_000432,sio:Millenium
+403,http://semanticscience.org/resource/SIO_000787,page number,sio:SIO_000787,sio:PageNumber
+404,http://semanticscience.org/resource/SIO_000500,polygon vertex,sio:SIO_000500,sio:PolygonVertex
+405,http://semanticscience.org/resource/SIO_001140,increased spatial extent of process from increased regulation,sio:SIO_001140,sio:IncreasedSpatialExtentOfProcessFromIncreasedRegulation
+406,http://semanticscience.org/resource/SIO_010100,dna gene,sio:SIO_010100,sio:DnaGene
+407,http://semanticscience.org/resource/SIO_000880,regulator role,sio:SIO_000880,sio:RegulatorRole
+408,http://semanticscience.org/resource/SIO_000539,infinite line,sio:SIO_000539,sio:InfiniteLine
+409,http://semanticscience.org/resource/SIO_001132,process maintenance,sio:SIO_001132,sio:ProcessMaintenance
+410,http://semanticscience.org/resource/SIO_001163,increase in number of objects produced,sio:SIO_001163,sio:IncreaseInNumberOfObjectsProduced
+411,http://semanticscience.org/resource/SIO_000366,number,sio:SIO_000366,sio:Number
+412,http://semanticscience.org/resource/SIO_000724,to examine,sio:SIO_000724,sio:ToExamine
+413,http://semanticscience.org/resource/SIO_001128,regulation of molecular production,sio:SIO_001128,sio:RegulationOfMolecularProduction
+414,http://semanticscience.org/resource/SIO_000830,ecstasy,sio:SIO_000830,sio:Ecstasy
+415,http://semanticscience.org/resource/SIO_010428,evaluation role,sio:SIO_010428,sio:EvaluationRole
+416,http://semanticscience.org/resource/SIO_000953,end position,sio:SIO_000953,sio:EndPosition
+417,http://semanticscience.org/resource/SIO_000756,database entry,sio:SIO_000756,sio:DatabaseEntry
+418,http://semanticscience.org/resource/SIO_001329,single nucleotide polymorphism,sio:SIO_001329,sio:SingleNucleotidePolymorphism
+419,http://semanticscience.org/resource/SIO_000392,to change spatially,sio:SIO_000392,sio:ToChangeSpatially
+420,http://semanticscience.org/resource/SIO_010093,deoxyribonucleic acid primer,sio:SIO_010093,sio:DeoxyribonucleicAcidPrimer
+421,http://semanticscience.org/resource/SIO_011011,magnesium atom,sio:SIO_011011,sio:MagnesiumAtom
+422,http://semanticscience.org/resource/SIO_011065,mercury atom,sio:SIO_011065,sio:MercuryAtom
+423,http://semanticscience.org/resource/SIO_000110,paragraph,sio:SIO_000110,sio:Paragraph
+424,http://semanticscience.org/resource/SIO_000471,secondary title,sio:SIO_000471,sio:SecondaryTitle
+425,http://semanticscience.org/resource/SIO_000551,to change the activation energy,sio:SIO_000551,sio:ToChangeTheActivationEnergy
+426,http://semanticscience.org/resource/SIO_001081,t-statistic based increased differential gene expression,sio:SIO_001081,sio:T-statisticBasedIncreasedDifferentialGeneExpression
+427,http://semanticscience.org/resource/SIO_000543,to serve as a host,sio:SIO_000543,sio:ToServeAsAHost
+428,http://semanticscience.org/resource/SIO_000666,township,sio:SIO_000666,sio:Township
+429,http://semanticscience.org/resource/SIO_000922,Gantt chart,sio:SIO_000922,sio:GanttChart
+430,http://semanticscience.org/resource/SIO_000169,booklet,sio:SIO_000169,sio:Booklet
+431,http://semanticscience.org/resource/SIO_000266,valid argument,sio:SIO_000266,sio:ValidArgument
+432,http://semanticscience.org/resource/SIO_000175,document title,sio:SIO_000175,sio:DocumentTitle
+433,http://semanticscience.org/resource/SIO_011085,ununquadium atom,sio:SIO_011085,sio:UnunquadiumAtom
+434,http://semanticscience.org/resource/SIO_001383,gene symbol,sio:SIO_001383,sio:GeneSymbol
+435,http://semanticscience.org/resource/SIO_000398,nurse,sio:SIO_000398,sio:Nurse
+436,http://semanticscience.org/resource/SIO_000506,geometric entity,sio:SIO_000506,sio:GeometricEntity
+437,http://semanticscience.org/resource/SIO_001007,assay,sio:SIO_001007,sio:Assay
+438,http://semanticscience.org/resource/SIO_000201,table of contents,sio:SIO_000201,sio:TableOfContents
+439,http://semanticscience.org/resource/SIO_001274,right-handed helical,sio:SIO_001274,sio:Right-handedHelical
+440,http://semanticscience.org/resource/SIO_000959,existence quality,sio:SIO_000959,sio:ExistenceQuality
+441,http://semanticscience.org/resource/SIO_001000,clinical trial,sio:SIO_001000,sio:ClinicalTrial
+442,http://semanticscience.org/resource/SIO_000698,to disassemble,sio:SIO_000698,sio:ToDisassemble
+443,http://semanticscience.org/resource/SIO_000790,non-protein coding RNA (ncRNA) gene,sio:SIO_000790,sio:Non-proteinCodingRNA(ncrna)Gene
+444,http://semanticscience.org/resource/SIO_000987,predicted gene,sio:SIO_000987,sio:PredictedGene
+445,http://semanticscience.org/resource/SIO_010531,sequence profile,sio:SIO_010531,sio:SequenceProfile
+446,http://semanticscience.org/resource/SIO_001386,chemical notation,sio:SIO_001386,sio:ChemicalNotation
+447,http://semanticscience.org/resource/SIO_000455,category axis,sio:SIO_000455,sio:CategoryAxis
+448,http://semanticscience.org/resource/SIO_010065,bioinformatic data,sio:SIO_010065,sio:BioinformaticData
+449,http://semanticscience.org/resource/SIO_010415,host,sio:SIO_010415,sio:Host
+450,http://semanticscience.org/resource/SIO_000412,love,sio:SIO_000412,sio:Love
+451,http://semanticscience.org/resource/SIO_001276,coding sequence,sio:SIO_001276,sio:CodingSequence
+452,http://semanticscience.org/resource/SIO_010454,base,sio:SIO_010454,sio:Base
+453,http://semanticscience.org/resource/SIO_011095,europium atom,sio:SIO_011095,sio:EuropiumAtom
+454,http://semanticscience.org/resource/SIO_000127,workflow,sio:SIO_000127,sio:Workflow
+455,http://semanticscience.org/resource/SIO_000579,symport enabled secondary active transport,sio:SIO_000579,sio:SymportEnabledSecondaryActiveTransport
+456,http://semanticscience.org/resource/SIO_010355,to conformationally inhibit,sio:SIO_010355,sio:ToConformationallyInhibit
+457,http://semanticscience.org/resource/SIO_000798,product role,sio:SIO_000798,sio:ProductRole
+458,http://semanticscience.org/resource/SIO_000178,page total,sio:SIO_000178,sio:PageTotal
+459,http://semanticscience.org/resource/SIO_001109,mean,sio:SIO_001109,sio:Mean
+460,http://semanticscience.org/resource/SIO_010375,multicellular organism,sio:SIO_010375,sio:MulticellularOrganism
+461,http://semanticscience.org/resource/SIO_001049,sampling,sio:SIO_001049,sio:Sampling
+462,http://semanticscience.org/resource/SIO_010029,biological sex,sio:SIO_010029,sio:BiologicalSex
+463,http://semanticscience.org/resource/SIO_000878,graduate student advisor role,sio:SIO_000878,sio:GraduateStudentAdvisorRole
+464,http://semanticscience.org/resource/SIO_001299,quantity modifier,sio:SIO_001299,sio:QuantityModifier
+465,http://semanticscience.org/resource/SIO_001262,anatomical entity,sio:SIO_001262,sio:AnatomicalEntity
+466,http://semanticscience.org/resource/SIO_000861,regret,sio:SIO_000861,sio:Regret
+467,http://semanticscience.org/resource/SIO_000448,figure part,sio:SIO_000448,sio:FigurePart
+468,http://semanticscience.org/resource/SIO_000526,vertical line,sio:SIO_000526,sio:VerticalLine
+469,http://semanticscience.org/resource/SIO_001005,chemical effect,sio:SIO_001005,sio:ChemicalEffect
+470,http://semanticscience.org/resource/SIO_000758,disordered,sio:SIO_000758,sio:Disordered
+471,http://semanticscience.org/resource/SIO_011046,silver atom,sio:SIO_011046,sio:SilverAtom
+472,http://semanticscience.org/resource/SIO_010519,polar addition reaction,sio:SIO_010519,sio:PolarAdditionReaction
+473,http://semanticscience.org/resource/SIO_010418,solute,sio:SIO_010418,sio:Solute
+474,http://semanticscience.org/resource/SIO_000342,term variant,sio:SIO_000342,sio:TermVariant
+475,http://semanticscience.org/resource/SIO_000927,telephone,sio:SIO_000927,sio:Telephone
+476,http://semanticscience.org/resource/SIO_010084,operon,sio:SIO_010084,sio:Operon
+477,http://semanticscience.org/resource/SIO_000654,software version label,sio:SIO_000654,sio:SoftwareVersionLabel
+478,http://semanticscience.org/resource/SIO_001360,information decoding,sio:SIO_001360,sio:InformationDecoding
+479,http://semanticscience.org/resource/SIO_000745,comparing,sio:SIO_000745,sio:Comparing
+480,http://semanticscience.org/resource/SIO_000538,straight,sio:SIO_000538,sio:Straight
+481,http://semanticscience.org/resource/SIO_011113,einsteinium atom,sio:SIO_011113,sio:EinsteiniumAtom
+482,http://semanticscience.org/resource/SIO_001008,toxicity,sio:SIO_001008,sio:Toxicity
+483,http://semanticscience.org/resource/SIO_000089,dataset,sio:SIO_000089,sio:Dataset
+484,http://semanticscience.org/resource/SIO_001124,gene-disease association linked with post-translational modification,sio:SIO_001124,sio:Gene-diseaseAssociationLinkedWithPost-translationalModification
+485,http://semanticscience.org/resource/SIO_011030,gallium atom,sio:SIO_011030,sio:GalliumAtom
+486,http://semanticscience.org/resource/SIO_000443,bar graph,sio:SIO_000443,sio:BarGraph
+487,http://semanticscience.org/resource/SIO_000789,sequence element position,sio:SIO_000789,sio:SequenceElementPosition
+488,http://semanticscience.org/resource/SIO_000035,ongoing,sio:SIO_000035,sio:Ongoing
+489,http://semanticscience.org/resource/SIO_011091,praseodymium atom,sio:SIO_011091,sio:PraseodymiumAtom
+490,http://semanticscience.org/resource/SIO_000812,affection,sio:SIO_000812,sio:Affection
+491,http://semanticscience.org/resource/SIO_000330,spherical coordinate system,sio:SIO_000330,sio:SphericalCoordinateSystem
+492,http://semanticscience.org/resource/SIO_010502,disulfide bond,sio:SIO_010502,sio:DisulfideBond
+493,http://semanticscience.org/resource/SIO_010344,catalyst,sio:SIO_010344,sio:Catalyst
+494,http://semanticscience.org/resource/SIO_010300,transcription,sio:SIO_010300,sio:Transcription
+495,http://semanticscience.org/resource/SIO_000847,indifference,sio:SIO_000847,sio:Indifference
+496,http://semanticscience.org/resource/SIO_000894,to luminesce,sio:SIO_000894,sio:ToLuminesce
+497,http://semanticscience.org/resource/SIO_001076,microarray experiment,sio:SIO_001076,sio:MicroarrayExperiment
+498,http://semanticscience.org/resource/SIO_010015,protein sequence,sio:SIO_010015,sio:ProteinSequence
+499,http://semanticscience.org/resource/SIO_000879,reactant role,sio:SIO_000879,sio:ReactantRole
+500,http://semanticscience.org/resource/SIO_010054,cell line,sio:SIO_010054,sio:CellLine
+501,http://semanticscience.org/resource/SIO_001094,bent,sio:SIO_001094,sio:Bent
+502,http://semanticscience.org/resource/SIO_000856,passion,sio:SIO_000856,sio:Passion
+503,http://semanticscience.org/resource/SIO_001062,human population,sio:SIO_001062,sio:HumanPopulation
+504,http://semanticscience.org/resource/SIO_000956,device,sio:SIO_000956,sio:Device
+505,http://semanticscience.org/resource/SIO_000991,validated gene,sio:SIO_000991,sio:ValidatedGene
+506,http://semanticscience.org/resource/SIO_001040,morpheme,sio:SIO_001040,sio:Morpheme
+507,http://semanticscience.org/resource/SIO_001082,t-statistic based decreased differential gene expression,sio:SIO_001082,sio:T-statisticBasedDecreasedDifferentialGeneExpression
+508,http://semanticscience.org/resource/SIO_000181,first name,sio:SIO_000181,sio:FirstName
+509,http://semanticscience.org/resource/SIO_001233,small nuclear RNA (snRNA),sio:SIO_001233,sio:SmallNuclearRNA(snrna)
+510,http://semanticscience.org/resource/SIO_011099,holmium atom,sio:SIO_011099,sio:HolmiumAtom
+511,http://semanticscience.org/resource/SIO_001148,increased object consumption from increased regulation,sio:SIO_001148,sio:IncreasedObjectConsumptionFromIncreasedRegulation
+512,http://semanticscience.org/resource/SIO_000337,objective,sio:SIO_000337,sio:Objective
+513,http://semanticscience.org/resource/SIO_001100,crystal structure,sio:SIO_001100,sio:CrystalStructure
+514,http://semanticscience.org/resource/SIO_011020,scandium atom,sio:SIO_011020,sio:ScandiumAtom
+515,http://semanticscience.org/resource/SIO_000512,line segment,sio:SIO_000512,sio:LineSegment
+516,http://semanticscience.org/resource/SIO_001234,small nucleolar RNA (snoRNA),sio:SIO_001234,sio:SmallNucleolarRNA(snorna)
+517,http://semanticscience.org/resource/SIO_000239,conjunction (and),sio:SIO_000239,sio:Conjunction(and)
+518,http://semanticscience.org/resource/SIO_000952,default parameter,sio:SIO_000952,sio:DefaultParameter
+519,http://semanticscience.org/resource/SIO_011101,thulium atom,sio:SIO_011101,sio:ThuliumAtom
+520,http://semanticscience.org/resource/SIO_010347,to modify conformation of,sio:SIO_010347,sio:ToModifyConformationOf
+521,http://semanticscience.org/resource/SIO_001202,decreased molecular degradation from increased regulation,sio:SIO_001202,sio:DecreasedMolecularDegradationFromIncreasedRegulation
+522,http://semanticscience.org/resource/SIO_000701,to interact with,sio:SIO_000701,sio:ToInteractWith
+523,http://semanticscience.org/resource/SIO_000168,phd thesis,sio:SIO_000168,sio:PhdThesis
+524,http://semanticscience.org/resource/SIO_001052,data collection,sio:SIO_001052,sio:DataCollection
+525,http://semanticscience.org/resource/SIO_010025,oligosaccharide,sio:SIO_010025,sio:Oligosaccharide
+526,http://semanticscience.org/resource/SIO_000520,triangle,sio:SIO_000520,sio:Triangle
+527,http://semanticscience.org/resource/SIO_001339,empty,sio:SIO_001339,sio:Empty
+528,http://semanticscience.org/resource/SIO_000037,spatial quantity,sio:SIO_000037,sio:SpatialQuantity
+529,http://semanticscience.org/resource/SIO_011037,strontium atom,sio:SIO_011037,sio:StrontiumAtom
+530,http://semanticscience.org/resource/SIO_001223,3' splice site,sio:SIO_001223,sio:3'SpliceSite
+531,http://semanticscience.org/resource/SIO_010785,allotrope,sio:SIO_010785,sio:Allotrope
+532,http://semanticscience.org/resource/SIO_000438,altitude,sio:SIO_000438,sio:Altitude
+533,http://semanticscience.org/resource/SIO_000826,despair,sio:SIO_000826,sio:Despair
+534,http://semanticscience.org/resource/SIO_010308,metabolism,sio:SIO_010308,sio:Metabolism
+535,http://semanticscience.org/resource/SIO_001037,finalized,sio:SIO_001037,sio:Finalized
+536,http://semanticscience.org/resource/SIO_000819,boldness,sio:SIO_000819,sio:Boldness
+537,http://semanticscience.org/resource/SIO_000810,complete charge,sio:SIO_000810,sio:CompleteCharge
+538,http://semanticscience.org/resource/SIO_000924,television program,sio:SIO_000924,sio:TelevisionProgram
+539,http://semanticscience.org/resource/SIO_000009,social entity,sio:SIO_000009,sio:SocialEntity
+540,http://semanticscience.org/resource/SIO_000743,local minimum stationary point,sio:SIO_000743,sio:LocalMinimumStationaryPoint
+541,http://semanticscience.org/resource/SIO_000075,mathematical entity,sio:SIO_000075,sio:MathematicalEntity
+542,http://semanticscience.org/resource/SIO_000113,sentence,sio:SIO_000113,sio:Sentence
+543,http://semanticscience.org/resource/SIO_000592,chemical destruction,sio:SIO_000592,sio:ChemicalDestruction
+544,http://semanticscience.org/resource/SIO_001186,hypothetical,sio:SIO_001186,sio:Hypothetical
+545,http://semanticscience.org/resource/SIO_011029,zinc atom,sio:SIO_011029,sio:ZincAtom
+546,http://semanticscience.org/resource/SIO_001056,character position,sio:SIO_001056,sio:CharacterPosition
+547,http://semanticscience.org/resource/SIO_001264,homozygous,sio:SIO_001264,sio:Homozygous
+548,http://semanticscience.org/resource/SIO_000180,language label,sio:SIO_000180,sio:LanguageLabel
+549,http://semanticscience.org/resource/SIO_000525,horizontal line,sio:SIO_000525,sio:HorizontalLine
+550,http://semanticscience.org/resource/SIO_000741,stationary point,sio:SIO_000741,sio:StationaryPoint
+551,http://semanticscience.org/resource/SIO_000721,comparative role,sio:SIO_000721,sio:ComparativeRole
+552,http://semanticscience.org/resource/SIO_000824,depression,sio:SIO_000824,sio:Depression
+553,http://semanticscience.org/resource/SIO_001305,moderately quantifier,sio:SIO_001305,sio:ModeratelyQuantifier
+554,http://semanticscience.org/resource/SIO_000105,symbol,sio:SIO_000105,sio:Symbol
+555,http://semanticscience.org/resource/SIO_001106,to produce,sio:SIO_001106,sio:ToProduce
+556,http://semanticscience.org/resource/SIO_000996,cancelled,sio:SIO_000996,sio:Cancelled
+557,http://semanticscience.org/resource/SIO_010794,glassy carbon,sio:SIO_010794,sio:GlassyCarbon
+558,http://semanticscience.org/resource/SIO_010277,allele,sio:SIO_010277,sio:Allele
+559,http://semanticscience.org/resource/SIO_011059,tungsten atom,sio:SIO_011059,sio:TungstenAtom
+560,http://semanticscience.org/resource/SIO_001332,directed acyclic graph,sio:SIO_001332,sio:DirectedAcyclicGraph
+561,http://semanticscience.org/resource/SIO_000079,visual language entity,sio:SIO_000079,sio:VisualLanguageEntity
+562,http://semanticscience.org/resource/SIO_000527,trend line,sio:SIO_000527,sio:TrendLine
+563,http://semanticscience.org/resource/SIO_011076,dubnium atom,sio:SIO_011076,sio:DubniumAtom
+564,http://semanticscience.org/resource/SIO_000785,answer,sio:SIO_000785,sio:Answer
+565,http://semanticscience.org/resource/SIO_010792,carbon nanofoam,sio:SIO_010792,sio:CarbonNanofoam
+566,http://semanticscience.org/resource/SIO_000580,antiport enabled secondary active transport,sio:SIO_000580,sio:AntiportEnabledSecondaryActiveTransport
+567,http://semanticscience.org/resource/SIO_001371,statute,sio:SIO_001371,sio:Statute
+568,http://semanticscience.org/resource/SIO_010462,heterogeneous substance,sio:SIO_010462,sio:HeterogeneousSubstance
+569,http://semanticscience.org/resource/SIO_011123,chemical data,sio:SIO_011123,sio:ChemicalData
+570,http://semanticscience.org/resource/SIO_001129,regulation of molecular degradation,sio:SIO_001129,sio:RegulationOfMolecularDegradation
+571,http://semanticscience.org/resource/SIO_000319,latitude,sio:SIO_000319,sio:Latitude
+572,http://semanticscience.org/resource/SIO_000844,hostility,sio:SIO_000844,sio:Hostility
+573,http://semanticscience.org/resource/SIO_000350,to ionize,sio:SIO_000350,sio:ToIonize
+574,http://semanticscience.org/resource/SIO_010072,organic molecule,sio:SIO_010072,sio:OrganicMolecule
+575,http://semanticscience.org/resource/SIO_000779,primer,sio:SIO_000779,sio:Primer
+576,http://semanticscience.org/resource/SIO_001047,non-polar,sio:SIO_001047,sio:Non-polar
+577,http://semanticscience.org/resource/SIO_000918,modifying,sio:SIO_000918,sio:Modifying
+578,http://semanticscience.org/resource/SIO_000407,to increase the rate of formation,sio:SIO_000407,sio:ToIncreaseTheRateOfFormation
+579,http://semanticscience.org/resource/SIO_000807,partial positive charge,sio:SIO_000807,sio:PartialPositiveCharge
+580,http://semanticscience.org/resource/SIO_001063,family,sio:SIO_001063,sio:Family
+581,http://semanticscience.org/resource/SIO_011045,palladium atom,sio:SIO_011045,sio:PalladiumAtom
+582,http://semanticscience.org/resource/SIO_001162,difference in number of objects produced,sio:SIO_001162,sio:DifferenceInNumberOfObjectsProduced
+583,http://semanticscience.org/resource/SIO_001126,regulation of translation,sio:SIO_001126,sio:RegulationOfTranslation
+584,http://semanticscience.org/resource/SIO_001084,liquid solution,sio:SIO_001084,sio:LiquidSolution
+585,http://semanticscience.org/resource/SIO_001382,unigene cluster,sio:SIO_001382,sio:UnigeneCluster
+586,http://semanticscience.org/resource/SIO_001117,intersection,sio:SIO_001117,sio:Intersection
+587,http://semanticscience.org/resource/SIO_001133,increased frequency of process from increased regulation,sio:SIO_001133,sio:IncreasedFrequencyOfProcessFromIncreasedRegulation
+588,http://semanticscience.org/resource/SIO_000731,informational entity identifier,sio:SIO_000731,sio:InformationalEntityIdentifier
+589,http://semanticscience.org/resource/SIO_001119,gene-disease association linked with causal mutation,sio:SIO_001119,sio:Gene-diseaseAssociationLinkedWithCausalMutation
+590,http://semanticscience.org/resource/SIO_000493,clause,sio:SIO_000493,sio:Clause
+591,http://semanticscience.org/resource/SIO_000547,to cause disease,sio:SIO_000547,sio:ToCauseDisease
+592,http://semanticscience.org/resource/SIO_010342,chemical complex,sio:SIO_010342,sio:ChemicalComplex
+593,http://semanticscience.org/resource/SIO_001296,neither good nor poor quality,sio:SIO_001296,sio:NeitherGoodNorPoorQuality
+594,http://semanticscience.org/resource/SIO_010354,to conformationally activate,sio:SIO_010354,sio:ToConformationallyActivate
+595,http://semanticscience.org/resource/SIO_000387,to negatively charge,sio:SIO_000387,sio:ToNegativelyCharge
+596,http://semanticscience.org/resource/SIO_010098,mRNA splice variant,sio:SIO_010098,sio:MrnaSpliceVariant
+597,http://semanticscience.org/resource/SIO_001246,interval,sio:SIO_001246,sio:Interval
+598,http://semanticscience.org/resource/SIO_010364,to be modified,sio:SIO_010364,sio:ToBeModified
+599,http://semanticscience.org/resource/SIO_010363,product,sio:SIO_010363,sio:Product
+600,http://semanticscience.org/resource/SIO_011053,xenon atom,sio:SIO_011053,sio:XenonAtom
+601,http://semanticscience.org/resource/SIO_000994,experiment,sio:SIO_000994,sio:Experiment
+602,http://semanticscience.org/resource/SIO_001230,transfer RNA (tRNA) gene,sio:SIO_001230,sio:TransferRNA(trna)Gene
+603,http://semanticscience.org/resource/SIO_000191,author section,sio:SIO_000191,sio:AuthorSection
+604,http://semanticscience.org/resource/SIO_010366,to be covalently modified,sio:SIO_010366,sio:ToBeCovalentlyModified
+605,http://semanticscience.org/resource/SIO_001190,REST web service,sio:SIO_001190,sio:RESTWebService
+606,http://semanticscience.org/resource/SIO_010530,3d structure model,sio:SIO_010530,sio:3dStructureModel
+607,http://semanticscience.org/resource/SIO_000536,to regulate the rate of formation,sio:SIO_000536,sio:ToRegulateTheRateOfFormation
+608,http://semanticscience.org/resource/SIO_011012,aluminium atom,sio:SIO_011012,sio:AluminiumAtom
+609,http://semanticscience.org/resource/SIO_000777,to be a member of,sio:SIO_000777,sio:ToBeAMemberOf
+610,http://semanticscience.org/resource/SIO_001104,to lose a covalent bond,sio:SIO_001104,sio:ToLoseACovalentBond
+611,http://semanticscience.org/resource/SIO_010789,fullerene,sio:SIO_010789,sio:Fullerene
+612,http://semanticscience.org/resource/SIO_000818,awe,sio:SIO_000818,sio:Awe
+613,http://semanticscience.org/resource/SIO_000074,unit of measurement,sio:SIO_000074,sio:UnitOfMeasurement
+614,http://semanticscience.org/resource/SIO_000755,cell (informational),sio:SIO_000755,sio:Cell(informational)
+615,http://semanticscience.org/resource/SIO_001072,text span end position,sio:SIO_001072,sio:TextSpanEndPosition
+616,http://semanticscience.org/resource/SIO_001362,to encode information,sio:SIO_001362,sio:ToEncodeInformation
+617,http://semanticscience.org/resource/SIO_011027,nickel atom,sio:SIO_011027,sio:NickelAtom
+618,http://semanticscience.org/resource/SIO_001372,legislation,sio:SIO_001372,sio:Legislation
+619,http://semanticscience.org/resource/SIO_000747,investigation,sio:SIO_000747,sio:Investigation
+620,http://semanticscience.org/resource/SIO_000616,collection,sio:SIO_000616,sio:Collection
+621,http://semanticscience.org/resource/SIO_000786,verbal language entity,sio:SIO_000786,sio:VerbalLanguageEntity
+622,http://semanticscience.org/resource/SIO_000373,to boil,sio:SIO_000373,sio:ToBoil
+623,http://semanticscience.org/resource/SIO_000650,wave,sio:SIO_000650,sio:Wave
+624,http://semanticscience.org/resource/SIO_001356,information encoding,sio:SIO_001356,sio:InformationEncoding
+625,http://semanticscience.org/resource/SIO_000163,newspaper,sio:SIO_000163,sio:Newspaper
+626,http://semanticscience.org/resource/SIO_000264,inductive argument,sio:SIO_000264,sio:InductiveArgument
+627,http://semanticscience.org/resource/SIO_011093,promethium atom,sio:SIO_011093,sio:PromethiumAtom
+628,http://semanticscience.org/resource/SIO_000268,truth value,sio:SIO_000268,sio:TruthValue
+629,http://semanticscience.org/resource/SIO_000936,word tree,sio:SIO_000936,sio:WordTree
+630,http://semanticscience.org/resource/SIO_000006,process,sio:SIO_000006,sio:Process
+631,http://semanticscience.org/resource/SIO_001196,history,sio:SIO_001196,sio:History
+632,http://semanticscience.org/resource/SIO_011126,chemical substance,sio:SIO_011126,sio:ChemicalSubstance
+633,http://semanticscience.org/resource/SIO_000135,definition,sio:SIO_000135,sio:Definition
+634,http://semanticscience.org/resource/SIO_000977,syllable,sio:SIO_000977,sio:Syllable
+635,http://semanticscience.org/resource/SIO_010511,decomposition reaction,sio:SIO_010511,sio:DecompositionReaction
+636,http://semanticscience.org/resource/SIO_001073,text span,sio:SIO_001073,sio:TextSpan
+637,http://semanticscience.org/resource/SIO_000585,idea,sio:SIO_000585,sio:Idea
+638,http://semanticscience.org/resource/SIO_010506,molecular complex,sio:SIO_010506,sio:MolecularComplex
+639,http://semanticscience.org/resource/SIO_000562,passive transport,sio:SIO_000562,sio:PassiveTransport
+640,http://semanticscience.org/resource/SIO_000386,to positively charge,sio:SIO_000386,sio:ToPositivelyCharge
+641,http://semanticscience.org/resource/SIO_011014,phosphorus atom,sio:SIO_011014,sio:PhosphorusAtom
+642,http://semanticscience.org/resource/SIO_000728,chemical identifier,sio:SIO_000728,sio:ChemicalIdentifier
+643,http://semanticscience.org/resource/SIO_000395,to regulate,sio:SIO_000395,sio:ToRegulate
+644,http://semanticscience.org/resource/SIO_010434,activator,sio:SIO_010434,sio:Activator
+645,http://semanticscience.org/resource/SIO_010440,second messenger,sio:SIO_010440,sio:SecondMessenger
+646,http://semanticscience.org/resource/SIO_010460,nonpolar solvent,sio:SIO_010460,sio:NonpolarSolvent
+647,http://semanticscience.org/resource/SIO_000689,to be a part of,sio:SIO_000689,sio:ToBeAPartOf
+648,http://semanticscience.org/resource/SIO_000499,to decrease the rate of formation,sio:SIO_000499,sio:ToDecreaseTheRateOfFormation
+649,http://semanticscience.org/resource/SIO_000346,to heat,sio:SIO_000346,sio:ToHeat
+650,http://semanticscience.org/resource/SIO_011008,fluorine atom,sio:SIO_011008,sio:FluorineAtom
+651,http://semanticscience.org/resource/SIO_000622,RDFS ontology,sio:SIO_000622,sio:RDFSOntology
+652,http://semanticscience.org/resource/SIO_001176,negative nucleic acid strand,sio:SIO_001176,sio:NegativeNucleicAcidStrand
+653,http://semanticscience.org/resource/SIO_000572,osmosis,sio:SIO_000572,sio:Osmosis
+654,http://semanticscience.org/resource/SIO_010047,strong submolecular component,sio:SIO_010047,sio:StrongSubmolecularComponent
+655,http://semanticscience.org/resource/SIO_010505,base stack,sio:SIO_010505,sio:BaseStack
+656,http://semanticscience.org/resource/SIO_010458,anion,sio:SIO_010458,sio:Anion
+657,http://semanticscience.org/resource/SIO_000896,molecular tracer role,sio:SIO_000896,sio:MolecularTracerRole
+658,http://semanticscience.org/resource/SIO_001244,log likelihood,sio:SIO_001244,sio:LogLikelihood
+659,http://semanticscience.org/resource/SIO_000757,database column,sio:SIO_000757,sio:DatabaseColumn
+660,http://semanticscience.org/resource/SIO_010509,redox reaction,sio:SIO_010509,sio:RedoxReaction
+661,http://semanticscience.org/resource/SIO_001167,comment,sio:SIO_001167,sio:Comment
+662,http://semanticscience.org/resource/SIO_000442,line graph,sio:SIO_000442,sio:LineGraph
+663,http://semanticscience.org/resource/SIO_000401,y cartesian coordinate,sio:SIO_000401,sio:YCartesianCoordinate
+664,http://semanticscience.org/resource/SIO_000382,to filter,sio:SIO_000382,sio:ToFilter
+665,http://semanticscience.org/resource/SIO_000358,intent,sio:SIO_000358,sio:Intent
+666,http://semanticscience.org/resource/SIO_001087,to modify electronically,sio:SIO_001087,sio:ToModifyElectronically
+667,http://semanticscience.org/resource/SIO_011071,radon atom,sio:SIO_011071,sio:RadonAtom
+668,http://semanticscience.org/resource/SIO_001080,vocabulary,sio:SIO_001080,sio:Vocabulary
+669,http://semanticscience.org/resource/SIO_001317,middle name,sio:SIO_001317,sio:MiddleName
+670,http://semanticscience.org/resource/SIO_001387,InCHI notation,sio:SIO_001387,sio:InchiNotation
+671,http://semanticscience.org/resource/SIO_000033,process status,sio:SIO_000033,sio:ProcessStatus
+672,http://semanticscience.org/resource/SIO_001188,SADI semantic web service,sio:SIO_001188,sio:SADISemanticWebService
+673,http://semanticscience.org/resource/SIO_011064,gold atom,sio:SIO_011064,sio:GoldAtom
+674,http://semanticscience.org/resource/SIO_000846,hysteria,sio:SIO_000846,sio:Hysteria
+675,http://semanticscience.org/resource/SIO_000474,secondary graph title,sio:SIO_000474,sio:SecondaryGraphTitle
+676,http://semanticscience.org/resource/SIO_000136,description,sio:SIO_000136,sio:Description
+677,http://semanticscience.org/resource/SIO_010358,to oxidize,sio:SIO_010358,sio:ToOxidize
+678,http://semanticscience.org/resource/SIO_010295,process up-regulation,sio:SIO_010295,sio:ProcessUp-regulation
+679,http://semanticscience.org/resource/SIO_000326,concept,sio:SIO_000326,sio:Concept
+680,http://semanticscience.org/resource/SIO_001316,ordered list,sio:SIO_001316,sio:OrderedList
+681,http://semanticscience.org/resource/SIO_001151,regulation of object production,sio:SIO_001151,sio:RegulationOfObjectProduction
+682,http://semanticscience.org/resource/SIO_000327,polar coordinate system,sio:SIO_000327,sio:PolarCoordinateSystem
+683,http://semanticscience.org/resource/SIO_000664,country,sio:SIO_000664,sio:Country
+684,http://semanticscience.org/resource/SIO_000814,annoyance,sio:SIO_000814,sio:Annoyance
+685,http://semanticscience.org/resource/SIO_000133,descriptor,sio:SIO_000133,sio:Descriptor
+686,http://semanticscience.org/resource/SIO_000544,to infect,sio:SIO_000544,sio:ToInfect
+687,http://semanticscience.org/resource/SIO_001282,hunger,sio:SIO_001282,sio:Hunger
+688,http://semanticscience.org/resource/SIO_000955,environment,sio:SIO_000955,sio:Environment
+689,http://semanticscience.org/resource/SIO_011042,technetium atom,sio:SIO_011042,sio:TechnetiumAtom
+690,http://semanticscience.org/resource/SIO_010426,centrifugation substance,sio:SIO_010426,sio:CentrifugationSubstance
+691,http://semanticscience.org/resource/SIO_000993,chemical-disease association,sio:SIO_000993,sio:Chemical-diseaseAssociation
+692,http://semanticscience.org/resource/SIO_000345,to magnify,sio:SIO_000345,sio:ToMagnify
+693,http://semanticscience.org/resource/SIO_001326,status descriptor,sio:SIO_001326,sio:StatusDescriptor
+694,http://semanticscience.org/resource/SIO_000706,occupational role,sio:SIO_000706,sio:OccupationalRole
+695,http://semanticscience.org/resource/SIO_010299,disease,sio:SIO_010299,sio:Disease
+696,http://semanticscience.org/resource/SIO_000415,geopolitical region,sio:SIO_000415,sio:GeopoliticalRegion
+697,http://semanticscience.org/resource/SIO_001010,non toxic,sio:SIO_001010,sio:NonToxic
+698,http://semanticscience.org/resource/SIO_000904,chart,sio:SIO_000904,sio:Chart
+699,http://semanticscience.org/resource/SIO_000258,dimensional quantity,sio:SIO_000258,sio:DimensionalQuantity
+700,http://semanticscience.org/resource/SIO_000863,sadness,sio:SIO_000863,sio:Sadness
+701,http://semanticscience.org/resource/SIO_011108,plutonium atom,sio:SIO_011108,sio:PlutoniumAtom
+702,http://semanticscience.org/resource/SIO_010452,molecular pocket,sio:SIO_010452,sio:MolecularPocket
+703,http://semanticscience.org/resource/SIO_010091,to serve as a template for DNA synthesis,sio:SIO_010091,sio:ToServeAsATemplateForDNASynthesis
+704,http://semanticscience.org/resource/SIO_000694,to be passively interacted with,sio:SIO_000694,sio:ToBePassivelyInteractedWith
+705,http://semanticscience.org/resource/SIO_000347,to cool,sio:SIO_000347,sio:ToCool
+706,http://semanticscience.org/resource/SIO_011058,tantalum atom,sio:SIO_011058,sio:TantalumAtom
+707,http://semanticscience.org/resource/SIO_011102,ytterbium atom,sio:SIO_011102,sio:YtterbiumAtom
+708,http://semanticscience.org/resource/SIO_011000,boron atom,sio:SIO_011000,sio:BoronAtom
+709,http://semanticscience.org/resource/SIO_010416,buffer,sio:SIO_010416,sio:Buffer
+710,http://semanticscience.org/resource/SIO_010455,isomer,sio:SIO_010455,sio:Isomer
+711,http://semanticscience.org/resource/SIO_010101,rna gene,sio:SIO_010101,sio:RnaGene
+712,http://semanticscience.org/resource/SIO_000446,stacked bar graph,sio:SIO_000446,sio:StackedBarGraph
+713,http://semanticscience.org/resource/SIO_001111,mode,sio:SIO_001111,sio:Mode
+714,http://semanticscience.org/resource/SIO_000661,province,sio:SIO_000661,sio:Province
+715,http://semanticscience.org/resource/SIO_010077,active ingredient,sio:SIO_010077,sio:ActiveIngredient
+716,http://semanticscience.org/resource/SIO_011024,manganese atom,sio:SIO_011024,sio:ManganeseAtom
+717,http://semanticscience.org/resource/SIO_001194,media,sio:SIO_001194,sio:Media
+718,http://semanticscience.org/resource/SIO_000449,plot,sio:SIO_000449,sio:Plot
+719,http://semanticscience.org/resource/SIO_010419,antigen,sio:SIO_010419,sio:Antigen
+720,http://semanticscience.org/resource/SIO_011067,lead atom,sio:SIO_011067,sio:LeadAtom
+721,http://semanticscience.org/resource/SIO_000797,substrate role,sio:SIO_000797,sio:SubstrateRole
+722,http://semanticscience.org/resource/SIO_000869,suffering,sio:SIO_000869,sio:Suffering
+723,http://semanticscience.org/resource/SIO_001206,decreased molecular production from decreased regulation,sio:SIO_001206,sio:DecreasedMolecularProductionFromDecreasedRegulation
+724,http://semanticscience.org/resource/SIO_011041,molybdemum atom,sio:SIO_011041,sio:MolybdemumAtom
+725,http://semanticscience.org/resource/SIO_001045,polar quality,sio:SIO_001045,sio:PolarQuality
+726,http://semanticscience.org/resource/SIO_000022,material boundary,sio:SIO_000022,sio:MaterialBoundary
+727,http://semanticscience.org/resource/SIO_000982,written language,sio:SIO_000982,sio:WrittenLanguage
+728,http://semanticscience.org/resource/SIO_010014,primary structure descriptor,sio:SIO_010014,sio:PrimaryStructureDescriptor
+729,http://semanticscience.org/resource/SIO_001112,sum,sio:SIO_001112,sio:Sum
+730,http://semanticscience.org/resource/SIO_000152,note,sio:SIO_000152,sio:Note
+731,http://semanticscience.org/resource/SIO_010050,allosteric site,sio:SIO_010050,sio:AllostericSite
+732,http://semanticscience.org/resource/SIO_001030,major version number,sio:SIO_001030,sio:MajorVersionNumber
+733,http://semanticscience.org/resource/SIO_001239,to identify,sio:SIO_001239,sio:ToIdentify
+734,http://semanticscience.org/resource/SIO_000408,to investigate,sio:SIO_000408,sio:ToInvestigate
+735,http://semanticscience.org/resource/SIO_011050,antimony atom,sio:SIO_011050,sio:AntimonyAtom
+736,http://semanticscience.org/resource/SIO_000873,worry,sio:SIO_000873,sio:Worry
+737,http://semanticscience.org/resource/SIO_000617,empty set,sio:SIO_000617,sio:EmptySet
+738,http://semanticscience.org/resource/SIO_001095,curved,sio:SIO_001095,sio:Curved
+739,http://semanticscience.org/resource/SIO_001120,therapeutic gene-disease association,sio:SIO_001120,sio:TherapeuticGene-diseaseAssociation
+740,http://semanticscience.org/resource/SIO_001166,annotation,sio:SIO_001166,sio:Annotation
+741,http://semanticscience.org/resource/SIO_011056,lanthanum atom,sio:SIO_011056,sio:LanthanumAtom
+742,http://semanticscience.org/resource/SIO_000811,URL,sio:SIO_000811,sio:URL
+743,http://semanticscience.org/resource/SIO_000945,tree diagram,sio:SIO_000945,sio:TreeDiagram
+744,http://semanticscience.org/resource/SIO_000047,circumference,sio:SIO_000047,sio:Circumference
+745,http://semanticscience.org/resource/SIO_000270,false,sio:SIO_000270,sio:False
+746,http://semanticscience.org/resource/SIO_001306,mostly quantifier,sio:SIO_001306,sio:MostlyQuantifier
+747,http://semanticscience.org/resource/SIO_000545,polyline,sio:SIO_000545,sio:Polyline
+748,http://semanticscience.org/resource/SIO_001377,versioned dataset,sio:SIO_001377,sio:VersionedDataset
+749,http://semanticscience.org/resource/SIO_000367,variable,sio:SIO_000367,sio:Variable
+750,http://semanticscience.org/resource/SIO_000027,process quality,sio:SIO_000027,sio:ProcessQuality
+751,http://semanticscience.org/resource/SIO_010471,protein part,sio:SIO_010471,sio:ProteinPart
+752,http://semanticscience.org/resource/SIO_010286,molecular complex dissociation,sio:SIO_010286,sio:MolecularComplexDissociation
+753,http://semanticscience.org/resource/SIO_000978,consonant,sio:SIO_000978,sio:Consonant
+754,http://semanticscience.org/resource/SIO_001141,decreased spatial extent of process from decreased regulation,sio:SIO_001141,sio:DecreasedSpatialExtentOfProcessFromDecreasedRegulation
+755,http://semanticscience.org/resource/SIO_001249,closed interval,sio:SIO_001249,sio:ClosedInterval
+756,http://semanticscience.org/resource/SIO_001273,left-handed helical,sio:SIO_001273,sio:Left-handedHelical
+757,http://semanticscience.org/resource/SIO_001051,data analysis,sio:SIO_001051,sio:DataAnalysis
+758,http://semanticscience.org/resource/SIO_001231,small cytoplasmic RNA (scRNA),sio:SIO_001231,sio:SmallCytoplasmicRNA(scrna)
+759,http://semanticscience.org/resource/SIO_010521,free radical addition,sio:SIO_010521,sio:FreeRadicalAddition
+760,http://semanticscience.org/resource/SIO_000866,shock,sio:SIO_000866,sio:Shock
+761,http://semanticscience.org/resource/SIO_001001,medical diagnosis,sio:SIO_001001,sio:MedicalDiagnosis
+762,http://semanticscience.org/resource/SIO_000302,web page,sio:SIO_000302,sio:WebPage
+763,http://semanticscience.org/resource/SIO_000265,sound argument,sio:SIO_000265,sio:SoundArgument
+764,http://semanticscience.org/resource/SIO_010508,catalyzed reaction,sio:SIO_010508,sio:CatalyzedReaction
+765,http://semanticscience.org/resource/SIO_000784,hermaphrodite,sio:SIO_000784,sio:Hermaphrodite
+766,http://semanticscience.org/resource/SIO_000570,movement,sio:SIO_000570,sio:Movement
+767,http://semanticscience.org/resource/SIO_000808,partial negative charge,sio:SIO_000808,sio:PartialNegativeCharge
+768,http://semanticscience.org/resource/SIO_000439,center of mass,sio:SIO_000439,sio:CenterOfMass
+769,http://semanticscience.org/resource/SIO_000855,panic,sio:SIO_000855,sio:Panic
+770,http://semanticscience.org/resource/SIO_011121,molecular structure descriptor,sio:SIO_011121,sio:MolecularStructureDescriptor
+771,http://semanticscience.org/resource/SIO_001238,microarray device,sio:SIO_001238,sio:MicroarrayDevice
+772,http://semanticscience.org/resource/SIO_001272,circularly helical,sio:SIO_001272,sio:CircularlyHelical
+773,http://semanticscience.org/resource/SIO_000746,reasoning,sio:SIO_000746,sio:Reasoning
+774,http://semanticscience.org/resource/SIO_000456,primary category axis,sio:SIO_000456,sio:PrimaryCategoryAxis
+775,http://semanticscience.org/resource/SIO_000451,Cartesian coordinate axis,sio:SIO_000451,sio:CartesianCoordinateAxis
+776,http://semanticscience.org/resource/SIO_000872,wonder,sio:SIO_000872,sio:Wonder
+777,http://semanticscience.org/resource/SIO_000802,co-substrate role,sio:SIO_000802,sio:Co-substrateRole
+778,http://semanticscience.org/resource/SIO_000730,physical entity identifier,sio:SIO_000730,sio:PhysicalEntityIdentifier
+779,http://semanticscience.org/resource/SIO_010005,weak submolecular component,sio:SIO_010005,sio:WeakSubmolecularComponent
+780,http://semanticscience.org/resource/SIO_000566,movement equation,sio:SIO_000566,sio:MovementEquation
+781,http://semanticscience.org/resource/SIO_010496,ionic interaction,sio:SIO_010496,sio:IonicInteraction
+782,http://semanticscience.org/resource/SIO_001017,syndrome,sio:SIO_001017,sio:Syndrome
+783,http://semanticscience.org/resource/SIO_000917,integer scale,sio:SIO_000917,sio:IntegerScale
+784,http://semanticscience.org/resource/SIO_000289,set,sio:SIO_000289,sio:Set
+785,http://semanticscience.org/resource/SIO_000153,patent,sio:SIO_000153,sio:Patent
+786,http://semanticscience.org/resource/SIO_000220,implies (->),sio:SIO_000220,sio:Implies(->)
+787,http://semanticscience.org/resource/SIO_011130,PDB file,sio:SIO_011130,sio:PDBFile
+788,http://semanticscience.org/resource/SIO_000827,disappointment,sio:SIO_000827,sio:Disappointment
+789,http://semanticscience.org/resource/SIO_001270,paternally transmitted,sio:SIO_001270,sio:PaternallyTransmitted
+790,http://semanticscience.org/resource/SIO_010787,diamond,sio:SIO_010787,sio:Diamond
+791,http://semanticscience.org/resource/SIO_001324,work phone number,sio:SIO_001324,sio:WorkPhoneNumber
+792,http://semanticscience.org/resource/SIO_000716,medical practitioner,sio:SIO_000716,sio:MedicalPractitioner
+793,http://semanticscience.org/resource/SIO_000888,chemical substance role,sio:SIO_000888,sio:ChemicalSubstanceRole
+794,http://semanticscience.org/resource/SIO_000117,preferred name,sio:SIO_000117,sio:PreferredName
+795,http://semanticscience.org/resource/SIO_001220,to characterize,sio:SIO_001220,sio:ToCharacterize
+796,http://semanticscience.org/resource/SIO_001368,speed,sio:SIO_001368,sio:Speed
+797,http://semanticscience.org/resource/SIO_000717,dentist role,sio:SIO_000717,sio:DentistRole
+798,http://semanticscience.org/resource/SIO_010499,double bond,sio:SIO_010499,sio:DoubleBond
+799,http://semanticscience.org/resource/SIO_000436,informational quality,sio:SIO_000436,sio:InformationalQuality
+800,http://semanticscience.org/resource/SIO_000840,happiness,sio:SIO_000840,sio:Happiness
+801,http://semanticscience.org/resource/SIO_001228,small nuclear RNA (snRNA) gene,sio:SIO_001228,sio:SmallNuclearRNA(snrna)Gene
+802,http://semanticscience.org/resource/SIO_000423,scatterplot,sio:SIO_000423,sio:Scatterplot
+803,http://semanticscience.org/resource/SIO_000712,medical role,sio:SIO_000712,sio:MedicalRole
+804,http://semanticscience.org/resource/SIO_001061,population,sio:SIO_001061,sio:Population
+805,http://semanticscience.org/resource/SIO_010368,to be transported,sio:SIO_010368,sio:ToBeTransported
+806,http://semanticscience.org/resource/SIO_000967,disagreement,sio:SIO_000967,sio:Disagreement
+807,http://semanticscience.org/resource/SIO_011098,dysprosium atom,sio:SIO_011098,sio:DysprosiumAtom
+808,http://semanticscience.org/resource/SIO_000722,to be compared,sio:SIO_000722,sio:ToBeCompared
+809,http://semanticscience.org/resource/SIO_010020,submolecular entity,sio:SIO_010020,sio:SubmolecularEntity
+810,http://semanticscience.org/resource/SIO_001057,word start position,sio:SIO_001057,sio:WordStartPosition
+811,http://semanticscience.org/resource/SIO_000370,spatial region,sio:SIO_000370,sio:SpatialRegion
+812,http://semanticscience.org/resource/SIO_000948,dendrogram,sio:SIO_000948,sio:Dendrogram
+813,http://semanticscience.org/resource/SIO_000865,shame,sio:SIO_000865,sio:Shame
+814,http://semanticscience.org/resource/SIO_011106,uranium atom,sio:SIO_011106,sio:UraniumAtom
+815,http://semanticscience.org/resource/SIO_001261,ordered list item,sio:SIO_001261,sio:OrderedListItem
+816,http://semanticscience.org/resource/SIO_000969,communicating,sio:SIO_000969,sio:Communicating
+817,http://semanticscience.org/resource/SIO_000004,material entity,sio:SIO_000004,sio:MaterialEntity
+818,http://semanticscience.org/resource/SIO_000390,to transport,sio:SIO_000390,sio:ToTransport
+819,http://semanticscience.org/resource/SIO_010795,ionsdaleite,sio:SIO_010795,sio:Ionsdaleite
+820,http://semanticscience.org/resource/SIO_000740,curve segment,sio:SIO_000740,sio:CurveSegment
+821,http://semanticscience.org/resource/SIO_010346,organic polymer,sio:SIO_010346,sio:OrganicPolymer
+822,http://semanticscience.org/resource/SIO_000885,publisher role,sio:SIO_000885,sio:PublisherRole
+823,http://semanticscience.org/resource/SIO_001285,suicidal,sio:SIO_001285,sio:Suicidal
+824,http://semanticscience.org/resource/SIO_000638,probability measure,sio:SIO_000638,sio:ProbabilityMeasure
+825,http://semanticscience.org/resource/SIO_011033,selenium atom,sio:SIO_011033,sio:SeleniumAtom
+826,http://semanticscience.org/resource/SIO_010450,RNA transcript,sio:SIO_010450,sio:RNATranscript
+827,http://semanticscience.org/resource/SIO_000768,apartment number,sio:SIO_000768,sio:ApartmentNumber
+828,http://semanticscience.org/resource/SIO_000156,book volume,sio:SIO_000156,sio:BookVolume
+829,http://semanticscience.org/resource/SIO_000871,terror,sio:SIO_000871,sio:Terror
+830,http://semanticscience.org/resource/SIO_000683,justification,sio:SIO_000683,sio:Justification
+831,http://semanticscience.org/resource/SIO_000932,block histogram,sio:SIO_000932,sio:BlockHistogram
+832,http://semanticscience.org/resource/SIO_001388,sequence variation notation,sio:SIO_001388,sio:SequenceVariationNotation
+833,http://semanticscience.org/resource/SIO_000535,statistical graph line,sio:SIO_000535,sio:StatisticalGraphLine
+834,http://semanticscience.org/resource/SIO_000413,geolegal region,sio:SIO_000413,sio:GeolegalRegion
+835,http://semanticscience.org/resource/SIO_000791,sequence start position,sio:SIO_000791,sio:SequenceStartPosition
+836,http://semanticscience.org/resource/SIO_000926,radio receiver,sio:SIO_000926,sio:RadioReceiver
+837,http://semanticscience.org/resource/SIO_000306,letter,sio:SIO_000306,sio:Letter
+838,http://semanticscience.org/resource/SIO_011077,seaborgium atom,sio:SIO_011077,sio:SeaborgiumAtom
+839,http://semanticscience.org/resource/SIO_000555,abnormal,sio:SIO_000555,sio:Abnormal
+840,http://semanticscience.org/resource/SIO_000778,to distort,sio:SIO_000778,sio:ToDistort
+841,http://semanticscience.org/resource/SIO_010287,regulation of biochemical process,sio:SIO_010287,sio:RegulationOfBiochemicalProcess
+842,http://semanticscience.org/resource/SIO_001337,epimer association,sio:SIO_001337,sio:EpimerAssociation
+843,http://semanticscience.org/resource/SIO_001390,protein coding sequence,sio:SIO_001390,sio:ProteinCodingSequence
+844,http://semanticscience.org/resource/SIO_000614,attribute,sio:SIO_000614,sio:Attribute
+845,http://semanticscience.org/resource/SIO_001257,chemical-gene assocation,sio:SIO_001257,sio:Chemical-geneAssocation
+846,http://semanticscience.org/resource/SIO_001237,mass spectrometer,sio:SIO_001237,sio:MassSpectrometer
+847,http://semanticscience.org/resource/SIO_011005,beryllium atom,sio:SIO_011005,sio:BerylliumAtom
+848,http://semanticscience.org/resource/SIO_000524,double arrowed line segment,sio:SIO_000524,sio:DoubleArrowedLineSegment
+849,http://semanticscience.org/resource/SIO_001020,effective dose,sio:SIO_001020,sio:EffectiveDose
+850,http://semanticscience.org/resource/SIO_001187,database row,sio:SIO_001187,sio:DatabaseRow
+851,http://semanticscience.org/resource/SIO_001184,slope,sio:SIO_001184,sio:Slope
+852,http://semanticscience.org/resource/SIO_010383,drug regulatory authority,sio:SIO_010383,sio:DrugRegulatoryAuthority
+853,http://semanticscience.org/resource/SIO_000510,model,sio:SIO_000510,sio:Model
+854,http://semanticscience.org/resource/SIO_000116,name,sio:SIO_000116,sio:Name
+855,http://semanticscience.org/resource/SIO_000707,student role,sio:SIO_000707,sio:StudentRole
+856,http://semanticscience.org/resource/SIO_010085,gene regulatory component,sio:SIO_010085,sio:GeneRegulatoryComponent
+857,http://semanticscience.org/resource/SIO_000036,predicted,sio:SIO_000036,sio:Predicted
+858,http://semanticscience.org/resource/SIO_000404,professor,sio:SIO_000404,sio:Professor
+859,http://semanticscience.org/resource/SIO_011112,californium atom,sio:SIO_011112,sio:CaliforniumAtom
+860,http://semanticscience.org/resource/SIO_001288,temporal qualifier,sio:SIO_001288,sio:TemporalQualifier
+861,http://semanticscience.org/resource/SIO_000800,co-enzyme role,sio:SIO_000800,sio:Co-enzymeRole
+862,http://semanticscience.org/resource/SIO_000621,formal specification,sio:SIO_000621,sio:FormalSpecification
+863,http://semanticscience.org/resource/SIO_001395,carbohydrate,sio:SIO_001395,sio:Carbohydrate
+864,http://semanticscience.org/resource/SIO_001283,discouragement,sio:SIO_001283,sio:Discouragement
+865,http://semanticscience.org/resource/SIO_001221,to describe,sio:SIO_001221,sio:ToDescribe
+866,http://semanticscience.org/resource/SIO_001340,full,sio:SIO_001340,sio:Full
+867,http://semanticscience.org/resource/SIO_011087,ununhexium atom,sio:SIO_011087,sio:UnunhexiumAtom
+868,http://semanticscience.org/resource/SIO_000368,equation,sio:SIO_000368,sio:Equation
+869,http://semanticscience.org/resource/SIO_000091,action specification,sio:SIO_000091,sio:ActionSpecification
+870,http://semanticscience.org/resource/SIO_000259,argument,sio:SIO_000259,sio:Argument
+871,http://semanticscience.org/resource/SIO_010445,exon,sio:SIO_010445,sio:Exon
+872,http://semanticscience.org/resource/SIO_011015,sulfur atom,sio:SIO_011015,sio:SulfurAtom
+873,http://semanticscience.org/resource/SIO_001019,dose,sio:SIO_001019,sio:Dose
+874,http://semanticscience.org/resource/SIO_001039,written,sio:SIO_001039,sio:Written
+875,http://semanticscience.org/resource/SIO_010018,deoxyribonucleic acid sequence,sio:SIO_010018,sio:DeoxyribonucleicAcidSequence
+876,http://semanticscience.org/resource/SIO_010459,polar solvent,sio:SIO_010459,sio:PolarSolvent
+877,http://semanticscience.org/resource/SIO_001325,home phone number,sio:SIO_001325,sio:HomePhoneNumber
+878,http://semanticscience.org/resource/SIO_000237,namespace label,sio:SIO_000237,sio:NamespaceLabel
+879,http://semanticscience.org/resource/SIO_000870,surprise,sio:SIO_000870,sio:Surprise
+880,http://semanticscience.org/resource/SIO_000418,time instant,sio:SIO_000418,sio:TimeInstant
+881,http://semanticscience.org/resource/SIO_000561,molecular orbital,sio:SIO_000561,sio:MolecularOrbital
+882,http://semanticscience.org/resource/SIO_000726,administrative role,sio:SIO_000726,sio:AdministrativeRole
+883,http://semanticscience.org/resource/SIO_011103,lutetium atom,sio:SIO_011103,sio:LutetiumAtom
+884,http://semanticscience.org/resource/SIO_000841,guilt,sio:SIO_000841,sio:Guilt
+885,http://semanticscience.org/resource/SIO_001064,community,sio:SIO_001064,sio:Community
+886,http://semanticscience.org/resource/SIO_000949,apprehension,sio:SIO_000949,sio:Apprehension
+887,http://semanticscience.org/resource/SIO_000077,generic name,sio:SIO_000077,sio:GenericName
+888,http://semanticscience.org/resource/SIO_001350,gene-disease association linked with genomic alterations,sio:SIO_001350,sio:Gene-diseaseAssociationLinkedWithGenomicAlterations
+889,http://semanticscience.org/resource/SIO_000048,3D extent quantity,sio:SIO_000048,sio:3DExtentQuantity
+890,http://semanticscience.org/resource/SIO_000597,solid state hard drive,sio:SIO_000597,sio:SolidStateHardDrive
+891,http://semanticscience.org/resource/SIO_000816,apathy,sio:SIO_000816,sio:Apathy
+892,http://semanticscience.org/resource/SIO_000200,results section,sio:SIO_000200,sio:ResultsSection
+893,http://semanticscience.org/resource/SIO_000012,organization,sio:SIO_000012,sio:Organization
+894,http://semanticscience.org/resource/SIO_000129,ontology document,sio:SIO_000129,sio:OntologyDocument
+895,http://semanticscience.org/resource/SIO_001179,full agreement,sio:SIO_001179,sio:FullAgreement
+896,http://semanticscience.org/resource/SIO_000591,destroying,sio:SIO_000591,sio:Destroying
+897,http://semanticscience.org/resource/SIO_010051,biological fluid,sio:SIO_010051,sio:BiologicalFluid
+898,http://semanticscience.org/resource/SIO_000435,second,sio:SIO_000435,sio:Second
+899,http://semanticscience.org/resource/SIO_010030,monosaccharide,sio:SIO_010030,sio:Monosaccharide
+900,http://semanticscience.org/resource/SIO_001146,increased object production from increased regulation,sio:SIO_001146,sio:IncreasedObjectProductionFromIncreasedRegulation
+901,http://semanticscience.org/resource/SIO_000440,3D cartesian point,sio:SIO_000440,sio:3DCartesianPoint
+902,http://semanticscience.org/resource/SIO_001137,increased duration of process from increased regulation,sio:SIO_001137,sio:IncreasedDurationOfProcessFromIncreasedRegulation
+903,http://semanticscience.org/resource/SIO_000928,radar,sio:SIO_000928,sio:Radar
+904,http://semanticscience.org/resource/SIO_010040,binding site,sio:SIO_010040,sio:BindingSite
+905,http://semanticscience.org/resource/SIO_010372,to be activated,sio:SIO_010372,sio:ToBeActivated
+906,http://semanticscience.org/resource/SIO_000713,doctor role,sio:SIO_000713,sio:DoctorRole
+907,http://semanticscience.org/resource/SIO_000849,jealousy,sio:SIO_000849,sio:Jealousy
+908,http://semanticscience.org/resource/SIO_001373,legal document,sio:SIO_001373,sio:LegalDocument
+909,http://semanticscience.org/resource/SIO_010378,non-cellular organism,sio:SIO_010378,sio:Non-cellularOrganism
+910,http://semanticscience.org/resource/SIO_011114,fermium atom,sio:SIO_011114,sio:FermiumAtom
+911,http://semanticscience.org/resource/SIO_001031,minor version number,sio:SIO_001031,sio:MinorVersionNumber
+912,http://semanticscience.org/resource/SIO_011002,hydrogen atom,sio:SIO_011002,sio:HydrogenAtom
+913,http://semanticscience.org/resource/SIO_001182,ribosomal RNA gene,sio:SIO_001182,sio:RibosomalRNAGene
+914,http://semanticscience.org/resource/SIO_010777,enantiomer,sio:SIO_010777,sio:Enantiomer
+915,http://semanticscience.org/resource/SIO_000943,start position,sio:SIO_000943,sio:StartPosition
+916,http://semanticscience.org/resource/SIO_001219,to test a hypothesis,sio:SIO_001219,sio:ToTestAHypothesis
+917,http://semanticscience.org/resource/SIO_000799,cofactor role,sio:SIO_000799,sio:CofactorRole
+918,http://semanticscience.org/resource/SIO_000463,logarithmic value axis,sio:SIO_000463,sio:LogarithmicValueAxis
+919,http://semanticscience.org/resource/SIO_000026,object quality,sio:SIO_000026,sio:ObjectQuality
+920,http://semanticscience.org/resource/SIO_011079,hassium atom,sio:SIO_011079,sio:HassiumAtom
+921,http://semanticscience.org/resource/SIO_010049,molecular site,sio:SIO_010049,sio:MolecularSite
+922,http://semanticscience.org/resource/SIO_000189,acknowledgements section,sio:SIO_000189,sio:AcknowledgementsSection
+923,http://semanticscience.org/resource/SIO_000549,to reduce the activation energy,sio:SIO_000549,sio:ToReduceTheActivationEnergy
+924,http://semanticscience.org/resource/SIO_000912,measurement scale,sio:SIO_000912,sio:MeasurementScale
+925,http://semanticscience.org/resource/SIO_000383,to excite,sio:SIO_000383,sio:ToExcite
+926,http://semanticscience.org/resource/SIO_010075,nucleotide residue,sio:SIO_010075,sio:NucleotideResidue
+927,http://semanticscience.org/resource/SIO_001342,gene-disease association linked with modifying mutation,sio:SIO_001342,sio:Gene-diseaseAssociationLinkedWithModifyingMutation
+928,http://semanticscience.org/resource/SIO_010353,to breathe,sio:SIO_010353,sio:ToBreathe
+929,http://semanticscience.org/resource/SIO_000821,contempt,sio:SIO_000821,sio:Contempt
+930,http://semanticscience.org/resource/SIO_000492,to consume,sio:SIO_000492,sio:ToConsume
+931,http://semanticscience.org/resource/SIO_000688,institute,sio:SIO_000688,sio:Institute
+932,http://semanticscience.org/resource/SIO_000090,specification,sio:SIO_000090,sio:Specification
+933,http://semanticscience.org/resource/SIO_010097,pre-mRNA,sio:SIO_010097,sio:Pre-mrna
+934,http://semanticscience.org/resource/SIO_000076,plan,sio:SIO_000076,sio:Plan
+935,http://semanticscience.org/resource/SIO_001289,never,sio:SIO_001289,sio:Never
+936,http://semanticscience.org/resource/SIO_001267,nullizygous,sio:SIO_001267,sio:Nullizygous
+937,http://semanticscience.org/resource/SIO_001291,most of the time,sio:SIO_001291,sio:MostOfTheTime
+938,http://semanticscience.org/resource/SIO_001333,arc,sio:SIO_001333,sio:Arc
+939,http://semanticscience.org/resource/SIO_001344,gene-disease association linked with germline causal mutation,sio:SIO_001344,sio:Gene-diseaseAssociationLinkedWithGermlineCausalMutation
+940,http://semanticscience.org/resource/SIO_000143,exclusion criterion,sio:SIO_000143,sio:ExclusionCriterion
+941,http://semanticscience.org/resource/SIO_010044,atom,sio:SIO_010044,sio:Atom
+942,http://semanticscience.org/resource/SIO_000184,legal name,sio:SIO_000184,sio:LegalName
+943,http://semanticscience.org/resource/SIO_000158,book series,sio:SIO_000158,sio:BookSeries
+944,http://semanticscience.org/resource/SIO_010094,to serve as a primer for DNA synthesis,sio:SIO_010094,sio:ToServeAsAPrimerForDNASynthesis
+945,http://semanticscience.org/resource/SIO_001150,regulation of object consumption,sio:SIO_001150,sio:RegulationOfObjectConsumption
+946,http://semanticscience.org/resource/SIO_001385,notation,sio:SIO_001385,sio:Notation
+947,http://semanticscience.org/resource/SIO_000858,pleasure,sio:SIO_000858,sio:Pleasure
+948,http://semanticscience.org/resource/SIO_001102,to interact and to be interacted with,sio:SIO_001102,sio:ToInteractAndToBeInteractedWith
+949,http://semanticscience.org/resource/SIO_001136,regulation of process duration,sio:SIO_001136,sio:RegulationOfProcessDuration
+950,http://semanticscience.org/resource/SIO_011097,terbium atom,sio:SIO_011097,sio:TerbiumAtom
+951,http://semanticscience.org/resource/SIO_001060,planned,sio:SIO_001060,sio:Planned
+952,http://semanticscience.org/resource/SIO_001183,statement,sio:SIO_001183,sio:Statement
+953,http://semanticscience.org/resource/SIO_001330,metadata,sio:SIO_001330,sio:Metadata
+954,http://semanticscience.org/resource/SIO_000466,global maximal stationary point,sio:SIO_000466,sio:GlobalMaximalStationaryPoint
+955,http://semanticscience.org/resource/SIO_001116,union,sio:SIO_001116,sio:Union
+956,http://semanticscience.org/resource/SIO_010003,organ,sio:SIO_010003,sio:Organ
+957,http://semanticscience.org/resource/SIO_011034,bromine atom,sio:SIO_011034,sio:BromineAtom
+958,http://semanticscience.org/resource/SIO_000067,namespace,sio:SIO_000067,sio:Namespace
+959,http://semanticscience.org/resource/SIO_000295,collection of documents,sio:SIO_000295,sio:CollectionOfDocuments
+960,http://semanticscience.org/resource/SIO_001394,evidence,sio:SIO_001394,sio:Evidence
+961,http://semanticscience.org/resource/SIO_000179,label,sio:SIO_000179,sio:Label
+962,http://semanticscience.org/resource/SIO_010035,gene,sio:SIO_010035,sio:Gene
+963,http://semanticscience.org/resource/SIO_010371,to lose an electron,sio:SIO_010371,sio:ToLoseAnElectron
+964,http://semanticscience.org/resource/SIO_011094,samarium atom,sio:SIO_011094,sio:SamariumAtom
+965,http://semanticscience.org/resource/SIO_000016,role,sio:SIO_000016,sio:Role
+966,http://semanticscience.org/resource/SIO_000381,to immobilize,sio:SIO_000381,sio:ToImmobilize
+967,http://semanticscience.org/resource/SIO_000582,birthing,sio:SIO_000582,sio:Birthing
+968,http://semanticscience.org/resource/SIO_000475,biological quality,sio:SIO_000475,sio:BiologicalQuality
+969,http://semanticscience.org/resource/SIO_011001,carbon atom,sio:SIO_011001,sio:CarbonAtom
+970,http://semanticscience.org/resource/SIO_010503,dipole-dipole interaction,sio:SIO_010503,sio:Dipole-dipoleInteraction
+971,http://semanticscience.org/resource/SIO_001338,mereological quality,sio:SIO_001338,sio:MereologicalQuality
+972,http://semanticscience.org/resource/SIO_001236,data collection device,sio:SIO_001236,sio:DataCollectionDevice
+973,http://semanticscience.org/resource/SIO_010367,to be combined,sio:SIO_010367,sio:ToBeCombined
+974,http://semanticscience.org/resource/SIO_000396,file,sio:SIO_000396,sio:File
+975,http://semanticscience.org/resource/SIO_000534,positionally oriented line,sio:SIO_000534,sio:PositionallyOrientedLine
+976,http://semanticscience.org/resource/SIO_010066,sequence alignment,sio:SIO_010066,sio:SequenceAlignment
+977,http://semanticscience.org/resource/SIO_000409,mutual disposition,sio:SIO_000409,sio:MutualDisposition
+978,http://semanticscience.org/resource/SIO_000801,prosthetic group role,sio:SIO_000801,sio:ProstheticGroupRole
+979,http://semanticscience.org/resource/SIO_010285,molecular complex formation,sio:SIO_010285,sio:MolecularComplexFormation
+980,http://semanticscience.org/resource/SIO_000431,century,sio:SIO_000431,sio:Century
+981,http://semanticscience.org/resource/SIO_000043,thickness,sio:SIO_000043,sio:Thickness
+982,http://semanticscience.org/resource/SIO_000078,language entity,sio:SIO_000078,sio:LanguageEntity
+983,http://semanticscience.org/resource/SIO_001363,to maintain information,sio:SIO_001363,sio:ToMaintainInformation
+984,http://semanticscience.org/resource/SIO_011017,argon atom,sio:SIO_011017,sio:ArgonAtom
+985,http://semanticscience.org/resource/SIO_010453,acid,sio:SIO_010453,sio:Acid
+986,http://semanticscience.org/resource/SIO_011057,hafnium atom,sio:SIO_011057,sio:HafniumAtom
+987,http://semanticscience.org/resource/SIO_001378,analyte,sio:SIO_001378,sio:Analyte
+988,http://semanticscience.org/resource/SIO_011009,neon atom,sio:SIO_011009,sio:NeonAtom
+989,http://semanticscience.org/resource/SIO_000744,learning,sio:SIO_000744,sio:Learning
+990,http://semanticscience.org/resource/SIO_010775,stereoisomer,sio:SIO_010775,sio:Stereoisomer
+991,http://semanticscience.org/resource/SIO_000299,quote,sio:SIO_000299,sio:Quote
+992,http://semanticscience.org/resource/SIO_000839,gratitude,sio:SIO_000839,sio:Gratitude
+993,http://semanticscience.org/resource/SIO_000864,satisfaction,sio:SIO_000864,sio:Satisfaction
+994,http://semanticscience.org/resource/SIO_001322,IP number,sio:SIO_001322,sio:IPNumber
+995,http://semanticscience.org/resource/SIO_010776,diastereomer,sio:SIO_010776,sio:Diastereomer
+996,http://semanticscience.org/resource/SIO_001290,some of the time,sio:SIO_001290,sio:SomeOfTheTime
+997,http://semanticscience.org/resource/SIO_000862,remorse,sio:SIO_000862,sio:Remorse
+998,http://semanticscience.org/resource/SIO_000501,polygon edge,sio:SIO_000501,sio:PolygonEdge
+999,http://semanticscience.org/resource/SIO_000377,to demagnify,sio:SIO_000377,sio:ToDemagnify
+1000,http://semanticscience.org/resource/SIO_010037,chemical element,sio:SIO_010037,sio:ChemicalElement
+1001,http://semanticscience.org/resource/SIO_000262,conclusion,sio:SIO_000262,sio:Conclusion
+1002,http://semanticscience.org/resource/SIO_010036,biochemical reaction,sio:SIO_010036,sio:BiochemicalReaction
+1003,http://semanticscience.org/resource/SIO_000171,document component,sio:SIO_000171,sio:DocumentComponent
+1004,http://semanticscience.org/resource/SIO_001012,healthy,sio:SIO_001012,sio:Healthy
+1005,http://semanticscience.org/resource/SIO_001248,open interval,sio:SIO_001248,sio:OpenInterval
+1006,http://semanticscience.org/resource/SIO_000469,graph title,sio:SIO_000469,sio:GraphTitle
+1007,http://semanticscience.org/resource/SIO_000290,university,sio:SIO_000290,sio:University
+1008,http://semanticscience.org/resource/SIO_001216,fatal,sio:SIO_001216,sio:Fatal
+1009,http://semanticscience.org/resource/SIO_000279,mass,sio:SIO_000279,sio:Mass
+1010,http://semanticscience.org/resource/SIO_000895,to fluoresce,sio:SIO_000895,sio:ToFluoresce
+1011,http://semanticscience.org/resource/SIO_000198,materials section,sio:SIO_000198,sio:MaterialsSection
+1012,http://semanticscience.org/resource/SIO_000402,z cartesian coordinate,sio:SIO_000402,sio:ZCartesianCoordinate
+1013,http://semanticscience.org/resource/SIO_001229,small nucleolar RNA (snoRNA) gene,sio:SIO_001229,sio:SmallNucleolarRNA(snorna)Gene
+1014,http://semanticscience.org/resource/SIO_010783,homocyclic ring,sio:SIO_010783,sio:HomocyclicRing
+1015,http://semanticscience.org/resource/SIO_010365,to be cleaved,sio:SIO_010365,sio:ToBeCleaved
+1016,http://semanticscience.org/resource/SIO_000032,end date,sio:SIO_000032,sio:EndDate
+1017,http://semanticscience.org/resource/SIO_001354,week,sio:SIO_001354,sio:Week
+1018,http://semanticscience.org/resource/SIO_000605,sound wave,sio:SIO_000605,sio:SoundWave
+1019,http://semanticscience.org/resource/SIO_000854,misery,sio:SIO_000854,sio:Misery
+1020,http://semanticscience.org/resource/SIO_000910,geographic heatmap,sio:SIO_000910,sio:GeographicHeatmap
+1021,http://semanticscience.org/resource/SIO_000940,mereological chart,sio:SIO_000940,sio:MereologicalChart
+1022,http://semanticscience.org/resource/SIO_000167,master's thesis,sio:SIO_000167,sio:Master'sThesis
+1023,http://semanticscience.org/resource/SIO_000297,movie,sio:SIO_000297,sio:Movie
+1024,http://semanticscience.org/resource/SIO_000546,collection of points,sio:SIO_000546,sio:CollectionOfPoints
+1025,http://semanticscience.org/resource/SIO_000966,agreement,sio:SIO_000966,sio:Agreement
+1026,http://semanticscience.org/resource/SIO_000899,chromosome,sio:SIO_000899,sio:Chromosome
+1027,http://semanticscience.org/resource/SIO_000256,proposition,sio:SIO_000256,sio:Proposition
+1028,http://semanticscience.org/resource/SIO_000476,cellular quality,sio:SIO_000476,sio:CellularQuality
+1029,http://semanticscience.org/resource/SIO_000860,rage,sio:SIO_000860,sio:Rage
+1030,http://semanticscience.org/resource/SIO_000618,standard,sio:SIO_000618,sio:Standard
+1031,http://semanticscience.org/resource/SIO_010456,ion,sio:SIO_010456,sio:Ion
+1032,http://semanticscience.org/resource/SIO_010376,unicellular organism,sio:SIO_010376,sio:UnicellularOrganism
+1033,http://semanticscience.org/resource/SIO_010781,aromatic ring,sio:SIO_010781,sio:AromaticRing
+1034,http://semanticscience.org/resource/SIO_010501,aromatic bond,sio:SIO_010501,sio:AromaticBond
+1035,http://semanticscience.org/resource/SIO_000788,linear position,sio:SIO_000788,sio:LinearPosition
+1036,http://semanticscience.org/resource/SIO_000257,dimensionless quantity,sio:SIO_000257,sio:DimensionlessQuantity
+1037,http://semanticscience.org/resource/SIO_000379,perception,sio:SIO_000379,sio:Perception
+1038,http://semanticscience.org/resource/SIO_001075,microarray probe set identifier,sio:SIO_001075,sio:MicroarrayProbeSetIdentifier
+1039,http://semanticscience.org/resource/SIO_001002,differential diagnosis,sio:SIO_001002,sio:DifferentialDiagnosis
+1040,http://semanticscience.org/resource/SIO_000891,toxic role,sio:SIO_000891,sio:ToxicRole
+1041,http://semanticscience.org/resource/SIO_000732,molecular identifier,sio:SIO_000732,sio:MolecularIdentifier
+1042,http://semanticscience.org/resource/SIO_000112,capability,sio:SIO_000112,sio:Capability
+1043,http://semanticscience.org/resource/SIO_000843,hope,sio:SIO_000843,sio:Hope
+1044,http://semanticscience.org/resource/SIO_000742,local maximum stationary point,sio:SIO_000742,sio:LocalMaximumStationaryPoint
+1045,http://semanticscience.org/resource/SIO_001258,set item,sio:SIO_001258,sio:SetItem
+1046,http://semanticscience.org/resource/SIO_011043,ruthenium atom,sio:SIO_011043,sio:RutheniumAtom
+1047,http://semanticscience.org/resource/SIO_001367,frequency,sio:SIO_001367,sio:Frequency
+1048,http://semanticscience.org/resource/SIO_000714,nurse role,sio:SIO_000714,sio:NurseRole
+1049,http://semanticscience.org/resource/SIO_000317,spatial specification,sio:SIO_000317,sio:SpatialSpecification
+1050,http://semanticscience.org/resource/SIO_010001,cell,sio:SIO_010001,sio:Cell
+1051,http://semanticscience.org/resource/SIO_000919,reproducing,sio:SIO_000919,sio:Reproducing
+1052,http://semanticscience.org/resource/SIO_000071,coordinate,sio:SIO_000071,sio:Coordinate
+1053,http://semanticscience.org/resource/SIO_011016,chlorine atom,sio:SIO_011016,sio:ChlorineAtom
+1054,http://semanticscience.org/resource/SIO_000349,to separate,sio:SIO_000349,sio:ToSeparate
+1055,http://semanticscience.org/resource/SIO_001044,viroid,sio:SIO_001044,sio:Viroid
+1056,http://semanticscience.org/resource/SIO_001078,differential gene expression ratio,sio:SIO_001078,sio:DifferentialGeneExpressionRatio
+1057,http://semanticscience.org/resource/SIO_000092,biopolymer,sio:SIO_000092,sio:Biopolymer
+1058,http://semanticscience.org/resource/SIO_000173,affiliation,sio:SIO_000173,sio:Affiliation
+1059,http://semanticscience.org/resource/SIO_000483,phrase,sio:SIO_000483,sio:Phrase
+1060,http://semanticscience.org/resource/SIO_001085,to remove a covalent bond,sio:SIO_001085,sio:ToRemoveACovalentBond
+1061,http://semanticscience.org/resource/SIO_000942,numeric label,sio:SIO_000942,sio:NumericLabel
+1062,http://semanticscience.org/resource/SIO_000574,active movement,sio:SIO_000574,sio:ActiveMovement
+1063,http://semanticscience.org/resource/SIO_001297,good quality,sio:SIO_001297,sio:GoodQuality
+1064,http://semanticscience.org/resource/SIO_000815,anxiety,sio:SIO_000815,sio:Anxiety
+1065,http://semanticscience.org/resource/SIO_001083,date of database submission,sio:SIO_001083,sio:DateOfDatabaseSubmission
+1066,http://semanticscience.org/resource/SIO_000146,monomer,sio:SIO_000146,sio:Monomer
+1067,http://semanticscience.org/resource/SIO_011006,nitrogen atom,sio:SIO_011006,sio:NitrogenAtom
+1068,http://semanticscience.org/resource/SIO_000046,length of perimeter,sio:SIO_000046,sio:LengthOfPerimeter
+1069,http://semanticscience.org/resource/SIO_001013,age,sio:SIO_001013,sio:Age
+1070,http://semanticscience.org/resource/SIO_000186,document version,sio:SIO_000186,sio:DocumentVersion
+1071,http://semanticscience.org/resource/SIO_000141,criterion,sio:SIO_000141,sio:Criterion
+1072,http://semanticscience.org/resource/SIO_011131,collection of 3d molecular structure models,sio:SIO_011131,sio:CollectionOf3dMolecularStructureModels
+1073,http://semanticscience.org/resource/SIO_000357,fitness,sio:SIO_000357,sio:Fitness
+1074,http://semanticscience.org/resource/SIO_010532,metabolic pathway,sio:SIO_010532,sio:MetabolicPathway
+1075,http://semanticscience.org/resource/SIO_010360,to modify oxidation state of,sio:SIO_010360,sio:ToModifyOxidationStateOf
+1076,http://semanticscience.org/resource/SIO_000109,novel,sio:SIO_000109,sio:Novel
+1077,http://semanticscience.org/resource/SIO_011013,silicon atom,sio:SIO_011013,sio:SiliconAtom
+1078,http://semanticscience.org/resource/SIO_001181,full disagreement,sio:SIO_001181,sio:FullDisagreement
+1079,http://semanticscience.org/resource/SIO_000505,polygon,sio:SIO_000505,sio:Polygon
+1080,http://semanticscience.org/resource/SIO_010068,pairwise sequence alignment,sio:SIO_010068,sio:PairwiseSequenceAlignment
+1081,http://semanticscience.org/resource/SIO_000296,website,sio:SIO_000296,sio:Website
+1082,http://semanticscience.org/resource/SIO_000609,regulation of process,sio:SIO_000609,sio:RegulationOfProcess
+1083,http://semanticscience.org/resource/SIO_001275,coding frame offset,sio:SIO_001275,sio:CodingFrameOffset
+1084,http://semanticscience.org/resource/SIO_001379,protein domain,sio:SIO_001379,sio:ProteinDomain
+1085,http://semanticscience.org/resource/SIO_001121,gene-disease biomarker association,sio:SIO_001121,sio:Gene-diseaseBiomarkerAssociation
+1086,http://semanticscience.org/resource/SIO_010469,beta strand,sio:SIO_010469,sio:BetaStrand
+1087,http://semanticscience.org/resource/SIO_000097,software entity,sio:SIO_000097,sio:SoftwareEntity
+1088,http://semanticscience.org/resource/SIO_000581,locomotion,sio:SIO_000581,sio:Locomotion
+1089,http://semanticscience.org/resource/SIO_000485,human,sio:SIO_000485,sio:Human
+1090,http://semanticscience.org/resource/SIO_001059,gesturing,sio:SIO_001059,sio:Gesturing
+1091,http://semanticscience.org/resource/SIO_001003,diagnostic opinion,sio:SIO_001003,sio:DiagnosticOpinion
+1092,http://semanticscience.org/resource/SIO_000577,primary active transport,sio:SIO_000577,sio:PrimaryActiveTransport
+1093,http://semanticscience.org/resource/SIO_000594,data transformation,sio:SIO_000594,sio:DataTransformation
+1094,http://semanticscience.org/resource/SIO_000380,to contain,sio:SIO_000380,sio:ToContain
+1095,http://semanticscience.org/resource/SIO_001021,expected value,sio:SIO_001021,sio:ExpectedValue
+1096,http://semanticscience.org/resource/SIO_000598,hard disk drive,sio:SIO_000598,sio:HardDiskDrive
+1097,http://semanticscience.org/resource/SIO_011119,biomolecular structure descriptor,sio:SIO_011119,sio:BiomolecularStructureDescriptor
+1098,http://semanticscience.org/resource/SIO_001210,positive,sio:SIO_001210,sio:Positive
+1099,http://semanticscience.org/resource/SIO_000578,secondary active transport,sio:SIO_000578,sio:SecondaryActiveTransport
+1100,http://semanticscience.org/resource/SIO_010446,gene promoter,sio:SIO_010446,sio:GenePromoter
+1101,http://semanticscience.org/resource/SIO_000624,chemical functional group,sio:SIO_000624,sio:ChemicalFunctionalGroup
+1102,http://semanticscience.org/resource/SIO_000703,evolving,sio:SIO_000703,sio:Evolving
+1103,http://semanticscience.org/resource/SIO_000354,dysfunction,sio:SIO_000354,sio:Dysfunction
+1104,http://semanticscience.org/resource/SIO_000359,purpose,sio:SIO_000359,sio:Purpose
+1105,http://semanticscience.org/resource/SIO_000915,numeric scale,sio:SIO_000915,sio:NumericScale
+1106,http://semanticscience.org/resource/SIO_010362,substrate,sio:SIO_010362,sio:Substrate
+1107,http://semanticscience.org/resource/SIO_001304,a little quantifier,sio:SIO_001304,sio:ALittleQuantifier
+1108,http://semanticscience.org/resource/SIO_000275,term,sio:SIO_000275,sio:Term
+1109,http://semanticscience.org/resource/SIO_011047,cadmium atom,sio:SIO_011047,sio:CadmiumAtom
+1110,http://semanticscience.org/resource/SIO_001065,speculation,sio:SIO_001065,sio:Speculation
+1111,http://semanticscience.org/resource/SIO_001343,gene-disease association linked with susceptibility mutation,sio:SIO_001343,sio:Gene-diseaseAssociationLinkedWithSusceptibilityMutation
+1112,http://semanticscience.org/resource/SIO_000700,to disassociate,sio:SIO_000700,sio:ToDisassociate
+1113,http://semanticscience.org/resource/SIO_000981,verbal language,sio:SIO_000981,sio:VerbalLanguage
+1114,http://semanticscience.org/resource/SIO_000464,data series,sio:SIO_000464,sio:DataSeries
+1115,http://semanticscience.org/resource/SIO_000640,increased,sio:SIO_000640,sio:Increased
+1116,http://semanticscience.org/resource/SIO_011088,ununseptium atom,sio:SIO_011088,sio:UnunseptiumAtom
+1117,http://semanticscience.org/resource/SIO_011003,helium atom,sio:SIO_011003,sio:HeliumAtom
+1118,http://semanticscience.org/resource/SIO_011125,molecule,sio:SIO_011125,sio:Molecule
+1119,http://semanticscience.org/resource/SIO_000647,process model,sio:SIO_000647,sio:ProcessModel
+1120,http://semanticscience.org/resource/SIO_000889,molecular entity role,sio:SIO_000889,sio:MolecularEntityRole
+1121,http://semanticscience.org/resource/SIO_010017,ribonucleic acid sequence,sio:SIO_010017,sio:RibonucleicAcidSequence
+1122,http://semanticscience.org/resource/SIO_001006,drug drug interaction,sio:SIO_001006,sio:DrugDrugInteraction
+1123,http://semanticscience.org/resource/SIO_001235,non-protein coding RNA (ncRNA),sio:SIO_001235,sio:Non-proteinCodingRNA(ncrna)
+1124,http://semanticscience.org/resource/SIO_001313,excellent quality,sio:SIO_001313,sio:ExcellentQuality
+1125,http://semanticscience.org/resource/SIO_011063,platinum atom,sio:SIO_011063,sio:PlatinumAtom
+1126,http://semanticscience.org/resource/SIO_001033,text quality,sio:SIO_001033,sio:TextQuality
+1127,http://semanticscience.org/resource/SIO_000183,personal name,sio:SIO_000183,sio:PersonalName
+1128,http://semanticscience.org/resource/SIO_010447,start codon,sio:SIO_010447,sio:StartCodon
+1129,http://semanticscience.org/resource/SIO_001315,author list,sio:SIO_001315,sio:AuthorList
+1130,http://semanticscience.org/resource/SIO_010520,non-polar addition reaction,sio:SIO_010520,sio:Non-polarAdditionReaction
+1131,http://semanticscience.org/resource/SIO_000182,last name,sio:SIO_000182,sio:LastName
+1132,http://semanticscience.org/resource/SIO_011054,caesium atom,sio:SIO_011054,sio:CaesiumAtom
+1133,http://semanticscience.org/resource/SIO_000528,increasing line,sio:SIO_000528,sio:IncreasingLine
+1134,http://semanticscience.org/resource/SIO_001400,subcellular entity,sio:SIO_001400,sio:SubcellularEntity
+1135,http://semanticscience.org/resource/SIO_001110,median,sio:SIO_001110,sio:Median
+1136,http://semanticscience.org/resource/SIO_000898,statistical association,sio:SIO_000898,sio:StatisticalAssociation
+1137,http://semanticscience.org/resource/SIO_011049,tin atom,sio:SIO_011049,sio:TinAtom
+1138,http://semanticscience.org/resource/SIO_001253,right closed interval,sio:SIO_001253,sio:RightClosedInterval
+1139,http://semanticscience.org/resource/SIO_001376,bill,sio:SIO_001376,sio:Bill
+1140,http://semanticscience.org/resource/SIO_010790,aggregated carbon nanorods,sio:SIO_010790,sio:AggregatedCarbonNanorods
+1141,http://semanticscience.org/resource/SIO_000571,brownian motion,sio:SIO_000571,sio:BrownianMotion
+1142,http://semanticscience.org/resource/SIO_000720,to be translocated,sio:SIO_000720,sio:ToBeTranslocated
+1143,http://semanticscience.org/resource/SIO_000877,undergraduate student advisor role,sio:SIO_000877,sio:UndergraduateStudentAdvisorRole
+1144,http://semanticscience.org/resource/SIO_010052,female,sio:SIO_010052,sio:Female
+1145,http://semanticscience.org/resource/SIO_010673,medical history,sio:SIO_010673,sio:MedicalHistory
+1146,http://semanticscience.org/resource/SIO_000568,partial differential equation,sio:SIO_000568,sio:PartialDifferentialEquation
+1147,http://semanticscience.org/resource/SIO_000125,hyponym,sio:SIO_000125,sio:Hyponym
+1148,http://semanticscience.org/resource/SIO_000372,to inject,sio:SIO_000372,sio:ToInject
+1149,http://semanticscience.org/resource/SIO_000795,chemical entity role,sio:SIO_000795,sio:ChemicalEntityRole
+1150,http://semanticscience.org/resource/SIO_011073,radium atom,sio:SIO_011073,sio:RadiumAtom
+1151,http://semanticscience.org/resource/SIO_000174,citation,sio:SIO_000174,sio:Citation
+1152,http://semanticscience.org/resource/SIO_001263,zygosity,sio:SIO_001263,sio:Zygosity
+1153,http://semanticscience.org/resource/SIO_010438,signal,sio:SIO_010438,sio:Signal
+1154,http://semanticscience.org/resource/SIO_010514,single displacement reaction,sio:SIO_010514,sio:SingleDisplacementReaction
+1155,http://semanticscience.org/resource/SIO_011118,covalent bond,sio:SIO_011118,sio:CovalentBond
+1156,http://semanticscience.org/resource/SIO_000304,email,sio:SIO_000304,sio:Email
+1157,http://semanticscience.org/resource/SIO_001178,double stranded RNA,sio:SIO_001178,sio:DoubleStrandedRNA
+1158,http://semanticscience.org/resource/SIO_000992,unsupported,sio:SIO_000992,sio:Unsupported
+1159,http://semanticscience.org/resource/SIO_000690,to associate,sio:SIO_000690,sio:ToAssociate
+1160,http://semanticscience.org/resource/SIO_000515,minor tick mark,sio:SIO_000515,sio:MinorTickMark
+1161,http://semanticscience.org/resource/SIO_000014,disposition,sio:SIO_000014,sio:Disposition
+1162,http://semanticscience.org/resource/SIO_000150,list,sio:SIO_000150,sio:List
+1163,http://semanticscience.org/resource/SIO_000343,to modify,sio:SIO_000343,sio:ToModify
+1164,http://semanticscience.org/resource/SIO_011110,curium atom,sio:SIO_011110,sio:CuriumAtom
+1165,http://semanticscience.org/resource/SIO_000164,technical report,sio:SIO_000164,sio:TechnicalReport
+1166,http://semanticscience.org/resource/SIO_000550,to increase the activation energy,sio:SIO_000550,sio:ToIncreaseTheActivationEnergy
+1167,http://semanticscience.org/resource/SIO_001193,SADI web service invocation,sio:SIO_001193,sio:SADIWebServiceInvocation
+1168,http://semanticscience.org/resource/SIO_001266,hemizygous,sio:SIO_001266,sio:Hemizygous
+1169,http://semanticscience.org/resource/SIO_010007,polypeptide,sio:SIO_010007,sio:Polypeptide
+1170,http://semanticscience.org/resource/SIO_000238,logical operator,sio:SIO_000238,sio:LogicalOperator
+1171,http://semanticscience.org/resource/SIO_000776,object,sio:SIO_000776,sio:Object
+1172,http://semanticscience.org/resource/SIO_000983,gene-disease association,sio:SIO_000983,sio:Gene-diseaseAssociation
+1173,http://semanticscience.org/resource/SIO_000276,emotion,sio:SIO_000276,sio:Emotion
+1174,http://semanticscience.org/resource/SIO_000575,transporting,sio:SIO_000575,sio:Transporting
+1175,http://semanticscience.org/resource/SIO_001381,genomic sequence variant,sio:SIO_001381,sio:GenomicSequenceVariant
+1176,http://semanticscience.org/resource/SIO_001212,intensity,sio:SIO_001212,sio:Intensity
+1177,http://semanticscience.org/resource/SIO_000989,sequence assembly,sio:SIO_000989,sio:SequenceAssembly
+1178,http://semanticscience.org/resource/SIO_001204,decreased molecular production from increased regulation,sio:SIO_001204,sio:DecreasedMolecularProductionFromIncreasedRegulation
+1179,http://semanticscience.org/resource/SIO_010497,protein complex,sio:SIO_010497,sio:ProteinComplex
+1180,http://semanticscience.org/resource/SIO_001174,nucleic acid strand,sio:SIO_001174,sio:NucleicAcidStrand
+1181,http://semanticscience.org/resource/SIO_000941,conversing,sio:SIO_000941,sio:Conversing
+1182,http://semanticscience.org/resource/SIO_001268,parental transmission,sio:SIO_001268,sio:ParentalTransmission
+1183,http://semanticscience.org/resource/SIO_000192,bibliography section,sio:SIO_000192,sio:BibliographySection
+1184,http://semanticscience.org/resource/SIO_010055,strain,sio:SIO_010055,sio:Strain
+1185,http://semanticscience.org/resource/SIO_010436,molecular regulator,sio:SIO_010436,sio:MolecularRegulator
+1186,http://semanticscience.org/resource/SIO_011081,darmstadtium atom,sio:SIO_011081,sio:DarmstadtiumAtom
+1187,http://semanticscience.org/resource/SIO_001310,dissatisfied qualifier,sio:SIO_001310,sio:DissatisfiedQualifier
+1188,http://semanticscience.org/resource/SIO_010788,graphite,sio:SIO_010788,sio:Graphite
+1189,http://semanticscience.org/resource/SIO_001089,pH,sio:SIO_001089,sio:Ph
+1190,http://semanticscience.org/resource/SIO_000836,excitement,sio:SIO_000836,sio:Excitement
+1191,http://semanticscience.org/resource/SIO_000792,sequence end position,sio:SIO_000792,sio:SequenceEndPosition
+1192,http://semanticscience.org/resource/SIO_000930,matrix chart,sio:SIO_000930,sio:MatrixChart
+1193,http://semanticscience.org/resource/SIO_011096,gadolinium atom,sio:SIO_011096,sio:GadoliniumAtom
+1194,http://semanticscience.org/resource/SIO_000934,stack graph,sio:SIO_000934,sio:StackGraph
+1195,http://semanticscience.org/resource/SIO_000739,planning,sio:SIO_000739,sio:Planning
+1196,http://semanticscience.org/resource/SIO_000764,foreign database key,sio:SIO_000764,sio:ForeignDatabaseKey
+1197,http://semanticscience.org/resource/SIO_000498,person,sio:SIO_000498,sio:Person
+1198,http://semanticscience.org/resource/SIO_001346,gene-disease association linked with somatic modifying mutation,sio:SIO_001346,sio:Gene-diseaseAssociationLinkedWithSomaticModifyingMutation
+1199,http://semanticscience.org/resource/SIO_000950,resentment,sio:SIO_000950,sio:Resentment
+1200,http://semanticscience.org/resource/SIO_001347,gene-disease association linked with germline modifying mutation,sio:SIO_001347,sio:Gene-diseaseAssociationLinkedWithGermlineModifyingMutation
+1201,http://semanticscience.org/resource/SIO_000458,value axis,sio:SIO_000458,sio:ValueAxis
+1202,http://semanticscience.org/resource/SIO_000082,photograph,sio:SIO_000082,sio:Photograph
+1203,http://semanticscience.org/resource/SIO_010067,multiple sequence alignment,sio:SIO_010067,sio:MultipleSequenceAlignment
+1204,http://semanticscience.org/resource/SIO_001077,gene expression value,sio:SIO_001077,sio:GeneExpressionValue
+1205,http://semanticscience.org/resource/SIO_010019,biological data,sio:SIO_010019,sio:BiologicalData
+1206,http://semanticscience.org/resource/SIO_000620,collective,sio:SIO_000620,sio:Collective
+1207,http://semanticscience.org/resource/SIO_001070,control variable,sio:SIO_001070,sio:ControlVariable
+1208,http://semanticscience.org/resource/SIO_000508,endpoint,sio:SIO_000508,sio:Endpoint
+1209,http://semanticscience.org/resource/SIO_000489,e.coli,sio:SIO_000489,sio:E.coli
+1210,http://semanticscience.org/resource/SIO_010002,tissue,sio:SIO_010002,sio:Tissue
+1211,http://semanticscience.org/resource/SIO_010092,deoxyribonucleic acid template,sio:SIO_010092,sio:DeoxyribonucleicAcidTemplate
+1212,http://semanticscience.org/resource/SIO_000470,primary title,sio:SIO_000470,sio:PrimaryTitle
+1213,http://semanticscience.org/resource/SIO_000851,loathing,sio:SIO_000851,sio:Loathing
+1214,http://semanticscience.org/resource/SIO_001307,completely quantifier,sio:SIO_001307,sio:CompletelyQuantifier
+1215,http://semanticscience.org/resource/SIO_001197,structural motif,sio:SIO_001197,sio:StructuralMotif
+1216,http://semanticscience.org/resource/SIO_000507,point,sio:SIO_000507,sio:Point
+1217,http://semanticscience.org/resource/SIO_000049,volume,sio:SIO_000049,sio:Volume
+1218,http://semanticscience.org/resource/SIO_000767,postal code,sio:SIO_000767,sio:PostalCode
+1219,http://semanticscience.org/resource/SIO_000344,to record,sio:SIO_000344,sio:ToRecord
+1220,http://semanticscience.org/resource/SIO_010076,poison,sio:SIO_010076,sio:Poison
+1221,http://semanticscience.org/resource/SIO_000938,tag cloud,sio:SIO_000938,sio:TagCloud
+1222,http://semanticscience.org/resource/SIO_001036,draft,sio:SIO_001036,sio:Draft
+1223,http://semanticscience.org/resource/SIO_001222,5' splice site,sio:SIO_001222,sio:5'SpliceSite
+1224,http://semanticscience.org/resource/SIO_010090,to serve as a template for RNA synthesis,sio:SIO_010090,sio:ToServeAsATemplateForRNASynthesis
+1225,http://semanticscience.org/resource/SIO_000857,pity,sio:SIO_000857,sio:Pity
+1226,http://semanticscience.org/resource/SIO_001015,race,sio:SIO_001015,sio:Race
+1227,http://semanticscience.org/resource/SIO_001359,information translation,sio:SIO_001359,sio:InformationTranslation
+1228,http://semanticscience.org/resource/SIO_010463,homogeneous substance,sio:SIO_010463,sio:HomogeneousSubstance
+1229,http://semanticscience.org/resource/SIO_001392,biologic,sio:SIO_001392,sio:Biologic
+1230,http://semanticscience.org/resource/SIO_000832,negative emotion,sio:SIO_000832,sio:NegativeEmotion
+1231,http://semanticscience.org/resource/SIO_000042,width,sio:SIO_000042,sio:Width
+1232,http://semanticscience.org/resource/SIO_000108,character,sio:SIO_000108,sio:Character
+1233,http://semanticscience.org/resource/SIO_000460,right value axis,sio:SIO_000460,sio:RightValueAxis
+1234,http://semanticscience.org/resource/SIO_000414,geographic region,sio:SIO_000414,sio:GeographicRegion
+1235,http://semanticscience.org/resource/SIO_000397,to provide,sio:SIO_000397,sio:ToProvide
+1236,http://semanticscience.org/resource/SIO_001211,negative,sio:SIO_001211,sio:Negative
+1237,http://semanticscience.org/resource/SIO_010041,active site,sio:SIO_010041,sio:ActiveSite
+1238,http://semanticscience.org/resource/SIO_001018,ratio,sio:SIO_001018,sio:Ratio
+1239,http://semanticscience.org/resource/SIO_001011,chemical quality,sio:SIO_001011,sio:ChemicalQuality
+1240,http://semanticscience.org/resource/SIO_000030,biopolymer sequence,sio:SIO_000030,sio:BiopolymerSequence
+1241,http://semanticscience.org/resource/SIO_001226,trans-regulatory element,sio:SIO_001226,sio:Trans-regulatoryElement
+1242,http://semanticscience.org/resource/SIO_001355,specific gravity,sio:SIO_001355,sio:SpecificGravity
+1243,http://semanticscience.org/resource/SIO_000473,primary graph title,sio:SIO_000473,sio:PrimaryGraphTitle
+1244,http://semanticscience.org/resource/SIO_000285,academic organization,sio:SIO_000285,sio:AcademicOrganization
+1245,http://semanticscience.org/resource/SIO_000340,realizable entity,sio:SIO_000340,sio:RealizableEntity
+1246,http://semanticscience.org/resource/SIO_001050,sample,sio:SIO_001050,sio:Sample
+1247,http://semanticscience.org/resource/SIO_001298,very good quality,sio:SIO_001298,sio:VeryGoodQuality
+1248,http://semanticscience.org/resource/SIO_001108,centrality measure,sio:SIO_001108,sio:CentralityMeasure
+1249,http://semanticscience.org/resource/SIO_010423,target,sio:SIO_010423,sio:Target
+1250,http://semanticscience.org/resource/SIO_000881,investigational role,sio:SIO_000881,sio:InvestigationalRole
+1251,http://semanticscience.org/resource/SIO_000461,scaled value axis,sio:SIO_000461,sio:ScaledValueAxis
+1252,http://semanticscience.org/resource/SIO_000307,normality,sio:SIO_000307,sio:Normality
+1253,http://semanticscience.org/resource/SIO_000897,association,sio:SIO_000897,sio:Association
+1254,http://semanticscience.org/resource/SIO_000569,differential equation,sio:SIO_000569,sio:DifferentialEquation
+1255,http://semanticscience.org/resource/SIO_000428,year,sio:SIO_000428,sio:Year
+1256,http://semanticscience.org/resource/SIO_001256,pharmacodynamic pathway,sio:SIO_001256,sio:PharmacodynamicPathway
+1257,http://semanticscience.org/resource/SIO_001145,regulation of object quantity,sio:SIO_001145,sio:RegulationOfObjectQuantity
+1258,http://semanticscience.org/resource/SIO_000909,boxplot,sio:SIO_000909,sio:Boxplot
+1259,http://semanticscience.org/resource/SIO_001105,to ingest,sio:SIO_001105,sio:ToIngest
+1260,http://semanticscience.org/resource/SIO_000137,category,sio:SIO_000137,sio:Category
+1261,http://semanticscience.org/resource/SIO_010442,charge quality,sio:SIO_010442,sio:ChargeQuality
+1262,http://semanticscience.org/resource/SIO_001164,decrease in number of objects produced,sio:SIO_001164,sio:DecreaseInNumberOfObjectsProduced
+1263,http://semanticscience.org/resource/SIO_001149,decreased object consumption from increased regulation,sio:SIO_001149,sio:DecreasedObjectConsumptionFromIncreasedRegulation
+1264,http://semanticscience.org/resource/SIO_001252,right open interval,sio:SIO_001252,sio:RightOpenInterval
+1265,http://semanticscience.org/resource/SIO_001328,copy number variation,sio:SIO_001328,sio:CopyNumberVariation
+1266,http://semanticscience.org/resource/SIO_001361,to store,sio:SIO_001361,sio:ToStore
+1267,http://semanticscience.org/resource/SIO_011111,berkelium atom,sio:SIO_011111,sio:BerkeliumAtom
+1268,http://semanticscience.org/resource/SIO_001302,assertion ovopub,sio:SIO_001302,sio:AssertionOvopub
+1269,http://semanticscience.org/resource/SIO_011021,titanium atom,sio:SIO_011021,sio:TitaniumAtom
+1270,http://semanticscience.org/resource/SIO_001217,strong,sio:SIO_001217,sio:Strong
+1271,http://semanticscience.org/resource/SIO_000107,chapter,sio:SIO_000107,sio:Chapter
+1272,http://semanticscience.org/resource/SIO_000045,area,sio:SIO_000045,sio:Area
+1273,http://semanticscience.org/resource/SIO_001292,always,sio:SIO_001292,sio:Always
+1274,http://semanticscience.org/resource/SIO_000013,geographic position,sio:SIO_000013,sio:GeographicPosition
+1275,http://semanticscience.org/resource/SIO_001286,irritability,sio:SIO_001286,sio:Irritability
+1276,http://semanticscience.org/resource/SIO_001199,increased molecular degradation from increased regulation,sio:SIO_001199,sio:IncreasedMolecularDegradationFromIncreasedRegulation
+1277,http://semanticscience.org/resource/SIO_000518,rectangle,sio:SIO_000518,sio:Rectangle
+1278,http://semanticscience.org/resource/SIO_000195,discussion section,sio:SIO_000195,sio:DiscussionSection
+1279,http://semanticscience.org/resource/SIO_000010,social structure,sio:SIO_000010,sio:SocialStructure
+1280,http://semanticscience.org/resource/SIO_001093,rigid,sio:SIO_001093,sio:Rigid
+1281,http://semanticscience.org/resource/SIO_000391,time measurement,sio:SIO_000391,sio:TimeMeasurement
+1282,http://semanticscience.org/resource/SIO_000041,length,sio:SIO_000041,sio:Length
+1283,http://semanticscience.org/resource/SIO_000965,agreement quality,sio:SIO_000965,sio:AgreementQuality
+1284,http://semanticscience.org/resource/SIO_000695,to be recorded,sio:SIO_000695,sio:ToBeRecorded
+1285,http://semanticscience.org/resource/SIO_001357,speech,sio:SIO_001357,sio:Speech
+1286,http://semanticscience.org/resource/SIO_010516,organic reaction,sio:SIO_010516,sio:OrganicReaction
+1287,http://semanticscience.org/resource/SIO_010038,drug,sio:SIO_010038,sio:Drug
+1288,http://semanticscience.org/resource/SIO_000770,standard deviation,sio:SIO_000770,sio:StandardDeviation
+1289,http://semanticscience.org/resource/SIO_001195,behaviour,sio:SIO_001195,sio:Behaviour
+1290,http://semanticscience.org/resource/SIO_011068,bismuth atom,sio:SIO_011068,sio:BismuthAtom
+1291,http://semanticscience.org/resource/SIO_001341,containment quality,sio:SIO_001341,sio:ContainmentQuality
+1292,http://semanticscience.org/resource/SIO_010527,chemical synthesis pathway,sio:SIO_010527,sio:ChemicalSynthesisPathway
+1293,http://semanticscience.org/resource/SIO_000567,ordinary differential equation,sio:SIO_000567,sio:OrdinaryDifferentialEquation
+1294,http://semanticscience.org/resource/SIO_000371,to measure,sio:SIO_000371,sio:ToMeasure
+1295,http://semanticscience.org/resource/SIO_001130,protein mediated regulation of translation,sio:SIO_001130,sio:ProteinMediatedRegulationOfTranslation
+1296,http://semanticscience.org/resource/SIO_010507,acid-base reaction,sio:SIO_010507,sio:Acid-baseReaction
+1297,http://semanticscience.org/resource/SIO_001172,exact cross-reference,sio:SIO_001172,sio:ExactCross-reference
+1298,http://semanticscience.org/resource/SIO_000723,to compare,sio:SIO_000723,sio:ToCompare
+1299,http://semanticscience.org/resource/SIO_000348,to freeze,sio:SIO_000348,sio:ToFreeze
+1300,http://semanticscience.org/resource/SIO_000913,nomimal scale,sio:SIO_000913,sio:NomimalScale
+1301,http://semanticscience.org/resource/SIO_000155,blog,sio:SIO_000155,sio:Blog
+1302,http://semanticscience.org/resource/SIO_001147,decreased object production from increased regulation,sio:SIO_001147,sio:DecreasedObjectProductionFromIncreasedRegulation
+1303,http://semanticscience.org/resource/SIO_000947,venn diagram,sio:SIO_000947,sio:VennDiagram
+1304,http://semanticscience.org/resource/SIO_000589,regulating,sio:SIO_000589,sio:Regulating
+1305,http://semanticscience.org/resource/SIO_000537,curvature,sio:SIO_000537,sio:Curvature
+1306,http://semanticscience.org/resource/SIO_000444,horizontal bar graph,sio:SIO_000444,sio:HorizontalBarGraph
+1307,http://semanticscience.org/resource/SIO_000118,common name,sio:SIO_000118,sio:CommonName
+1308,http://semanticscience.org/resource/SIO_000902,top value axis,sio:SIO_000902,sio:TopValueAxis
+1309,http://semanticscience.org/resource/SIO_000098,software method,sio:SIO_000098,sio:SoftwareMethod
+1310,http://semanticscience.org/resource/SIO_010099,messenger RNA,sio:SIO_010099,sio:MessengerRNA
+1311,http://semanticscience.org/resource/SIO_000890,toxin role,sio:SIO_000890,sio:ToxinRole
+1312,http://semanticscience.org/resource/SIO_000400,x cartesian coordinate,sio:SIO_000400,sio:XCartesianCoordinate
+1313,http://semanticscience.org/resource/SIO_000835,euphoria,sio:SIO_000835,sio:Euphoria
+1314,http://semanticscience.org/resource/SIO_001391,ontology,sio:SIO_001391,sio:Ontology
+1315,http://semanticscience.org/resource/SIO_001090,homogeneous,sio:SIO_001090,sio:Homogeneous
+1316,http://semanticscience.org/resource/SIO_000419,table,sio:SIO_000419,sio:Table
+1317,http://semanticscience.org/resource/SIO_011061,osmium atom,sio:SIO_011061,sio:OsmiumAtom
+1318,http://semanticscience.org/resource/SIO_010028,genetic data,sio:SIO_010028,sio:GeneticData
+1319,http://semanticscience.org/resource/SIO_010073,open reading frame,sio:SIO_010073,sio:OpenReadingFrame
+1320,http://semanticscience.org/resource/SIO_000445,vertical bar graph,sio:SIO_000445,sio:VerticalBarGraph
+1321,http://semanticscience.org/resource/SIO_011069,polonium atom,sio:SIO_011069,sio:PoloniumAtom
+1322,http://semanticscience.org/resource/SIO_010340,to covalently modify,sio:SIO_010340,sio:ToCovalentlyModify
+1323,http://semanticscience.org/resource/SIO_011107,neptunium atom,sio:SIO_011107,sio:NeptuniumAtom
+1324,http://semanticscience.org/resource/SIO_010504,van der Waals interaction,sio:SIO_010504,sio:VanDerWaalsInteraction
+1325,http://semanticscience.org/resource/SIO_001107,pathway,sio:SIO_001107,sio:Pathway
+1326,http://semanticscience.org/resource/SIO_000669,start time,sio:SIO_000669,sio:StartTime
+1327,http://semanticscience.org/resource/SIO_001053,reason,sio:SIO_001053,sio:Reason
+1328,http://semanticscience.org/resource/SIO_000809,partial charge,sio:SIO_000809,sio:PartialCharge
+1329,http://semanticscience.org/resource/SIO_000968,poison role,sio:SIO_000968,sio:PoisonRole
+1330,http://semanticscience.org/resource/SIO_011086,ununpentium atom,sio:SIO_011086,sio:UnunpentiumAtom
+1331,http://semanticscience.org/resource/SIO_010510,inorganic reaction,sio:SIO_010510,sio:InorganicReaction
+1332,http://semanticscience.org/resource/SIO_000762,database key,sio:SIO_000762,sio:DatabaseKey
+1333,http://semanticscience.org/resource/SIO_000280,disjunction (or),sio:SIO_000280,sio:Disjunction(or)
+1334,http://semanticscience.org/resource/SIO_011062,iridium atom,sio:SIO_011062,sio:IridiumAtom
+1335,http://semanticscience.org/resource/SIO_000804,activator role,sio:SIO_000804,sio:ActivatorRole
+1336,http://semanticscience.org/resource/SIO_010429,placebo,sio:SIO_010429,sio:Placebo
+1337,http://semanticscience.org/resource/SIO_000503,polygonal face,sio:SIO_000503,sio:PolygonalFace
+1338,http://semanticscience.org/resource/SIO_001364,to decode information,sio:SIO_001364,sio:ToDecodeInformation
+1339,http://semanticscience.org/resource/SIO_001022,diagnostic test,sio:SIO_001022,sio:DiagnosticTest
+1340,http://semanticscience.org/resource/SIO_000015,information content entity,sio:SIO_000015,sio:InformationContentEntity
+1341,http://semanticscience.org/resource/SIO_001351,DisGeNET disease specificity,sio:SIO_001351,sio:DisgenetDiseaseSpecificity
+1342,http://semanticscience.org/resource/SIO_000468,legend,sio:SIO_000468,sio:Legend
+1343,http://semanticscience.org/resource/SIO_011083,copernicium atom,sio:SIO_011083,sio:CoperniciumAtom
+1344,http://semanticscience.org/resource/SIO_000199,methods section,sio:SIO_000199,sio:MethodsSection
+1345,http://semanticscience.org/resource/SIO_001177,double stranded nucleic acid,sio:SIO_001177,sio:DoubleStrandedNucleicAcid
+1346,http://semanticscience.org/resource/SIO_011055,barium atom,sio:SIO_011055,sio:BariumAtom
+1347,http://semanticscience.org/resource/SIO_010410,specialized material entity,sio:SIO_010410,sio:SpecializedMaterialEntity
+1348,http://semanticscience.org/resource/SIO_000360,belief,sio:SIO_000360,sio:Belief
+1349,http://semanticscience.org/resource/SIO_010031,PDB chain identifier,sio:SIO_010031,sio:PDBChainIdentifier
+1350,http://semanticscience.org/resource/SIO_000884,publishing role,sio:SIO_000884,sio:PublishingRole
+1351,http://semanticscience.org/resource/SIO_000516,ray,sio:SIO_000516,sio:Ray
+1352,http://semanticscience.org/resource/SIO_000665,city,sio:SIO_000665,sio:City
+1353,http://semanticscience.org/resource/SIO_010412,specimen,sio:SIO_010412,sio:Specimen
+1354,http://semanticscience.org/resource/SIO_000147,keyword,sio:SIO_000147,sio:Keyword
+1355,http://semanticscience.org/resource/SIO_010464,negative charge,sio:SIO_010464,sio:NegativeCharge
+1356,http://semanticscience.org/resource/SIO_000267,invalid argument,sio:SIO_000267,sio:InvalidArgument
+1357,http://semanticscience.org/resource/SIO_000533,surface normal,sio:SIO_000533,sio:SurfaceNormal
+1358,http://semanticscience.org/resource/SIO_010086,gene enhancer,sio:SIO_010086,sio:GeneEnhancer
+1359,http://semanticscience.org/resource/SIO_000875,department chair role,sio:SIO_000875,sio:DepartmentChairRole
+1360,http://semanticscience.org/resource/SIO_000073,polar coordinate,sio:SIO_000073,sio:PolarCoordinate
+1361,http://semanticscience.org/resource/SIO_000126,homonym,sio:SIO_000126,sio:Homonym
+1362,http://semanticscience.org/resource/SIO_000663,territory,sio:SIO_000663,sio:Territory
+1363,http://semanticscience.org/resource/SIO_000853,lust,sio:SIO_000853,sio:Lust
+1364,http://semanticscience.org/resource/SIO_001303,none quantifier,sio:SIO_001303,sio:NoneQuantifier
+1365,http://semanticscience.org/resource/SIO_001069,intervention group,sio:SIO_001069,sio:InterventionGroup
+1366,http://semanticscience.org/resource/SIO_001225,cis regulatory element,sio:SIO_001225,sio:CisRegulatoryElement
+1367,http://semanticscience.org/resource/SIO_001032,revision number,sio:SIO_001032,sio:RevisionNumber
+1368,http://semanticscience.org/resource/SIO_010359,to reduce,sio:SIO_010359,sio:ToReduce
+1369,http://semanticscience.org/resource/SIO_000662,state,sio:SIO_000662,sio:State
+1370,http://semanticscience.org/resource/SIO_001153,maintenance of level of object consumption,sio:SIO_001153,sio:MaintenanceOfLevelOfObjectConsumption
+1371,http://semanticscience.org/resource/SIO_000069,data item,sio:SIO_000069,sio:DataItem
+1372,http://semanticscience.org/resource/SIO_010451,splice site,sio:SIO_010451,sio:SpliceSite
+1373,http://semanticscience.org/resource/SIO_000450,axis,sio:SIO_000450,sio:Axis
+1374,http://semanticscience.org/resource/SIO_001189,semantic web service,sio:SIO_001189,sio:SemanticWebService
+1375,http://semanticscience.org/resource/SIO_001397,microRNA (miRNA),sio:SIO_001397,sio:Microrna(mirna)
+1376,http://semanticscience.org/resource/SIO_001066,study,sio:SIO_001066,sio:Study
+1377,http://semanticscience.org/resource/SIO_010334,carbohydrate residue,sio:SIO_010334,sio:CarbohydrateResidue
+1378,http://semanticscience.org/resource/SIO_000867,shyness,sio:SIO_000867,sio:Shyness
+1379,http://semanticscience.org/resource/SIO_010526,chemical reaction pathway,sio:SIO_010526,sio:ChemicalReactionPathway
+1380,http://semanticscience.org/resource/SIO_000088,record,sio:SIO_000088,sio:Record
+1381,http://semanticscience.org/resource/SIO_000976,observational study,sio:SIO_000976,sio:ObservationalStudy
+1382,http://semanticscience.org/resource/SIO_010057,life status,sio:SIO_010057,sio:LifeStatus
+1383,http://semanticscience.org/resource/SIO_000447,line-bar graph,sio:SIO_000447,sio:Line-barGraph
+1384,http://semanticscience.org/resource/SIO_000301,geographic image,sio:SIO_000301,sio:GeographicImage
+1385,http://semanticscience.org/resource/SIO_010431,control role,sio:SIO_010431,sio:ControlRole
+1386,http://semanticscience.org/resource/SIO_000486,mouse,sio:SIO_000486,sio:Mouse
+1387,http://semanticscience.org/resource/SIO_000564,diffusion,sio:SIO_000564,sio:Diffusion
+1388,http://semanticscience.org/resource/SIO_001396,terminology,sio:SIO_001396,sio:Terminology
+1389,http://semanticscience.org/resource/SIO_011052,iodine atom,sio:SIO_011052,sio:IodineAtom
+1390,http://semanticscience.org/resource/SIO_010370,to gain an electron,sio:SIO_010370,sio:ToGainAnElectron
+1391,http://semanticscience.org/resource/SIO_010053,evolutionary lineage,sio:SIO_010053,sio:EvolutionaryLineage
+1392,http://semanticscience.org/resource/SIO_010016,nucleic acid sequence,sio:SIO_010016,sio:NucleicAcidSequence
+1393,http://semanticscience.org/resource/SIO_010786,carbon allotrope,sio:SIO_010786,sio:CarbonAllotrope
+1394,http://semanticscience.org/resource/SIO_000540,vector,sio:SIO_000540,sio:Vector
+1395,http://semanticscience.org/resource/SIO_000886,author role,sio:SIO_000886,sio:AuthorRole
+1396,http://semanticscience.org/resource/SIO_001213,mild,sio:SIO_001213,sio:Mild
+1397,http://semanticscience.org/resource/SIO_001068,control group,sio:SIO_001068,sio:ControlGroup
+1398,http://semanticscience.org/resource/SIO_001160,number of objects produced,sio:SIO_001160,sio:NumberOfObjectsProduced
+1399,http://semanticscience.org/resource/SIO_000850,joy,sio:SIO_000850,sio:Joy
+1400,http://semanticscience.org/resource/SIO_000034,completed,sio:SIO_000034,sio:Completed
+1401,http://semanticscience.org/resource/SIO_000177,page range,sio:SIO_000177,sio:PageRange
+1402,http://semanticscience.org/resource/SIO_001399,chemical exposure,sio:SIO_001399,sio:ChemicalExposure
+1403,http://semanticscience.org/resource/SIO_000602,computational entity,sio:SIO_000602,sio:ComputationalEntity
+1404,http://semanticscience.org/resource/SIO_001314,date of issue,sio:SIO_001314,sio:DateOfIssue
+1405,http://semanticscience.org/resource/SIO_001312,satisfied qualifier,sio:SIO_001312,sio:SatisfiedQualifier
+1406,http://semanticscience.org/resource/SIO_000287,social relation,sio:SIO_000287,sio:SocialRelation
+1407,http://semanticscience.org/resource/SIO_000625,chemical structure,sio:SIO_000625,sio:ChemicalStructure
+1408,http://semanticscience.org/resource/SIO_010335,nucleic acid part,sio:SIO_010335,sio:NucleicAcidPart
+1409,http://semanticscience.org/resource/SIO_000882,host role,sio:SIO_000882,sio:HostRole
+1410,http://semanticscience.org/resource/SIO_000121,magazine,sio:SIO_000121,sio:Magazine
+1411,http://semanticscience.org/resource/SIO_000384,to emit,sio:SIO_000384,sio:ToEmit
+1412,http://semanticscience.org/resource/SIO_010349,to cleave,sio:SIO_010349,sio:ToCleave
+1413,http://semanticscience.org/resource/SIO_000488,worm,sio:SIO_000488,sio:Worm
+1414,http://semanticscience.org/resource/SIO_000612,representation,sio:SIO_000612,sio:Representation
+1415,http://semanticscience.org/resource/SIO_001079,genotype,sio:SIO_001079,sio:Genotype
+1416,http://semanticscience.org/resource/SIO_000114,word,sio:SIO_000114,sio:Word
+1417,http://semanticscience.org/resource/SIO_001042,recipe,sio:SIO_001042,sio:Recipe
+1418,http://semanticscience.org/resource/SIO_010500,triple bond,sio:SIO_010500,sio:TripleBond
+1419,http://semanticscience.org/resource/SIO_010351,to combine,sio:SIO_010351,sio:ToCombine
+1420,http://semanticscience.org/resource/SIO_000805,charged,sio:SIO_000805,sio:Charged
+1421,http://semanticscience.org/resource/SIO_010782,heterocyclic ring,sio:SIO_010782,sio:HeterocyclicRing
+1422,http://semanticscience.org/resource/SIO_010433,low barrier hydrogen bond,sio:SIO_010433,sio:LowBarrierHydrogenBond
+1423,http://semanticscience.org/resource/SIO_000140,web service,sio:SIO_000140,sio:WebService
+1424,http://semanticscience.org/resource/SIO_000838,frustration,sio:SIO_000838,sio:Frustration
+1425,http://semanticscience.org/resource/SIO_001209,assertional qualifier,sio:SIO_001209,sio:AssertionalQualifier
+1426,http://semanticscience.org/resource/SIO_000677,processual role,sio:SIO_000677,sio:ProcessualRole
+1427,http://semanticscience.org/resource/SIO_000705,design,sio:SIO_000705,sio:Design
+1428,http://semanticscience.org/resource/SIO_001014,ethnicity,sio:SIO_001014,sio:Ethnicity
+1429,http://semanticscience.org/resource/SIO_000715,patient role,sio:SIO_000715,sio:PatientRole
+1430,http://semanticscience.org/resource/SIO_010301,translation,sio:SIO_010301,sio:Translation
+1431,http://semanticscience.org/resource/SIO_000417,time interval,sio:SIO_000417,sio:TimeInterval
+1432,http://semanticscience.org/resource/SIO_000626,molecular structure,sio:SIO_000626,sio:MolecularStructure
+1433,http://semanticscience.org/resource/SIO_000131,sequence motif,sio:SIO_000131,sio:SequenceMotif
+1434,http://semanticscience.org/resource/SIO_000794,count,sio:SIO_000794,sio:Count
+1435,http://semanticscience.org/resource/SIO_001142,maintenance of spatial extent of process,sio:SIO_001142,sio:MaintenanceOfSpatialExtentOfProcess
+1436,http://semanticscience.org/resource/SIO_001185,software process identifier,sio:SIO_001185,sio:SoftwareProcessIdentifier
+1437,http://semanticscience.org/resource/SIO_010048,male,sio:SIO_010048,sio:Male
+1438,http://semanticscience.org/resource/SIO_001369,velocity,sio:SIO_001369,sio:Velocity
+1439,http://semanticscience.org/resource/SIO_000995,suspended,sio:SIO_000995,sio:Suspended
+1440,http://semanticscience.org/resource/SIO_000331,OWL ontology,sio:SIO_000331,sio:OWLOntology
+1441,http://semanticscience.org/resource/SIO_000686,academic department,sio:SIO_000686,sio:AcademicDepartment
+1442,http://semanticscience.org/resource/SIO_000883,subject role,sio:SIO_000883,sio:SubjectRole
+1443,http://semanticscience.org/resource/SIO_001352,DisGeNET Pleiotropy Index,sio:SIO_001352,sio:DisgenetPleiotropyIndex
+1444,http://semanticscience.org/resource/SIO_000479,variant role,sio:SIO_000479,sio:VariantRole
+1445,http://semanticscience.org/resource/SIO_000320,coordinate system,sio:SIO_000320,sio:CoordinateSystem
+1446,http://semanticscience.org/resource/SIO_000057,orientation,sio:SIO_000057,sio:Orientation
+1447,http://semanticscience.org/resource/SIO_000765,probability value,sio:SIO_000765,sio:ProbabilityValue
+1448,http://semanticscience.org/resource/SIO_001099,electronic structure,sio:SIO_001099,sio:ElectronicStructure
+1449,http://semanticscience.org/resource/SIO_010341,covalently connected entity,sio:SIO_010341,sio:CovalentlyConnectedEntity
+1450,http://semanticscience.org/resource/SIO_001318,middle initial,sio:SIO_001318,sio:MiddleInitial
+1451,http://semanticscience.org/resource/SIO_010417,solvent,sio:SIO_010417,sio:Solvent
+1452,http://semanticscience.org/resource/SIO_000389,to extract,sio:SIO_000389,sio:ToExtract
+1453,http://semanticscience.org/resource/SIO_001043,experimental protocol,sio:SIO_001043,sio:ExperimentalProtocol
+1454,http://semanticscience.org/resource/SIO_000980,sign language,sio:SIO_000980,sio:SignLanguage
+1455,http://semanticscience.org/resource/SIO_000754,database table,sio:SIO_000754,sio:DatabaseTable
+1456,http://semanticscience.org/resource/SIO_010064,5' untranslated region,sio:SIO_010064,sio:5'UntranslatedRegion
+1457,http://semanticscience.org/resource/SIO_011084,unutrium atom,sio:SIO_011084,sio:UnutriumAtom
+1458,http://semanticscience.org/resource/SIO_000044,2D extent quantity,sio:SIO_000044,sio:2DExtentQuantity
+1459,http://semanticscience.org/resource/SIO_001046,polar,sio:SIO_001046,sio:Polar
+1460,http://semanticscience.org/resource/SIO_000056,position,sio:SIO_000056,sio:Position
+1461,http://semanticscience.org/resource/SIO_001028,medical report,sio:SIO_001028,sio:MedicalReport
+1462,http://semanticscience.org/resource/SIO_010045,base pair,sio:SIO_010045,sio:BasePair
+1463,http://semanticscience.org/resource/SIO_011040,niobium atom,sio:SIO_011040,sio:NiobiumAtom
+1464,http://semanticscience.org/resource/SIO_000269,true,sio:SIO_000269,sio:True
+1465,http://semanticscience.org/resource/SIO_000998,literature curation,sio:SIO_000998,sio:LiteratureCuration
+1466,http://semanticscience.org/resource/SIO_010793,chaoite,sio:SIO_010793,sio:Chaoite
+1467,http://semanticscience.org/resource/SIO_000465,data point,sio:SIO_000465,sio:DataPoint
+1468,http://semanticscience.org/resource/SIO_000281,negation (not),sio:SIO_000281,sio:Negation(not)
+1469,http://semanticscience.org/resource/SIO_010414,pathogen,sio:SIO_010414,sio:Pathogen
+1470,http://semanticscience.org/resource/SIO_000837,fear,sio:SIO_000837,sio:Fear
+1471,http://semanticscience.org/resource/SIO_000101,software application,sio:SIO_000101,sio:SoftwareApplication
+1472,http://semanticscience.org/resource/SIO_000796,catalytic role,sio:SIO_000796,sio:CatalyticRole
+1473,http://semanticscience.org/resource/SIO_000825,desire,sio:SIO_000825,sio:Desire
+1474,http://semanticscience.org/resource/SIO_000769,uncertainty value,sio:SIO_000769,sio:UncertaintyValue
+1475,http://semanticscience.org/resource/SIO_001035,peer-reviewed,sio:SIO_001035,sio:Peer-reviewed
+1476,http://semanticscience.org/resource/SIO_001345,gene-disease association linked with somatic causal mutation,sio:SIO_001345,sio:Gene-diseaseAssociationLinkedWithSomaticCausalMutation
+1477,http://semanticscience.org/resource/SIO_011120,molecular structure file,sio:SIO_011120,sio:MolecularStructureFile
+1478,http://semanticscience.org/resource/SIO_000000,entity,sio:SIO_000000,sio:Entity
+1479,http://semanticscience.org/resource/SIO_000541,vertex normal,sio:SIO_000541,sio:VertexNormal
+1480,http://semanticscience.org/resource/SIO_010439,messenger,sio:SIO_010439,sio:Messenger
+1481,http://semanticscience.org/resource/SIO_001135,regulation of process frequency,sio:SIO_001135,sio:RegulationOfProcessFrequency
+1482,http://semanticscience.org/resource/SIO_001134,decreased frequency of process from increased regulation,sio:SIO_001134,sio:DecreasedFrequencyOfProcessFromIncreasedRegulation
+1483,http://semanticscience.org/resource/SIO_000523,single arrowed line segment,sio:SIO_000523,sio:SingleArrowedLineSegment
+1484,http://semanticscience.org/resource/SIO_000190,author contribution section,sio:SIO_000190,sio:AuthorContributionSection
+1485,http://semanticscience.org/resource/SIO_000457,secondary category axis,sio:SIO_000457,sio:SecondaryCategoryAxis
+1486,http://semanticscience.org/resource/SIO_000923,correlation,sio:SIO_000923,sio:Correlation
+1487,http://semanticscience.org/resource/SIO_000454,z-axis,sio:SIO_000454,sio:Z-axis
+1488,http://semanticscience.org/resource/SIO_000087,publication,sio:SIO_000087,sio:Publication
+1489,http://semanticscience.org/resource/SIO_010791,amorphous carbon,sio:SIO_010791,sio:AmorphousCarbon
+1490,http://semanticscience.org/resource/SIO_000261,premise,sio:SIO_000261,sio:Premise
+1491,http://semanticscience.org/resource/SIO_000748,predicting,sio:SIO_000748,sio:Predicting
+1492,http://semanticscience.org/resource/SIO_000556,lipid residue,sio:SIO_000556,sio:LipidResidue
+1493,http://semanticscience.org/resource/SIO_001398,medical intervention,sio:SIO_001398,sio:MedicalIntervention
+1494,http://semanticscience.org/resource/SIO_000314,polymer,sio:SIO_000314,sio:Polymer
+1495,http://semanticscience.org/resource/SIO_001026,report,sio:SIO_001026,sio:Report
+1496,http://semanticscience.org/resource/SIO_000984,genome,sio:SIO_000984,sio:Genome
+1497,http://semanticscience.org/resource/SIO_000522,arrowed line segment,sio:SIO_000522,sio:ArrowedLineSegment
+1498,http://semanticscience.org/resource/SIO_000725,to be examined,sio:SIO_000725,sio:ToBeExamined
+1499,http://semanticscience.org/resource/SIO_000729,record identifier,sio:SIO_000729,sio:RecordIdentifier
+1500,http://semanticscience.org/resource/SIO_001243,likelihood,sio:SIO_001243,sio:Likelihood
+1501,http://semanticscience.org/resource/SIO_001122,gene-disease association linked with genetic variation,sio:SIO_001122,sio:Gene-diseaseAssociationLinkedWithGeneticVariation
+1502,http://semanticscience.org/resource/SIO_010034,cation pi interaction,sio:SIO_010034,sio:CationPiInteraction
+1503,http://semanticscience.org/resource/SIO_000906,map,sio:SIO_000906,sio:Map
+1504,http://semanticscience.org/resource/SIO_000403,study group,sio:SIO_000403,sio:StudyGroup
+1505,http://semanticscience.org/resource/SIO_000119,brand name,sio:SIO_000119,sio:BrandName
+1506,http://semanticscience.org/resource/SIO_000160,journal,sio:SIO_000160,sio:Journal
+1507,http://semanticscience.org/resource/SIO_011004,lithium atom,sio:SIO_011004,sio:LithiumAtom
+1508,http://semanticscience.org/resource/SIO_000653,version label,sio:SIO_000653,sio:VersionLabel
+1509,http://semanticscience.org/resource/SIO_000761,referent cell,sio:SIO_000761,sio:ReferentCell
+1510,http://semanticscience.org/resource/SIO_001331,diagnosis,sio:SIO_001331,sio:Diagnosis
+1511,http://semanticscience.org/resource/SIO_001198,consensus,sio:SIO_001198,sio:Consensus
+1512,http://semanticscience.org/resource/SIO_000405,student,sio:SIO_000405,sio:Student
+1513,http://semanticscience.org/resource/SIO_010465,antibody,sio:SIO_010465,sio:Antibody
+1514,http://semanticscience.org/resource/SIO_000876,student advisor role,sio:SIO_000876,sio:StudentAdvisorRole
+1515,http://semanticscience.org/resource/SIO_001393,post-translational modification,sio:SIO_001393,sio:Post-translationalModification
+1516,http://semanticscience.org/resource/SIO_000613,ordinal position,sio:SIO_000613,sio:OrdinalPosition
+1517,http://semanticscience.org/resource/SIO_000986,functional rna coding gene,sio:SIO_000986,sio:FunctionalRnaCodingGene
+1518,http://semanticscience.org/resource/SIO_011018,potassium atom,sio:SIO_011018,sio:PotassiumAtom
+1519,http://semanticscience.org/resource/SIO_000868,sorrow,sio:SIO_000868,sio:Sorrow
+1520,http://semanticscience.org/resource/SIO_001293,quality descriptor,sio:SIO_001293,sio:QualityDescriptor
+1521,http://semanticscience.org/resource/SIO_010525,biochemical pathway,sio:SIO_010525,sio:BiochemicalPathway
+1522,http://semanticscience.org/resource/SIO_001335,node,sio:SIO_001335,sio:Node
+1523,http://semanticscience.org/resource/SIO_000542,to serve as,sio:SIO_000542,sio:ToServeAs
+1524,http://semanticscience.org/resource/SIO_000115,identifier,sio:SIO_000115,sio:Identifier
+1525,http://semanticscience.org/resource/SIO_001308,satisfaction qualifier,sio:SIO_001308,sio:SatisfactionQualifier
+1526,http://semanticscience.org/resource/SIO_011051,tellurium atom,sio:SIO_011051,sio:TelluriumAtom
+1527,http://semanticscience.org/resource/SIO_000333,3D cartesian coordinate,sio:SIO_000333,sio:3DCartesianCoordinate
+1528,http://semanticscience.org/resource/SIO_000308,edition number,sio:SIO_000308,sio:EditionNumber
+1529,http://semanticscience.org/resource/SIO_010288,biochemical activation,sio:SIO_010288,sio:BiochemicalActivation
+1530,http://semanticscience.org/resource/SIO_000590,biosynthesis,sio:SIO_000590,sio:Biosynthesis
+1531,http://semanticscience.org/resource/SIO_000166,honor's thesis,sio:SIO_000166,sio:Honor'sThesis
+1532,http://semanticscience.org/resource/SIO_000753,column,sio:SIO_000753,sio:Column
+1533,http://semanticscience.org/resource/SIO_000600,structure,sio:SIO_000600,sio:Structure
+1534,http://semanticscience.org/resource/SIO_010023,tertiary structure descriptor,sio:SIO_010023,sio:TertiaryStructureDescriptor
+1535,http://semanticscience.org/resource/SIO_000852,loneliness,sio:SIO_000852,sio:Loneliness
+1536,http://semanticscience.org/resource/SIO_001029,peer reviewed article,sio:SIO_001029,sio:PeerReviewedArticle
+1537,http://semanticscience.org/resource/SIO_000848,interest,sio:SIO_000848,sio:Interest
+1538,http://semanticscience.org/resource/SIO_000111,document section,sio:SIO_000111,sio:DocumentSection
+1539,http://semanticscience.org/resource/SIO_010778,optical isomer,sio:SIO_010778,sio:OpticalIsomer
+1540,http://semanticscience.org/resource/SIO_001370,slide,sio:SIO_001370,sio:Slide
+1541,http://semanticscience.org/resource/SIO_010096,mature mRNA,sio:SIO_010096,sio:MatureMrna
+1542,http://semanticscience.org/resource/SIO_001380,protein family,sio:SIO_001380,sio:ProteinFamily
+1543,http://semanticscience.org/resource/SIO_001245,standard score,sio:SIO_001245,sio:StandardScore

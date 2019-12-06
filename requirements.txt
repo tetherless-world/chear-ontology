@@ -5,3 +5,4 @@ labkey
 Jinja2
 git+git://github.com/jimmccusker/rdflib-jsonld.git#egg=rdflib-jsonld
 setlr
+openpyxl==2.6.3

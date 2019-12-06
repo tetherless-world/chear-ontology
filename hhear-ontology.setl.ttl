@@ -1,0 +1,493 @@
+@prefix rdf:           <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:          <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:           <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:           <http://www.w3.org/2002/07/owl#> .
+@prefix skos:          <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov:          <http://www.w3.org/ns/prov#> .
+@prefix sio:           <http://semanticscience.org/resource/> .
+@prefix dcat:          <http://www.w3.org/ns/dcat#> .
+@prefix dcterms:       <http://purl.org/dc/terms/> .
+@prefix void:          <http://rdfs.org/ns/void#> .
+@prefix foaf:          <http://xmlns.com/foaf/0.1/> .
+@prefix ov:            <http://open.vocab.org/terms/> .
+@prefix setl:          <http://purl.org/twc/vocab/setl/> .
+@prefix csvw:          <http://www.w3.org/ns/csvw#> .
+@prefix pv:            <http://purl.org/net/provenance/ns#>.
+@prefix prv:           <http://hadatac.org/ont/prov#>.
+
+@prefix :              <https://hadatac.org/setl/> .
+
+@prefix chear:    <http://hadatac.org/ont/chear#> .
+
+
+:analytes_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1LiUBgM0WDLel9AbHT9msYvzYd9IhcNAB2sjByqXFExQ/export?exportFormat=csv&gid=1104211168>;
+  ].
+  
+:attributes_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1LiUBgM0WDLel9AbHT9msYvzYd9IhcNAB2sjByqXFExQ/export?exportFormat=csv&gid=1538469852>;
+  ].
+
+:instrument_perspectives_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1LiUBgM0WDLel9AbHT9msYvzYd9IhcNAB2sjByqXFExQ/export?exportFormat=csv&gid=1352629858>;
+  ].
+
+:instruments_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1LiUBgM0WDLel9AbHT9msYvzYd9IhcNAB2sjByqXFExQ/export?exportFormat=csv&gid=1460654869>;
+  ].
+
+:methods_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1LiUBgM0WDLel9AbHT9msYvzYd9IhcNAB2sjByqXFExQ/export?exportFormat=csv&gid=520711172>;
+  ].
+
+:objects_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1LiUBgM0WDLel9AbHT9msYvzYd9IhcNAB2sjByqXFExQ/export?exportFormat=csv&gid=1546048559>;
+  ].
+
+:roles_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1LiUBgM0WDLel9AbHT9msYvzYd9IhcNAB2sjByqXFExQ/export?exportFormat=csv&gid=57137815>;
+  ].
+
+:samples_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1LiUBgM0WDLel9AbHT9msYvzYd9IhcNAB2sjByqXFExQ/export?exportFormat=csv&gid=588123621>;
+  ].
+
+:indicators_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1LiUBgM0WDLel9AbHT9msYvzYd9IhcNAB2sjByqXFExQ/export?exportFormat=csv&gid=295360362>;
+  ].
+
+:studies_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1LiUBgM0WDLel9AbHT9msYvzYd9IhcNAB2sjByqXFExQ/export?exportFormat=csv&gid=943094173>;
+  ].
+
+:time_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1LiUBgM0WDLel9AbHT9msYvzYd9IhcNAB2sjByqXFExQ/export?exportFormat=csv&gid=815139593>;
+  ].
+
+:units_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1LiUBgM0WDLel9AbHT9msYvzYd9IhcNAB2sjByqXFExQ/export?exportFormat=csv&gid=1388027918>;
+  ].
+
+:cogat_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1LiUBgM0WDLel9AbHT9msYvzYd9IhcNAB2sjByqXFExQ/export?exportFormat=csv&gid=1337184281>;
+  ].
+
+:labels_table a csvw:Table, setl:Table;
+  prov:wasGeneratedBy [
+    a setl:Extract;
+    prov:used <https://docs.google.com/spreadsheets/d/1LiUBgM0WDLel9AbHT9msYvzYd9IhcNAB2sjByqXFExQ/export?exportFormat=csv&gid=1716266576>;
+  ].
+
+
+
+<http://purl.org/twc/HHEAR> a void:Dataset;
+  prov:wasGeneratedBy [
+    a setl:Transform, setl:JSLDT;
+    prov:used
+        :analytes_table,
+        :attributes_table,
+        :instrument_perspectives_table,
+        :instruments_table,
+        :methods_table,
+        :objects_table,
+        :roles_table,
+        :samples_table,
+        :indicators_table,
+        :studies_table,
+        :time_table,
+        :units_table;
+    setl:hasContext '''{
+  "@vocab" :   "http://hadatac.org/ont/chear#",
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "sio" :     "http://semanticscience.org/resource/",
+  "foaf" : "http://xmlns.com/foaf/0.1/",
+  "hhear" :   "http://purl.org/twc/HHEAR_",
+  "skos" :    "http://www.w3.org/2004/02/skos/core#",
+  "prov" :    "http://www.w3.org/ns/prov#",
+  "uniprot" :   "http://www.uniprot.org/uniprot/",
+  "chebi" :   "http://purl.obolibrary.org/obo/CHEBI_",
+  "cl" :   "http://purl.obolibrary.org/obo/CL_",
+  "stato" :   "http://purl.obolibrary.org/obo/STATO_",
+  "hp" :   "http://purl.obolibrary.org/obo/HP_",
+  "efo" :   "http://www.ebi.ac.uk/efo/EFO_",
+  "obo" :   "http://purl.obolibrary.org/obo/",
+  "phenx" : "http://purl.bioontology.org/ontology/phenX/",
+  "pubchem" : "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/",
+  "dc"   :    "http://purl.org/dc/terms/",
+  "hasco" : "http://hadatac.org/ont/hasco/",
+  "vstoi" : "http://hadatac.org/ont/vstoi#",
+  "hasneto" : "http://hadatac.org/ont/hasneto#",
+  "vivo": "http://vivoweb.org/ontology/core#",
+  "uberon" : "http://purl.obolibrary.org/obo/UBERON_",
+  "envo" : "http://purl.obolibrary.org/obo/ENVO_",
+  "radlex" : "http://radlex.org/RID/RID",
+  "do": "http://purl.obolibrary.org/obo/DOID_",
+  "doid": "http://purl.obolibrary.org/obo/DOID_",
+  "prv" : "http://hadatac.org/ont/prov#",
+  "chear-kb" : "http://hadatac.org/kb/chear#",
+  "CSEO" : "http://scai.fraunhofer.de/CSEO#",
+  "cmo"  :    "http://purl.obolibrary.org/obo/CMO_"
+}''';
+  prov:value '''[{
+    "@id": "http://purl.org/twc/HHEAR",
+    "@context": {
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "comment": "rdfs:comment",
+    "isa": {
+      "@id":"rdfs:subClassOf",
+      "@type":"@id"
+    },
+    "Property": "rdfs:Property",
+    "Relation": "owl:ObjectProperty",
+    "Attribute": "owl:DatatypeProperty",
+    "AnnotationProperty": "owl:AnnotationProperty",
+    "Transitive": "owl:TransitiveProperty",
+    "Reflexive": "owl:ReflexiveProperty",
+    "Irreflexive": "owl:IrreflexiveProperty",
+    "Symmetric": "owl:SymmetricProperty",
+    "Asymmetric": "owl:AsymmetricProperty",
+    "Functional": "owl:FunctionalProperty",
+    "InverseFunctional": "owl:InverseFunctionalProperty",
+    "Class": "owl:Class",
+    "Restriction": "owl:Restriction",
+    "AllDifferent": "owl:AllDifferent",
+    "Ontology": "owl:Ontology",
+    "imports": {
+      "@id": "owl:imports",
+      "@type": "@id"
+    },
+    "value":"owl:hasValue",
+    "distinct": {
+      "@id": "owl:distinctMembers",
+      "@type": "@id"
+    },
+    "distinct": {
+      "@id": "owl:distinctMembers",
+      "@type": "@id"
+    },
+    "definedBy": {
+      "@id": "rdfs:isDefinedBy",
+      "@type": "@id"
+    },
+    "subPropertyOf": {
+      "@id": "rdfs:subPropertyOf",
+      "@type": "@id"
+    },
+    "range": {
+      "@id": "rdfs:range",
+      "@type": "@id"
+    },
+    "domain": {
+      "@id": "rdfs:domain",
+      "@type": "@id"
+    },
+    "seeAlso": {
+      "@id": "rdfs:seeAlso",
+      "@type": "@id"
+    },
+    "label": {
+      "@id": "rdfs:label"
+    },
+    "not" : {
+      "@id":"owl:disjointWith",
+      "@type":"@id"
+    },
+    "complement" : {
+      "@id":"owl:complementOf",
+      "@type":"@id"
+    },
+    "some" : {
+      "@id":"owl:someValuesFrom",
+      "@type":"@id"
+    },
+    "only" : {
+      "@id":"owl:allValuesFrom",
+      "@type":"@id"
+    },
+    "on" : {
+      "@id":"owl:onProperty",
+      "@type":"@id"
+    },
+    "inverse" : {
+      "@id":"owl:inverseOf",
+      "@type":"@id"
+    },
+    "equivalent" : {
+      "@id":"owl:equivalentClass",
+      "@type":"@id"
+    },
+    "and" : {
+      "@id":"owl:intersectionOf",
+      "@type":"@id",
+      "@container":"@list"
+    },
+    "or" : {
+      "@id":"owl:unionOf",
+      "@type":"@id",
+      "@container":"@list"
+    },
+    "key" : {
+      "@id":"owl:hasKey",
+      "@type":"@id",
+      "@container":"@list"
+    },
+    "in": {
+      "@id": "owl:oneOf",
+      "@type": "@id",
+      "@container": "@list"
+    },
+    "min": {
+      "@id": "owl:minCardinality",
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "max": {
+      "@id": "owl:maxCardinality",
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "minq": {
+      "@id": "owl:minQualifiedCardinality",
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "maxq": {
+      "@id": "owl:maxQualifiedCardinality",
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "exactq": {
+      "@id": "owl:qualifiedCardinality",
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "exactly": {
+      "@id": "owl:cardinality",
+      "@type": "xsd:nonNegativeInteger"
+    },
+    "onClass": {
+      "@id": "owl:onClass",
+      "@type": "@id"
+    },
+    "hasSelf": {
+      "@id": "owl:hasSelf",
+      "@type": "xsd:boolean"
+    }
+  }
+},
+    "@graph": [{
+        "@if" : "'owl:deprecated' not in row or isempty(row['owl:deprecated']) or not float(row['owl:deprecated']) < 1.2",
+        "@id": "{{row['hasURI']}}",
+        "@type": [
+          { "@if" : "not isempty(row['rdfs:subClassOf'])", "@id" : "owl:Class"},
+          {
+            "@if" : "'rdf:type' in row and row['rdf:type'] is not None and len(row['rdf:type'].strip()) > 0",
+            "@for" : "t in re.split('\\\\s*[,&]\\\\s*', row['rdf:type'])",
+            "@do" : "{{t}}"
+          }
+        ],
+        "owl:deprecated": {
+          "@if" : "not isempty(row['owl:deprecated']) and not float(row['owl:deprecated']) > 1.2",
+          "@value" : true
+        },
+        "rdfs:label": {
+          "@if" : "'rdfs:label' in row and row['rdfs:label'] is not None and len(row['rdfs:label'].strip()) > 0",
+          "@value" : "{{row['rdfs:label']}}"
+        },
+        "dc:identifier": {
+          "@if" : "'dcterms:identifier' in row and row['dcterms:identifier'] is not None and len(row['dcterms:identifier'].strip()) > 0",
+          "@value" : "{{row['dcterms:identifier'].strip()}}"
+        },
+        "skos:editorialNote": {
+          "@if" : "'skos:editorialNote' in row and row['skos:editorialNote'] is not None and len(row['skos:editorialNote'].strip()) > 0",
+          "@value" : "{{row['skos:editorialNote']}}"
+        },
+        "skos:editorialNote": {
+          "@if" : "'skos:editorialNote' in row and row['skos:editorialNote'] is not None and len(row['skos:editorialNote'].strip()) > 0",
+          "@value" : "{{row['skos:editorialNote']}}"
+        },
+        "skos:definition": [
+          {
+            "@if" : "'rdfs:comment' in row and row['rdfs:comment'] is not None and len(row['rdfs:comment'].strip()) > 0",
+            "@value" : "{{row['rdfs:comment']}}"
+          },
+          {
+            "@if" : "'skos:definition' in row and row['skos:definition'] is not None and len(row['skos:definition'].strip()) > 0",
+            "@value" : "{{row['skos:definition']}}"
+          }
+        ],
+        "hasco:wasApprovedBy": [
+          {
+            "@if" : "'hasco:approvedBy' in row and row['hasco:approvedBy'] is not None and len(row['hasco:approvedBy'].strip()) > 0",
+            "@value" : "{{row['hasco:approvedBy']}}"
+          }
+        ],
+        "vivo:abbreviation": [
+          {
+            "@if" : "'vivo:abbreviation' in row and row['vivo:abbreviation'] is not None and len(row['vivo:abbreviation'].strip()) > 0",
+            "@value" : "{{row['vivo:abbreviation']}}"
+          }
+        ],
+        "skos:notation": [
+          {
+            "@if" : "'skos:notation' in row and row['skos:notation'] is not None and len(row['skos:notation'].strip()) > 0",
+            "@value" : "{{row['skos:notation']}}"
+          }
+        ],
+        "rdfs:subClassOf": [
+          { "@if" : "'hasneto:hasUnit' in row and not isempty(row['hasneto:hasUnit'])",
+            "@type" : "owl:Restriction",
+            "owl:onProperty" : { "@id":"sio:hasUnit"},
+            "owl:hasValue" : { "@id": "{{row['hasneto:hasUnit']}}" }
+          },
+          { "@if" : "'prov:wasGeneratedBy' in row and not isempty(row['prov:wasGeneratedBy'])",
+            "@for" : "s in re.split('\\\\s*[,&]\\\\s*', row['prov:wasGeneratedBy'])",
+            "@do" : {
+              "@type" : "owl:Restriction",
+              "owl:onProperty" : { "@id":"prov:wasDerivedFrom"},
+              "owl:allValuesFrom" : { "@id": "{{s}}" }
+            }
+          },
+          { "@if" : "'sio:isAttributeOf' in row and not isempty(row['sio:isAttributeOf'])",
+            "@for" : "s in re.split('\\\\s*[,&]\\\\s*', row['sio:isAttributeOf'])",
+            "@do" : { "@type" : "Restriction", "owl:onProperty" : "sio:isAttributeOf", "only" : "{{s}}" }
+          },
+          {
+            "@if" : "'sio:hasUnit' in row and not isempty(row['sio:hasUnit'])",
+            "@type" : "owl:Restriction", "owl:onProperty" : "sio:hasUnit", "value" : { "@id": "{{row['sio:hasUnit']}}" }
+          },
+          { "@if" : "'start' in row and not isempty(row.start)",
+            "@type" : "Restriction", "owl:onProperty" : "sio:hasStartTime",
+            "only" : {
+              "@type" : "Class", "and" : [
+                { "@id": "{{row['sio:hasUnit']}}" },
+                { "@type" : "Restriction", "owl:onProperty" : "sio:hasValue", "value" : {"@value" : "{{r.start}}", "@type" : "xsd:integer"} }
+              ]}
+          },
+          { "@if" : "'end' in row and not isempty(row.end)",
+            "@type" : "Restriction", "on" : "sio:hasEndTime",
+            "only" : {
+              "@type" : "Class", "and" : [
+                { "@id": "{{row['sio:hasUnit']}}" },
+                { "@type" : "Restriction", "on" : "sio:hasValue", "value" : {"@value" : "{{r.end}}", "@type" : "xsd:integer"} }
+              ]}
+          },
+          {
+            "@if" : "'sio:inRelationTo' in row and not isempty(row['sio:inRelationTo'])",
+            "@type" : "owl:Restriction", "on" : "sio:inRelationTo", "only" : {
+              "@type" : "Class", "and" : [
+                { "@id": "{{row['sio:inRelationTo']}}" },
+                {
+                  "@if" : "'sio:inRelationTo o sio:hasRole' in row and not isempty(row['sio:inRelationTo o sio:hasRole'])",
+                  "@type" : "Restriction", "on" : "sio:hasRole", "only" : {"@id" : "{{row['sio:inRelationTo o sio:hasRole']}}"}
+                }
+              ]
+            }
+          },
+          {
+            "@if" : "'sio:isRoleOf o sio:hasAttribute' in row and not isempty(row['sio:isRoleOf o sio:hasAttribute'])",
+            "@type" : "owl:Restriction", "on" : "sio:isRoleOf",
+            "only" : {
+              "@type" : "Restriction", "on" : "sio:hasAttribute", "some" : {"@id" : "{{row['sio:isRoleOf o sio:hasAttribute']}}"}
+            }
+          },
+          {
+            "@if" : "'rdfs:subClassOf' in row and row['rdfs:subClassOf'] is not None and len(row['rdfs:subClassOf'].strip()) > 0",
+            "@for" : "s in re.split('\\\\s*[,&]\\\\s*', row['rdfs:subClassOf'])",
+            "@do" : { "@id": "{{s}}", "@type": "owl:Class"}
+          }
+        ]
+      }
+    ]
+  }
+]''']
+.
+
+
+<hhear.ttl> a pv:File;
+    dcterms:format "text/turtle";
+    setl:hasContext '''{
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "sio" :     "http://semanticscience.org/resource/",
+  "chear" :   "http://hadatac.org/ont/chear#",
+  "skos" :    "http://www.w3.org/2004/02/skos/core#",
+  "prov" :    "http://www.w3.org/ns/prov#",
+  "obo" :   "http://purl.obolibrary.org/obo/",
+  "pubchem" : "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/",
+  "dc"   :    "http://purl.org/dc/terms/",
+  "hasco" : "http://hadatac.org/ont/hasco#",
+  "vstoi" : "http://hadatac.org/ont/vstoi#"
+}''';
+    prov:wasGeneratedBy [
+      a setl:Load;
+      prov:used <http://purl.org/twc/HHEAR> ;
+    ].
+    
+<hhear.owl> a pv:File;
+    setl:hasContext '''{
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "sio" :     "http://semanticscience.org/resource/",
+  "chear" :   "http://hadatac.org/ont/chear#",
+  "skos" :    "http://www.w3.org/2004/02/skos/core#",
+  "prov" :    "http://www.w3.org/ns/prov#",
+  "obo" :   "http://purl.obolibrary.org/obo/",
+  "pubchem" : "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/",
+  "dc"   :    "http://purl.org/dc/terms/",
+  "hasco" : "http://hadatac.org/ont/hasco#",
+  "vstoi" : "http://hadatac.org/ont/vstoi#"
+}''';
+    dcterms:format "application/rdf+xml";
+    prov:wasGeneratedBy [
+      a setl:Load;
+      prov:used <http://purl.org/twc/HHEAR> ;
+    ].
+
+<hhear.json> a pv:File;
+    setl:hasContext '''{
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "sio" :     "http://semanticscience.org/resource/",
+  "chear" :   "http://hadatac.org/ont/chear#",
+  "skos" :    "http://www.w3.org/2004/02/skos/core#",
+  "prov" :    "http://www.w3.org/ns/prov#",
+  "obo" :   "http://purl.obolibrary.org/obo/",
+  "pubchem" : "http://rdf.ncbi.nlm.nih.gov/pubchem/compound/",
+  "dc"   :    "http://purl.org/dc/terms/",
+  "hasco" : "http://hadatac.org/ont/hasco#",
+  "vstoi" : "http://hadatac.org/ont/vstoi#"
+}''';
+    dcterms:format "application/json";
+    prov:wasGeneratedBy [
+      a setl:Load;
+      prov:used <http://purl.org/twc/HHEAR> ;
+    ].
+
+

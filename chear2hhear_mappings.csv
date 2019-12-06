@@ -1,0 +1,504 @@
+,class,label,depth,numeric_uri,label_uri
+0,http://hadatac.org/ont/chear#PHEN2PHEN3,2-hydroxyphenanthrene + 3-hydroxyphenanthrene,0,hhear:00001,chear:PHEN2PHEN3
+1,http://hadatac.org/ont/chear#MCOCH,"Cyclohexane-1,2-dicarboxylic acid mono carboxyisooctyl ester (DINCH)",0,hhear:00002,chear:MCOCH
+2,http://hadatac.org/ont/chear#MHNCH,"Cyclohexane-1,2-dicarboxylic acid mono hydroxyisononyl ester (DINCH)",0,hhear:00003,chear:MHNCH
+3,http://hadatac.org/ont/chear#homa_ir_unit,HOMA-IR,0,hhear:00004,chear:homa_ir_unit
+4,http://hadatac.org/ont/chear#MEOHTP,Mono-2-ethyl-5-oxohexylterephthalate,0,hhear:00005,chear:MEOHTP
+5,http://hadatac.org/ont/chear#PHET,Phenanthrene tetrol,0,hhear:00006,chear:PHET
+6,http://hadatac.org/ont/chear#billion_parts_per_microgram,billion parts per microgram,0,hhear:00007,chear:billion_parts_per_microgram
+7,http://hadatac.org/ont/chear#international_units_per_litre,international units per litre,0,hhear:00008,chear:international_units_per_litre
+8,http://hadatac.org/ont/chear#micrograms_per_gram,microgram per gram,0,hhear:00009,chear:micrograms_per_gram
+9,http://hadatac.org/ont/chear#micrograms_per_deciliter,micrograms per deciliter,0,hhear:00010,chear:micrograms_per_deciliter
+10,http://hadatac.org/ont/chear#micrograms_per_meter_cubed,micrograms per meter cubed,0,hhear:00011,chear:micrograms_per_meter_cubed
+11,http://hadatac.org/ont/chear#microunits_per_milliliter,microunits per milliliter,0,hhear:00012,chear:microunits_per_milliliter
+12,http://hadatac.org/ont/chear#milligram_per_gram,milligram per gram,0,hhear:00013,chear:milligram_per_gram
+13,http://hadatac.org/ont/chear#millimole_per_liter,millimole per liter,0,hhear:00014,chear:millimole_per_liter
+14,http://hadatac.org/ont/chear#million_parts_per_microgram,million parts per microgram,0,hhear:00015,chear:million_parts_per_microgram
+15,http://hadatac.org/ont/chear#MECPTP,mono-2-ethyl-5- carboxypentyl terephthalate (DEHTP),0,hhear:00016,chear:MECPTP
+16,http://hadatac.org/ont/chear#MEHHTP,mono-2-ethyl-5-hydroxyhexyl terephthalate (DEHTP),0,hhear:00017,chear:MEHHTP
+17,http://hadatac.org/ont/chear#MONP,monooxoisononyl phthalate (DiNP),0,hhear:00018,chear:MONP
+18,http://hadatac.org/ont/chear#parasites_per_microgram,parasites per microgram,0,hhear:00019,chear:parasites_per_microgram
+19,http://hadatac.org/ont/chear#picomoles_per_milliliter,picomoles per milliliter,0,hhear:00020,chear:picomoles_per_milliliter
+20,http://hadatac.org/ont/chear#thousand_parts_per_microgram,thousand parts per microgram,0,hhear:00021,chear:thousand_parts_per_microgram
+21,http://hadatac.org/ont/chear#SamplePairing,A Sample has a Pairing,1,hhear:00022,chear:SamplePairing
+22,http://hadatac.org/ont/chear#Comment_90,Abnormal hemoglobin variant observed,1,hhear:00023,chear:Comment_90
+23,http://hadatac.org/ont/chear#Acculturation,Acculturation,1,hhear:00024,chear:Acculturation
+24,http://hadatac.org/ont/chear#ATIDU,"Alcohol, Tobacco, and Illicit Drug Use",1,hhear:00025,chear:ATIDU
+25,http://hadatac.org/ont/chear#AnalysisMode,Analysis Mode,1,hhear:00026,chear:AnalysisMode
+26,http://hadatac.org/ont/chear#Analyte,Analyte,1,hhear:00027,chear:Analyte
+27,http://hadatac.org/ont/chear#Comment_38,Analyzed at a later date than rest of samples on worksheet (not a repeat),1,hhear:00028,chear:Comment_38
+28,http://hadatac.org/ont/chear#Anthropometry,Anthropometry,1,hhear:00029,chear:Anthropometry
+29,http://hadatac.org/ont/chear#AFSInstrument,Atomic Fluorescence Spectroscopy Instrument,1,hhear:00030,chear:AFSInstrument
+30,http://hadatac.org/ont/chear#AtomicSpectroscopy,Atomic Spectroscopy,1,hhear:00031,chear:AtomicSpectroscopy
+31,http://hadatac.org/ont/chear#BRIEF_pschl,Behavior Rating Inventory of Executive Function – Preschool Version,1,hhear:00032,chear:BRIEF_pschl
+32,http://hadatac.org/ont/chear#Comment_201,"Below LOD, results repeated and confirmed (37,33)",1,hhear:00033,chear:Comment_201
+33,http://hadatac.org/ont/chear#BiologicalResponse,Biological Response,1,hhear:00034,chear:BiologicalResponse
+34,http://hadatac.org/ont/chear#BirthCohortStudy,Birth Cohort Study,1,hhear:00035,chear:BirthCohortStudy
+35,http://hadatac.org/ont/chear#BirthOutcome,Birth Outcome,1,hhear:00036,chear:BirthOutcome
+36,http://hadatac.org/ont/chear#BIRD-MS,Blackbody Infrared Radiative Dissociation (BIRD),1,hhear:00037,chear:BIRD-MS
+37,http://hadatac.org/ont/chear#Comment_87,Broken Mitest,1,hhear:00038,chear:Comment_87
+38,http://hadatac.org/ont/chear#Comment_10,Cellular debris present,1,hhear:00039,chear:Comment_10
+39,http://hadatac.org/ont/chear#ChildhoodCohortStudy,Childhood Cohort Study,1,hhear:00040,chear:ChildhoodCohortStudy
+40,http://hadatac.org/ont/chear#ChromatographyInstrument,Chromatography Instrument,1,hhear:00041,chear:ChromatographyInstrument
+41,http://hadatac.org/ont/chear#CollectionDate,Collection Date of Sample,1,hhear:00042,chear:CollectionDate
+42,http://hadatac.org/ont/chear#CollegeGraduate,College Graduate,1,hhear:00043,chear:CollegeGraduate
+43,http://hadatac.org/ont/chear#CID-MS,Collision-Induced Dissociation (CID),1,hhear:00044,chear:CID-MS
+44,http://hadatac.org/ont/chear#ColorObjectAssocTest,Color Object Association Test,1,hhear:00045,chear:ColorObjectAssocTest
+45,http://hadatac.org/ont/chear#CompetitiveImmunoassay,Competitive Immunoassay,1,hhear:00046,chear:CompetitiveImmunoassay
+46,http://hadatac.org/ont/chear#Conceiving,Conceiving,1,hhear:00047,chear:Conceiving
+47,http://hadatac.org/ont/chear#Comment_31,Cyclomicrons present,1,hhear:00048,chear:Comment_31
+48,http://hadatac.org/ont/chear#DeliveryCharacteristic,Delivery Characteristics,1,hhear:00049,chear:DeliveryCharacteristic
+49,http://hadatac.org/ont/chear#Demographic,Demographic,1,hhear:00050,chear:Demographic
+50,http://hadatac.org/ont/chear#Comment_104,Detectable,1,hhear:00051,chear:Comment_104
+51,http://hadatac.org/ont/chear#DevelopmentalQuality,Developmental Quality,1,hhear:00052,chear:DevelopmentalQuality
+52,http://hadatac.org/ont/chear#DietAndNutrition,Diet and Nutrition,1,hhear:00053,chear:DietAndNutrition
+53,http://hadatac.org/ont/chear#Difference,Difference,1,hhear:00054,chear:Difference
+54,http://hadatac.org/ont/chear#Comment_32,Dilution required,1,hhear:00055,chear:Comment_32
+55,http://hadatac.org/ont/chear#DirectMercuryAnalyzer,Direct Mercury Analyzer,1,hhear:00056,chear:DirectMercuryAnalyzer
+56,http://hadatac.org/ont/chear#EarlyChildVigTest,Early Childhood Vigilance Test,1,hhear:00057,chear:EarlyChildVigTest
+57,http://hadatac.org/ont/chear#ECD-MS,Electron Capture Dissociation (ECD),1,hhear:00058,chear:ECD-MS
+58,http://hadatac.org/ont/chear#ETD-MS,Electron Transfer Dissociation (ETD),1,hhear:00059,chear:ETD-MS
+59,http://hadatac.org/ont/chear#EDD-MS,Electron-Detachment Dissociation (EDD),1,hhear:00060,chear:EDD-MS
+60,http://hadatac.org/ont/chear#ElectrosprayIonizationMassSpectrometry,Electrospray Ionization Mass Spectrometry,1,hhear:00061,chear:ElectrosprayIonizationMassSpectrometry
+61,http://hadatac.org/ont/chear#EnvironmentalExposure,Environmental Exposure,1,hhear:00062,chear:EnvironmentalExposure
+62,http://hadatac.org/ont/chear#EIA,Enzyme Immunoassay,1,hhear:00063,chear:EIA
+63,http://hadatac.org/ont/chear#ExposureMonitoringInstrument,Exposure Monitoring Instrument,1,hhear:00064,chear:ExposureMonitoringInstrument
+64,http://hadatac.org/ont/chear#Comment_78,Failed negative control,1,hhear:00065,chear:Comment_78
+65,http://hadatac.org/ont/chear#Comment_79,Failed positive control,1,hhear:00066,chear:Comment_79
+66,http://hadatac.org/ont/chear#FentonGrowthChart,Fenton Preterm Growth Chart,1,hhear:00067,chear:FentonGrowthChart
+67,http://hadatac.org/ont/chear#Comment_13,Fibrin present,1,hhear:00068,chear:Comment_13
+68,http://hadatac.org/ont/chear#FreezeThawCycleCount,Freeze/Thaw Cycles Count,1,hhear:00069,chear:FreezeThawCycleCount
+69,http://hadatac.org/ont/chear#GC,Gas Chromatography,1,hhear:00070,chear:GC
+70,http://hadatac.org/ont/chear#GravimetricAnalysisInstrument,Gravimetric Analysis Instrument,1,hhear:00071,chear:GravimetricAnalysisInstrument
+71,http://hadatac.org/ont/chear#Comment_84,Greater than 99th percentile,1,hhear:00072,chear:Comment_84
+72,http://hadatac.org/ont/chear#Comment_124,HUC sample having discrepancy between fluorometer results and semi quantative Albustix test results,1,hhear:00073,chear:Comment_124
+73,http://hadatac.org/ont/chear#HealthcareAccess,Healthcare Access,1,hhear:00074,chear:HealthcareAccess
+74,http://hadatac.org/ont/chear#Comment_54,Hemolyzed (covers all three levels) and contaminated,1,hhear:00075,chear:Comment_54
+75,http://hadatac.org/ont/chear#Comment_55,Hemolyzed (covers all three levels) and debris present,1,hhear:00076,chear:Comment_55
+76,http://hadatac.org/ont/chear#Comment_56,Hemolyzed (covers all three levels) and lipemic,1,hhear:00077,chear:Comment_56
+77,http://hadatac.org/ont/chear#Comment_53,"Hemolyzed (covers all three levels), lipemic, and icteric",1,hhear:00078,chear:Comment_53
+78,http://hadatac.org/ont/chear#HP-LC,High Performance Liquid Chromatography,1,hhear:00079,chear:HP-LC
+79,http://hadatac.org/ont/chear#HousingCharacteristic,Housing Characteristic,1,hhear:00080,chear:HousingCharacteristic
+80,http://hadatac.org/ont/chear#Comment_4,Icteric,1,hhear:00081,chear:Comment_4
+81,http://hadatac.org/ont/chear#ICP-MS,Inductively Coupled Plasma Mass Spectrometry,1,hhear:00082,chear:ICP-MS
+82,http://hadatac.org/ont/chear#IRMPD-MS,Infrared Multiphoton Dissociation (IRMPD),1,hhear:00083,chear:IRMPD-MS
+83,http://hadatac.org/ont/chear#Comment_93,Initial concentration higher than the highest standard,1,hhear:00084,chear:Comment_93
+84,http://hadatac.org/ont/chear#Comment_210,"Initial concentration higher than the highest standard, insufficient volume for repeat analysis (93, 18)",1,hhear:00085,chear:Comment_210
+85,http://hadatac.org/ont/chear#Comment_15,Interfering substances present,1,hhear:00086,chear:Comment_15
+86,http://hadatac.org/ont/chear#Comment_129,"Irregular result, no concentration reported",1,hhear:00087,chear:Comment_129
+87,http://hadatac.org/ont/chear#KaufmanABC,Kaufman ABC,1,hhear:00088,chear:KaufmanABC
+88,http://hadatac.org/ont/chear#KABC_Seq,Kaufman ABC Sequence Subscale,1,hhear:00089,chear:KABC_Seq
+89,http://hadatac.org/ont/chear#Comment_57,Lab confirmed result,1,hhear:00090,chear:Comment_57
+90,http://hadatac.org/ont/chear#LabResult,Laboratory Result,1,hhear:00091,chear:LabResult
+91,http://hadatac.org/ont/chear#Comment_7,Lipemic,1,hhear:00092,chear:Comment_7
+92,http://hadatac.org/ont/chear#Comment_59,Lipemic and turbid,1,hhear:00093,chear:Comment_59
+93,http://hadatac.org/ont/chear#Comment_8,"Lipemic sample, clarified before running",1,hhear:00094,chear:Comment_8
+94,http://hadatac.org/ont/chear#LC-MS-MS,Liquid Chromotography -tandem mass spectrometry,1,hhear:00095,chear:LC-MS-MS
+95,http://hadatac.org/ont/chear#LC-MS,Liquid Chromotography-Mass Spectrometery,1,hhear:00096,chear:LC-MS
+96,http://hadatac.org/ont/chear#LC-MS3,Liquid Chromotography-Multistage Mass Spectrometery,1,hhear:00097,chear:LC-MS3
+97,http://hadatac.org/ont/chear#Comment_3,Markedly hemolyzed,1,hhear:00098,chear:Comment_3
+98,http://hadatac.org/ont/chear#MassSpectrometer,Mass Spectrometer,1,hhear:00099,chear:MassSpectrometer
+99,http://hadatac.org/ont/chear#MedicalHistory,Medical History,1,hhear:00100,chear:MedicalHistory
+100,http://hadatac.org/ont/chear#MicroplateReader,Microplate Reader,1,hhear:00101,chear:MicroplateReader
+101,http://hadatac.org/ont/chear#Comment_85,Mitest not capped,1,hhear:00102,chear:Comment_85
+102,http://hadatac.org/ont/chear#Comment_2,Moderately hemolyzed,1,hhear:00103,chear:Comment_2
+103,http://hadatac.org/ont/chear#NeighborhoodCharacteristic,Neighborhood Characteristic,1,hhear:00104,chear:NeighborhoodCharacteristic
+104,http://hadatac.org/ont/chear#Comment_96,No FOL result; FOL = 8 ng/mL assumed,1,hhear:00105,chear:Comment_96
+105,http://hadatac.org/ont/chear#Comment_63,"No Hct, Hct=40 assumed",1,hhear:00106,chear:Comment_63
+106,http://hadatac.org/ont/chear#Comment_128,No preservative added,1,hhear:00107,chear:Comment_128
+107,http://hadatac.org/ont/chear#NotCurrentStudent,Not Current Student,1,hhear:00108,chear:NotCurrentStudent
+108,http://hadatac.org/ont/chear#Comment_91,Obvious coarse debris,1,hhear:00109,chear:Comment_91
+109,http://hadatac.org/ont/chear#OralHealth,Oral Health,1,hhear:00110,chear:OralHealth
+110,http://hadatac.org/ont/chear#Comment_89,Overloaded filter,1,hhear:00111,chear:Comment_89
+111,http://hadatac.org/ont/chear#Comment_73,Panel change,1,hhear:00112,chear:Comment_73
+112,http://hadatac.org/ont/chear#ParentalHealthAndFamilyHistory,Parental Health and Family History,1,hhear:00113,chear:ParentalHealthAndFamilyHistory
+113,http://hadatac.org/ont/chear#Comment_82,Partial match,1,hhear:00114,chear:Comment_82
+114,http://hadatac.org/ont/chear#PersonalProductUse,Personal Product Use,1,hhear:00115,chear:PersonalProductUse
+115,http://hadatac.org/ont/chear#PhysicalActivityAndFitness,Physical Activity and Fitness,1,hhear:00116,chear:PhysicalActivityAndFitness
+116,http://hadatac.org/ont/chear#Assessment,Physical and Mental Assessment,1,hhear:00117,chear:Assessment
+117,http://hadatac.org/ont/chear#Comment_92,Predominantly fibrous material,1,hhear:00118,chear:Comment_92
+118,http://hadatac.org/ont/chear#PregnancyCharacteristic,Pregnancy Characteristic,1,hhear:00119,chear:PregnancyCharacteristic
+119,http://hadatac.org/ont/chear#PregnancyCohortStudy,Pregnancy Cohort Study,1,hhear:00120,chear:PregnancyCohortStudy
+120,http://hadatac.org/ont/chear#CBCL_pschl,Preschool Child Behavior Checklist,1,hhear:00121,chear:CBCL_pschl
+121,http://hadatac.org/ont/chear#CBCLpschl_internal,Preschool Child Behavior Checklist  Internalizing Subscale,1,hhear:00122,chear:CBCLpschl_internal
+122,http://hadatac.org/ont/chear#CBCLpschl_external,Preschool Child Behavior Checklist Externalizing Subscale,1,hhear:00123,chear:CBCLpschl_external
+123,http://hadatac.org/ont/chear#PrescriptionMedication,Prescription Medication and Dietary Supplements,1,hhear:00124,chear:PrescriptionMedication
+124,http://hadatac.org/ont/chear#Comment_18,Quantity of sample insufficient for repeat analysis,1,hhear:00125,chear:Comment_18
+125,http://hadatac.org/ont/chear#Comment_14,Red blood cells present,1,hhear:00126,chear:Comment_14
+126,http://hadatac.org/ont/chear#Refractometer,Refractometer,1,hhear:00127,chear:Refractometer
+127,http://hadatac.org/ont/chear#ReplicateNumber,Replicate Number,1,hhear:00128,chear:ReplicateNumber
+128,http://hadatac.org/ont/chear#ReproductiveHealth,Reproductive Health,1,hhear:00129,chear:ReproductiveHealth
+129,http://hadatac.org/ont/chear#Comment_33,Result repeated and confirmed,1,hhear:00130,chear:Comment_33
+130,http://hadatac.org/ont/chear#Comment_97,Result repeated with diluted sample,1,hhear:00131,chear:Comment_97
+131,http://hadatac.org/ont/chear#Comment_114,Result reported based on fewer replicates than required,1,hhear:00132,chear:Comment_114
+132,http://hadatac.org/ont/chear#ReversePhaseMassSpectrometryProfiling,Reverse-Phase Mass Spectrometry Profiling,1,hhear:00133,chear:ReversePhaseMassSpectrometryProfiling
+133,http://hadatac.org/ont/chear#Comment_12,Run out-of-contol; insufficient sample for repeat analysis,1,hhear:00134,chear:Comment_12
+134,http://hadatac.org/ont/chear#Comment_62,Sample frozen,1,hhear:00135,chear:Comment_62
+135,http://hadatac.org/ont/chear#Comment_19,Sample integrity/quality compromised preventing analysis,1,hhear:00136,chear:Comment_19
+136,http://hadatac.org/ont/chear#Comment_29,Sample older than 2 weeks,1,hhear:00137,chear:Comment_29
+137,http://hadatac.org/ont/chear#Comment_122,Samples Arrived Thawed and Analyzed,1,hhear:00138,chear:Comment_122
+138,http://hadatac.org/ont/chear#Screening,Screening,1,hhear:00139,chear:Screening
+139,http://hadatac.org/ont/chear#Comment_39,Short sample; sample probe picked up incomplete volume first time,1,hhear:00140,chear:Comment_39
+140,http://hadatac.org/ont/chear#SleepCharacterisitic,Sleep Characterisitic,1,hhear:00141,chear:SleepCharacterisitic
+141,http://hadatac.org/ont/chear#Comment_1,Slightly hemolyzed,1,hhear:00142,chear:Comment_1
+142,http://hadatac.org/ont/chear#Comment_11,Small clot present,1,hhear:00143,chear:Comment_11
+143,http://hadatac.org/ont/chear#SocioeconomicStatus,Socioeconomic Status,1,hhear:00144,chear:SocioeconomicStatus
+144,http://hadatac.org/ont/chear#Comment_95,Specimen analyzed in singlicate for an assay that requires duplicates,1,hhear:00145,chear:Comment_95
+145,http://hadatac.org/ont/chear#Comment_94,Specimen analyzed with less than normal quantity,1,hhear:00146,chear:Comment_94
+146,http://hadatac.org/ont/chear#Comment_115,Specimen analyzed with less than usual dilution,1,hhear:00147,chear:Comment_115
+147,http://hadatac.org/ont/chear#StudyBaseline,Study Baseline,1,hhear:00148,chear:StudyBaseline
+148,http://hadatac.org/ont/chear#SID-MS,Surface-Induced Dissociation (SID),1,hhear:00149,chear:SID-MS
+149,http://hadatac.org/ont/chear#Comment_88,"Torn bag (Mitest intact, capped)",1,hhear:00150,chear:Comment_88
+150,http://hadatac.org/ont/chear#Comment_86,"Torn, perforated screen",1,hhear:00151,chear:Comment_86
+151,http://hadatac.org/ont/chear#Comment_5,Turbid,1,hhear:00152,chear:Comment_5
+152,http://hadatac.org/ont/chear#Comment_35,Unusual color,1,hhear:00153,chear:Comment_35
+153,http://hadatac.org/ont/chear#Comment_34,Unusually high,1,hhear:00154,chear:Comment_34
+154,http://hadatac.org/ont/chear#Comment_16,Urine grossly hematuric,1,hhear:00155,chear:Comment_16
+155,http://hadatac.org/ont/chear#Comment_200,"Valid measurement, results repeated and confirmed (0,33)",1,hhear:00156,chear:Comment_200
+156,http://hadatac.org/ont/chear#Comment_130,Value above LOD but below LLOQ,1,hhear:00157,chear:Comment_130
+157,http://hadatac.org/ont/chear#Comment_199,"Value below LLOQ, no LOD provided",1,hhear:00158,chear:Comment_199
+158,http://hadatac.org/ont/chear#Comment_131,Value greater than ULOQ,1,hhear:00159,chear:Comment_131
+159,http://hadatac.org/ont/chear#Comment_37,Value less than LOD,1,hhear:00160,chear:Comment_37
+160,http://hadatac.org/ont/chear#Comment_6,Very turbid,1,hhear:00161,chear:Comment_6
+161,http://hadatac.org/ont/chear#Visit,Visit,1,hhear:00162,chear:Visit
+162,http://hadatac.org/ont/chear#Comment_58,did not precipitate,1,hhear:00163,chear:Comment_58
+163,http://hadatac.org/ont/chear#ELISA,enzyme-linked immunosorbent assay (ELISA),1,hhear:00164,chear:ELISA
+164,http://hadatac.org/ont/chear#EOPerHPF,eosinophils per high-power field,1,hhear:00165,chear:EOPerHPF
+165,http://hadatac.org/ont/chear#Comment_17,quantity of sample insufficient for analysis,1,hhear:00166,chear:Comment_17
+166,http://hadatac.org/ont/chear#Comment_49,thawed and clotted,1,hhear:00167,chear:Comment_49
+167,http://hadatac.org/ont/chear#Comment_50,thawed and hemolyzed (covers all three levels),1,hhear:00168,chear:Comment_50
+168,http://hadatac.org/ont/chear#Comment_51,"thawed, hemolyzed (covers all three levels) and exposed to light",1,hhear:00169,chear:Comment_51
+169,http://hadatac.org/ont/chear#Comment_0,valid measurement,1,hhear:00170,chear:Comment_0
+170,http://hadatac.org/ont/chear#AbsorbanceReader,Absorbance Reader,2,hhear:00171,chear:AbsorbanceReader
+171,http://hadatac.org/ont/chear#AlcoholUse,Alcohol Use,2,hhear:00172,chear:AlcoholUse
+172,http://hadatac.org/ont/chear#AssistedReproductiveTherapy,Assisted Reproductive Therapy,2,hhear:00173,chear:AssistedReproductiveTherapy
+173,http://hadatac.org/ont/chear#AtomicAbsorptionSpectroscopy,Atomic Absorption Spectroscopy,2,hhear:00174,chear:AtomicAbsorptionSpectroscopy
+174,http://hadatac.org/ont/chear#AtomicEmissionSpectroscopy,Atomic Emission Spectroscopy,2,hhear:00175,chear:AtomicEmissionSpectroscopy
+175,http://hadatac.org/ont/chear#Before,Before,2,hhear:00176,chear:Before
+176,http://hadatac.org/ont/chear#Biospecimen,Biospecimen,2,hhear:00177,chear:Biospecimen
+177,http://hadatac.org/ont/chear#CVAFSInstrument,Cold Vapor Atomic Fluorescence Spectroscopy Instrument,2,hhear:00178,chear:CVAFSInstrument
+178,http://hadatac.org/ont/chear#ColorimetricAssay,Colorimetric Assay,2,hhear:00179,chear:ColorimetricAssay
+179,http://hadatac.org/ont/chear#CommonEra,Common Era,2,hhear:00180,chear:CommonEra
+180,http://hadatac.org/ont/chear#CompetitiveELISA,Competitive-inhibition enzyme-linked immunosorbent assay,2,hhear:00181,chear:CompetitiveELISA
+181,http://hadatac.org/ont/chear#DentalFillings,Dental Fillings,2,hhear:00182,chear:DentalFillings
+182,http://hadatac.org/ont/chear#DrugHistory,Drug History,2,hhear:00183,chear:DrugHistory
+183,http://hadatac.org/ont/chear#ClaussClottingMethod,Fibrinogen Assay (Clauss method),2,hhear:00184,chear:ClaussClottingMethod
+184,http://hadatac.org/ont/chear#GasChromatographyInstrument,Gas Chromatography Instrument,2,hhear:00185,chear:GasChromatographyInstrument
+185,http://hadatac.org/ont/chear#GelElectrophoresis,Gel Electrophoresis,2,hhear:00186,chear:GelElectrophoresis
+186,http://hadatac.org/ont/chear#HaircareProductUse,Haircare Product Use,2,hhear:00187,chear:HaircareProductUse
+187,http://hadatac.org/ont/chear#HospitalUtilization,Hospital Utilization,2,hhear:00188,chear:HospitalUtilization
+188,http://hadatac.org/ont/chear#HDMS,Hydrogen–Deuterium Exchange Mass Spectrometer,2,hhear:00189,chear:HDMS
+189,http://hadatac.org/ont/chear#TurbidimetricAntibodyMethod,Immunoturbidimetry,2,hhear:00190,chear:TurbidimetricAntibodyMethod
+190,http://hadatac.org/ont/chear#ICPMSInstrument,Inductively Coupled Plasma Mass Spectrometer,2,hhear:00191,chear:ICPMSInstrument
+191,http://hadatac.org/ont/chear#KnownFoodAllergies,Known Food Allergies,2,hhear:00192,chear:KnownFoodAllergies
+192,http://hadatac.org/ont/chear#LiquidChromatographyInstrument,Liquid Chromatography Instrument,2,hhear:00193,chear:LiquidChromatographyInstrument
+193,http://hadatac.org/ont/chear#MentalHealth,Mental Health,2,hhear:00194,chear:MentalHealth
+194,http://hadatac.org/ont/chear#MethylationAssay,Methylation Assay,2,hhear:00195,chear:MethylationAssay
+195,http://hadatac.org/ont/chear#MicroPEM,MicroPEM,2,hhear:00196,chear:MicroPEM
+196,http://hadatac.org/ont/chear#MicroarrayAssay,Microarray Assay,2,hhear:00197,chear:MicroarrayAssay
+197,http://hadatac.org/ont/chear#NeurocognitiveAssessment,Neurocognitive Assessment,2,hhear:00198,chear:NeurocognitiveAssessment
+198,http://hadatac.org/ont/chear#NoAntiMalarialUse,No Anti Malarial Use,2,hhear:00199,chear:NoAntiMalarialUse
+199,http://hadatac.org/ont/chear#NucleicAcidSequencing,Nucleic Acid Sequencing,2,hhear:00200,chear:NucleicAcidSequencing
+200,http://hadatac.org/ont/chear#PerfumeUse,Perfume Use,2,hhear:00201,chear:PerfumeUse
+201,http://hadatac.org/ont/chear#PolymeraseChainReaction,Polymerase Chain Reaction,2,hhear:00202,chear:PolymeraseChainReaction
+202,http://hadatac.org/ont/chear#PregnancyComplication,Pregnancy Complication,2,hhear:00203,chear:PregnancyComplication
+203,http://hadatac.org/ont/chear#PretermBirth,Preterm Birth,2,hhear:00204,chear:PretermBirth
+204,http://hadatac.org/ont/chear#Q-ToF_LC-MS,Quadrapole Time-of-Flight Liquid Chromotography-Mass Spectrometry,2,hhear:00205,chear:Q-ToF_LC-MS
+205,http://hadatac.org/ont/chear#Reichert_AR200,Reichert AR200 Handheld Digital Refractometer,2,hhear:00206,chear:Reichert_AR200
+206,http://hadatac.org/ont/chear#Religion,Religion,2,hhear:00207,chear:Religion
+207,http://hadatac.org/ont/chear#RouteOfDelivery,Route Of Delivery,2,hhear:00208,chear:RouteOfDelivery
+208,http://hadatac.org/ont/chear#SandwichELISA,Sandwich ELISA,2,hhear:00209,chear:SandwichELISA
+209,http://hadatac.org/ont/chear#ShotgunLipidomics,Shotgun Lipidomics,2,hhear:00210,chear:ShotgunLipidomics
+210,http://hadatac.org/ont/chear#SpectraMax_Plus_384,SpectraMax Plus 384 Microplate Reader,2,hhear:00211,chear:SpectraMax_Plus_384
+211,http://hadatac.org/ont/chear#Subject,Subject,2,hhear:00212,chear:Subject
+212,http://hadatac.org/ont/chear#TandemMassSpectrometer,Tandem Mass Spectrometer,2,hhear:00213,chear:TandemMassSpectrometer
+213,http://hadatac.org/ont/chear#TermBirth,TermBirth,2,hhear:00214,chear:TermBirth
+214,http://hadatac.org/ont/chear#TobaccoExposure,Tobacco Smoke Exposure,2,hhear:00215,chear:TobaccoExposure
+215,http://hadatac.org/ont/chear#Tri_Cell_DMA_80,Tri-Cell DMA-80 Direct Mercury Analyzer,2,hhear:00216,chear:Tri_Cell_DMA_80
+216,http://hadatac.org/ont/chear#OnlyAntiMalarialsOrNoMedications,Used Only Anti Malarials or No Medications,2,hhear:00217,chear:OnlyAntiMalarialsOrNoMedications
+217,http://hadatac.org/ont/chear#Biomolecule,Biomolecule,3,hhear:00218,chear:Biomolecule
+218,http://hadatac.org/ont/chear#BisulfitePyrosequencing,Bisulfite Pyrosequencing,3,hhear:00219,chear:BisulfitePyrosequencing
+219,http://hadatac.org/ont/chear#BodilyFluid,Bodily Fluid,3,hhear:00220,chear:BodilyFluid
+220,http://hadatac.org/ont/chear#BodyWeightQuality,Body Weight Quality,3,hhear:00221,chear:BodyWeightQuality
+221,http://hadatac.org/ont/chear#CarCount,Car Count,3,hhear:00222,chear:CarCount
+222,http://hadatac.org/ont/chear#ConsumedAlcohol,Consumed Alcohol,3,hhear:00223,chear:ConsumedAlcohol
+223,http://hadatac.org/ont/chear#DateOfBirth,Date of Birth,3,hhear:00224,chear:DateOfBirth
+224,http://hadatac.org/ont/chear#DidNotConsumeAlcohol,Did Not Consume Alcohol,3,hhear:00225,chear:DidNotConsumeAlcohol
+225,http://hadatac.org/ont/chear#DietQuantity,Diet Quantity,3,hhear:00226,chear:DietQuantity
+226,http://hadatac.org/ont/chear#FloorType,Floor Type,3,hhear:00227,chear:FloorType
+227,http://hadatac.org/ont/chear#Gravida,Gravida,3,hhear:00228,chear:Gravida
+228,http://hadatac.org/ont/chear#HPLC,High-Performance Liquid Chromatography,3,hhear:00229,chear:HPLC
+229,http://hadatac.org/ont/chear#HouseholdApplianceCount,Household Appliance Count,3,hhear:00230,chear:HouseholdApplianceCount
+230,http://hadatac.org/ont/chear#InVitroFertilization,In Vitro Fertilization,3,hhear:00231,chear:InVitroFertilization
+231,http://hadatac.org/ont/chear#Insurance,Insurance,3,hhear:00232,chear:Insurance
+232,http://hadatac.org/ont/chear#IQ,Intelligence Quotient,3,hhear:00233,chear:IQ
+233,http://hadatac.org/ont/chear#LandfillProximity,Landfill Proximity,3,hhear:00234,chear:LandfillProximity
+234,http://hadatac.org/ont/chear#LightBulbCount,Light Bulb Count,3,hhear:00235,chear:LightBulbCount
+235,http://hadatac.org/ont/chear#LimitOfDetection,Limit of Detection,3,hhear:00236,chear:LimitOfDetection
+236,http://hadatac.org/ont/chear#LongRangePCR,Long Range Polymerase Chain Reaction,3,hhear:00237,chear:LongRangePCR
+237,http://hadatac.org/ont/chear#MaritalStatus,Marital Status,3,hhear:00238,chear:MaritalStatus
+238,http://hadatac.org/ont/chear#MedicalTherapy,Medical Therapy Procedure,3,hhear:00239,chear:MedicalTherapy
+239,http://hadatac.org/ont/chear#MultiplexQPCR,Multiplex real-time PCR,3,hhear:00240,chear:MultiplexQPCR
+240,http://hadatac.org/ont/chear#NonSpontaneousPreterm,Non-Spontaneous Preterm Birth,3,hhear:00241,chear:NonSpontaneousPreterm
+241,http://hadatac.org/ont/chear#OtherGIDisease,Other GI Disease,3,hhear:00242,chear:OtherGIDisease
+242,http://hadatac.org/ont/chear#PregnancySample,Pregnancy Sample,3,hhear:00243,chear:PregnancySample
+243,http://hadatac.org/ont/chear#RNA_Sequencing,RNA Sequencing,3,hhear:00244,chear:RNA_Sequencing
+244,http://hadatac.org/ont/chear#RoomCount,Room Count,3,hhear:00245,chear:RoomCount
+245,http://hadatac.org/ont/chear#Ion_Mobility_Synapt_G2Si,SYNAPT G2-Si Mass Spectrometer,3,hhear:00246,chear:Ion_Mobility_Synapt_G2Si
+246,http://hadatac.org/ont/chear#SocioeconomicStatusIndex,Socioeconomic Status Index,3,hhear:00247,chear:SocioeconomicStatusIndex
+247,http://hadatac.org/ont/chear#SolidPhaseSandwichELISA,Solid-Phase Sandwich ELISA,3,hhear:00248,chear:SolidPhaseSandwichELISA
+248,http://hadatac.org/ont/chear#SpontaneousPretermBirth,Spontaneous Preterm Birth,3,hhear:00249,chear:SpontaneousPretermBirth
+249,http://hadatac.org/ont/chear#TargetedAnalyte,Targeted Analyte,3,hhear:00250,chear:TargetedAnalyte
+250,http://hadatac.org/ont/chear#TargetedSequencing,Targeted Sequencing,3,hhear:00251,chear:TargetedSequencing
+251,http://hadatac.org/ont/chear#ICPMSQQQ,Triple Quadrupole Inductively Coupled Plasma Mass Spectrometer,3,hhear:00252,chear:ICPMSQQQ
+252,http://hadatac.org/ont/chear#EoEActive,active eosinophilic esophagitis,3,hhear:00253,chear:EoEActive
+253,http://hadatac.org/ont/chear#EoERemission,eosinophilic esophagitis in remission,3,hhear:00254,chear:EoERemission
+254,http://hadatac.org/ont/chear#EoEMild,mild eosinophilic esophagitis,3,hhear:00255,chear:EoEMild
+255,http://hadatac.org/ont/chear#ActiveSmoker,Active Smoker,4,hhear:00256,chear:ActiveSmoker
+256,http://hadatac.org/ont/chear#Adult,Adult,4,hhear:00257,chear:Adult
+257,http://hadatac.org/ont/chear#Agilent_1100_HPLC,Agilent 1100 HPLC,4,hhear:00258,chear:Agilent_1100_HPLC
+258,http://hadatac.org/ont/chear#Agilent_8800_QQQ_ICP_MS,Aligent 8800 Triple Quadrupole ICP-MS,4,hhear:00259,chear:Agilent_8800_QQQ_ICP_MS
+259,http://hadatac.org/ont/chear#AlkylPhosphatePesticideMetabolite,Alkyl Phosphate Pesticide Metabolite,4,hhear:00260,chear:AlkylPhosphatePesticideMetabolite
+260,http://hadatac.org/ont/chear#APGAR,Apgar Score,4,hhear:00261,chear:APGAR
+261,http://hadatac.org/ont/chear#ArsenicSpecies,Arsenic Species,4,hhear:00262,chear:ArsenicSpecies
+262,http://hadatac.org/ont/chear#BathroomCount,Bathroom Count,4,hhear:00263,chear:BathroomCount
+263,http://hadatac.org/ont/chear#BedroomCount,Bedroom Count,4,hhear:00264,chear:BedroomCount
+264,http://hadatac.org/ont/chear#BoilerCount,Boiler Count,4,hhear:00265,chear:BoilerCount
+265,http://hadatac.org/ont/chear#BuccalCell,Buccal Cell,4,hhear:00266,chear:BuccalCell
+266,http://hadatac.org/ont/chear#CaesareanSection,Caesarian Section,4,hhear:00267,chear:CaesareanSection
+267,http://hadatac.org/ont/chear#CannedFoodFrequency,Canned Food Consumption Frequency,4,hhear:00268,chear:CannedFoodFrequency
+268,http://hadatac.org/ont/chear#CementFloor,Cement Floor,4,hhear:00269,chear:CementFloor
+269,http://hadatac.org/ont/chear#ComputerCount,Computer,4,hhear:00270,chear:ComputerCount
+270,http://hadatac.org/ont/chear#DVDPlayerCount,DVD Player Count,4,hhear:00271,chear:DVDPlayerCount
+271,http://hadatac.org/ont/chear#DietTreatment,Diet Treatment Medical Therapy,4,hhear:00272,chear:DietTreatment
+272,http://hadatac.org/ont/chear#Element,Element,4,hhear:00273,chear:Element
+273,http://hadatac.org/ont/chear#Ever_Smoker,Ever Smoked,4,hhear:00274,chear:Ever_Smoker
+274,http://hadatac.org/ont/chear#FastFoodFrequency,Fast Food Consumption Frequency,4,hhear:00275,chear:FastFoodFrequency
+275,http://hadatac.org/ont/chear#FreshVegetableFrequency,Fresh Vegetable Consumption Frequency,4,hhear:00276,chear:FreshVegetableFrequency
+276,http://hadatac.org/ont/chear#GCMS,Gas Chromatographer–Mass Spectrometer,4,hhear:00277,chear:GCMS
+277,http://hadatac.org/ont/chear#HPLCFLD,HPLC with Fluorescence Level Detector,4,hhear:00278,chear:HPLCFLD
+278,http://hadatac.org/ont/chear#HMOInsurance,Health Maintenance Organization Insurance,4,hhear:00279,chear:HMOInsurance
+279,http://hadatac.org/ont/chear#HospitalReadmissionCount,Hospital Readmissions,4,hhear:00280,chear:HospitalReadmissionCount
+280,http://hadatac.org/ont/chear#InfiniumMethylationEPICBeadChip,Infinium Methylation EPIC BeadChip Assay,4,hhear:00281,chear:InfiniumMethylationEPICBeadChip
+281,http://hadatac.org/ont/chear#InsuranceType,Insurance Type,4,hhear:00282,chear:InsuranceType
+282,http://hadatac.org/ont/chear#LCMS,Liquid Chromatography–Mass Spectrometer,4,hhear:00283,chear:LCMS
+283,http://hadatac.org/ont/chear#Macromolecule,Macromolecule,4,hhear:00284,chear:Macromolecule
+284,http://hadatac.org/ont/chear#MalarialRetinopathy,Malarial Retinopathy,4,hhear:00285,chear:MalarialRetinopathy
+285,http://hadatac.org/ont/chear#MercurySpecies,Mercury Species,4,hhear:00286,chear:MercurySpecies
+286,http://hadatac.org/ont/chear#MicrowaveOvenCount,Microwave Oven Count,4,hhear:00287,chear:MicrowaveOvenCount
+287,http://hadatac.org/ont/chear#Neighbor,Neighbor,4,hhear:00288,chear:Neighbor
+288,http://hadatac.org/ont/chear#NonHispanicOrLatino,Non-Hispanic Ethnicity,4,hhear:00289,chear:NonHispanicOrLatino
+289,http://hadatac.org/ont/chear#NonSmoker,Non-smoker,4,hhear:00290,chear:NonSmoker
+290,http://hadatac.org/ont/chear#Nulliparous,Nulliparous,4,hhear:00291,chear:Nulliparous
+291,http://hadatac.org/ont/chear#OtherMaterialFloor,Other Material Finish,4,hhear:00292,chear:OtherMaterialFloor
+292,http://hadatac.org/ont/chear#Perfluorocarbon,PFC,4,hhear:00293,chear:Perfluorocarbon
+293,http://hadatac.org/ont/chear#Parous,Parous,4,hhear:00294,chear:Parous
+294,http://hadatac.org/ont/chear#PeripheralBloodMononuclearCell,Peripheral Blood Mononuclear Cell,4,hhear:00295,chear:PeripheralBloodMononuclearCell
+295,http://hadatac.org/ont/chear#PreviousSmoker,Previous Smoker,4,hhear:00296,chear:PreviousSmoker
+296,http://hadatac.org/ont/chear#PrivateInsuranceOrSelfPay,Private Insurance or Self Pay,4,hhear:00297,chear:PrivateInsuranceOrSelfPay
+297,http://hadatac.org/ont/chear#PPITreatment,Proton Pump Inhibitor Treatment,4,hhear:00298,chear:PPITreatment
+298,http://hadatac.org/ont/chear#PublicInsurance,Public Insurance,4,hhear:00299,chear:PublicInsurance
+299,http://hadatac.org/ont/chear#Relative,Relative,4,hhear:00300,chear:Relative
+300,http://hadatac.org/ont/chear#SevereMalarialAnemia,Severe Malarial Anemia,4,hhear:00301,chear:SevereMalarialAnemia
+301,http://hadatac.org/ont/chear#SmallMolecule,Small Molecule,4,hhear:00302,chear:SmallMolecule
+302,http://hadatac.org/ont/chear#Smoker,Smoker,4,hhear:00303,chear:Smoker
+303,http://hadatac.org/ont/chear#SoilFloor,Soil Floor,4,hhear:00304,chear:SoilFloor
+304,http://hadatac.org/ont/chear#SteroidTreatment,Steroid Treatment form of Medical Therapy,4,hhear:00305,chear:SteroidTreatment
+305,http://hadatac.org/ont/chear#StressFrequency,Stress Frequency,4,hhear:00306,chear:StressFrequency
+306,http://hadatac.org/ont/chear#ToasterCount,Toaster Count,4,hhear:00307,chear:ToasterCount
+307,http://hadatac.org/ont/chear#TobaccoMetabolite,Tobacco Metabolite,4,hhear:00308,chear:TobaccoMetabolite
+308,http://hadatac.org/ont/chear#UHPLC,Ultra High Performance Liquid Chromatography Instrument,4,hhear:00309,chear:UHPLC
+309,http://hadatac.org/ont/chear#UnknownRace,Unknown Race,4,hhear:00310,chear:UnknownRace
+310,http://hadatac.org/ont/chear#Unmarried,Unmarried,4,hhear:00311,chear:Unmarried
+311,http://hadatac.org/ont/chear#VCRPlayerCount,VCR Player Count,4,hhear:00312,chear:VCRPlayerCount
+312,http://hadatac.org/ont/chear#VacuumCleanerCount,Vacuum Cleaner Count,4,hhear:00313,chear:VacuumCleanerCount
+313,http://hadatac.org/ont/chear#WashingMachineCount,Washing Machine Count,4,hhear:00314,chear:WashingMachineCount
+314,http://hadatac.org/ont/chear#WeightForHeightZScore,Weight for Height Z-Score,4,hhear:00315,chear:WeightForHeightZScore
+315,http://hadatac.org/ont/chear#BDE209,"2,2',3,3',4,4',5,5',6,6'-Decabromodiphenyl ether",5,hhear:00316,chear:BDE209
+316,http://hadatac.org/ont/chear#BDE183,"2,2',3,4,4',5',6-Heptabromodiphenyl ether",5,hhear:00317,chear:BDE183
+317,http://hadatac.org/ont/chear#BDE85,"2,2',3,4,4'-Pentabromodiphenyl ether",5,hhear:00318,chear:BDE85
+318,http://hadatac.org/ont/chear#BDE17,"2,2',4'-Tribromodiphenyl ether",5,hhear:00319,chear:BDE17
+319,http://hadatac.org/ont/chear#PBB153,"2,2',4,4',5,5'-Hexabromobiphenyl",5,hhear:00320,chear:PBB153
+320,http://hadatac.org/ont/chear#BDE153,"2,2',4,4',5,5'-Hexabromodiphenyl ether",5,hhear:00321,chear:BDE153
+321,http://hadatac.org/ont/chear#BDE154,"2,2',4,4',5,6'-Hexabromodiphenyl ether",5,hhear:00322,chear:BDE154
+322,http://hadatac.org/ont/chear#BDE99,"2,2',4,4',5-Pentabromodiphenyl ether",5,hhear:00323,chear:BDE99
+323,http://hadatac.org/ont/chear#BDE100,"2,2',4,4',6-Pentabromodiphenyl ether",5,hhear:00324,chear:BDE100
+324,http://hadatac.org/ont/chear#BDE47,"2,2',4,4'-Tetrabromodiphenyl ether",5,hhear:00325,chear:BDE47
+325,http://hadatac.org/ont/chear#BDE66,"2,3',4,4'-Tetrabromodiphenyl ether",5,hhear:00326,chear:BDE66
+326,http://hadatac.org/ont/chear#BDE28,"2,4,4'-Tribromodiphenyl ether",5,hhear:00327,chear:BDE28
+327,http://hadatac.org/ont/chear#TeCP2456,"2,4,5,6-Tetrachlorophenol",5,hhear:00328,chear:TeCP2456
+328,http://hadatac.org/ont/chear#ATCA,2-Aminothiazoline-4-carboxylic acid,5,hhear:00329,chear:ATCA
+329,http://hadatac.org/ont/chear#MHA2,2-Methylhippuric acid,5,hhear:00330,chear:MHA2
+330,http://hadatac.org/ont/chear#VOC2MH,2-Methylhippuric acid (ng/mL),5,hhear:00331,chear:VOC2MH
+331,http://hadatac.org/ont/chear#TTCA,2-Thioxothiazolidine-4-carboxylic acid,5,hhear:00332,chear:TTCA
+332,http://hadatac.org/ont/chear#VOCATC,2-amnothiazolne-4-carbxylic acid(ng/mL),5,hhear:00333,chear:VOCATC
+333,http://hadatac.org/ont/chear#PHEN2_PHEN3,2-hydroxyphenanthrene + 3-hydroxyphenanthrene,5,hhear:00334,chear:PHEN2_PHEN3
+334,http://hadatac.org/ont/chear#VOCTTC,2-thoxothazlidne-4-carbxylic acid(ng/mL),5,hhear:00335,chear:VOCTTC
+335,http://hadatac.org/ont/chear#TCP,"3,5,6-trichloro-2-pyridinol",5,hhear:00336,chear:TCP
+336,http://hadatac.org/ont/chear#MHA34,3-Methylhippuric acid + 4-Methylhippuric acid,5,hhear:00337,chear:MHA34
+337,http://hadatac.org/ont/chear#VOC34M,3-methipurc acd & 4-methipurc acd(ng/mL),5,hhear:00338,chear:VOC34M
+338,http://hadatac.org/ont/chear#PBA,3-phenoxybenzoic acid,5,hhear:00339,chear:PBA
+339,http://hadatac.org/ont/chear#NNAL,4-(methlynitrosamino)-1-(3-pyridyl)-1-butanol,5,hhear:00340,chear:NNAL
+340,http://hadatac.org/ont/chear#ActiveNonTobaccoSmoker,Active Non-Tobacco Smoker,5,hhear:00341,chear:ActiveNonTobaccoSmoker
+341,http://hadatac.org/ont/chear#AdolescentPeriod,Adolescent Period,5,hhear:00342,chear:AdolescentPeriod
+342,http://hadatac.org/ont/chear#AdvancedDegree,Advanced Graduate Degree,5,hhear:00343,chear:AdvancedDegree
+343,http://hadatac.org/ont/chear#BP3,Benzophenone-3,5,hhear:00344,chear:BP3
+344,http://hadatac.org/ont/chear#BiologicalRelative,Biological Relative,5,hhear:00345,chear:BiologicalRelative
+345,http://hadatac.org/ont/chear#CannedFoodConsumption,Canned Food Consumption,5,hhear:00346,chear:CannedFoodConsumption
+346,http://hadatac.org/ont/chear#ChildhoodPeriod,Childhood Period,5,hhear:00347,chear:ChildhoodPeriod
+347,http://hadatac.org/ont/chear#COTT,Cotinine (total),5,hhear:00348,chear:COTT
+348,http://hadatac.org/ont/chear#Cousin,Cousin,5,hhear:00349,chear:Cousin
+349,http://hadatac.org/ont/chear#EducationGrade,Education Grade,5,hhear:00350,chear:EducationGrade
+350,http://hadatac.org/ont/chear#ElectiveCaesarianSection,Elective Caesarian Section,5,hhear:00351,chear:ElectiveCaesarianSection
+351,http://hadatac.org/ont/chear#FastFoodConsumption,Fast Food Consumption,5,hhear:00352,chear:FastFoodConsumption
+352,http://hadatac.org/ont/chear#FirstTrimester,First Trimester,5,hhear:00353,chear:FirstTrimester
+353,http://hadatac.org/ont/chear#FreshVegetableConsumption,Fresh Vegetable Consumption,5,hhear:00354,chear:FreshVegetableConsumption
+354,http://hadatac.org/ont/chear#GestationalAgeAtBirth,Gestational Age at Birth,5,hhear:00355,chear:GestationalAgeAtBirth
+355,http://hadatac.org/ont/chear#HighSchoolOrLess,High School or Less,5,hhear:00356,chear:HighSchoolOrLess
+356,http://hadatac.org/ont/chear#HigherEducation,Higher Education,5,hhear:00357,chear:HigherEducation
+357,http://hadatac.org/ont/chear#MA,Mandelic acid,5,hhear:00358,chear:MA
+358,http://hadatac.org/ont/chear#VOCMAD,Mandelic acid(ng/mL),5,hhear:00359,chear:VOCMAD
+359,http://hadatac.org/ont/chear#MaternalWeightGain,Maternal Weight Gain,5,hhear:00360,chear:MaternalWeightGain
+360,http://hadatac.org/ont/chear#HEMA,"Mercapturic acids of 1,3-butadiene",5,hhear:00361,chear:HEMA
+361,http://hadatac.org/ont/chear#Metabolite,Metabolite,5,hhear:00362,chear:Metabolite
+362,http://hadatac.org/ont/chear#Metal,Metal,5,hhear:00363,chear:Metal
+363,http://hadatac.org/ont/chear#MPP,Mono-n-pentyl phthalate,5,hhear:00364,chear:MPP
+364,http://hadatac.org/ont/chear#VOCMB1,N-A-S-(1-HydrxMet)-2-Prpn)-L-Cys(ng/mL),5,hhear:00365,chear:VOCMB1
+365,http://hadatac.org/ont/chear#VOCPMM,N-A-S-(3-hydrxprpl-1-metl)-L-cys(ng/mL),5,hhear:00366,chear:VOCPMM
+366,http://hadatac.org/ont/chear#VOCMB2,N-Ac-S-(2-Hydrxy-3-butnyl)-L-Cys(ng/mL),5,hhear:00367,chear:VOCMB2
+367,http://hadatac.org/ont/chear#VOCDHB,"N-Ace-S- (3,4-Dihidxybutl)-L-Cys(ng/mL)",5,hhear:00368,chear:VOCDHB
+368,http://hadatac.org/ont/chear#VOCHEM,N-Ace-S-(2-Hydroxyethyl)-L-cys(ng/mL),5,hhear:00369,chear:VOCHEM
+369,http://hadatac.org/ont/chear#VOCAAM,N-Ace-S-(2-carbamoylethyl)-L-cys(ng/mL),5,hhear:00370,chear:VOCAAM
+370,http://hadatac.org/ont/chear#VOCHP2,N-Ace-S-(2-hydroxypropyl)-L-cys(ng/mL),5,hhear:00371,chear:VOCHP2
+371,http://hadatac.org/ont/chear#VOCHPM,N-Ace-S-(3-Hydroxypropyl)-L-Cys(ng/mL),5,hhear:00372,chear:VOCHPM
+372,http://hadatac.org/ont/chear#VOCAMC,N-Ace-S-(N-methlcarbamoyl)-L-cys(ng/mL),5,hhear:00373,chear:VOCAMC
+373,http://hadatac.org/ont/chear#VOCDPM,N-Ace-S-(dimethylphenyl)-L-Cys(ng/mL),5,hhear:00374,chear:VOCDPM
+374,http://hadatac.org/ont/chear#VOC2DC,"N-Acel-S-(2,2-Dichlorvinyl)-L-cys(ng/mL)",5,hhear:00375,chear:VOC2DC
+375,http://hadatac.org/ont/chear#CEMA,N-Acetyl-S- (2-carboxyethyl)-L-cysteine,5,hhear:00376,chear:CEMA
+376,http://hadatac.org/ont/chear#DHBMA,"N-Acetyl-S- (3,4-dihydroxybutyl)-L-cysteine",5,hhear:00377,chear:DHBMA
+377,http://hadatac.org/ont/chear#HPMA,N-Acetyl-S- (3-hydroxypropyl)-L-cysteine,5,hhear:00378,chear:HPMA
+378,http://hadatac.org/ont/chear#DCVMA12,"N-Acetyl-S-(1,2-dichlorovinyl)-L-cysteine",5,hhear:00379,chear:DCVMA12
+379,http://hadatac.org/ont/chear#MHBMA1,N-Acetyl-S-(1-hydroxymethyl-2-propenyl)-L-cysteine,5,hhear:00380,chear:MHBMA1
+380,http://hadatac.org/ont/chear#PHEMA,N-Acetyl-S-(1-phenyl-2-hydroxyethyl-L-cysteine + N-Acetyl-S-(2-phenyl-2-hydroxyethyl)-L-cysteine,5,hhear:00381,chear:PHEMA
+381,http://hadatac.org/ont/chear#DCVMA22,"N-Acetyl-S-(2,2-dichlorovinyl)-L-cysteine",5,hhear:00382,chear:DCVMA22
+382,http://hadatac.org/ont/chear#DPMA,"N-Acetyl-S-(2,4-dimethylphenyl)-L-cysteine + N-Acetyl-S-(2,5-dimethylphenyl)-L-cysteine + N-Acetyl-S-(3,4-dimethylphenyl)-L-cysteine",5,hhear:00383,chear:DPMA
+383,http://hadatac.org/ont/chear#VOCCEM,N-Acetyl-S-(2-Carbxyethyl)-L-Cys(ng/mL),5,hhear:00384,chear:VOCCEM
+384,http://hadatac.org/ont/chear#GAMA,N-Acetyl-S-(2-carbamoyl-2-hydroxyethyl)-L-cysteine,5,hhear:00385,chear:GAMA
+385,http://hadatac.org/ont/chear#AAMA,N-Acetyl-S-(2-carbamoylethyl)-L-cysteine,5,hhear:00386,chear:AAMA
+386,http://hadatac.org/ont/chear#CYMA,N-Acetyl-S-(2-cyanoethyl)-L-cysteine,5,hhear:00387,chear:CYMA
+387,http://hadatac.org/ont/chear#MHBMA2,N-Acetyl-S-(2-hydroxy-3-butenyl)-L-cysteine,5,hhear:00388,chear:MHBMA2
+388,http://hadatac.org/ont/chear#HPMA2,N-Acetyl-S-(2-hydroxypropyl)-L-cysteine,5,hhear:00389,chear:HPMA2
+389,http://hadatac.org/ont/chear#HPMMA,N-Acetyl-S-(3-hydroxypropyl-1-methyl)-L-cysteine,5,hhear:00390,chear:HPMMA
+390,http://hadatac.org/ont/chear#MHBMA3,N-Acetyl-S-(4-hydroxy-2-buten-1-yl)-L-cysteine,5,hhear:00391,chear:MHBMA3
+391,http://hadatac.org/ont/chear#AMCC,N-Acetyl-S-(N-methylcarbamoyl)-L-cysteine,5,hhear:00392,chear:AMCC
+392,http://hadatac.org/ont/chear#BMA,N-Acetyl-S-(benzyl)-L-cysteine,5,hhear:00393,chear:BMA
+393,http://hadatac.org/ont/chear#VOCBMA,N-Acetyl-S-(benzyl)-L-cysteine(ng/mL),5,hhear:00394,chear:VOCBMA
+394,http://hadatac.org/ont/chear#BPMA,N-Acetyl-S-(n-propyl)-L-cysteine,5,hhear:00395,chear:BPMA
+395,http://hadatac.org/ont/chear#VOCBPM,N-Acetyl-S-(n-propyl)-L-cysteine(ng/mL),5,hhear:00396,chear:VOCBPM
+396,http://hadatac.org/ont/chear#PMA,N-Acetyl-S-(phenyl)-L-cysteine,5,hhear:00397,chear:PMA
+397,http://hadatac.org/ont/chear#VOCPMA,N-Acetyl-S-(phenyl)-L-cysteine(ng/mL),5,hhear:00398,chear:VOCPMA
+398,http://hadatac.org/ont/chear#VOCTCV,N-Acetyl-S-(trichlorovinyl)-L-cys(ng/mL),5,hhear:00399,chear:VOCTCV
+399,http://hadatac.org/ont/chear#TCVMA,N-Acetyl-S-(trichlorovinyl)-L-cysteine,5,hhear:00400,chear:TCVMA
+400,http://hadatac.org/ont/chear#VOCGAM,N-ac-S-(2-carbmo-2-hydxel)-L-cys(ng/mL),5,hhear:00401,chear:VOCGAM
+401,http://hadatac.org/ont/chear#VOCMB3,N-ace-S-(phenl-2-hydxyetl)-L-cys(ng/mL),5,hhear:00402,chear:VOCMB3
+402,http://hadatac.org/ont/chear#VOCPHE,N-ace-S-(phenl-2-hydxyetl)-L-cys(ng/mL),5,hhear:00403,chear:VOCPHE
+403,http://hadatac.org/ont/chear#VOC1DC,"N-acel-S-(1,2-dichlorovinl)-L-cys(ng/mL)",5,hhear:00404,chear:VOC1DC
+404,http://hadatac.org/ont/chear#VOCCYM,N-acetyl-S-(2-cyanoethyl)-L-cyst(ng/mL),5,hhear:00405,chear:VOCCYM
+405,http://hadatac.org/ont/chear#NICT,Nicotine (total),5,hhear:00406,chear:NICT
+406,http://hadatac.org/ont/chear#NoFormalEducation,No Formal Education,5,hhear:00407,chear:NoFormalEducation
+407,http://hadatac.org/ont/chear#SelfPay,No Insurance / Self-funded,5,hhear:00408,chear:SelfPay
+408,http://hadatac.org/ont/chear#NonBiologicalRelative,Non-Biological Relative,5,hhear:00409,chear:NonBiologicalRelative
+409,http://hadatac.org/ont/chear#PFUNDA,Perfluroundecanoic acid,5,hhear:00410,chear:PFUNDA
+410,http://hadatac.org/ont/chear#PGA,Phenylglyoxylic acid,5,hhear:00411,chear:PGA
+411,http://hadatac.org/ont/chear#VOCPHG,Phenylglyoxylic acid(ng/mL),5,hhear:00412,chear:VOCPHG
+412,http://hadatac.org/ont/chear#PlannedCaesarianSection,Planned Caesarian Section,5,hhear:00413,chear:PlannedCaesarianSection
+413,http://hadatac.org/ont/chear#PostPregnancy,Post-Pregnancy,5,hhear:00414,chear:PostPregnancy
+414,http://hadatac.org/ont/chear#PrePregnancy,Pre-Pregnancy,5,hhear:00415,chear:PrePregnancy
+415,http://hadatac.org/ont/chear#PrenatalNonSmoker,Prenatal Nonsmoker,5,hhear:00416,chear:PrenatalNonSmoker
+416,http://hadatac.org/ont/chear#PrenatalSmoker,Prenatal Smoker,5,hhear:00417,chear:PrenatalSmoker
+417,http://hadatac.org/ont/chear#PrivateInsurance,Private Insurance,5,hhear:00418,chear:PrivateInsurance
+418,http://hadatac.org/ont/chear#QuitSmoking,Quit Smoking,5,hhear:00419,chear:QuitSmoking
+419,http://hadatac.org/ont/chear#RepeatCaesarianSection,Repeat Caesarian Section,5,hhear:00420,chear:RepeatCaesarianSection
+420,http://hadatac.org/ont/chear#SecondTrimester,Second Trimester,5,hhear:00421,chear:SecondTrimester
+421,http://hadatac.org/ont/chear#SpontaneousCaesarianSection,Spontaneous Caesarian Section,5,hhear:00422,chear:SpontaneousCaesarianSection
+422,http://hadatac.org/ont/chear#Stress,Stress,5,hhear:00423,chear:Stress
+423,http://hadatac.org/ont/chear#TechnicalSchool,Technical School,5,hhear:00424,chear:TechnicalSchool
+424,http://hadatac.org/ont/chear#ThirdTrimester,Third Trimester,5,hhear:00425,chear:ThirdTrimester
+425,http://hadatac.org/ont/chear#TNIC,Total nicotine,5,hhear:00426,chear:TNIC
+426,http://hadatac.org/ont/chear#UnderweightOrNormal,Underweight/Normal,5,hhear:00427,chear:UnderweightOrNormal
+427,http://hadatac.org/ont/chear#UnknownEducationLevel,Unknown Education Level,5,hhear:00428,chear:UnknownEducationLevel
+428,http://hadatac.org/ont/chear#UnplannedCaesarianSection,Unplanned Caesarian Section,5,hhear:00429,chear:UnplannedCaesarianSection
+429,http://hadatac.org/ont/chear#VaginalBirth,Vaginal Birth,5,hhear:00430,chear:VaginalBirth
+430,http://hadatac.org/ont/chear#DEDP,diethyldithiophosphate,5,hhear:00431,chear:DEDP
+431,http://hadatac.org/ont/chear#DEP,diethylphosphate,5,hhear:00432,chear:DEP
+432,http://hadatac.org/ont/chear#DETP,diethylthiophosphate,5,hhear:00433,chear:DETP
+433,http://hadatac.org/ont/chear#DMDP,dimethyldithiophosphate,5,hhear:00434,chear:DMDP
+434,http://hadatac.org/ont/chear#DMP,dimethylphosphate,5,hhear:00435,chear:DMP
+435,http://hadatac.org/ont/chear#DMTP,dimethylthiophosphate,5,hhear:00436,chear:DMTP
+436,http://hadatac.org/ont/chear#MCOMHP,mono (6-COOH-2-methylheptyl) phthalate,5,hhear:00437,chear:MCOMHP
+437,http://hadatac.org/ont/chear#MCOMOP,mono (7-COOH-2-methyloctyl) phthalate,5,hhear:00438,chear:MCOMOP
+438,http://hadatac.org/ont/chear#mCHpP,mono(7-carboxyheptyl)phthalate,5,hhear:00439,chear:mCHpP
+439,http://hadatac.org/ont/chear#mECPP,mono-(2-ethyl-5-carboxypentyl) phthalate,5,hhear:00440,chear:mECPP
+440,http://hadatac.org/ont/chear#mHpP,mono-2-heptyl phthalate,5,hhear:00441,chear:mHpP
+441,http://hadatac.org/ont/chear#mBzP,mono-benzyl phthalate,5,hhear:00442,chear:mBzP
+442,http://hadatac.org/ont/chear#mCINP,mono-carboxy isononyl phthalate,5,hhear:00443,chear:mCINP
+443,http://hadatac.org/ont/chear#mCIOP,mono-carboxy isooctyl phthalate,5,hhear:00444,chear:mCIOP
+444,http://hadatac.org/ont/chear#mIDP,mono-isodecyl phthalate,5,hhear:00445,chear:mIDP
+445,http://hadatac.org/ont/chear#mIPrP,mono-isopropyl phthalate,5,hhear:00446,chear:mIPrP
+446,http://hadatac.org/ont/chear#MIP,monoisononyl phthalate,5,hhear:00447,chear:MIP
+447,http://hadatac.org/ont/chear#VOCMUC,"t,t-Muconic acid(ng/mL)",5,hhear:00448,chear:VOCMUC
+448,http://hadatac.org/ont/chear#MU,"trans, trans -Muconic acid",5,hhear:00449,chear:MU
+449,http://hadatac.org/ont/chear#BAA1,1-hydroxybenz[a]anthacene,6,hhear:00450,chear:BAA1
+450,http://hadatac.org/ont/chear#BCP1,1-hydroxybenzo[c]-phenanthrene,6,hhear:00451,chear:BCP1
+451,http://hadatac.org/ont/chear#BCP2,2-hydroxybenzo[c]-phenanthrene,6,hhear:00452,chear:BCP2
+452,http://hadatac.org/ont/chear#BCP3,3-hydroxybenzo[c]-phenanthrene,6,hhear:00453,chear:BCP3
+453,http://hadatac.org/ont/chear#CHRY3,3-hydroxychrysene,6,hhear:00454,chear:CHRY3
+454,http://hadatac.org/ont/chear#Adopted,Adopted,6,hhear:00455,chear:Adopted
+455,http://hadatac.org/ont/chear#Ancestor,Ancestor,6,hhear:00456,chear:Ancestor
+456,http://hadatac.org/ont/chear#BAPT,Benzo[a]pyrene tetraol,6,hhear:00457,chear:BAPT
+457,http://hadatac.org/ont/chear#Birth,Birth,6,hhear:00458,chear:Birth
+458,http://hadatac.org/ont/chear#Descendant,Descendant,6,hhear:00459,chear:Descendant
+459,http://hadatac.org/ont/chear#ZFentonBW,Fenton Weighted Z-Score,6,hhear:00460,chear:ZFentonBW
+460,http://hadatac.org/ont/chear#ForcepsAssistedBirth,Forceps-Assisted Birth,6,hhear:00461,chear:ForcepsAssistedBirth
+461,http://hadatac.org/ont/chear#Foster,Foster,6,hhear:00462,chear:Foster
+462,http://hadatac.org/ont/chear#GCMSMS,Gas Chromatographer-Tandem Mass Spectrometer,6,hhear:00463,chear:GCMSMS
+463,http://hadatac.org/ont/chear#HighSchoolGraduate,Graduated From High School,6,hhear:00464,chear:HighSchoolGraduate
+464,http://hadatac.org/ont/chear#HPLCMS,High-Performance Liquid Chromatography-Mass Spectrometry,6,hhear:00465,chear:HPLCMS
+465,http://hadatac.org/ont/chear#LCMSMS,Liquid Chromatography - Tandem Mass Spectrometer,6,hhear:00466,chear:LCMSMS
+466,http://hadatac.org/ont/chear#SPMA,Mercapturic acid of benzene,6,hhear:00467,chear:SPMA
+467,http://hadatac.org/ont/chear#AMA,Mercapturic acids of acrolein and crotonaldehyde,6,hhear:00468,chear:AMA
+468,http://hadatac.org/ont/chear#PCB138,PCB138,6,hhear:00469,chear:PCB138
+469,http://hadatac.org/ont/chear#34202,PCB153,6,hhear:00470,chear:34202
+470,http://hadatac.org/ont/chear#PCB180,PCB180,6,hhear:00471,chear:PCB180
+471,http://hadatac.org/ont/chear#PreSchool,Preschool,6,hhear:00472,chear:PreSchool
+472,http://hadatac.org/ont/chear#Sibling,Sibling,6,hhear:00473,chear:Sibling
+473,http://hadatac.org/ont/chear#SomeElementarySchool,Some Elementary School,6,hhear:00474,chear:SomeElementarySchool
+474,http://hadatac.org/ont/chear#SomeHighSchool,Some High School,6,hhear:00475,chear:SomeHighSchool
+475,http://hadatac.org/ont/chear#SomeMiddleSchool,Some Middle School,6,hhear:00476,chear:SomeMiddleSchool
+476,http://hadatac.org/ont/chear#Step,Step,6,hhear:00477,chear:Step
+477,http://hadatac.org/ont/chear#TechnicalPostJuniorCollege,Technical Post Junior College,6,hhear:00478,chear:TechnicalPostJuniorCollege
+478,http://hadatac.org/ont/chear#UPLCMS,Ultra Performance Liquid Chromatography - Mass Spectrometer,6,hhear:00479,chear:UPLCMS
+479,http://hadatac.org/ont/chear#Conception,Conception,7,hhear:00480,chear:Conception
+480,http://hadatac.org/ont/chear#EducationGrade1,Education Grade 1,7,hhear:00481,chear:EducationGrade1
+481,http://hadatac.org/ont/chear#EducationGrade2,Education Grade 2,7,hhear:00482,chear:EducationGrade2
+482,http://hadatac.org/ont/chear#EducationGrade3,Education Grade 3,7,hhear:00483,chear:EducationGrade3
+483,http://hadatac.org/ont/chear#EducationGrade5,Education Grade 5,7,hhear:00484,chear:EducationGrade5
+484,http://hadatac.org/ont/chear#EducationGrade6,Education Grade 6,7,hhear:00485,chear:EducationGrade6
+485,http://hadatac.org/ont/chear#EducationGrade7,Education Grade 7,7,hhear:00486,chear:EducationGrade7
+486,http://hadatac.org/ont/chear#ElementarySchool,Elementary School,7,hhear:00487,chear:ElementarySchool
+487,http://hadatac.org/ont/chear#NormalWeight,Normal Weight,7,hhear:00488,chear:NormalWeight
+488,http://hadatac.org/ont/chear#Pregnancy,Pregnancy,7,hhear:00489,chear:Pregnancy
+489,http://hadatac.org/ont/chear#TechnicalPostPrimarySchool,Technical Post Primary School,7,hhear:00490,chear:TechnicalPostPrimarySchool
+490,http://hadatac.org/ont/chear#TechnicalPostMiddleSchool,Technical Post-Middle School,7,hhear:00491,chear:TechnicalPostMiddleSchool
+491,http://hadatac.org/ont/chear#Child,Child,8,hhear:00492,chear:Child
+492,http://hadatac.org/ont/chear#EducationGrade4,Education Grade 4,8,hhear:00493,chear:EducationGrade4
+493,http://hadatac.org/ont/chear#HeadOfHousehold,Head Of Household,8,hhear:00494,chear:HeadOfHousehold
+494,http://hadatac.org/ont/chear#Parent,Parent,8,hhear:00495,chear:Parent
+495,http://hadatac.org/ont/chear#UPLCMSMS,Ultra-Performance Liquid Chromatography - Tandem Mass Spectrometer,8,hhear:00496,chear:UPLCMSMS
+496,http://hadatac.org/ont/chear#HPLCMSMS,High Performance Liquid Chromatography - Tandem Mass Spectrometer,9,hhear:00497,chear:HPLCMSMS
+497,http://hadatac.org/ont/chear#QuitAfterPregnancy,Quit Smoking After Pregnancy,9,hhear:00498,chear:QuitAfterPregnancy
+498,http://hadatac.org/ont/chear#QuitBeforePregnancy,Quit Smoking Before Pregnancy,9,hhear:00499,chear:QuitBeforePregnancy
+499,http://hadatac.org/ont/chear#Daughter,Daughter,10,hhear:00500,chear:Daughter
+500,http://hadatac.org/ont/chear#Father,Father,10,hhear:00501,chear:Father
+501,http://hadatac.org/ont/chear#Mother,Mother,10,hhear:00502,chear:Mother
+502,http://hadatac.org/ont/chear#Son,Son,10,hhear:00503,chear:Son

@@ -1,0 +1,165 @@
+@prefix do: <http://purl.obolibrary.org/obo/DOID_> .
+@prefix uo: <http://purl.obolibrary.org/obo/UO_> .
+@prefix fma: <http://purl.org/sig/ont/fma/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix hhear: <http://purl.org/twc/HHEAR_> .
+@prefix uberon: <http://purl.obolibrary.org/obo/UBERON_>.
+@prefix : <http://purl.org/twc/HHEAR_>.
+@prefix hasco: <http://hadatac.org/ont/hasco#>.
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+
+
+###  http://hadatac.org/ont/chear/EOPerHPF
+
+hhear:00165 rdf:type owl:Class ;
+               
+               rdfs:subClassOf sio:SIO_000794 ;
+               
+               rdfs:comment "A histological count of the eosinophils in a high-power microscopic field of view, or 0.158 mm^2 (x400)." ;
+               
+               rdfs:label "eosinophils per high-power field" .
+
+
+
+###  http://hadatac.org/ont/chear/EoEActive
+
+hhear:00253 rdf:type owl:Class ;
+                
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty sio:isPhenotypeOf ;
+                                      owl:allValuesFrom [ owl:intersectionOf ( uberon:0001043
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty sio:hasAttribute ;
+                                                                                 owl:someValuesFrom [ owl:intersectionOf ( hhear:00165
+                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                             owl:onProperty sio:hasValue ;
+                                                                                                                             owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                 owl:onDatatype xsd:integer ;
+                                                                                                                                                 owl:withRestrictions ( [ xsd:minExclusive 25
+                                                                                                                                                                        ]
+                                                                                                                                                                      )
+                                                                                                                                               ]
+                                                                                                                           ]
+                                                                                                                         ) ;
+                                                                                                      rdf:type owl:Class
+                                                                                                    ]
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ]
+                                    ] ;
+                
+                rdfs:subClassOf do:13922 ;
+                
+                rdfs:comment "Eosinophilic esophagitis is active when a biopsy of the esophagus reveals a count of more than 25 eosinophils per high-power field area, or 0.158 mm^2 (400x)." ;
+                
+                rdfs:label "active eosinophilic esophagitis" .
+
+
+
+###  http://hadatac.org/ont/chear/EoEMild
+
+hhear:00255 rdf:type owl:Class ;
+              
+              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                    owl:onProperty sio:isPhenotypeOf ;
+                                    owl:allValuesFrom [ owl:intersectionOf ( uberon:0001043
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty sio:hasAttribute ;
+                                                                               owl:someValuesFrom [ owl:intersectionOf ( hhear:00165
+                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                           owl:onProperty sio:hasValue ;
+                                                                                                                           owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                               owl:onDatatype xsd:integer ;
+                                                                                                                                               owl:withRestrictions ( [ xsd:minInclusive 15
+                                                                                                                                                                      ]
+                                                                                                                                                                      [ xsd:maxExclusive 25
+                                                                                                                                                                      ]
+                                                                                                                                                                    )
+                                                                                                                                             ]
+                                                                                                                         ]
+                                                                                                                       ) ;
+                                                                                                    rdf:type owl:Class
+                                                                                                  ]
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ]
+                                  ] ;
+              
+              rdfs:subClassOf do:13922 ;
+              
+              rdfs:comment "Eosinophilic esophagitis is mild when a biopsy of the esophagus reveals a count of 15-25 eosinophils per high-power field area, or 0.158 mm^2 (400x)." ;
+              
+              rdfs:label "mild eosinophilic esophagitis" .
+
+
+
+###  http://hadatac.org/ont/chear/EoERemission
+
+hhear:00254 rdf:type owl:Class ;
+                   
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty sio:isPhenotypeOf ;
+                                         owl:allValuesFrom [ owl:intersectionOf ( uberon:0001043
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty sio:hasAttribute ;
+                                                                                    owl:someValuesFrom [ owl:intersectionOf ( hhear:00165
+                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                owl:onProperty sio:hasValue ;
+                                                                                                                                owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                                                    owl:onDatatype xsd:integer ;
+                                                                                                                                                    owl:withRestrictions ( [ xsd:maxExclusive 15
+                                                                                                                                                                           ]
+                                                                                                                                                                         )
+                                                                                                                                                  ]
+                                                                                                                              ]
+                                                                                                                            ) ;
+                                                                                                         rdf:type owl:Class
+                                                                                                       ]
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ]
+                                       ] ;
+                   
+                   rdfs:subClassOf do:13922 ;
+                   
+                   rdfs:comment "Eosinophilic esophagitis is active when a biopsy of the esophagus reveals a count of less than 15 eosinophils per high-power field area, or 0.158 mm^2 (400x)." ;
+                   
+                   rdfs:label "eosinophilic esophagitis in remission" .
+
+
+
+###  http://purl.obolibrary.org/obo/DOID_13922
+
+do:13922 rdf:type owl:Class ;
+         
+         rdfs:subClassOf do:6050 ;
+         
+         rdfs:label "eosinophilic esophagitis" .
+
+
+
+###  http://purl.obolibrary.org/obo/DOID_6050
+
+do:6050 rdf:type owl:Class ;
+        
+        rdfs:subClassOf sio:SIO_010299 ;
+        
+        rdfs:label "esophageal disease" .
+
+
+
+uberon:0001043 rdf:type owl:Class ;
+            rdfs:subClassOf sio:SIO_010003;
+            rdfs:label "Esophagus" .
+
