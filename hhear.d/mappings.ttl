@@ -62,7 +62,7 @@
 
 
 ###  http://purl.obolibrary.org/obo/NBO_0000313
-<http://purl.obolibrary.org/obo/NBO_0000313> rdfs:subClassOf <http://semanticscience.org/resource/SIO_001195> .
+#<http://purl.obolibrary.org/obo/NBO_0000313> rdfs:subClassOf <http://semanticscience.org/resource/SIO_001195> .
 
 
 ###  http://purl.obolibrary.org/obo/NCIT_C3262
